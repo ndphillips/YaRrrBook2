@@ -1,0 +1,2324 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tufte-Style Book (Minimal Template)
+% LaTeX Template
+% Version 1.0 (5/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% IMPORTANT NOTE:
+% In addition to running BibTeX to compile the reference list from the .bib
+% file, you will need to run MakeIndex to compile the index at the end of the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
+
+\usepackage{microtype} % Improves character and word spacing
+\usepackage{amsmath}
+\usepackage{booktabs} % Better horizontal rules in tables
+\usepackage{Sweave}
+\usepackage{graphicx} % Needed to insert images into the document 
+\graphicspath{{graphics/}} % Sets the default location of pictures
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio} % Improves figure scaling
+\usepackage{fancyvrb} % Allows customization of verbatim environments
+\fvset{fontsize=\normalsize} % The font size of all verbatim text can be changed here
+
+\newcommand{\hangp}[1]{\makebox[0pt][r]{(}#1\makebox[0pt][l]{)}} % New command to create parentheses around text in tables which take up no horizontal space - this improves column spacing
+\newcommand{\hangstar}{\makebox[0pt][l]{*}} % New command to create asterisks in tables which take up no horizontal space - this improves column spacing
+
+\usepackage{xspace} % Used for printing a trailing space better than using a tilde (~) using the \xspace command
+
+\newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year} % A command to print the current month and year
+
+
+\newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
+
+\newcommand{\newfun}[1]{\begin{Large} \begin{center}  \texttt{#1} \end{center} \end{Large}}
+\setcounter{tocdepth}{1}
+\usepackage{makeidx} % Used to generate the index
+\makeindex % Generate the index which is printed at the end of the document
+
+%----------------------------------------------------------------------------------------
+%	BOOK META-INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{YaRrr!\\ A pirate's guide to R} % Title of the book
+
+\author{Dr. Nathaniel D. Phillips} % Author
+
+
+%\publisher{Publisher Name} % Publisher
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\frontmatter
+
+\maketitle % Print the title page
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+\begin{fullwidth}
+~\vfill
+\thispagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+Copyright \copyright\ \the\year\ \thanklessauthor
+
+\par\smallcaps{Published by \thanklesspublisher}
+
+\par\smallcaps{\url{http://www.nathanieldphillips.com}}
+
+\par This document may not be used for any commercial purposes. All rights are reserved by Nathaniel Phillips.\index{license}
+
+\par\textit{First printing, \monthyear}
+\end{fullwidth}
+
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Print the table of contents
+
+%----------------------------------------------------------------------------------------
+
+%\listoffigures % Print a list of figures
+
+%----------------------------------------------------------------------------------------
+
+%\listoftables % Print a list of tables
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION PAGE
+%----------------------------------------------------------------------------------------
+
+\cleardoublepage
+~\vfill
+\begin{doublespace}
+\noindent\fontsize{18}{22}\selectfont\itshape
+\nohyphenation
+This book is dedicated to my former statistics instructors Dr. Thomas Moore and Dr. Wei Lin who taught me everything I know about statistics, and my PhD colleagues Dr. Dirk Wulff and Dr. Stefan Herzog who taught me everything I know about R.
+\end{doublespace}
+\vfill
+\vfill
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+%\cleardoublepage
+
+\chapter{Introduction} % The asterisk leaves out this chapter from the table of contents
+
+\subsection{Who am I?}
+
+TEST Testtest
+
+I am a pirate on the Bodensee in Konstanz Germany. When I started pirate training, I discovered R and have been hooked ever since. I'm now on a mission to convince everyone I can to make the switch from SPSS (or Excel, Matlab, JMP...) to R.
+
+\subsection{This book is in progress..}
+
+If you haven't figured it out already, this book is very much a work in progress. I'm constantly experimenting with the material and the layout. If you have any recommendations for changes or spot any errors, please write me at YaRrr.Book@gmail.com or tweet me @YaRrrBook
+
+\marginnote{Email me with comments, recommendations or typos at: YaRrr.Book@gmail.com or tweet me at @YaRrrBook}
+
+
+\subsection{Who is this book for?}
+Anyone who wants to learn R can benefit from this book. I will assume that you have taken an introductory course in statistics, but have no substantial programming experience. While the techniques in this book apply to most data analysis problems, because my background is in experimental psychology I will cater the course to solving analysis problems commonly faced in psychological research.
+
+\subsection{Why is R so great?}
+
+\begin{enumerate}
+
+\item R is 100\% free and as a result, has a huge support community. Unlike SPSS, Matlab, Excel and JMP, R is, and always will be completely free. This doesn't just help your wallet - it means that a huge community of R programmers will constantly develop an distribute new R functionality and packages at a speed that leaves all those other packages in the dust! Unlike Fight Club, the first rule of R is "Do talk about R!" The size of the R programming community is staggering. If you ever have a question about how to implement something in R, a quick Poogle\footnote{I am in the process of creating Poogle - Google for Pirates. Kickstarter page coming soon...} search will lead you to your answer virtually every single time.
+
+\item R is incredibly versatile. You can use R to do everything from calculating simple summary statistics, to performing complex simulations to creating gorgeous plots like the chord diagram in Figure~\ref{fig:chorddiagram}. If you can imagine an analytical task, you can almost certainly implement it in R.
+
+\begin{marginfigure}
+\begin{tiny}
+<<>>=
+require("circlize")
+mat = matrix(sample(1:100, 18, replace = TRUE), 3, 6)
+rownames(mat) = letters[1:3]
+colnames(mat) = LETTERS[1:6]
+chordDiagram(mat)
+@
+\end{tiny}
+\caption{This is a \texttt{chordDiagram} plot that comes with the R package \texttt{circlize}.}
+\label{fig:chorddiagram}
+\end{marginfigure}
+
+
+\item Using RStudio, You can easily and seamlessly combine R code, analyses, plots, and written text into elegant documents all in one place using Sweave (R and Latex) or RMarkdown. Instead of trying to manage two or three programs, say Excel, Word and (sigh) SPSS, where you find yourself spending half your time copying, pasting and formatting data, images and test, R combined with RStudio allows you to do everything in one place so nothing gets misread, mistyped, or forgotten.
+
+\item Analyses conducted in R are transparent, easily shareable, and reproducible. If you ask an SPSS user how they conducted a specific analyses, they will either A) Not remember,  B) Try (nervously) to construct an analysis procedure on the spot that makes sense - which may or may not correspond to what they actually did months or years ago, or C) Ask you what you are doing in their kitchen\footnote{Get used to the bad jokes people. Lots more where that came from.}. I used to primarily use SPSS, so I speak from experience on this. If you ask an R user (who uses good programming techniques!) how they conducted an analysis, they should always be able to show you the exact code they used. Of course, this doesn't mean that they used the appropriate analysis or interpreted it correctly, but with all the original code, any problems should be completely transparent!
+
+\item And most importantly of all, R is the programming language of choice for pirates, (who prefer the "YaRrr!" pronunciation)
+
+\end{enumerate}
+
+\subsection{How this book is formatted}
+
+In this book, R code is (almost) always presented in a separate gray box like this one:
+
+\begin{footnotesize}
+<<>>=
+a <- 1 + 2 + 3 + 4 + 5
+a
+@
+\end{footnotesize}
+
+This is called a \textit{code chunk}. You should always be able to directly copy and paste code chunks directly into R. If you copy a chunk and it does not work for you, it is most likely because the code refers to a package, function, or object that I defined in a previous chunk. If so, read back and look for a previous chunk that contains the missing definition. As you'll soon learn, lines that begin with \texttt{#} are either comments or output from prior code so R will ignore these lines if you paste them into R. 
+
+As you'll notice, I'll include code chunks before all plots in the book. In early chapters, the code might not make sense just yet. However, I elected to always include plotting code so you have the option of re-creating (and tweaking) any plot in the book.
+
+
+\mainmatter
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+\chapter{1: Installing R and RStudio}
+\label{ch:1}
+
+%------------------------------------------------
+
+Now that I've convinced you to use R, let's get started! First, you'll need to install the base R software.
+
+1. Download and install the base R software (around 50mb)
+    + Windows <http://cran.r-project.org/bin/windows/base/>
+    + Mac <http://cran.r-project.org/bin/macosx/>
+
+See Figure \ref{fig:rscreenshot} Here's how the base R software looks (on Mac). As you can see, it's very much a bare-bones software - just how we want it! No extra gimmicks or flashy bloatware needed!
+
+\begin{marginfigure}
+\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Public/RScreenshot.png}
+\caption{Here is how the standard R application looks. Not too exciting - just how we like it!}
+\label{fig:rscreenshot}
+\end{marginfigure}
+
+While you can do pretty much everything you want within base R, you'll find that most people these days do their R programming in an application called RStudio. RStudio is a graphical user interface (GUI)-like interface for R that makes programming in R a bit easier. To download and install RStudio (around 40mb), go to <http://www.rstudio.com/products/rstudio/download/>
+
+Once you've installed RStudio, you'll never need to open the base R application. Let's go ahead and boot up RStudio and see how she looks!
+
+\subsection{The four RStudio windows}
+
+When you open RStudio, you'll see the following four windows (also called panes):
+
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Public/RStudio_Screenshot_Labels.png}
+\caption{The four panes of RStudio.}
+\label{fig:fullfig}
+\end{figure*}
+
+Note your windows might be in a different order. You can change the order of the windows under RStudio preferences.
+
+\subsection{Source - Your notepad for code}
+
+The source pane is where you create and edit R Scripts - which are just text files with the ".R" extension. When you open RStudio, it will automatically start a new Untitled script. You will write 99\% of your R code in a script in the source panel. However, your R code will not be evaluated until you 'send' the code to the Console.
+
+You can send your code from the source to the Console by highlighting the code you wish to evaluate and clicking on the "Run" button on the top right of the Source. Alternatively, you can use the hot-key "Command + Return" on Mac, or "Control + Enter" on PC to send code to the console.
+
+
+
+\subsection{Console: The calculator}
+
+The console is where R actually executes (calculates) code. You can type code directly into the console and get an immediate response. For example, if you type 1+1 into the console, you'll see that R immediately gives an output of 2
+
+\begin{footnotesize}
+<<>>=
+1+1
+@
+\end{footnotesize}
+
+\marginnote{Tip: Try to write most of your code in a document in the Source. Only type directly into the Console to de-bug or do quick analyses.}
+
+However, most of the time, you won't be typing directly into the console. Instead, you'll be writing code in the source and then "Running" it to the console. The reason for this is straightforward: If you type code into the console, it won't be saved (though you can look back on your command History). And if you make a mistake in typing code into the console, you'd have to re-type everything all over again. Instead, it's better to write all your code in the Source. When you are ready to execute some code, you can then send "Run" it to the console.
+
+\subsection{Environment / History}
+
+The Environment tab of this panel shows you the names of all the data objects (like vectors, matrices, and dataframes) that you've defined in your current R session. The tab also has a few clickable actions like importing a new dataset. However, I almost never look at this menu.
+
+The History tab of this panel simply shows you a history of your R commands. I never look at this. In fact, I didn't realize it was even there until I started writing this tutorial.
+
+\subsection{Files / Plots / Packages / Help}
+
+This panel shows you file directories, plots, your current packages, and help menus.
+
+\begin{enumerate}
+\item Files - Gives you access to the file directory on your harddrive. One nice feature of the "Files" panel is that you can use it to set your working directory - once you navigate to a folder you want to read and save files to, click "More" and then "Set As Working Directory."
+\item Plots - Shows your plots. There are buttons for opening the plot in a separate window and exporting the plot as a pdf or jpeg (though you can also do this with code using the \texttt{pdf()} or \texttt{jpeg()} functions.)\marginnote{Most - if not all - of the time when you perform actions using your mouse by pointing and clicking in RStudio, RStudio will perform the function by sending the appropriate R Code to the console. You can then copy and paste this code into your documents to automate the process later.}
+\item Packages - Shows a list of all the R packages installed on your harddrive and indicates whether or not they are currently loaded. Packages that are loaded in the current session are checked while those that are installed but not yet loaded are unchecked.
+\item Help - Help menu for R functions. You can either type the name of a function in the search window, or use the code \texttt{?function.name} to search for a function with the name \texttt{function.name}
+\end{enumerate}
+
+
+To see how plots are displayed try the following command which should display a histogram of 100 values randomly drawn from a standard normal distribution.
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+hist(rnorm(n = 100, 
+           mean = 1000, 
+           sd = 100),
+     main = "Plunder in 2015",
+     xlab = "Amount"
+     )
+@
+\end{footnotesize}
+
+\section{Getting help}
+
+To get help and see documentation for a function, type \texttt{?fun}, where \texttt{fun} is the name of the function. For example, to get additional information on the histogram function, run the following code:
+
+\marginnote{Tip: If you ever need to learn more about an R function: type \texttt{?functionname}, where \texttt{functionname} is the name of the function.}
+
+\begin{footnotesize}
+<<>>=
+?hist
+@
+\end{footnotesize}
+
+
+\section{Installing and loading packages}
+
+When you download and install R for the first time, you are installing the Base R software. Base R will will contain most if not all the functions you need. However, one of the great things about R is that people are constantly writing and sharing new functions that you can use. When people share a new function, they usually do so in the form of an \textit{R package} which contains anything from functions, to help menus, to vignettes (examples), to data. To install a new R package, you need to run the code \texttt{install.packages("package")}, where "package" is the name of the package. After you've installed the package, you need to \textit{load} it into R by running the code \texttt{load("package)}. This will load the package into your current R session and allow you to use its contents.\marginnote{Once you've installed a package on your computer, you never need to install it again. However, you do need to load the package every time you start a new R session.}
+
+For example, let's say you want to create a wordcloud - a graph that plots text in different sizes. You can certainly program this yourself in R, but thankfully someone has created a package called \texttt{wordcloud} with a function that will do this for you. Let's install the package, load it, and then use the \texttt{wordcloud} function:
+
+\begin{footnotesize}
+<<fig.width = 3, fig.height = 3, prompt=FALSE, warning=FALSE>>=
+install.packages("wordcloud") # Install the package
+
+library("wordcloud") # Load the package
+
+par(mar = rep(0, 4))
+wordcloud(words = c("sword", "YaRrr!", "eyepatch", 
+                    "parrot", "plunder", "treasure",
+                    "chest", "scurvy"),
+          freq = sample(50:1000, 8), 
+          colors = gray(runif(8, 0, 1)))
+@
+\end{footnotesize}
+
+
+\subsection{Finished!}
+
+That's it for this lecture! All you did was install the most powerful statistical package on the planet used by top universities and companies like Google. No big deal.
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 2
+%----------------------------------------------------------------------------------------
+
+\chapter{2: Coding Basics}
+\label{ch:2}
+
+
+\subsection{Chapter Goals}
+
+\begin{enumerate}
+  \item Accept that learning R will take time (and promise you'll never go back to SPSS!)
+  \item Know how to use comments and spaces in R code.
+  \item Be able to define and manipulate scalers and vectors
+  \item Generate vectors using c(), :, rep(), and seq()
+\end{enumerate}
+
+
+\subsection{Before we get started, a word of warning...}
+
+So by now you've installed R and you're ready to get started. But first, let me give you a brief word of warning: Especially if this is your first experience programming, you are going to experience a \textit{lot} of headaches when you get started. You will run into error after error and pound your fists against the table screaming: "WHY ISN'T MY CODE WORKING?!?!? There must be something wrong with this stupid software!!!" You will spend hours trying to find a bug in your code, only to find that - frustratingly enough, you had had an extra space or missed a comma somewhere. You'll then wonder why you ever decided to learn R when (::sigh::) SPSS was so "nice and easy."
+
+
+\marginnote{Fun fact: SPSS stands for "Shitty Piece of Shitty Shit". True story.}
+
+This is perfectly normal! Don't get discouraged and DON'T GO BACK TO SPSS! Trust me, as you gain more programming experience, you'll experience fewer and fewer bugs (though they'll never go away completely). Once you get over the initial barriers, you'll find yourself conducting analyses much, much faster than you ever did before.
+
+\subsection{The basics of R programming}
+
+Ok, let's write some code! Again, we will write all our code in a script file in the Source pane of RStudio. When we want to execute it, we'll send it to the Console.
+
+\subsection{R as a calculator}
+
+At its heart, R is just a fancy calculator. Let's do some basic algebra, type the following command into the source, then highlight the text and click "Run" to execute it in the console:
+
+\marginnote{Tip: To execute code from the source to the console, highlight it and use the hot-keys "Command-Return" on Mac or "Control-Enter" on PC.}
+
+\begin{footnotesize}
+<<>>=
+1+1 # The result should be 2
+@
+\end{footnotesize}
+
+As you can see, R returns the (thankfully correct) value of 2. You'll notice that the console also returns the text [1]. This is just a 'prompt' that tells you the index of the value next to it. Don't worry about this for now, it will make more sense later.
+
+Additionally, you'll notice that I included a comment in the code using the \# sign. R will ignore everything on a line after the \# sign. So why do we use comments? Mainly to explain to others, including your future self, what you are trying to do with your code.\marginnote{Do your future self a favor and use comments to explain what you're doing with your code. Also, maybe go for a run once in a while.}
+
+Let's try some more:
+
+\begin{footnotesize}
+<<>>=
+2 * 3 - 1 # R ignores spaces
+2 * (3 - 1) # R observes order of operations
+@
+\end{footnotesize}
+
+As you can see, R ignores spaces in between arguments in code. I recommend using spaces to make your code easier to look at. Personally, I include spaces between arithmetic operators (like + and -) and after commas (which we'll get to later).
+
+\section{Defining objects with the "<-" assignment}
+
+\marginnote{Good object names strike a balance between being easy to type (i.e.; short names) and interpret. If you have several datasets, it's probably not a good idea to name them \texttt{a}, \texttt{b}, \texttt{c} because you'll forget which is which. However, using long names like \texttt{March2015Group1OnlyFemales} and \texttt{March2015Group1OnlyMales} will give you carpel tunnel syndrome.}
+
+So far so good, you can use R as a simple calculator. Now, let's do our first \textit{object assignment}. Object assignment is our way of storing information, such as a number or a statistical test, into something we can easily refer to later. Let's start by creating the object "my.object" and assigning the outcome of $2^{10}$ to it:
+
+\begin{footnotesize}
+<<>>=
+# The symbol(s) "<-" mean "assign"
+mateys <- 2 ^ 10 # Assign the value of 2^10 to mateys
+@
+\end{footnotesize}
+
+As you can see in the example, we used the "<-" command to assign the value of 1 to my.object. When you assign a value to an object, R won't automatically print it. If you want to see the value, you need to call the object by just executing its name:
+
+\begin{footnotesize}
+<<>>=
+mateys # What is the value of mateys?
+@
+\end{footnotesize}
+
+A few notes about defining objects: you can't start the name of an object with a number, and you can't have spaces or other 'weird' characters in the name. Here are some examples of \textit{invalid} object names:
+
+\begin{footnotesize}
+<<eval = F>>=
+me mateys # Can't have spaces
+5.mateys # Can't start a name with a number
+YaRrr! # Can't have an "!" in the object name
+@
+\end{footnotesize}
+
+R is case-sensitive. If you define an object with uppercase letters, you must keep referring to it with uppercase letters!
+
+\marginnote{Avoid using too many capital letters in object names because they require you to hold the shift key. This may sound silly, but you'd be surprised how much easier it is to type \texttt{mydata} than \texttt{MyData} 100 times.}
+
+\begin{footnotesize}
+<<>>=
+Plunder <- 1
+plunder <- 100
+Plunder
+plunder
+@
+\end{footnotesize}
+
+Once you've defined an object, you can use it in other commands:
+
+\begin{footnotesize}
+<<>>=
+prior.plunder <- 100
+new.plunder <- 2
+total.plunder <- prior.plunder + new.plunder
+total.plunder
+@
+\end{footnotesize}
+
+If you want to change an object, you can just reassign it. You can even refer to the same object when reassigning it:
+
+\begin{footnotesize}
+<<>>=
+a <- 2
+a <- a + a
+a
+@
+\end{footnotesize}
+
+\marginnote{You can use \texttt{=} instead of \texttt{<-} for object assignment but I recommend you stick with \textt{<-} because the direction of the assignment is clear.}
+
+
+\section{Data object types in R}
+
+R stores everything as an object, and there are different types of objects. The first two objects we'll learn about are scalers and vectors. Later on, we'll talk about more complicated objects like matrices, dataframes, hypothesis tests, etc.
+
+\subsection{Two simple data objects: Scalers and Vectors}
+
+Two of the most common data objects in R are \textbf{scalers} and \textbf{vectors}. Let's discuss each in turn,
+
+\subsection{Scalers}
+
+A \textbf{scaler} is just a single value. A scaler can either be \textit{numeric} or \textit{character}. A numeric scaler is a number, while a character scaler is a letter. We denote character scalers by using quotation marks. Here are some examples:
+
+<<>>=
+a <- 1
+b <- 3 * 40
+ship <- "Black Pearl"
+@
+
+
+
+\begin{marginfigure}
+\begin{tiny}
+<<fig.height = 4, fig.width = 3>>=
+# scaler v vector v matrix  
+
+par(mar = rep(1, 4))
+plot(1, xlim = c(0, 4), ylim = c(-.5, 5), 
+     xlab = "", ylab = "", 
+     xaxt = "n", yaxt = "n", 
+     bty = "n", type = "n")
+
+# Scaler
+rect(rep(0, 1), rep(0, 1), rep(1, 1), rep(1, 1))
+text(.5, -.5, "Scaler")
+
+# Vector
+rect(rep(2, 5), 0:4, rep(3, 5), 1:5)
+text(2.5, -.5, "Vector")
+
+@
+\caption{Visual depiction of a scaler and vector. Deep shit. Wait until we get to matrices - you're going to lose it.}
+\label{fig:scalervector}
+\end{tiny}
+\end{marginfigure}
+
+It is important to note that once you've defined an object, you refer to it without quotation marks, even if the object is a character. For example, to refer to the object \texttt{ship} that I defined above, you need to write \texttt{ship} without quotations marks
+
+\begin{footnotesize}
+<<>>=
+ship # Print the value of the object ship
+"ship" # R thinks this is a new string called "ship", not the object called ship
+@
+\end{footnotesize}
+
+\subsection{Vectors}
+
+A \textbf{vector} is a combination of several scalers. For example, the numbers from one to ten could be a vector of length 10. Like scalers, you can also create character vectors that contain character scalers.
+
+
+There are many ways to create vectors in R, here are the most common:
+
+\newfun{c()}\index{c()}
+
+The simplest way to create a vector is with the \texttt{c()} function. The c here stands for concatenate, which means "bring them together". When using c(), place a comma in between the scalers you want to combine:
+
+\marginnote{\texttt{c(x, y, z)}: Create a vector with the c() command by separating elements with commas}
+
+\begin{footnotesize}
+<<>>=
+c(1, 2, 3, 4, 5) # A vector of the integers 1 through 5
+a <- 9
+b <- 10
+c(a, b) # Combine the scalers a and b
+
+ship <- "Black Pearl"
+captain <- "Jack Sparrow"
+
+c(ship, captain)
+@
+\end{footnotesize}
+
+A vector can only contain one type of scaler: either numeric or character. If you try to create a vector with numeric and character scalers, then R will convert all of the numeric scalers to characters:
+
+\begin{footnotesize}
+<<>>=
+movie <- "Pirates of the Carribean"
+revenue <- 634954111
+c(movie, revenue) # Result is just character scalers
+@
+\end{footnotesize}
+
+
+Once you've created a vector, you can easily determine its length by using the \texttt{length()} function:
+
+\newfun{length()}\index{length()}
+
+<<>>=
+length(c(1, 2, 3))
+@
+
+
+\section{Generating numeric vectors}
+
+While the c() operator is the most straightforward way to create a vector, it's also one of the most tedious. Let's say you wanted to create a vector of all integers from 1 to 100. You definitely don't want to have to type all the numbers into a c() operator. Instead, R has many simple built-in functions for generating numeric vectors. Let's start with three of them:
+
+\newfun{a:b\index{a:b}}\marginnote{\textbf{a:b} - Creates a sequence from a to b in steps of 1.}
+
+The \texttt{a:b} function creates a vector of numbers from the starting point a to the ending point b in steps of 1:
+
+\begin{footnotesize}
+<<>>=
+1 : 10 # Integers from 1 to 10
+10 : 1 # Integers from 10 to 1
+20.1:30.1 # From 20.1 to 30.1
+@
+\end{footnotesize}
+
+\newfun{seq(from, to, by)\index{seq()}}\marginnote{\textbf{seq(from, to, by)} - Creates a sequence between two numbers in steps that you specify. \\ \texttt{from}: The starting value \\ \texttt{to}: The ending value \\ \texttt{by}: The step size between \texttt{begin} and \texttt{end}}
+
+The \texttt{seq()} function allows you to create a sequence from a starting number to an ending number, in steps you specify. The function has three **arguments**, which are inputs to the function which changes how it works. There are three arguments to the seq() function:
+
+
+
+\begin{itemize}
+  \item from: The starting number
+  \item to: The ending number
+  \item by: The steps between numbers
+\end{itemize}
+
+\begin{footnotesize}
+<<>>=
+seq(from = 1, to = 10, by = 1)
+seq(from = 0, to = 100, by = 10)
+@
+\end{footnotesize}
+
+\newfun{rep(x, times, each)\index{rep()}}\marginnote{\textbf{rep(x, times, each)} - Repeats the numbers in x in a manner you specify \\ \texttt{times}: The number of times the vector should be repeated \\ \texttt{each}: The number of times you want to repeat each element in the vector.}
+
+The \texttt{rep()} function rep allows you to repeat a number (or vector) a specified number of times. There are three arguments to the rep function:
+
+
+
+\begin{itemize}
+\item x: The numeric object (scaler or vector) you want to repeat
+\item times: The number of times you want to repeat the entire object
+\item each: The number of times you want to repeat each element within a vector
+\end{itemize}
+
+\begin{footnotesize}
+<<>>=
+rep(1:5, times = 2) # Repeat integers 1 to 5 two times
+rep(1:5, each = 2) # Repeat each integer from 1 to 5 two times
+rep(1:5, each = 2, times = 2) # Do both!
+@
+\end{footnotesize}
+
+\subsection{Arithmetic operations on scalers and vectors}
+
+You can do basic arithmetic operations like +, -, * and / on scalers and vectors. If you do an operation on a vector with a scaler, R will apply the scaler to each element in the vector:
+
+\begin{footnotesize}
+<<>>=
+a <- 1:5
+a * 10
+a - 1
+a ^ 2
+@
+\end{footnotesize}
+
+If you do an operation on two vectors, R will try to apply the operation between the vectors by each item:
+
+\begin{footnotesize}
+<<>>=
+1:10 + 21:30
+
+(1:5) * (1:5)
+
+seq(10, 100, 10)
+seq(10, 100, 10) ^ 2
+@
+\end{footnotesize}
+
+\subsection{Additional Tips}
+
+\begin{enumerate}
+  \item If you need to enter a lot of numeric data into R by hand you might want to use the \texttt{scan()} function. This function allows you to easily enter data using 10-key typing on a number pad. To do this, run the code \texttt{scan()} and then enter the data number by number. When you are finished, R will then print the appropriate code to store the data into a vector.
+  \item You can run several lines of code in one line by separating the code with the ; key. For example, the following two chunks of code are the same:
+  
+<<>>=
+a <- 1
+b <- 14
+c <- 67
+@
+
+<<>>=
+a <- 1 ; b <- 14 ; c <- 67
+@
+
+  
+  However, I recommend you use the ; key sparingly. If you get in the habit of trying to cram several lines of code in one line, your code will get cluttered and difficult to understand.
+
+\end{enumerate}
+
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 3
+%----------------------------------------------------------------------------------------
+
+\chapter{3: Sampling data and Descriptive Statistics}
+\label{ch:3}
+
+\textit{Chapter Goals}
+
+\begin{enumerate}
+  \item Download the priceless R reference card
+  \item Learn functions for generating data from probability distributions: rnorm(), runif()
+  \item Learn functions for basic descriptive statistics: mean(), median(), sd(), var(), min(), max()
+\end{enumerate}
+
+\subsection{The R Reference Card}
+
+Over the next few lessons, you will be learning \textit{lots} of new functions. Wouldn't it be nice if someone created a Cheatsheet / Notecard of many common R functions? Yes it would, and thankfully Tom Short has done this in his creation of the R Reference Card. You can download a copy at <https://dl.dropboxusercontent.com/u/7618380/RReferenceCard.pdf>. I highly encourage you to print this out and start highlighting functions as you learn them!
+
+
+\section{Sampling data from distributions}
+
+By now you know how to generate sequences of numbers with the functions :, \texttt{seq()}, and \texttt{rep()}. However, these functions don't generate very interesting data. Instead, we can use R to generate randomly sampled data from specified probability distributions. Because the data are drawn randomly, you'll get different results every time you run the functions.
+
+Let's start with the Normal and Uniform distributions.
+
+\subsection{The Normal (Gaussian) distribution: rnorm(n, mean, sd)}
+
+Let's start with the most famous distribution in statistics: the Normal (or if you want to sound pretentious, the Gaussian) distribution. From our intro stats class, we know that the Normal distribution is bell-shaped, and has two parameters: a mean and a standard deviation.
+
+\begin{marginfigure}
+\begin{tiny}
+<<fig.height = 5, fig.width = 5>>=
+# normal distribution
+curve(dnorm, 
+      from = -3, 
+      to = 3, 
+      xlab = "x", 
+      lwd = 2, 
+      main = "Normal\nmean = 0, sd = 1")
+@
+\caption{The standard normal distribution}
+\label{fig:marginfig}
+\end{tiny}
+\end{marginfigure}
+
+
+\newfun{rnorm(n, mean, sd)}\index{rnorm()}\marginnote{\texttt{rnorm(n, mean, sd)}: Generate n samples from a normal distribution with specified mean and standard deviation}
+
+To generate samples from a normal distribution, we use the function \texttt{rnorm()} this function has three arguments:
+
+\begin{itemize}
+  \item n: The number of observations
+  \item mean: The mean of the distribution
+  \item sd: the standard deviation of the distribution
+\end{itemize}
+
+
+\begin{footnotesize}
+<<>>=
+rnorm(10, mean = 0, sd = 1) # 10 samples from standard normal
+rnorm(10, mean = 100, sd = 10) # 10 samples with mean = 100 and sd = 10
+@
+\end{footnotesize}
+
+Again, because the samples are drawn randomly, you'll get different values from the ones I got above.
+
+Next, let's move on to the \textit{uniform} distribution. The uniform distribution gives equal probability to all values between the minimum and maximum values.
+
+
+\begin{marginfigure}
+\begin{tiny}
+<<fig.height = 5, fig.width = 5>>=
+# uniform distribution
+curve(dunif, 
+      from = 0, to = 1,
+      xlim = c(-.5, 1.5),
+      xlab = "x", 
+      lwd = 2, 
+      main = "Uniform\nmin = 0, max = 1")
+@
+\caption{The Uniform distribution - known colloquially as the Anthony Davis distribution.}
+\label{fig:unif_dist}
+\end{tiny}
+\end{marginfigure}
+
+
+\newfun{runif(n, min, max)}\index{runif()}
+
+To generate samples from a uniform distribution, we use the function \texttt{runif()}, the function has 3 arguments:
+
+\begin{itemize}
+  \item n: The number of observations
+  \item min: The lower bound of the distribution
+  \item max: The upper bound of the distribution
+\end{itemize}
+
+\begin{footnotesize}
+<<>>=
+runif(10, min = 0, max = 1) # 10 samples from U[0, 1]
+runif(10, min = -100, max = 100) # 10 samples from U[-100, 100]
+@
+\end{footnotesize}
+
+\subsection{Sampling from a set of values: sample()}
+
+The next function we'll use is \textbf{sample()}. Sample allows you to draw values from a larger set with some probability.
+
+
+\newfun{sample(x, size, replace, prob)}\index{sample()}\marginnote{\texttt{sample(x, size, replace, prob)}: Draw a sample of outcomes from a vector, each with a specified probability.}
+
+\begin{itemize}
+  \item x: A vector of outcomes you want to sample from
+  \item size: The number of samples you want to draw
+  \item replace: Should sampling be done with replacement? If T, then each individual sample will be replaced in the data vector. If F, then the same outcome will never be drawn more than once. \marginnote{\textbf{Replacement}: Think about replacement like drawing different balls from a bag. Sampling with replacement (\texttt{replace = T}) means that each time you draw a ball, you return the ball back into the bag before drawing another ball. Sampling without replacement (\texttt{replace = F}) means that after you draw a ball, you remove that ball from the bag before drawing again.}
+  \item prob: A vector of probabilities of the same length as \texttt{x} indicating how likely each outcome in "x" is. The first value corresponds to the first value of x and the second corresponds to the second value (etc.). The vector of probabilities you give as an argument should add up to one. However, if they don't, R will just rescale them so that they will sum to 1.
+\end{itemize}
+
+
+
+
+\subsection{Simulating Tinder Outcomes}
+
+\begin{marginfigure}
+\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Teaching/YaRrr/multimedia/pinder.pdf}
+\caption{Pinder. Tinder for Pirates.}
+\label{fig:pinder}
+\end{marginfigure}
+
+
+Let's simulate some Tinder outcomes. For those who don't know, Tinder is (or "was" if it's not still around when you're reading this) an app that allows you to view profiles of potential dates. For each potential date, you can see their picture and either "like" them by swiping right, or "dislike" them by swiping left. If a person that you "liked" also "likes" you, then you've had a successful match and will be able to start chatting. let's say you "swipe right" on 20 Tinder profiles and the probability you get a match is 20\%. We can simulate this using the sample function
+
+\begin{footnotesize}
+<<>>=
+sample(x = c(":)", "-"), 
+       size = 20,
+       replace = T, # Replace each sample back to the set
+       prob = c(.2, .8)  # Probability of Match! is .2, and No Match :( is .8)
+       )
+@
+\end{footnotesize}
+
+In the example above I set \texttt{replace = T}. If I didn't do this, then on the third sample R would run out of objects to draw from. However, there are cases where we would not want sampling with replacement.
+
+\subsection{Where should I go clubbing in Berlin...?}
+
+Let's say you planning a weekend of clubbing in Berlin and need to decide on just 2 out of 5 clubs to visit. Since we don't want to visit the same club twice, we'll set \texttt{replace = F}
+
+\begin{footnotesize}
+<<>>=
+clubs <- sample(x = c("Berghain", "Club der Visionare", 
+             "Goldengate", "Watergate", "Keller"),
+       size = 2,
+       replace = F,
+       prob = rep(1/5, 5) # The probability of each is 1/5
+       )
+clubs
+@
+\end{footnotesize}
+
+Looks like R has selected \Sexpr{clubs[1]} and \Sexpr{clubs[2]}. Let's see if we even make it to \Sexpr{clubs[2]}...
+
+\section{Descriptive statistics}
+
+Ok, now that we can generate some data, let's learn the basic descriptive statistics functions. We'll focus on the most common ones for numerical analyses.
+
+\marginnote{\textbf{Common descriptive statistics}:\\ \texttt{mean(x)}: Mean \\ \texttt{median(x)}: Median \\ \texttt{sd(x)}: Standard Deviation \\ \texttt{var(x)}: Variance\\ \texttt{min(x)}: Minimum \\ \texttt{max(x)}: Maximum}
+
+\begin{itemize}
+  \item mean(x): The arithmetic mean of the vector x\index{mean()}
+  \item median(x): The median of the vector x\index{median()}
+  \item sd(x): Standard deviation\index{sd()}
+  \item var(x): Variance\index{var()}
+  \item min(x), max(x): Minimum and maximum\index{min()}\index{max()}
+  \item quantile(x, probs): Sample quantiles of a vector x corresponding to certain probabilities.
+\end{itemize}
+
+
+Each of these functions takes a vector as an argument, and returns a scaler as a result. Let's start by creating a vector of 50 samples from a normal distribution with mean 10 and standard deviation 10. We'll then calculate some descriptive statistics from that vector:
+
+\begin{footnotesize}
+<<>>=
+a <- rnorm(50, mean = 10, sd = 10) # 100 samples from standard normal
+mean(a)
+median(a)
+sd(a)
+var(a)
+min(a)
+max(a)
+quantile(a, probs = c(.25, .75))
+@
+\end{footnotesize}
+
+Let's say you want to get many summary statistics from a vector, you can do this by using the \textbf{summary()} function which gives you several key statistics:
+
+\marginnote{\texttt{summary(x)}: Gives you some distributional information about a vector}
+
+\begin{footnotesize}
+<<>>=
+summary(a)
+@
+\end{footnotesize}
+
+\section{A quick test of the law of large numbers}
+
+According to the law of large numbers, the larger our sample size, the closer our sample mean should be to the population mean. Let's test this by drawing either a small (N = 5) or a large (N = 1,000,000) number of observations from a Normal distribution with mean = 100 and sd = 20:
+
+\marginnote{Tip: You can easily write large powers of 10 by using the notation \texttt{1eN}, where N is the power of 10. For example: \texttt{1e6} is the same as 1,000,000}
+
+\begin{footnotesize}
+<<>>=
+small <- rnorm(10, mean = 100, sd = 20) # 10 observations
+large <- rnorm(1e6, mean = 100, sd = 20) # One million observations
+
+mean(small) # What is the mean of the small sample?
+mean(large) # What is the mean of the large sample?
+
+mean(small) - 100 # How far is the mean of Small from 100?
+mean(large) - 100 # How far is the mean of Large from 100?
+@
+\end{footnotesize}
+
+If our test worked, then the difference for the small sample should be larger than the large sample - which it is!
+
+\subsection{Additional Tips}
+
+\begin{enumerate}
+  \item Many functions for descriptive statistics, like \texttt{mean()} and \texttt{median()} have a logical argument \texttt{na.rm} which tells the function whether or not to remove \texttt{NA} values. If you do not specify \texttt{na.rm = T}, then the functions will return \texttt{NA} if there are any missing values in the vector.
+  
+\begin{footnotesize}
+<<>>=
+mean(c(1, 2, 3, NA))
+mean(c(1, 2, 3, NA), na.rm = T)
+@
+\end{footnotesize}
+
+\end{enumerate}
+%----------------------------------------------------------------------------------------
+%	CHAPTER 4
+%----------------------------------------------------------------------------------------
+
+\chapter{4: Indexing and comparing vectors}
+\label{ch:4}
+
+
+Chapter Goals:
+
+\begin{enumerate}
+  \item Use brackets [] and logical vectors to index vectors
+  \item Combine indexing with descriptive statistics
+  \item Learn indexing functions which(), sort()
+  \item Vector discrete summary functions table() and unique()
+  \item Set functions: intersect(), union(), setdiff(), %in%
+\end{enumerate}
+
+
+\section{Indexing vectors with brackets}
+
+\marginnote{\textbf{Indexing with brackets [ ]} \\ To get the ith value of a vector called \texttt{vec}, use the bracket notation \textt{vec[i]}}
+
+When we have a vector, we will frequently want to access specific values of a vector. These might be values in a specific location in the vector (i.e.; the fifth element) or based on some criteria (i.e.; all values greater than 0). We can accomplish this using indexing.
+
+\newfun{[]}\index{[]}
+
+Let's start with some data. Currently, I live in an apartment with large windows that open to a popular walking path. Imagine that 10 times over the course of an evening I pointed at a random person and asked/yelled "How much do you think I would pay for a date with Jennifer Lawrence?" I then recorded their answers in the vector \texttt{guesses}
+
+\begin{footnotesize}
+<<>>=
+guesses <- c(100, 20, 500, 50, 10000, 1, 0, 500, 100, 100)
+@
+
+Now, I can access specific values in the data vector by inserting a vector (or scaler) of index values between brackets:
+
+\begin{footnotesize}
+<<>>=
+guesses[1] # First value of guesses
+guesses[1:5] # Values 1 to 5 of guesses
+guesses[c(1, 4, 10)] # 1st, 4th, and 10th value
+guesses[seq(2, 10, 2)] # Every 2nd value
+@
+\end{footnotesize}
+
+\section{Indexing with logical vectors}
+
+Another way to index data vectors is with **logical vectors**. A logical vector is a vector that only contains TRUE and FALSE values. You can create a logical vector by using comparison operations such as ==, <, >, <=, >=
+
+\begin{footnotesize}
+<<>>=
+a <- 1:10
+a > 5 # Are the values greater than 5?
+a == 3 # Are the values equal to 3?
+a <= 9 # Are the values less than or equal to 9?
+@
+\end{footnotesize}
+
+Once we have a logical vector, we can use that vector as an indexing vector. For example, let's say that I want to access values of the guess vector that are greater than 10
+
+\begin{footnotesize}
+<<>>=
+log.vec <- guesses > 100 # Create logical vector
+log.vec # show me values of log.vec
+guesses[log.vec] # Index guesses by log.vec
+@
+\end{footnotesize}
+
+In the examples above, we calculated a logical vector by comparing a data vector to a scaler. This told us, for example "Which values are greater than 0?" However, we can also do comparisons between two vectors. 
+
+Let's take the example of comparing some data on the changing quality of my jokes over time. In each of two semesters - winter and summer - I told 10 jokes. After telling each joke, I secretly recorded the number of laughs I got for that joke. I can represent the joke response data for each semester as a vector:
+
+\begin{footnotesize}
+<<>>=
+winter <- c(0, 0, 1, 2, 0, 1, 2, 10, 2, 1)
+summer <- c(0, 1, 3, 0, 0, 5, 0, 1, 4, 3)
+@
+\end{footnotesize}
+
+Ok, so let's see if my jokes improved from the winter to summer semester. I'll start by seeing which jokes had an increase in laughs between semesters:
+
+\begin{footnotesize}
+<<>>=
+improve.log <- summer > winter # create logical vector
+improve.log # print values
+@
+\end{footnotesize}
+
+\newfun{which()}\marginnote{\texttt{\textbf{which(logical.vector)}}: Tells you the index value of all \texttt{TRUE} values in the logical vector. \\ For example, the command \texttt{which(c(T, T, F))} will return the vector \texttt{[1, 2]}, telling you that the first and second values are true.}
+
+
+If I want to know which jokes improved, I can use the \texttt{which()} function. The which function will tell me the index of each TRUE value in a logical vector:
+
+
+\begin{footnotesize}
+<<>>=
+which(improve.log)
+@
+\end{footnotesize}
+
+Now I know that I did better with jokes 2, 3, 6, 7, 9 and 10. Not bad! Ok let's see which jokes actually resulted in fewer laughs
+
+\begin{footnotesize}
+<<>>=
+decrease.log <- summer < winter
+decrease.log
+which(decrease.log)
+@
+\end{footnotesize}
+
+Ok looks like I might need to work on my delivery of jokes 4, 7, and 8...
+
+\section{Combining indexing with descriptive statistics}
+
+Many (if not all) R functions that take numeric data as inputs will interpret TRUE values as 1 and FALSE values as 0. This allows us to easily answer questions like "How many values in a data vector are greater than 0?" or "What percentage of values are equal to 5?"
+
+
+\marginnote{To see what percentage of values are TRUE in a logical vector, just take the mean of the vector. For example, the command \texttt{mean(c(-1, -2, 1, 1) > 0)} will return \texttt{0.50}, telling you that half of the values are positive.}
+
+In the next example, I'll generate 10,000 values from a standard normal distribution and use logical indexing to figure out what percentage of values are positive in a vector \textt{x}:
+
+\begin{footnotesize}
+<<>>=
+values <- rnorm(n = 10000, mean = 0, sd = 1)
+gt.0.log <- values > 0 # Logical vector indicating positive values
+sum(gt.0.log) # How many values are positive?
+mean(gt.0.log) # What percentage of values are positive?
+@
+\end{footnotesize}
+
+The percentage is pretty close to 50\%, which is exactly what we would expect given that the standard normal distribution is symmetric around 0.
+
+Next, let's ask a slightly different question: What is the mean value for those values that are positive? In other words, given that a value is positive, how big do we expect it to be? We can answer this in 4 steps:
+
+\begin{enumerate}
+  \item Create a vector called \texttt{values} generated from a standard normal distribution
+  \item Create a logical vector \texttt{log.vec} that indicates which values are positive.
+  \item Create a new vector called \texttt{pos.values} that only contains positive values from the vector **values**
+  \item Calculate the mean of the vector \texttt{pos.values}
+\end{enumerate}
+
+\begin{footnotesize}
+<<>>=
+values <- rnorm(n = 10000, mean = 0, sd = 1)  # Step 1
+log.vec <- values > 0 # Step 2
+pos.values <- values[log.vec] # Step 3
+mean(pos.values) # Step 4
+@
+\end{footnotesize}
+
+\marginnote{There is a fine balance between code that is space-efficient and code that is incomprehensible. When in doubt, I strongly recommend separating code into multiple lines (with comments when appropriate). This will not only help other people understand your code, but more importantly, it will help your future self figure out what the heck you were doing when you wrote it!}
+
+The code above is easy to understand because each processing step is on a separate line. However, once you get better with programming in R, you may find it easier and more space-efficient to combine multiple steps into one line. For example, I can recreate steps 2 - 4 above with just one line of code:
+
+\begin{footnotesize}
+<<>>=
+mean(values[values > 0]) # Combining steps 2, 3, and 4 above in one line
+@
+\end{footnotesize}
+
+\newfun{sort(x)}\index{sort()}\marginnote{\textbf{sort(x)}: Sort a vector x. If you set \texttt{decreasing = F}, it will sort the vector in ascending order.}
+
+Once you have a vector of data, you may want to sort it in order to see, for example, the largest and smallest values. You can do this using the \texttt{sort()} function. Let's look back on my summer joke data and sort the results:
+
+
+
+\begin{footnotesize}
+<<>>=
+summer <- c(0, 1, 3, 0, 0, 5, 0, 1, 4, 3)
+sort(summer, decreasing = T) # Sort decreasing
+sort(summer, decreasing = F) # Sort increasing
+@
+\end{footnotesize}
+
+You'll notice that the sort function has an argument \texttt{decreasing} which you can set to TRUE or FALSE.
+
+\subsection{Getting quick summary information of vectors}
+
+When you have a vector that contains discrete values, you may want to get a quick idea of what values are in the vector. Here are two helpful functions to do that:
+
+\newfun{unique(x)}\index{unique()}
+
+The function \texttt{unique(x)} will tell you all the unique values in the vector, but won't tell you anything about how often each value occurs:
+
+\marginnote{\textbf{unique(x)}: Gives you all unique values in a vector, ignoring the number of times each value occurs.}
+
+\begin{footnotesize}
+<<>>=
+unique(summer)
+unique(c("a", "A", "A", "A", "b", "b", "b", "c"))
+@
+\end{footnotesize}
+
+\newfun{table(x)}\index{table()}
+
+The function \texttt{table()} does the same thing as \texttt{unique()}, but goes a step further in telling you how often each of the unique values occurs:
+
+\marginnote{\textbf{table(x)}: Gives you all unique values in a vector and tells you how often each value occurs.}
+
+\begin{footnotesize}
+<<>>=
+table(summer)
+table(c("a", "A", "A", "A", "b", "b", "b", "c"))
+@
+\end{footnotesize}
+
+\section{Set functions \index{set functions}}
+
+Set functions allow you to compare two vectors and see which values are common (or uncommon) between them. For example, let's say you are comparing your top 5 favorite bands with that of a friend. We'll create two vectors, your.favs and there.favs, that contain the data:
+
+\begin{footnotesize}
+<<>>=
+your.favs <- c("Green Day", "Mars Volta", "Tool", "Smashing Pumpkins", "Nada Surf")
+their.favs <- c("Maroon 5", "Avril Lavigne", "Nada Surf", "Chopin", "Tool")
+@
+\end{footnotesize}
+
+\newfun{union(x, y)}\index{union()}
+
+To see all unique values between both sets, we'll use the \texttt{union} function:
+
+\marginnote{\textbf{union(x, y)}: Tells you all unique values across two vectors}
+
+\begin{footnotesize}
+<<>>=
+union(your.favs, their.favs)
+@
+\end{footnotesize}
+
+\newfun{intersect(x, y)}\index{intersect}
+
+To see which values are in both sets, we'll use the \texttt{intersect()} function:
+
+\marginnote{\textbf{intersect(x, y)}: Tells you all values that are present in multiple vectors.}
+
+\begin{footnotesize}
+<<>>=
+intersect(your.favs, their.favs)
+@
+\end{footnotesize}
+
+\newfun{setdiff(x, y)}\index{setdiff()}
+
+To see which values are *different* between the two sets, we'll use the \textt{setdiff()} function. This will give us the values that are in one set but *not* in the other. As you'll see, this function is directional as it gives different results depending which vector you put first:
+
+\marginnote{\textbf{setdiff(x, y)}: Tells you which values are in x but \textit{not} in y. Keep in mind that \texttt{setdiff(x, y)} is \textit{not} the same as  \texttt{setdiff(y, x)}!}
+
+\begin{footnotesize}
+<<>>=
+setdiff(your.favs, their.favs) # Which bands do YOU like but they don't like?
+setdiff(their.favs, your.favs) # Which bands do THEY like but not you?
+@
+\end{footnotesize}
+
+\newfun{setequal(x, y)}\index{setequal()}
+
+To see if two sets are identical, we use the **setequal()** function. This function simply tests if two sets are identical. We'll run this on our existing data, plus two vectors that we know are equal.
+
+\marginnote{\textbf{setequal(x, y)}: Simply tells you whether or not two sets are identical (but ignoring order).}
+
+\begin{footnotesize}
+<<>>=
+setequal(your.favs, their.favs)
+setequal(c("Green Day", "Tool"), c("Tool", "Green Day"))
+@
+\end{footnotesize}
+
+\newfun{x \%in\% y}\index{\%in\%}
+
+Finally, to see if a specific value is in a vector, you can use the \%in\% function. This function looks a bit different from other functions because it doesn't follow the typical format of function(x, y). Instead, you place the function \%in\% between its arguments:
+
+\marginnote{\textbf{x \%in\% y}: Tells you if the values in x are in y.}
+
+\begin{footnotesize}
+<<>>=
+"Green Day" %in% your.favs
+"Green Day" %in% their.favs
+@
+\end{footnotesize}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 5
+%----------------------------------------------------------------------------------------
+
+\chapter{5: Plotting Basics}
+\label{ch:5}
+
+
+Chapter Goals
+
+\begin{enumerate}
+  \item High-level plotting commands: plot(), hist(), boxplot, barplot()
+  \item Main plotting parameters: main, xlab, ylab, xlim, ylim
+  \item Low-level plotting functions: abline(), points(), text(), legend()
+  \item Saving plots with pdf() and jpg()
+\end{enumerate}
+
+Plotting in R works like putting paint on a canvas. You start by creating a canvas and drawing a basic outline with a *high-level* plotting command, then add sequentially add individual elements with *low-level* plotting commands. And just like painting on a canvas, you can't 'erase' any elements after you've put them on a plot - once they're there they're there for good!
+
+\section{High-level plotting functions}
+
+Next, we'll cover some of the key high-level plotting functions in R.
+
+\newfun{plot(x ,y)}\index{plot()}
+
+\marginnote{\texttt{plot(x, y)}: Create a scatterplot from two vectors x and y.}
+
+Let's start by creating a simple scatterplot using the \texttt{plot()} command. The plot function has many, many optional arguments, but for now we'll just look at the two main arguments:
+
+- x: A data vector for the x-coordinates.
+- y: A data vector for the y-coordinates.
+
+Let's make a simple plot with 10 data points: (1, 1), (2, 2), (3, 3), ... (10, 10). I'll set both the x and y values to be the integers from 1 to 10.
+
+\begin{footnotesize}
+<<fig.width = 3, fig.height = 3>>=
+plot(x = 1:10,
+     y = 1:10)
+@
+\end{footnotesize}
+
+As you can see, R has plotted 10 points. The x and y labels are both just "1:10" and the plot has no title. Not too exciting. Now let's jazz up the plot a bit by putting in some more interesting data and adding several parameters: 
+
+\marginnote{Common plotting parameters \\ \texttt{main}: Title of plot \\ \texttt{xlab, ylab}: axes labels \\ \texttt{xlim, ylim}: Limits of axes \\ \texttt{xaxt, yaxt}: Set to \texttt{"n"} to remove the axes \\ \texttt{cex}: Size of the plotting points \\ \texttt{pch}: Type of plotting points (see \texttt{?points})}
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+plot(x = rnorm(n = 100, mean = 0, sd = 1),
+     y = rnorm(n = 100, mean = 0, sd = 1),
+     main = "My First Plot",
+     xlab = "This is the x-axis label",
+     ylab = "This is the y-axis label",
+     xlim = c(-5, 5), # Min and max values for x-axis
+     ylim = c(-5, 5), # Min and max values for y-axis
+     col = "blue" # Color of the points
+     )
+@
+\end{footnotesize}
+
+Now things are looking better. We've specified several of the most common plotting parameters including the plot title (main), axis labels (xlab and ylab), the axis limits (xlim and ylim) and the color of the plotting symbols (col).
+
+There are many, many more parameters than change the look of the plotting region. To see all of these, type ?par in R to bring up the help menu on plotting parameters. 
+
+Here's another plot with some additional changes:
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+x.data <- rnorm(n = 100, mean = 0, sd = 1) # Generate the x data
+y.data <- rnorm(n = 100, mean = 0, sd = 1) # Generate the y data
+
+plot(x = x.data,
+     y = y.data,
+     main = "Is this aRt?",
+     xlab = "",
+     ylab = "",
+     xaxt = "n",
+     yaxt = "n",
+     pch = 23, # Use filled diamond points
+     bg = gray(runif(100, 0, 1)), # Color of the inside of the points,
+     col = "black", # Color of the border of the points
+     cex = rnorm(n = 100, mean = 1, sd = 3), # Size of the points
+     lwd = 2 # Widths of the point borders
+     )
+@
+\end{footnotesize}
+
+Let's go through the new parameters that we specified:
+
+\begin{itemize}
+
+\item \texttt{pch}: This dictates the point type you want to use. You indicate which point type you want with a number. To see what each of the point types are, look at the points help menu with ?points. There, you'll see that the value of 23 is a filled diamond (like the ones in the plot above).
+
+\item \texttt{bg}: The color of the filling of a point. This only applies if you are using filled point type (that is, a type that has a filling in addition to a border). Notice that in the example above I specified this using the \texttt{gray()} function, which gives you different shades of gray. Check out \texttt{?gray} to see more on this useful color function.
+
+\item \texttt{cex}: The size of the points. The default value is 1 and can range anywhere from 0 to...I guess infinity.
+
+\item \texttt{lwd}: The width of the border of points. Again, default is 1 but can be any positive number.
+
+\item \texttt{xaxt} and \texttt{yaxt}: Set to "n" to hide the x or y axes. I did this in the example above.
+
+\end{itemize}
+
+You'll notice that you can input a vector for many of these parameters. When you do this, R will apply the ith value of the vector to the ith point. For example, in the plot above I set cex = rnorm(n = 100, mean = 0, sd = 1), 100 samples from a standard normal distribution. This means that the size of each of the 100 points will be determined by each of these 100 standard normal values. For this plot, the size of the points was meaningless, but in other plots you can change the size of the point based on a meaningful third variable in your data (for example, the number of instances of that point).
+
+The plot() command creates scatterplots, which require two vectors of data (for the x and y values). For univariate data, we may want to create a different type of plot. Here are three common ones:
+
+\newfun{hist(x, main, xlab, ylab)}\index{hist()}
+
+The function \texttt{hist()} creates a histogram based on a vector of data. Let's create a histogram of 1,000 values drawn from a Normal distribution with $\mu$ = 10 and $\sigma$ = 3:
+
+\marginnote{\texttt{hist(x)}: Create a histogram of a vector x\\ Optional Parameters \\ \texttt{breaks}: Defines how bins are set (see \texttt{?hist}) \\ \texttt{border}: Color of bar borders \\ \texttt{col}: Color of bar fillings \\ \texttt{freq}: Set to \texttt{FALSE} to plot probability densities}
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+hist(x = rnorm(n = 1000, mean = 10, sd = 3),
+     main = "My First Histogram",
+     xlab = "Distribution of x",
+     xlim = c(-5, 20),
+     col = "gray" # Color of the bars
+     )
+@
+\end{footnotesize}
+
+
+The histogram function has a few special arguments you may want to vary (including the number and width of the bars). Look at the help menu for histograms (?hist) to see these.
+
+\newfun{boxplot(x, main, xlab, ylab)}
+
+The function \texttt{boxplot()} creates a boxplot based on a vector of data. A boxplot shows you several \textit{quantiles} of a dataset. Let's create a boxplot of a \textit{bi-modal} set of data that contains 50 samples from a normal distribution with $\mu$ = 20 and $\sigma$ = 5, and 50 samples from another normal distribution with $\mu$ = -20 and $\sigma$ = 5.
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+data <- c(rnorm(n = 50, mean = 20, sd = 5),
+          rnorm(n = 50, mean = -20, sd = 5)
+          )
+
+boxplot(x = data,
+        main = "My First Boxplot",
+        horizontal = T,
+        xlab = "Distribution of x"
+        )
+@
+\end{footnotesize}
+
+\marginnote{Boxplots are a good way to visualize key percentiles in a data set. However, they can hide multiple modes in a dataset.}
+
+Looking at the boxplot, we can see that the median falls around 0. However, the boxplot completely hides the bi-modal nature of the data. To see this, we need to use a different kind of plot. One great candidate is the \textit{beanplot}:
+
+\newfun{beanplot(x)}\index{beanplot()}
+
+Beanplots are a really cool way to picture a distribution. In fact, beanplots are so cool that when I use them in a conference poster - 9 times out of 10 people ignore my research and ask "How did you make those cool plots?!" The beanplot function is not part of the base R software. To use it, you first need to install the R Package "beanplot". To do this run the following code:
+
+\begin{footnotesize}
+<<eval = F>>=
+install.packages("beanplot") # Install the beanplot library
+@
+\end{footnotesize}
+
+Once you've installed the package on your machine, you need to load the package using the function library. Once you've done that, you can use the beanplot function to make beautiful beanplots!
+
+\marginnote{\texttt{beanplot(x)}: Create a beanplot. This function has many optional arguments. See \texttt{?beanplot} to learn about them. Also, be warned that because they're so darn pretty, they may distract conference-attendees from your real hard work!}
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+require("beanplot")
+beanplot(x = data,
+         main = "My first beanplot!",
+         xlab = "Distribution of x",
+         col = "white",
+         horizontal = T
+         )
+@
+\end{footnotesize}
+
+
+Beanplots are great because they show you all the original data, represented as small lines, the average value, shown by a long line, and a smoothed distribution of the data with curved lines. To see how you can customize the look of beanplots further, check the help menu (?beanplot)
+
+\section{Low-level plotting functions}
+
+Once you've created a plot with a high-level plotting function, you can add elements to it using low-level plotting functions. Here are some of the most common low-level plotting functions:
+
+\newfun{abline(a, b, h, v, lty, lwd)}\index{abline()}
+
+With \texttt{abline()} you can add one or more lines to a plot. You may want to add lines for regression equations, reference points, or to indicate group means. Here are some of the optional parameters:
+
+\marginnote{\texttt{abline(a, b, h, v)}: Add straight lines to an existing plot \\ \texttt{a, b}: Intercept and slope of lines \\ \texttt{h}: y-values of horizontal lines \\ \texttt{v}: x-values of vertical lines}
+
+\begin{itemize}
+  \item a, b: The intercept and slope
+  \item h: the y-value(s) for horizontal line(s)
+  \item v: the x-value(s) for vertical line(s)
+  \item lty: The type of line(s)
+  \item lwd: The width of the line(s)
+  \item col: The color(s) of the line(s)
+\end{itemize}
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+plot(x = rnorm(100), y = rnorm(100))
+
+abline(h = 0, lty = 2, lwd = 3, col = "blue") # Add a horizontal blue line
+abline(v = 1, lty = 1, lwd = .5, col = "red") # Add a thin vertical red line
+abline(a = 0, b = 1, lty = 1, lwd = 4, col = "green") # Add a diagonal green line
+@
+\end{footnotesize}
+
+\newfun{points(x, y, pch, cex)}\index{points()}
+
+With textt{points}, you can add points to an existing plot. The points() function works a lot like plot(), except that it adds points to an existing plot. You would want to do this if, for example, you want to plot different colored points for different data sets:
+
+\marginnote{\texttt{points(x, y)}: Add points to an existing plot\\ \texttt{pch}: The plotting symbol (entered as a number). You can also plot characters as symbols (e.g.; "x")\\  \texttt{bg}: Background color of symbols (only when symbol has a background)\\ \texttt{col}: Color of symbols\\ \texttt{cex}: Size of symbols}
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+plot(x = rnorm(100), 
+     y = rnorm(100), 
+     xlim = c(-3, 3),
+     ylim = c(-3, 3),
+     bg = "lightcoral", 
+     pch = 21, 
+     cex = 1.5,
+     xlab = "", # Don't show xlabel
+     ylab = "" # Don't show ylabel
+     )
+
+points(x = rnorm(100, mean = 1, sd = 1), 
+       y = rnorm(100), 
+       pch = 23, 
+       bg = "lightblue",
+       cex = 1.5
+       )
+
+@
+\end{footnotesize}
+
+Of course, because the points() command is a low-level plotting command that only adds to an existing plot, you don't need to specify things like the axis limits or titles of the plot (that's all done in the high-level command)
+
+\newfun{text(x, y, labels, cex)}\index{text()}
+
+With \texttt{text()}, you can add text to a plot. You can use text() to highlight specific points of interest in the plot, or to add information (like a third variable) for every point in a plot
+
+\marginnote{\texttt{text(x, y, labels)}: Add text to an existing plot at specified points \\ \texttt{x, y}: x and y coordinates of the text \\ \texttt{labels}: The text you want to plot\\ \texttt{cex}: Size of text}
+
+\begin{itemize}
+  \item x, y: Coordinates of the text
+  \item labels: The text you're plotting
+  \item cex: The size of the text
+\end{itemize}
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+x.vals <- runif(50, min = -20, max = 20)
+y.vals <- runif(50, min = -20, max = 20)
+
+plot(x = x.vals, 
+     y = y.vals, 
+     xlim = c(-20, 20),
+     ylim = c(-20, 20),
+     bg = "lightblue", 
+     col = "black",
+     pch = 21, 
+     cex = 3,
+     main = "Lottery Balls",
+     xlab = "", ylab = "", xaxt = "n", yaxt = "n"
+     )
+
+# Add numbers to the balls
+text(x = x.vals,
+     y = y.vals, 
+     labels = 1:50,
+     cex = 1
+     )
+@
+\end{footnotesize}
+
+\subsection{Formatting text for plotting}
+
+A common way to use text in a plot, either in the main title of a plot or using the \texttt{text()} function, is to combine text with numerical data. For example, you may want to include the text "Mean = 3.14" in a plot to show that the mean of the data is 3.14. But how can we combine numerical data with text? In R, we can do this with the \texttt{paste()} function:
+
+\newfun{paste(x, y, sep)}\index{paste()}
+
+\begin{itemize}
+  \item x, y, ...: One or more arguments to be converted to characters
+  \item sep: A character string that separates the arguments. Set to \texttt{""} for no separation
+\end{itemize}
+
+\marginnote{When you include descriptive statistics in a plot, you will almost always want to use the \texttt{round(x, digits)} function to reduce the number of digits in the statistic.}
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+data <- rnorm(100, mean = 20, sd = 2)
+
+hist(data, 
+     ylim = c(0, 35),
+     main = paste("Distribution of scores\nMean = ", round(mean(data, 2)))
+     )
+
+text(x = mean(data), y = 30, 
+     labels = "Mean\n|")
+@
+\end{footnotesize}
+
+The benefit of using \texttt{paste()} over hard-coding the text (for example by typing \texttt{labels = "Mean = 20"}) is that the code will automatically change the value of the mean when the data changes. In later chapters, when use loops to create multiple graphs over different sets of data, this will become extremely helpful!
+
+
+
+\newfun{legend(x, y, labels)}\index{legend()}
+
+With \texttt{legend()}, you can add a legend to the plot. Here are a few common arguments, though you can see additional ones in the help menu (?legend)
+
+\marginnote{\texttt{legend(x, y, labels)}: Add a legend to a plot\\ \texttt{x, y}: Either two separate x and y coordinates, or a string indicating where to put the legend (e.g.; "topright")\\ \texttt{legend}: The text in the legend\\ \texttt{lty}: The line types\\ \texttt{pch}: The symbol types}
+
+\begin{itemize}
+  \item x, y: Coordinates of the legend. Alternatively, you can enter a string indicating where to put the legend (i.e.; "topright", "topleft")
+  \item legend: Text in the legend
+  \item lty: Line type for lines in the legend (optional)
+  \item pch: Point types in the legend (optional)
+\end{itemize}
+
+\begin{footnotesize}
+<<fig.width = 4, fig.height = 4>>=
+g1.x <- rnorm(100)
+g1.y <- g1.x + rnorm(100, sd = 1.5)
+
+plot(x = g1.x,
+     y = g1.y,
+     bg = "lightblue",
+     pch = 21,
+     xlab = "Height (or something)", ylab = "Weight (or something)",
+     main = "Cough particles?", 
+     xlim = c(-3, 5),
+     ylim = c(-5, 5),
+     cex = runif(100, min = 0, max = 1.5)
+     )
+
+g2.x <- rnorm(100, mean = 2)
+g2.y <- g2.x * .5  - rnorm(100, sd = 1)
+
+points(x = g2.x,
+       y = g2.y,
+       bg = "lightgreen",
+       pch = 21,
+     cex = runif(100, min = 0, max = 1.5)
+       )
+  
+legend("bottomright",
+       pch = c(16, 16),
+       col = c("lightblue", "lightgreen"),
+       legend = c("Group 1", "Group 2")
+       )
+@
+\end{footnotesize}
+
+\subsection{Additional low-level plotting functions}
+
+There are many more low-level plotting functions that can add additional elements to your plots. Here are some I use:
+
+\textit{Drawing elements}
+
+\begin{itemize}
+  \item \texttt{rect()}: Add rectangles.
+  \item \texttt{polygon()}: Add polygons (pretty much any shape you want)
+  \item \texttt{segments()}: Add segments (lines with fixed endings)}.
+  \item \texttt{arrows()}: Add arrows
+\end{itemize}
+
+\textit{Plotting elements}
+
+\begin{itemize}
+  \item \texttt{axis()}: Add an additional axis to a plot (or add fully customizable  x and y axes.
+  \item \texttt{mtext()}: Add text to the margins of a plot
+\end{itemize}
+
+
+\section{Saving plots to a file}
+
+Once you've created a plot in R, you may wish to save it to a file so you can use it in another document. To do this, you'll use either the \texttt{pdf()} or \texttt{jpeg()} functions. These functions will save your plot to either a .pdf of jpeg file.
+
+\marginnote{\texttt{pdf(file, width, height), jpeg(file, width, height)}: Save a plot as a pdf or jpeg\\ \texttt{file}: The directory you want to save the file in\\ \texttt{height, width}: The height and width of the plot in inches.}
+
+To use these functions to save files, you need to follow 3 steps
+
+\begin{enumerate}
+  \item Entering the function and specifying a few parameters, like where you want the file to be saved and how big you want the plot to be.
+  \item Execute all your plotting code.
+  \item Close the function by entering the closing command **dev.off()**
+\end{enumerate}
+
+Here's an example of the three steps.
+
+\begin{footnotesize}
+<<eval = F>>=
+# Step 1: Call the pdf command
+pdf(file = "/Users/Nathaniel/Desktop/My Plot.pdf",   # The directory you want to save the file in
+    width = 4, # The width of the plot in inches
+    height = 4 # The height of the plot in inches
+    )
+
+# Step 2: Create the plot
+hist(rnorm(100))
+
+# Step 3: Close the pdf function and create the file
+dev.off()
+@
+\end{footnotesize}
+
+You'll notice that after you close the plot with \texttt{dev.off()}, you'll see a message in the prompt like "null device".
+
+Using the command  \texttt{pdf()} will save the file as a pdf. If you use  \texttt{jpeg()}, it will be saved as a jpeg.
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 6
+%----------------------------------------------------------------------------------------
+
+\chapter{6: Matrices and Data Frames}}
+\label{ch:6}
+
+
+Chapter Goals
+
+
+\begin{enumerate}
+  \item Learn about the matrix and dataframe data objects
+  \item Create matrices with matrix(), cbind(), and data.frame()
+  \item Index matrices/dataframes with brackets [], and \$
+  \item Use matrix/dataframe functions dim(), nrow(), ncol(), head(), tail()
+  \item Subset dataframes with subset()
+\end{enumerate}
+ 
+
+\section{Creating matrices and dataframes}
+
+By now, you should be comfortable with scalers and vectors. Next, we'll cover the next two most common data objects in R, \textbf{matrices} and \textbf{dataframes}
+
+Matrices and dataframes are both two dimensional objects that contain rows and columns. Really, they're just like spreadsheets in Excel. Each matrix or dataframe contains a certain number of rows (call that number m) and columns (n). You can think of a matrix as a combination of n vectors, where each vector has a length of m. See Figure \ref{fig:scalervectormatrix} to see the difference.
+
+
+\begin{marginfigure}
+\begin{tiny}
+<<fig.height = 3.2, fig.width = 5>>=
+# scaler v vector v matrix
+
+par(mar = rep(1, 4))
+plot(1, xlim = c(0, 10), ylim = c(-.5, 5), 
+     xlab = "", ylab = "", 
+     xaxt = "n", yaxt = "n", 
+     bty = "n", type = "n")
+
+# Scaler
+rect(rep(0, 1), rep(0, 1), rep(1, 1), rep(1, 1))
+text(.5, -.5, "Scaler")
+
+# Vector
+rect(rep(2, 5), 0:4, rep(3, 5), 1:5)
+text(2.5, -.5, "Vector")
+
+# Matrix
+rect(rep(4:8, each = 5), 
+     rep(0:4, times = 5), 
+     rep(5:9, each = 5), 
+     rep(1:5, times = 5))
+text(6.5, -.5, "Matrix / Data Frame"
+     )
+@
+\caption{Scaler, Vector, Matrix... ::drops mike::}
+\label{fig:scalervectormatrix}
+\end{tiny}
+\end{marginfigure}
+
+
+I use one of the following three functions to create matrices:
+
+\subsection{cbind() and rbind()}
+
+\newfun{cbind(x, y), rbind(x, y)}\index{cbind()}\index{rbind()}
+
+\texttt{cbind()} and \texttt{rbind()} joins several vectors together to create a matrix. cbind() combines vectors as columns in the matrix, while rbind() combines them as rows:
+
+\marginnote{\texttt{cbind(x, y), rbind(x, y)}: Combine two (or more) vectors into a matrix by column or row.}
+
+\begin{footnotesize}
+<<>>=
+x <- 1:10
+y <- 11:20
+z <- 21:30
+
+matrix.1 <- rbind(x, y, z)
+matrix.1
+
+matrix.2 <- cbind(x, y, z)
+matrix.2
+@
+\end{footnotesize}
+
+\newfun{matrix(data, nrow, ncol, byrow)}\index{matrix()}
+
+\texttt{matrix()} will create a matrix from a single vector of data with dimensions that you designate.
+
+\begin{itemize}
+  \item data: A vector of data
+  \item nrow: The number of rows in the resulting matrix
+  \item ncol: The number of columns in the resulting matrix
+  \item byrow: A logical value indicating whether to fill the matrix by row or column
+\end{itemize}
+
+
+\begin{footnotesize}
+<<>>=
+matrix.1 <- matrix(data = 1:30, 
+                   nrow = 10, 
+                   ncol = 3)
+matrix.1
+
+matrix.2 <- matrix(data = 1:30, 
+                   nrow = 3, 
+                   ncol = 10)
+matrix.2
+@
+\end{footnotesize}
+
+Keep in mind that matrices can either contain numbers or characters. If you try to create a matrix with both numbers and characters, it will turn all the numbers into characters:
+
+\begin{footnotesize}
+<<>>=
+cbind(1:5, c("a", "b", "c", "d", "e"))
+@
+\end{footnotesize}
+
+\section{Indexing matrices with brackets [rows, columns]}
+
+Just like vectors, you can access specific data in matrices using brackets. But now, instead of just using one index vector, we use two index vectors: one for the rows and one for the columns. To do this, use the notation \texttt{matrix[rows, columns]} like this:
+
+\begin{footnotesize}
+<<>>=
+matrix.1 <- matrix(data = 1:30, nrow = 10, ncol = 3)
+
+matrix.1[1:5, 1] # Give me rows 1 through 5 in column 1
+matrix.1[2:6, 2:3] # Give me rows 2 through 6 in columns 2 and 3
+matrix.1[,1] # Give me column 1
+matrix.1[3,] # Give me row 3
+@
+\end{footnotesize}
+
+As you can see, if you leave one of the entries blank in the brackets [,], R will assume that you want all values in that index. For example, as you see above, the code matrix.1[,1] gives you the data in all rows in column 1.
+
+\subsection{Dataframe: An m x n object containing numbers, strings and factors}
+
+A dataframe looks a lot like a matrix at first: it is also rectangular and has m rows and n columns. However, unlike matrices, dataframes can contain *both* string vectors and numeric vectors within the same object. For this reason, most large datasets in R, for example, a survey including numeric data and text data, will be stored as dataframes.
+
+\marginnote{A dataframe is just a more flexible matrix that allows you to combine both character and numeric vectors into the same data object. Because dataframes are more flexible than matrices, Most datafiles you use will be stored as dataframes.}
+
+\newfun{data.frame()}\index{data.frame()}
+
+To create a dataframe, you can use the \texttt{data.frame()} function. Let's create a dataframe of fictional survey data. I'll create 5 entries for Males and 5 entries for Females. I'll then generate 10 heights from a normal distribution with mean 150 and standard deviation 10.
+
+\begin{footnotesize}
+<<>>=
+survey <- data.frame("gender" = rep(c("Female", "Male"), each = 10),
+                     "height" = rnorm(20, mean = 150, sd = 10),
+                     stringsAsFactors = F # don't convert strings to factors
+                    )
+survey # Print the dataframe
+@
+\end{footnotesize}
+
+You'll notice I included the argument \texttt{stringsAsFactors = F}, this tells R to NOT convert the strings (the Gender column) to a factor datatype. For now, don't worry about what factors are. Just know that you don't want to use them just yet!
+
+\section{Accessing columns in a dataframe with \$}
+
+You'll notice that I included a name for each column. This not only helps to remind you which data are in each column, but also allows you to access the columns by name using the \texttt{\$} operator:
+
+\begin{footnotesize}
+<<>>=
+survey$height
+survey$gender
+@
+\end{footnotesize}
+
+\subsection{Accessing names of dataframe columns}
+
+Once you have a dataframe, you can always get the names of the dataframe by using the function \texttt{names()}
+
+\begin{footnotesize}
+<<>>=
+names(survey)
+@
+\end{footnotesize}
+
+If you want to change the names of columns in a dataframe, you can do this using indexing and assignments:
+
+\begin{footnotesize}
+<<>>=
+names(survey)[1:2] <- c("GENDER", "HEIGHT")
+survey
+@
+\end{footnotesize}
+
+\subsection{Adding columns to a dataframe with $ and assignment}
+
+You can easily add columns to a dataframe using the \texttt{\$} and assignment \texttt{<-} operators:
+
+\begin{footnotesize}
+<<>>=
+survey$age <- round(rnorm(20, 20, 2), 1)
+survey$siblings <- sample(1:5, 20, replace = T)
+survey
+@
+\end{footnotesize}
+
+\subsection{Getting information about matrices and dataframes}
+
+Once you have a matrix or dataframe, you can use many functions to get information about them. Here are some common ones:
+
+\begin{itemize}
+  \item head: Print the first few rows (this is especially usefull when the matrix is very large)
+  \item tail: Print the last few rows
+  \item dim: How many rows and columns are there?
+  \item nrow: How many rows are there?
+  \item ncol: How many columns are there?
+\end{itemize}
+
+
+\begin{footnotesize}
+<<>>=
+head(survey) # Print the first few rows
+tail(survey) # Print the last few rows
+dim(survey) # How many rows and columns?
+nrow(survey) # How many rows?
+ncol(survey) # How many columns?
+@
+\end{footnotesize}
+
+\section{Subsetting dataframes with indexing and subset()}
+
+Frequently you will want to get access to subsets of data in a dataframe based on some criteria. For example, we may want to look just at the data from females in our survey data. To do this, we can use one of two methods: indexing with logical vectors, or the \texttt{subset()} function.
+
+Indexing dataframes with logical vectors is very similar to indexing data vectors. First, we create a logical vector. Next, we index the dataframe using that logical vector:
+
+\begin{footnotesize}
+<<>>=
+females.log <- survey$GENDER == "Female"
+females.log
+survey.females <- survey[females.log,] # Give me the survey data for females
+survey.females
+@
+\end{footnotesize}
+
+\newfun{subset(x, subset, select)}\index{subset()}
+
+Alternatively we can use the \texttt{subset()} function which usually looks a bit nicer than logical indexing. The subset() function has the following arguments:
+
+\marginnote{\texttt{subset(x, subset, select)} allows you to select certain rows and columns of a dataframe based on criteria you set. \\ \texttt{x}: The data (usually a dataframe)\\ \texttt{subset}: A logical vector indicating which rows you want to select. For example: \texttt{gender == "female"}.\\ \texttt{select}: An optional vector of the names of columns you want to select.}
+
+\begin{itemize}
+  \item x: The data (usually a dataframe)
+  \item subset: A logical vector indicating which rows you want to select
+  \item select: An optional vector of the columns you want to select
+\end{itemize}
+
+
+\begin{footnotesize}
+<<>>=
+survey.males <- subset(x = survey, 
+                       subset = GENDER == "Male"
+                       )
+survey.males
+@
+\end{footnotesize}
+
+\subsection{Combining indexing and descriptive statistics}
+
+Once you know how to index a dataframe to get the data vectors you want, you can then easily calculate descriptive statistics based on specific criteria. For example, we can separately calculate statistics for males and females:
+
+\begin{footnotesize}
+<<>>=
+mean(survey$HEIGHT[survey$GENDER == "Female"]) # Mean height of females
+mean(survey$HEIGHT[survey$GENDER == "Male"]) # Mean height of males
+
+max(subset(survey, GENDER == "Female")$HEIGHT) # Tallest female
+max(subset(survey, GENDER == "Male")$HEIGHT) # Tallest male
+@
+\end{footnotesize}
+
+Now we can also create plots with different elements for different groups:
+
+\begin{footnotesize}
+<<>>=
+
+male.height <- survey$HEIGHT[survey$GENDER == "Male"]
+male.age <- survey$age[survey$GENDER == "Male"]
+
+female.height <- survey$HEIGHT[survey$GENDER == "Female"]
+female.age <- survey$age[survey$GENDER == "Female"]
+
+plot(x = male.age,
+     y = male.height,
+     xlab = "Age",
+     ylab = "Height",
+     xlim = c(15, 25),
+     ylim = c(130, 170),
+     pch = 16,
+     col = "lightblue",
+     main = "Ages and Heights"
+     )
+
+points(x = female.age,
+       y = female.height,
+       pch = 17,
+       col = "lightgreen"
+     )
+
+legend("topright",
+       pch = c(16, 17),
+       col = c("lightblue", "lightgreen"),
+       legend = c("Male", "Female"),
+       bg = "white",
+       cex = .7
+       )
+
+
+@
+\end{footnotesize}
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 7
+%----------------------------------------------------------------------------------------
+
+\chapter{7: 1 and 2-sample Null-Hypothesis tests}
+\label{ch:7}
+
+
+Chapter Goals
+
+\begin{enumerate}
+  \item Learn about hypothesis test objects in R
+  \item One and two sample tests: Correlations, t-tests and chi-square
+\end{enumerate}
+
+Do we get more treasure from chests buried in the sand or at the bottom of the ocean? Is there a relationship between the number of scars a pirate has and how much grogg he can drink? Are pirates with nipple rings more likely to wear bandannas than those without nipple rings? Glad you asked, let's see how we can answer these questions some hypothesis tests.
+
+\section{Warning about null-hypothesis tests with "frequentist" statistics}
+
+\begin{marginfigure}
+\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Teaching/YaRrr/multimedia/xkcdbayes.png}
+\caption{xkcd comic. Currently used without any permission.}
+\label{fig:xkcdbayes}
+\end{marginfigure}
+
+Until recently, null-hypothesis testing using frequentist statistics has been the most popular method of conducting inferential statistics. However, it has serious flaws. While I can't go into the details here, I can point out that the main flaw is that frequentist statistics don't give you the information you really want to know. For example, imagine that you are comparing the effectiveness of a cancer drug to a placebo. After conducting a double-blind study, where you give some patients the placebo and some patients the drug, you want to know the probability that that the drug is better than a placebo. Unfortunately frequentist statistics cannot give you this information. They can only tell you the probability of getting a specific result \textit{given} that the null hypothesis (in this case, that the drug is equally as effective as the placebo) is true. If that sounds confusing, it's because it is. A better alternative is Bayesian statistics which \textit{can} give you posterior probability information. Unfortunately, Bayesian statistics can be computationally demanding, so in the past we've lived with frequentist statistics and tried to ignore its fundamental flaws. However, given improvements in processing speed, we can now easily conduct Bayesian alternatives to frequentist tests on modern computers.
+
+We will cover Bayesian statistics in Chapter X and I strongly encourage you to adopt them in your own analyses. However, for the purposes of completeness, I'll show you how to conduct most of the standard frequentist tests here.
+
+\section{T-test}\index{t-test}
+
+The t-test function is easy to remember: \texttt{t.test()}. The \texttt{t.test()} function can take several arguments, here I'll emphasize a few of them. To see them all, check the help menu for t.test (\texttt{?t.test}).
+
+\marginnote{\texttt{t.test(x, y)}: Conduct either a one sample t-test on a vector x, or a two-sample t-test on two vectors x and y.}
+
+\newfun{t.test(x, y, alternative, mu, paired, var.equal)}\index{t-test!t.test()}
+
+\begin{itemize}
+  \item x: A vector of data.
+  \item y: An (optional) second vector of data if you are conducting a two-sample test.
+  \item alternative: A character string indicating whether the test is two-tailed or one-tailed (including the direction). Type "t" for two-tailed, "g" for a 'greater than' one-tailed test, or "l" for a "less than" one-tailed test.
+  \item mu: The population mean under the null hypothesis.
+  \item paired: A logical value (either T or F) indicating whether the test is paired (T) or unpaired (F).
+  \item var.equal: A logical value indicating whether or not you treat the two variances as equal.
+\end{itemize}
+
+Let's do an example using the ChickWeight dataset in R (type ?ChickWeight for more info). This dataset shows the weights of several chickens over several time periods, where different chickens are on different diets.
+
+First, let's do a one-sample t-test on the chicken weights at time 0. Let's see if it's significantly different from 30:
+
+\begin{footnotesize}
+<<>>=
+time.0 <- ChickWeight$weight[ChickWeight$Time == 0] # Vector of weights at time 0
+
+test.result <- t.test(x = time.0,
+                      mu = 30)
+@
+\end{footnotesize}
+
+You'll notice that when you assign the t.test to an object (in this case \texttt{result}), you do not see any output. To see the output of the test, you need to tell R to print the object by executing the name of the test object:
+
+\begin{footnotesize}
+<<>>=
+test.result
+@
+\end{footnotesize}
+
+Now, you can see the main output of the test. Looks like we got a test statistic of \Sexpr{round(test.result$statistic, 2)} and a resulting p-value that's pretty darn small. But what if you want to access specific values like the test statistic or the p-value? Thankfully, this is easy in R. To see which information you can extract from the t-test object, apply the \texttt{names()} function to the test object:
+
+\marginnote{If you want to see what information is in a test object, just apply \texttt{names()} to the object. You can then extract specific information with \$}
+
+\begin{footnotesize}
+<<>>=
+names(test.result)
+@
+\end{footnotesize}
+
+From this vector of names, I see that I can extract the test statistic with the name \texttt{statistic} and the p-value with the name \texttt{p.value}. To get these from the test object, use the \$ operator:
+
+\begin{footnotesize}
+<<>>=
+test.result$statistic
+test.result$p.value
+@
+\end{footnotesize}
+
+Being able to quickly extract key numerical information from a test object is huge. For one thing, it allows you to automate the process of running statistical tests over different datasets or simulations. In Chapter XX, we'll see how you can use loops to do this in a snap.
+
+
+Next, let's do a two-sample t-test where we compare chicken's weights as a function of their diet. As you can see in the dataset, the chickens were fed one of three diets. Let's compare the weight at time 10 between chickens being fed the first and second diets:
+
+\begin{footnotesize}
+<<>>=
+x <- subset(ChickWeight, subset = Time == 10 & Diet == 1)$weight
+y <- subset(ChickWeight, subset = Time == 10 & Diet == 2)$weight
+
+test.result <- t.test(x, y)
+test.result  
+@
+\end{footnotesize}
+
+Looks like we see a test statistic of \Sexpr{round(test.result$statistic, 2)} with a resulting p-value of \Sexpr{round(test.result$p.value, 2)}. According to null-hypothesis test logic, we fail to reject the null hypothesis.
+
+
+
+\section{Correlation test}\index{correlation}
+
+Next we'll cover two-sample correlation tests. Recall that in a correlation test, you are accessing the relationship between two variables on a ratio or interval scale.
+
+To run a correlation test, use the \texttt{cor.test(x, y)} function. The test has the following arguments
+
+\marginnote{\texttt{cor.test(x, y)}: Conduct a correlation test between two vectors x and y.}
+
+\newfun{cor.test(x, y, alternative, method, conf.level)}\index{correlation!cor.test()}
+
+\begin{itemize}
+  \item x, y: The two vectors of data
+  \item alternative: A string indicating the direction of the test. You can use "t" for two-sided, "l", for less than, and "g" for greater than.
+  \item method: A string indicating which correlation coefficient to test. You can use "pearson", "kendall", or "spearman"
+  \item conf.level: The confidence level for the Pearson correlation coefficient.
+\end{itemize}
+
+Let's conduct a correlation test on some data on the number of scars a pirate has and how long he can hold his breathe. I've got the data from 10 pirates below
+
+\begin{footnotesize}
+<<>>=
+scars <- c(8, 11, 12, 10, 15, 15, 10, 13, 9, 10)
+breath <- c(39, 35.9, 37, 39.9, 57.9, 53.1, 33.6, 37.2, 35.4, 38.8)
+
+test.result <- cor.test(x = scars, 
+                        y = breath
+                        )
+
+test.result
+@
+\end{footnotesize}
+
+Looks like we have a positive correlation of \Sexpr{round(test.result$estimate, 2)}! To see what information we can extract for this test, let's run the command \texttt{names()} on the test object:
+
+\begin{footnotesize}
+<<>>=
+names(test.result)
+@
+\end{footnotesize}
+
+Looks like we've got a lot of information in this test object. As an example, let's look at the confidence interval:
+
+\begin{footnotesize}
+<<>>=
+test.result$conf.int
+@
+\end{footnotesize}
+
+You'll notice that when we tried to access the confidence interval, we got an additional piece of information called \texttt{attr(,"conf.level")}. This means that the result of the command \texttt{test.result\$conf.int} not only contains the bounds of the confidence interval, but also the level of confidence. This is a good thing because the confidence interval only makes sense in terms of the level of confidence used to calculate the interval.
+
+\section{Chi-square test}
+
+Next, we'll cover chi-square tests. Remember that a chi-square test tests the relationship between two variables on a nominal scale. For example, are pirates with nipple rings more likely to wear bandannas than those without? To answer this, I collected the following data from 20 pirates
+
+\begin{footnotesize}
+<<>>=
+nipple.rings <- c(1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1)
+bandanas <- c(1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1)
+@
+\end{footnotesize}
+
+Let's use these data and see if there is any relationship between the two variables. To calculate a chi-square test, we'll use the \texttt{chisq.test()} function:
+
+\newfun{chisq.test(x, y)}\index{Chi-square test: chisq.test()}
+
+\marginnote{\texttt{chisq.test(x, y)}: A chi-square test on two nominal vectors x and y.}
+
+\begin{footnotesize}
+<<>>=
+test.result <- chisq.test(nipple.rings, bandanas)
+
+test.result
+@
+\end{footnotesize}
+
+Looks like we got a test-statistic of \Sexpr{round(test.result$statistic, 2)} and a p-value of \Sexpr{round(test.result$p.value, 2)}. According to this test, we do not have sufficient data to reject the null hypothesis that there is no relationship between the two variables.
+
+Let's see what other information we can get from the chi-squre test object:
+
+\marginnote{I encourage you to run the \texttt{names()} function on statistical objects. You never know what interesting things you'll discover!}
+
+\begin{footnotesize}
+<<>>=
+names(test.result)
+@
+\end{footnotesize}
+
+We've got some interesting new options here. Let's look at the value of \texttt{observed} and \texttt{expected}
+
+\begin{footnotesize}
+<<>>=
+test.result$observed
+test.result$expected
+@
+\end{footnotesize}
+
+Cool. It looks like R stores a table of the observed frequencies and the expected frequencies under the null-hypothesis. Thanks R!
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 8
+%----------------------------------------------------------------------------------------
+
+\chapter{8: Regression and ANOVA}
+\label{ch:8}
+
+
+Chapter Goals
+
+\begin{enumerate}
+  \item Learn about regression
+  \item ANOVA
+\end{enumerate}
+
+\section{The Linear Model}\index{Linear Model}
+
+The linear model is easily the most famous and widely used model in all of statistics. Why? Because it can apply to so many interesting research questions where you are trying to predict a variable of interest (the \textit{response} or \textit{dependent variable}) on the basis of one or more other variables (the \textit{predictor} or \textit{independent variables}).
+
+The linear model takes the following form:
+
+\begin{Large}
+\begin{equation*}
+y=\beta_{0}+\beta_{1}x_{1}+\beta_{2}x_{2}+...\beta_{n}x_{n}
+\end{equation*}
+\end{Large}
+
+where the x values represent the predictors, while the beta values represent weights.
+
+To use the linear model in R, we use the \texttt{lm()} function:
+
+\newfun{lm(y {\raise.17ex\hbox{$\scriptstyle\sim$}} x1 + x2 + ..., data)}\index{General Linear Model!lm()}
+
+\begin{itemize}
+  \item y: The name of the response (dependent) variable.
+  \item x1, x2, ... xn: The names of one or more predictor (independent) variables.
+  \item data: The name of the dataframe containing the data.
+\end{itemize}
+
+Let's try an example with some made-up data. For this example, I'll create three independent variables x1, x2 and x3 from normal distributions. I'll then create a dependent variable \texttt{y} as a linear function of the three independent variables (with a little error thrown in)\footnote{If there was no error in the model, then the response variable would be a perfect linear combination of the predictor variables. When this happens, the model will always perfectly fit the data and no stats are necessary (or even possible!)}. Finally, I'll run the linear model and see if we can recover the true beta values:
+
+\begin{footnotesize}
+<<>>=
+# Step 1: Create a dataframe of predictors
+
+random.data <- data.frame(
+             "x1" = rnorm(100, mean = 0, sd = 1),
+             "x2" = rnorm(100, mean = 4, sd = 5),
+             "x3" = rnorm(100, mean = -2, sd = 2)
+             )
+
+# Step 2: Create the DV with beta values 0, 1, 2, 3
+random.data$y <- with(random.data, 0 + 1 * x1 + 2 * x2 + 3 * x3)
+
+# Step 3: Add some random noise to the DV
+random.data$y <- random.data$y + rnorm(100, mean = 0, sd = 1)
+
+# Step 4: Run the model then print the result
+result <- lm(y ~ x1 + x2 + x3, data = random.data)
+result
+@
+\end{footnotesize}
+
+Looks like our estimated beta values of \Sexpr{round(result$coefficients[1], 4)}, \Sexpr{round(result$coefficients[2], 4)}, \Sexpr{round(result$coefficients[3], 4)} and \Sexpr{round(result$coefficients[4], 4)} are pretty close to the true values of 0, 1, 2, 3! This means the model did a pretty good job of estimating the true beta values from the (noisy) data. 
+
+We can get lots of other information from the linear model object. Here are three of them (to see all of them, run \texttt{names(result)}):
+
+\begin{itemize}
+  \item \texttt{coefficients}: A vector of the estimated beta values
+  \item \texttt{residuals}: A vector of the differences between the true response values and the fitted response values.
+  \item \texttt{fitted.values}: A vector of the fitted values.
+\end{itemize}
+
+These attributes let us easily calculate some interesting model diagnostics. For example, let's see how far the model fits are on average from the true values:
+
+\begin{footnotesize}
+<<>>=
+abs.resid <- abs(result$residuals) # Calculate the absolute value of the residuals
+mean(abs.resid) # Calculate the mean
+@
+\end{footnotesize}
+
+So it looks like, on average, our model fits are \Sexpr{round(mean(abs.resid), 2)} off from the true values (This value is driven by the standard deviation in errors, which we set to 1).
+
+The linear model assumes that there should be no relationship between the predicted values and the distribution of errors. We can easily check this with a scatterplot with the predicted values on the x-axis, and residuals on the y-axis(see Figure \ref{fig:diagnostic} in the margin).
+
+\begin{marginfigure}
+<<fig.width = 3.5, fig.height = 3.5>>=
+plot(x = result$fitted.values, 
+     y = result$residuals,
+     main = "Model Diagnostics")
+@
+\caption{We see no evidence for a relationship between predicted values and residuals. This is good!}
+\label{fig:diagnostic}
+\end{marginfigure}
+
+
+\section{ANOVA}
+
+Once you've calculated a regression object, you can easily create an \textit{ANOVA} table based on the regression analysis using the \texttt{anova()} function.
+
+\newfun{anova(mod)}\index{General Linear Model!anova()}
+
+To use the \texttt{anova()} function, you apply it to an existing linear model object. For example, let's apply it to the previous model:
+
+\begin{footnotesize}
+<<>>=
+anova(result)
+@
+\end{footnotesize}
+
+Looks like we have significant effects for all predictors
+
+
+\section{Generalized Linear Model (GLM)}
+
+In the Generalized Linear Model (GLM), we take the original linear model, but apply a link function that wraps around the linear combination of predictors
+
+\newfun{glm(y {\raise.17ex\hbox{$\scriptstyle\sim$}} x1 + x2 + ..., family, data)}\index{General Linear Model!glm()}
+
+The key new argument in \texttt{glm()} compared to \texttt{lm()} is the \texttt{family} argument. This argument tells R which link function to use. To see more information about the families, look at help under \texttt{?family}.
+
+\subsection{Binary Logistic Regression}
+
+Probably the most common non-Normal family you will use is binomial which corresponds to binary logistic regression. In binary logistic regression, we predict a binary outcome variable (containing 0s and 1s) as the logit transformation of a linear combination of a set of predictors. Formally:
+
+\begin{Large}
+\begin{equation*}
+p(y=1)=\frac{1}{1+e^{-(\beta_{0}+\beta_{1}x_{1}+\beta_{2}x_{2}+...\beta_{n}x_{n})}}
+\end{equation*}
+\end{Large}
+
+
+\begin{marginfigure}
+\begin{tiny}
+<<fig.width = 4, fig.height = 4>>=
+# Logit
+logit.fun <- function(x) {1 / (1 + exp(-x))}
+
+curve(logit.fun, 
+      from = -3, 
+      to = 3,
+      lwd = 2, 
+      main = "Logit",
+      ylab = "p(y = 1)",
+      xlab = expression("b_{0} + b_{1}x_{1} + b_{2}x_{2} + ... b_{n}x_{n}")
+      )
+
+abline(h = .5, lty = 2)
+abline(v = 0, lty = 1)
+@
+\caption{The logit function used in binary logistic regression}
+\label{fig:logit}
+\end{tiny}
+\end{marginfigure}
+
+
+To conduct binary logistic regression, we use the \texttt{family = "binomial"} argument. Let's try an example with some more made-up data. We'll set the true beta values to 0, 1, -2 and 3
+
+\begin{footnotesize}
+<<>>=
+# Step 1: Create a dataframe of predictors
+random.data <- data.frame(
+             "x1" = rnorm(500, mean = 0, sd = 2),
+             "x2" = rnorm(500, mean = 4, sd = 2),
+             "x3" = rnorm(500, mean = -2, sd = 2)
+             )
+
+# Step 2: Create the DV with beta values 0, 1, -2, 3
+random.data$y <- with(random.data, 0 + 1 * x1 - 2 * x2 + 0 * x3)
+
+# Step 3: Add some random noise to the DV
+random.data$y <- random.data$y + rnorm(500, mean = 0, sd = 1)
+
+# Step 4: Convert to probability
+random.data$y.prob <- with(random.data, 1 / (1 + exp(-y)))
+
+# Step 5: Create binary response
+random.data$y.bin <- round(random.data$y.prob, 0)
+
+# Step 4: Run the model then print the result
+result <- glm(y.bin ~ x1 + x2 + x3,
+              data = random.data, family = "binomial")
+
+result
+
+summary(result)
+@
+\end{footnotesize}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 7
+%----------------------------------------------------------------------------------------
+
+\chapter{R Reference Card}
+\label{ch:X}
+
+
+\begin{figure}[h]
+\includegraphics{RReferenceCard.pdf}
+\label{fig:rreferencecard}
+\end{figure}
+
+\backmatter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\bibliography{bibliography} % Use the bibliography.bib file for the bibliography
+\bibliographystyle{plainnat} % Use the plainnat style of referencing
+
+%----------------------------------------------------------------------------------------
+
+\printindex % Print the index at the very end of the document
+
+\end{document}
