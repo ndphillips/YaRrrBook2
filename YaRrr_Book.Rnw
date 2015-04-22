@@ -205,7 +205,7 @@ Now that I've convinced you to use R, let's get started! First, you'll need to i
 See Figure \ref{fig:rscreenshot} Here's how the base R software looks (on Mac). As you can see, it's very much a bare-bones software - just how we want it! No extra gimmicks or flashy bloatware needed!
 
 \begin{marginfigure}
-\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Public/RScreenshot.png}
+\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Git/YaRrr_Book/media/RScreenshot.png}
 \caption{Here is how the standard R application looks. Not too exciting - just how we like it!}
 \label{fig:rscreenshot}
 \end{marginfigure}
@@ -219,7 +219,7 @@ Once you've installed RStudio, you'll never need to open the base R application.
 When you open RStudio, you'll see the following four windows (also called panes):
 
 \begin{figure*}[h]
-\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Public/RStudio_Screenshot_Labels.png}
+\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Git/YaRrr_Book/media/RStudio_Screenshot_Labels.png}
 \caption{The four panes of RStudio.}
 \label{fig:fullfig}
 \end{figure*}
@@ -773,7 +773,7 @@ The next function we'll use is \textbf{sample()}. Sample allows you to draw valu
 \subsection{Simulating Tinder Outcomes}
 
 \begin{marginfigure}
-\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Teaching/YaRrr/multimedia/pinder.pdf}
+\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Git/YaRrr_Book/media/pinder.pdf}
 \caption{Pinder. Tinder for Pirates.}
 \label{fig:pinder}
 \end{marginfigure}
@@ -1914,7 +1914,7 @@ Do we get more treasure from chests buried in the sand or at the bottom of the o
 \section{Warning about null-hypothesis tests with "frequentist" statistics}
 
 \begin{marginfigure}
-\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Teaching/YaRrr/multimedia/xkcdbayes.png}
+\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Git/YaRrr_Book/media/xkcdbayes.png}
 \caption{xkcd comic. Currently used without any permission.}
 \label{fig:xkcdbayes}
 \end{marginfigure}
@@ -2292,9 +2292,6 @@ summary(result)
 
 
 
-
-
-
 %----------------------------------------------------------------------------------------
 %	CHAPTER 7
 %----------------------------------------------------------------------------------------
@@ -2304,7 +2301,7 @@ summary(result)
 
 
 \begin{figure}[h]
-\includegraphics{RReferenceCard.pdf}
+\includegraphics{/Users/Nathaniel/Dropbox/Git/YaRrr_Book/media/RReferenceCard.pdf}
 \label{fig:rreferencecard}
 \end{figure}
 
