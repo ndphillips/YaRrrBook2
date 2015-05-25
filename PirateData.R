@@ -108,5 +108,5 @@ pirates.errors$tattoos[sample(1:nrow(pirates.errors), size = 10)] <- sample(c(10
 pirates.errors$favorite.pirate[sample(1:nrow(pirates.errors), size = 10)] <- sample(c("your mom"), size = 10, replace = T)
 
 # Write table to file
-write.table(pirates.errors, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirate_survey_werrors.txt", sep = "\t")
+write.table(pirates.errors, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirate_survey_errors.txt", sep = "\t")
 
