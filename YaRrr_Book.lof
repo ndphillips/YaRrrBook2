@@ -1,0 +1,23 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces This is a \texttt {chordDiagram} plot that comes with the R package \texttt {circlize}.}}{10}{Item.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2}{\ignorespaces Here is how the standard R application looks. Not too exciting - just how we like it!}}{13}{chapter*.9}
+\contentsline {figure}{\numberline {3}{\ignorespaces The four panes of RStudio.}}{14}{subsection*.10}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4}{\ignorespaces Visual depiction of a scaler and vector. Deep shit. Wait until we get to matrices - you're going to lose it.}}{22}{subsection*.26}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5}{\ignorespaces The standard normal distribution}}{27}{subsection*.34}
+\contentsline {figure}{\numberline {6}{\ignorespaces The Uniform distribution - known colloquially as the Anthony Davis distribution.}}{28}{subsection*.34}
+\contentsline {figure}{\numberline {7}{\ignorespaces Pinder. Tinder for Pirates.}}{29}{subsection*.36}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8}{\ignorespaces Scaler, Vector, Matrix... ::drops mike::}}{53}{section*.54}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9}{\ignorespaces xkcd comic. Currently used without any permission.}}{63}{section*.65}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {10}{\ignorespaces We see no evidence for a relationship between predicted values and residuals. This is good!}}{70}{section*.70}
+\contentsline {figure}{\numberline {11}{\ignorespaces The logit function used in binary logistic regression}}{71}{subsection*.73}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsfinish 

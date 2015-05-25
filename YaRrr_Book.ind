@@ -1,0 +1,92 @@
+\begin{theindex}
+
+  \item [], \hyperpage{41}
+  \item \%in\%, \hyperpage{44}
+
+  \indexspace
+
+  \item a:b, \hyperpage{26}
+  \item abline(), \hyperpage{84}
+  \item aggregate(), \hyperpage{115}
+
+  \indexspace
+
+  \item beanplot(), \hyperpage{81}
+  \item boxplot(), \hyperpage{79}
+
+  \indexspace
+
+  \item c(), \hyperpage{24}
+  \item cbind(), \hyperpage{54}
+  \item chisq.test(), \hyperpage{133}
+  \item cor.test(), \hyperpage{132}
+  \item correlation, \hyperpage{131}
+  \item curve(), \hyperpage{87}
+  \item cut(), \hyperpage{113}
+
+  \indexspace
+
+  \item data.frame(), \hyperpage{56}
+  \item dplyr(), \hyperpage{119}
+
+  \indexspace
+
+  \item General Linear Model
+    \subitem anova(), \hyperpage{139}
+  \item glm(), \hyperpage{137}
+
+  \indexspace
+
+  \item head(), \hyperpage{57}
+  \item hist(), \hyperpage{78}
+
+  \indexspace
+
+  \item legend(), \hyperpage{88}
+  \item length(), \hyperpage{25}
+  \item license, \hyperpage{2}
+  \item Linear Model, \hyperpage{135}
+  \item lm(), \hyperpage{135}
+
+  \indexspace
+
+  \item matrix(), \hyperpage{55}
+  \item merge(), \hyperpage{121}
+
+  \indexspace
+
+  \item paste(), \hyperpage{86}
+  \item plot(), \hyperpage{76}
+  \item points(), \hyperpage{83}
+
+  \indexspace
+
+  \item rbind(), \hyperpage{54}
+  \item readltab.e(), \hyperpage{59}
+  \item rep(), \hyperpage{27}
+  \item rgb(), \hyperpage{96}
+  \item rnorm(), \hyperpage{32}
+  \item runif(), \hyperpage{33}
+
+  \indexspace
+
+  \item Sammy Davis Jr., \hyperpage{75}
+  \item sample(), \hyperpage{34}
+  \item seq(), \hyperpage{27}
+  \item subset(), \hyperpage{70}
+
+  \indexspace
+
+  \item t-test, \hyperpage{126}
+    \subitem t.test(), \hyperpage{126}, \hyperpage{129}
+  \item text(), \hyperpage{85}
+
+  \indexspace
+
+  \item View(), \hyperpage{58}
+
+  \indexspace
+
+  \item with(), \hyperpage{67}
+
+\end{theindex}

@@ -1,0 +1,1001 @@
+"id"	"sex"	"headband"	"age"	"college"	"tattoos"	"tchests.found"	"parrots.lifetime"	"favorite.pirate"	"sword.type"	"sword.speed"
+"1"	1	"male"	"yes"	26	"Jack Sparrow's School of Fashion and Piratry"	8	0	0	"Jack Sparrow"	"cutlass"	0.634960451835588
+"2"	2	"male"	"yes"	27	"Captain Chunk's Canon Crew"	16	18	3	"Jack Sparrow"	"cutlass"	2.24805864433621
+"3"	3	"male"	"yes"	22	"Captain Chunk's Canon Crew"	-10	2	4	"Jack Sparrow"	"cutlass"	1.40716310196678
+"4"	4	"male"	"yes"	28	"Captain Chunk's Canon Crew"	11	28	1	"Anicetus"	"cutlass"	1.12261646972371
+"5"	5	"male"	"yes"	23	"Captain Chunk's Canon Crew"	13	13	6	"Hook"	"cutlass"	0.594848988085806
+"6"	6	"male"	"yes"	21	"Captain Chunk's Canon Crew"	11	1	1	"Jack Sparrow"	"cutlass"	0.522234338542268
+"7"	7	"female"	"yes"	24	"Captain Chunk's Canon Crew"	7	1	8	"Anicetus"	"cutlass"	0.533370458885582
+"8"	8	"male"	"yes"	17	"Captain Chunk's Canon Crew"	9	2	0	"Hook"	"cutlass"	1.08239390532823
+"9"	9	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	7	9	6	"Jack Sparrow"	"cutlass"	0.206897230686786
+"10"	10	"male"	"yes"	27	"Captain Chunk's Canon Crew"	9	3	1	"Jack Sparrow"	"cutlass"	0.958298390726112
+"11"	11	"male"	"yes"	28	"Captain Chunk's Canon Crew"	9	8	1	"Jack Sparrow"	"cutlass"	0.456921685810022
+"12"	12	"male"	"yes"	22	"Captain Chunk's Canon Crew"	11	0	3	"Jack Sparrow"	"cutlass"	0.127310401876457
+"13"	13	"female"	"no"	33	"Jack Sparrow's School of Fashion and Piratry"	8	2	6	"Blackbeard"	"scimitar"	1.93416497663113
+"14"	14	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	7	1	8	"Blackbeard"	"cutlass"	0.119602052145638
+"15"	15	"male"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	12	29	0	"Jack Sparrow"	"cutlass"	0.237532055471092
+"16"	16	"male"	"yes"	30	"Captain Chunk's Canon Crew"	9	2	2	"Jack Sparrow"	"cutlass"	0.237985234998632
+"17"	17	"male"	"yes"	26	"Captain Chunk's Canon Crew"	7	7	1	"Jack Sparrow"	"cutlass"	1.03790007443861
+"18"	18	"male"	"yes"	29	"Captain Chunk's Canon Crew"	12	11	5	"Jack Sparrow"	"cutlass"	0.22451327173888
+"19"	19	"other/NA"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	9	14	3	"Blackbeard"	"cutlass"	0.650514687850893
+"20"	20	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	12	9	1	"Jack Sparrow"	"cutlass"	0.669437310689247
+"21"	21	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	8	6	6	"Jack Sparrow"	"cutlass"	0.387465922976844
+"22"	22	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	12	2	0	"Blackbeard"	"cutlass"	2.12042470917779
+"23"	23	"male"	"yes"	21	"Captain Chunk's Canon Crew"	10	3	11	"Jack Sparrow"	"cutlass"	1.42089030182903
+"24"	24	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	10	11	1	"Jack Sparrow"	"cutlass"	0.293132409278769
+"25"	25	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	11	5	3	"Jack Sparrow"	"sabre"	2.76858450830881
+"26"	26	"male"	"yes"	18	"Captain Chunk's Canon Crew"	10	6	0	"Jack Sparrow"	"cutlass"	0.307192803593352
+"27"	27	"female"	"yes"	28	"Captain Chunk's Canon Crew"	4	0	0	"Edward Low"	"cutlass"	0.184116295131389
+"28"	28	"male"	"no"	26	"Captain Chunk's Canon Crew"	6	2	9	"Hook"	"scimitar"	0.256283949905386
+"29"	29	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	7	8	8	"Hook"	"cutlass"	0.283224294544198
+"30"	30	"male"	"yes"	22	"Captain Chunk's Canon Crew"	9	3	1	"Lewis Scot"	"scimitar"	10.1264450042964
+"31"	31	"female"	"yes"	33	NA	10	0	3	"Anicetus"	"cutlass"	0.368662440159824
+"32"	32	"other/NA"	"no"	999	"Jack Sparrow's School of Fashion and Piratry"	2	3	4	"Anicetus"	"scimitar"	0.300648677093704
+"33"	33	"male"	"yes"	16	"Captain Chunk's Canon Crew"	11	1	0	"Jack Sparrow"	"cutlass"	0.703217097298995
+"34"	34	"male"	"yes"	28	"Captain Chunk's Canon Crew"	10	0	3	"Jack Sparrow"	"cutlass"	0.0429142350913025
+"35"	35	"male"	"yes"	23	"Captain Chunk's Canon Crew"	11	1	1	"Hook"	"cutlass"	0.161783177754842
+"36"	36	"female"	"yes"	31	"Captain Chunk's Canon Crew"	7	5	1	"Jack Sparrow"	"scimitar"	15.2690201989355
+"37"	37	"male"	"no"	17	"Captain Chunk's Canon Crew"	7	1	4	"Hook"	"cutlass"	0.273372638272122
+"38"	38	"other/NA"	"no"	26	"Captain Chunk's Canon Crew"	1	14	12	"Anicetus"	"scimitar"	0.140207521617413
+"39"	39	"female"	"yes"	22	NA	9	10	1	"Jack Sparrow"	"cutlass"	0.276426486670971
+"40"	40	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	8	1	4	"Edward Low"	"cutlass"	0.405372162058484
+"41"	41	"female"	"yes"	41	"Jack Sparrow's School of Fashion and Piratry"	14	17	8	"Hook"	"cutlass"	0.425320784852374
+"42"	42	"female"	"yes"	31	"Captain Chunk's Canon Crew"	8	6	3	"Anicetus"	"scimitar"	3.33574866177514
+"43"	43	"male"	"no"	28	"Captain Chunk's Canon Crew"	0	2	0	"Jack Sparrow"	"scimitar"	5.80458599728604
+"44"	44	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	12	7	7	"Jack Sparrow"	"cutlass"	0.165552489925176
+"45"	45	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	10	27	3	"Blackbeard"	"cutlass"	0.200958290738993
+"46"	46	"female"	"yes"	27	"Captain Chunk's Canon Crew"	14	8	2	"Jack Sparrow"	"cutlass"	0.0817994758901976
+"47"	47	"male"	"no"	20	"Captain Chunk's Canon Crew"	6	10	2	"Jack Sparrow"	"scimitar"	6.35101877452456
+"48"	48	"male"	"no"	32	"Jack Sparrow's School of Fashion and Piratry"	3	6	2	"Jack Sparrow"	"sabre"	2.69271449839136
+"49"	49	"male"	"yes"	25	"Captain Chunk's Canon Crew"	11	1	4	"Jack Sparrow"	"cutlass"	0.197684461600147
+"50"	50	"female"	"yes"	27	"Captain Chunk's Canon Crew"	16	4	2	"your mom"	"cutlass"	0.445317646927953
+"51"	51	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	10	11	1	"Jack Sparrow"	"cutlass"	0.893592889135346
+"52"	52	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	8	6	15	"Jack Sparrow"	"cutlass"	0.0645553704816848
+"53"	53	"male"	"yes"	20	"Captain Chunk's Canon Crew"	11	9	0	"Anicetus"	"cutlass"	1.84973501237328
+"54"	54	"male"	"yes"	19	"Captain Chunk's Canon Crew"	7	3	1	"Edward Low"	"sabre"	0.561628156962494
+"55"	55	"female"	"no"	31	"Jack Sparrow's School of Fashion and Piratry"	6	15	3	"Anicetus"	"sabre"	1.25757536111276
+"56"	56	"female"	"yes"	28	"Captain Chunk's Canon Crew"	11	3	1	"Anicetus"	"cutlass"	0.297412075742614
+"57"	57	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	7	8	2	"Anicetus"	"cutlass"	0.166264245053753
+"58"	58	"male"	"yes"	23	"Captain Chunk's Canon Crew"	5	1	2	"Lewis Scot"	"cutlass"	0.461235014732261
+"59"	59	"male"	"yes"	24	"Captain Chunk's Canon Crew"	13	12	1	"Jack Sparrow"	"cutlass"	0.232563566381013
+"60"	60	"male"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	8	2	6	"Jack Sparrow"	"cutlass"	0.693338179910113
+"61"	61	"yes please!"	"yes"	18	"Captain Chunk's Canon Crew"	8	5	0	"Jack Sparrow"	"cutlass"	0.655188117499285
+"62"	62	"male"	"yes"	16	"Captain Chunk's Canon Crew"	13	2	1	"Jack Sparrow"	"cutlass"	1.81507582602111
+"63"	63	"male"	"yes"	19	"Captain Chunk's Canon Crew"	7	2	3	"Jack Sparrow"	"cutlass"	0.0750458748262165
+"64"	64	"male"	"yes"	26	"Captain Chunk's Canon Crew"	12	24	6	"Jack Sparrow"	"cutlass"	0.443556340152219
+"65"	65	"female"	"no"	29	"Captain Chunk's Canon Crew"	4	1	2	"Lewis Scot"	"banana"	2.22372967678155
+"66"	66	"male"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	9	24	1	"Jack Sparrow"	"cutlass"	1.1310329415776
+"67"	67	"male"	"no"	23	"Captain Chunk's Canon Crew"	7	3	3	"Jack Sparrow"	"cutlass"	0.102542352862656
+"68"	68	"male"	"yes"	23	"Captain Chunk's Canon Crew"	7	1	2	"Jack Sparrow"	"cutlass"	0.46350475514476
+"69"	69	"male"	"yes"	24	"Captain Chunk's Canon Crew"	1e+06	2	0	"Jack Sparrow"	"cutlass"	0.190167802211363
+"70"	70	"male"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	9	6	2	"Jack Sparrow"	"banana"	0.318137237562107
+"71"	71	"female"	"yes"	18	NA	6	3	3	"Anicetus"	"cutlass"	0.613508359502822
+"72"	72	"female"	"yes"	20	"Captain Chunk's Canon Crew"	16	1	1	"Blackbeard"	"cutlass"	0.818951233496711
+"73"	73	"male"	"yes"	24	"Captain Chunk's Canon Crew"	5	1	3	"Anicetus"	"cutlass"	0.180703438818455
+"74"	74	"female"	"yes"	30	"Captain Chunk's Canon Crew"	6	2	2	"Edward Low"	"cutlass"	0.067696410274401
+"75"	75	"male"	"yes"	21	"Captain Chunk's Canon Crew"	8	16	0	"Jack Sparrow"	"sabre"	3.46252837204341
+"76"	76	"male"	"no"	23	"Captain Chunk's Canon Crew"	3	4	0	"Edward Low"	"banana"	3.97567222892254
+"77"	77	"male"	"yes"	22	"Captain Chunk's Canon Crew"	9	1	2	"Jack Sparrow"	"cutlass"	0.346277531061787
+"78"	78	"female"	"yes"	27	"Captain Chunk's Canon Crew"	6	23	3	"Blackbeard"	"scimitar"	1.02463016980693
+"79"	79	"male"	"yes"	25	"Captain Chunk's Canon Crew"	13	10	3	"Jack Sparrow"	"cutlass"	0.585158684963182
+"80"	80	"female"	"yes"	30	"Captain Chunk's Canon Crew"	13	0	4	"Anicetus"	"cutlass"	0.922566106257603
+"81"	81	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	10	50	3	"Anicetus"	"cutlass"	0.367837212397717
+"82"	82	"female"	"no"	25	"Captain Chunk's Canon Crew"	4	2	0	"Jack Sparrow"	"sabre"	1.28496326234044
+"83"	83	"male"	"yes"	22	"Captain Chunk's Canon Crew"	8	11	1	"Blackbeard"	"cutlass"	1.99788672373372
+"84"	84	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	10	4	3	"Anicetus"	"cutlass"	0.456179404255755
+"85"	85	"male"	"yes"	21	"Captain Chunk's Canon Crew"	12	20	0	"Jack Sparrow"	"cutlass"	0.527730689268088
+"86"	86	"male"	"yes"	24	"Captain Chunk's Canon Crew"	5	1	3	"Jack Sparrow"	"scimitar"	5.11257941347963
+"87"	87	"male"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	8	12	1	"Jack Sparrow"	"cutlass"	0.370170270996888
+"88"	88	"male"	"yes"	22	"Captain Chunk's Canon Crew"	10	1	4	"Blackbeard"	"cutlass"	1.32895198759197
+"89"	89	"male"	"yes"	23	"Captain Chunk's Canon Crew"	NA	1	1	"Jack Sparrow"	"scimitar"	2.94898663414642
+"90"	90	"male"	"yes"	30	"Captain Chunk's Canon Crew"	14	5	4	"Jack Sparrow"	"cutlass"	0.53051135982377
+"91"	91	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	5	10	0	"Edward Low"	"cutlass"	0.905359139606901
+"92"	92	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	13	23	2	"Anicetus"	"cutlass"	0.965112044090243
+"93"	93	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	10	32	5	"Blackbeard"	"cutlass"	1.12648424803616
+"94"	94	"male"	"yes"	29	"Captain Chunk's Canon Crew"	12	6	2	"Jack Sparrow"	"cutlass"	0.625882673167445
+"95"	95	"male"	"yes"	19	"Captain Chunk's Canon Crew"	9	1	1	"Jack Sparrow"	"cutlass"	0.529283567421891
+"96"	96	"male"	"yes"	24	"Captain Chunk's Canon Crew"	4	0	2	"Jack Sparrow"	"cutlass"	0.61954050239957
+"97"	97	"male"	"yes"	21	"Captain Chunk's Canon Crew"	8	7	1	"Jack Sparrow"	"cutlass"	0.0471659220056608
+"98"	98	"male"	"yes"	17	"Captain Chunk's Canon Crew"	9	12	0	"Jack Sparrow"	"cutlass"	2.36827477217563
+"99"	99	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	8	2	1	"Hook"	"cutlass"	0.657527645208694
+"100"	100	"male"	"no"	26	"Captain Chunk's Canon Crew"	6	3	2	"Jack Sparrow"	"cutlass"	0.0562058575451374
+"101"	101	"male"	"yes"	18	"Captain Chunk's Canon Crew"	10	15	0	"Jack Sparrow"	"cutlass"	0.926050684595123
+"102"	102	"female"	"no"	30	"Jack Sparrow's School of Fashion and Piratry"	8	24	5	"Edward Low"	"banana"	0.522634534247576
+"103"	103	"male"	"yes"	25	"Captain Chunk's Canon Crew"	13	4	2	"Jack Sparrow"	"cutlass"	0.703232663191676
+"104"	104	"male"	"yes"	30	"Captain Chunk's Canon Crew"	9	4	3	"Jack Sparrow"	"cutlass"	0.80499436703679
+"105"	105	"male"	"yes"	26	"Captain Chunk's Canon Crew"	12	8	1	"Jack Sparrow"	"cutlass"	0.357252300600521
+"106"	106	"male"	"no"	12345	"Captain Chunk's Canon Crew"	9	5	1	"Blackbeard"	"scimitar"	0.133711989037693
+"107"	107	"female"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	8	3	3	"Lewis Scot"	"cutlass"	0.155043923296034
+"108"	108	"female"	"yes"	0	"Jack Sparrow's School of Fashion and Piratry"	11	15	1	"Edward Low"	"cutlass"	0.108314507524483
+"109"	109	"male"	"yes"	29	"Captain Chunk's Canon Crew"	8	6	1	"Jack Sparrow"	"scimitar"	3.47395781743144
+"110"	110	"male"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	10	17	2	"Jack Sparrow"	"sabre"	16.6658252927687
+"111"	111	"male"	"yes"	16	"Captain Chunk's Canon Crew"	13	7	3	"Jack Sparrow"	"cutlass"	1.17036233068781
+"112"	112	"male"	"yes"	22	"Captain Chunk's Canon Crew"	14	2	1	"Jack Sparrow"	"scimitar"	8.6940479494068
+"113"	113	"male"	"yes"	21	"Captain Chunk's Canon Crew"	11	0	0	"Jack Sparrow"	"cutlass"	0.107861804883615
+"114"	114	"female"	"yes"	24	"Captain Chunk's Canon Crew"	8	2	0	"Jack Sparrow"	"cutlass"	0.316966504324228
+"115"	115	"female"	"yes"	25	"Captain Chunk's Canon Crew"	10	2	10	"Jack Sparrow"	"cutlass"	0.0587741381605156
+"116"	116	"other/NA"	"yes"	27	"Captain Chunk's Canon Crew"	8	3	5	"Lewis Scot"	"cutlass"	1.18167866831051
+"117"	117	"male"	"yes"	25	"Captain Chunk's Canon Crew"	10	6	2	"Jack Sparrow"	"cutlass"	0.192691713869555
+"118"	118	"female"	"yes"	28	"Captain Chunk's Canon Crew"	14	1	2	"Anicetus"	"cutlass"	0.306931684026495
+"119"	119	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	17	19	3	"Jack Sparrow"	"cutlass"	0.101676362392027
+"120"	120	"female"	"yes"	25	"Captain Chunk's Canon Crew"	7	4	3	"Jack Sparrow"	"cutlass"	0.838387377999544
+"121"	121	"female"	"yes"	20	"Captain Chunk's Canon Crew"	13	16	2	"Blackbeard"	"cutlass"	1.29936873791145
+"122"	122	"male"	"yes"	19	"Captain Chunk's Canon Crew"	10	2	2	"Jack Sparrow"	"cutlass"	0.101882230956107
+"123"	123	"male"	"yes"	23	"Captain Chunk's Canon Crew"	14	8	0	"Jack Sparrow"	"cutlass"	1.34355709147003
+"124"	124	"male"	"yes"	21	"Captain Chunk's Canon Crew"	12	11	3	"Lewis Scot"	"scimitar"	0.133993939962238
+"125"	125	"female"	"yes"	29	"Captain Chunk's Canon Crew"	13	10	6	"Blackbeard"	"sabre"	0.608386228171488
+"126"	126	"female"	"yes"	28	"Captain Chunk's Canon Crew"	7	15	3	"Anicetus"	"cutlass"	1.12719926861452
+"127"	127	"female"	"yes"	26	"Captain Chunk's Canon Crew"	11	5	1	"Lewis Scot"	"cutlass"	0.424976848298684
+"128"	128	"female"	"yes"	24	"Captain Chunk's Canon Crew"	10	1	0	"Blackbeard"	"cutlass"	0.759749003310509
+"129"	129	"female"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	13	17	0	"Blackbeard"	"cutlass"	0.269449518818874
+"130"	130	"female"	"yes"	30	"Captain Chunk's Canon Crew"	10	6	6	"Anicetus"	"cutlass"	0.793034040226422
+"131"	131	"male"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	9	10	3	"Jack Sparrow"	"cutlass"	0.27001351932995
+"132"	132	"female"	"yes"	22	"Captain Chunk's Canon Crew"	8	12	0	"Jack Sparrow"	"cutlass"	0.372426346002612
+"133"	133	"male"	"yes"	19	"Captain Chunk's Canon Crew"	9	7	1	"Jack Sparrow"	"sabre"	1.40843078088102
+"134"	134	"male"	"yes"	28	"Captain Chunk's Canon Crew"	9	4	5	"Jack Sparrow"	"cutlass"	0.156337496591732
+"135"	135	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	16	20	1	"Jack Sparrow"	"cutlass"	0.375111277971882
+"136"	136	"male"	"yes"	23	"Captain Chunk's Canon Crew"	7	5	6	"Anicetus"	"cutlass"	0.522023823763523
+"137"	137	"other/NA"	"yes"	26	"Jack Sparrow's School of Fashion and Piratry"	10	2	2	"Blackbeard"	"cutlass"	1.11776595115067
+"138"	138	"male"	"yes"	21	"Captain Chunk's Canon Crew"	6	1	11	"Anicetus"	"scimitar"	1.97240624174149
+"139"	139	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	10	0	5	"Edward Low"	"cutlass"	0.215628870937508
+"140"	140	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	8	8	4	"Lewis Scot"	"cutlass"	0.277074803889263
+"141"	141	"male"	"yes"	27	"Captain Chunk's Canon Crew"	12	19	8	"Jack Sparrow"	"cutlass"	0.679900569931425
+"142"	142	"female"	"yes"	22	"Captain Chunk's Canon Crew"	10	2	1	"Hook"	"cutlass"	0.166307442414109
+"143"	143	"male"	"yes"	25	"Captain Chunk's Canon Crew"	9	2	0	"Jack Sparrow"	"cutlass"	0.799908501768306
+"144"	144	"female"	"yes"	29	"Captain Chunk's Canon Crew"	14	12	3	"Hook"	"cutlass"	1.61041024715214
+"145"	145	"male"	"yes"	19	"Captain Chunk's Canon Crew"	8	5	6	"Jack Sparrow"	"scimitar"	1.55054063303396
+"146"	146	"male"	"yes"	29	"Captain Chunk's Canon Crew"	14	2	0	"Jack Sparrow"	"cutlass"	0.306443524896167
+"147"	147	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	14	10	5	"Blackbeard"	"cutlass"	0.0318668517866172
+"148"	148	"male"	"no"	15	"Captain Chunk's Canon Crew"	2	3	1	"Anicetus"	"banana"	0.297871365216101
+"149"	149	"female"	"yes"	26	"Captain Chunk's Canon Crew"	3	9	1	"Anicetus"	"cutlass"	0.00166269484907389
+"150"	150	"female"	"yes"	30	"Captain Chunk's Canon Crew"	13	7	7	"Jack Sparrow"	"cutlass"	1.29294192762451
+"151"	151	"male"	"yes"	27	"Captain Chunk's Canon Crew"	8	12	8	"Blackbeard"	"cutlass"	1.22234707226898
+"152"	152	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	10	13	2	"Lewis Scot"	"cutlass"	0.3990545833949
+"153"	153	"male"	"yes"	29	"Captain Chunk's Canon Crew"	7	1	5	"Jack Sparrow"	"sabre"	5.51956774018018
+"154"	154	"male"	"yes"	17	"Captain Chunk's Canon Crew"	10	7	0	"Jack Sparrow"	"cutlass"	0.487322944073759
+"155"	155	"female"	"yes"	39	"Jack Sparrow's School of Fashion and Piratry"	12	4	0	"Blackbeard"	"cutlass"	0.13628336309921
+"156"	156	"male"	"yes"	27	"Captain Chunk's Canon Crew"	14	1	1	"Jack Sparrow"	"cutlass"	2.2770038187588
+"157"	157	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	11	4	3	"Edward Low"	"cutlass"	0.621043670663431
+"158"	158	"male"	"yes"	19	"Captain Chunk's Canon Crew"	9	1	2	"Jack Sparrow"	"cutlass"	0.500803955338717
+"159"	159	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	9	3	2	"Edward Low"	"cutlass"	0.100766368200442
+"160"	160	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	8	0	2	"Jack Sparrow"	"cutlass"	0.25876468163915
+"161"	161	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	7	4	3	"Jack Sparrow"	"cutlass"	0.126169074371657
+"162"	162	"male"	"yes"	26	"Captain Chunk's Canon Crew"	10	7	0	"Jack Sparrow"	"cutlass"	0.862538831398644
+"163"	163	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	8	6	2	"Lewis Scot"	"cutlass"	0.647119113995622
+"164"	164	"sure I'll have some"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	16	5	8	"Jack Sparrow"	"cutlass"	0.931227419007212
+"165"	165	"female"	"yes"	27	"Captain Chunk's Canon Crew"	9	5	1	"Jack Sparrow"	"cutlass"	0.217207509849686
+"166"	166	"female"	"yes"	500	"Captain Chunk's Canon Crew"	11	6	1	"Edward Low"	"cutlass"	1.04195785470644
+"167"	167	"female"	"yes"	35	NA	10	1	1	"Jack Sparrow"	"cutlass"	0.283559606038756
+"168"	168	"male"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	11	10	4	"Jack Sparrow"	"cutlass"	0.304704832669813
+"169"	169	"male"	"yes"	23	"Captain Chunk's Canon Crew"	10	10	0	"Jack Sparrow"	"cutlass"	0.242303372069728
+"170"	170	"male"	"yes"	21	"Captain Chunk's Canon Crew"	6	0	1	"Jack Sparrow"	"cutlass"	0.426883427426219
+"171"	171	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	7	2	2	"Lewis Scot"	"cutlass"	0.140100307775411
+"172"	172	"female"	"yes"	25	"Captain Chunk's Canon Crew"	17	22	8	"Blackbeard"	"cutlass"	1.03605389473365
+"173"	173	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	17	32	2	"Edward Low"	"cutlass"	0.0587450647424286
+"174"	174	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	11	8	1	"Blackbeard"	"cutlass"	0.478925997714333
+"175"	175	"female"	"yes"	25	"Captain Chunk's Canon Crew"	5	1	2	"Jack Sparrow"	"cutlass"	0.24173238867661
+"176"	176	"male"	"yes"	23	"Captain Chunk's Canon Crew"	15	10	4	"Jack Sparrow"	"cutlass"	0.55413980616425
+"177"	177	"male"	"yes"	17	"Captain Chunk's Canon Crew"	7	16	0	"Jack Sparrow"	"cutlass"	0.180231941631064
+"178"	178	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	5	1	1	"Blackbeard"	"cutlass"	0.116694894692555
+"179"	179	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	8	9	15	"Anicetus"	"cutlass"	0.995811456919957
+"180"	180	"female"	"yes"	28	"Captain Chunk's Canon Crew"	6	0	0	"Hook"	"cutlass"	0.496762419726791
+"181"	181	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	7	2	12	"Hook"	"cutlass"	1.38911783906475
+"182"	182	"female"	"yes"	27	"Captain Chunk's Canon Crew"	10	3	0	"Blackbeard"	"cutlass"	0.140671673289035
+"183"	183	"female"	"yes"	27	"Captain Chunk's Canon Crew"	13	1	2	"Edward Low"	"cutlass"	0.0408623490170433
+"184"	184	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	12	0	1	"Jack Sparrow"	"cutlass"	0.554639365079195
+"185"	185	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	7	1	2	"Hook"	"cutlass"	0.158095028018579
+"186"	186	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	14	0	1	"Lewis Scot"	"sabre"	0.847238495789786
+"187"	187	"female"	"yes"	19	"Captain Chunk's Canon Crew"	6	9	4	"Anicetus"	"cutlass"	0.362345849571284
+"188"	188	"male"	"yes"	22	"Captain Chunk's Canon Crew"	8	2	1	"Anicetus"	"cutlass"	0.524179215224345
+"189"	189	"male"	"yes"	21	"Captain Chunk's Canon Crew"	13	1	1	"Jack Sparrow"	"cutlass"	0.145401442257924
+"190"	190	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	5	1	3	"Lewis Scot"	"cutlass"	0.430219083791599
+"191"	191	"male"	"yes"	10	"Captain Chunk's Canon Crew"	8	4	0	"Jack Sparrow"	"cutlass"	0.251204063824844
+"192"	192	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	9	4	0	"Blackbeard"	"sabre"	0.140163404867053
+"193"	193	"sure I'll have some"	"yes"	12	"Captain Chunk's Canon Crew"	13	1	2	"Anicetus"	"cutlass"	0.12807454331778
+"194"	194	"male"	"yes"	23	"Captain Chunk's Canon Crew"	6	1	0	"Anicetus"	"cutlass"	0.600729321564265
+"195"	195	"male"	"yes"	21	"Captain Chunk's Canon Crew"	8	1	2	"Lewis Scot"	"cutlass"	0.218556151085068
+"196"	196	"male"	"yes"	24	"Captain Chunk's Canon Crew"	14	2	3	"Jack Sparrow"	"scimitar"	2.67885707551613
+"197"	197	"female"	"yes"	30	"Captain Chunk's Canon Crew"	12	4	1	"Edward Low"	"cutlass"	0.114044513611589
+"198"	198	"female"	"no"	23	"Captain Chunk's Canon Crew"	11	1	2	"Jack Sparrow"	"scimitar"	1.15073948322485
+"199"	199	"male"	"yes"	20	"Captain Chunk's Canon Crew"	14	17	2	"Jack Sparrow"	"cutlass"	0.203830534301233
+"200"	200	"male"	"yes"	999	"Captain Chunk's Canon Crew"	9	5	0	"Edward Low"	"cutlass"	1.27387755195947
+"201"	201	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	13	2	5	"Lewis Scot"	"cutlass"	0.160623707519713
+"202"	202	"male"	"yes"	28	"Captain Chunk's Canon Crew"	7	4	1	"Jack Sparrow"	"cutlass"	0.111244486761279
+"203"	203	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	8	1	8	"Blackbeard"	"cutlass"	0.718663849375963
+"204"	204	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	12	27	4	"Edward Low"	"cutlass"	0.133138544313296
+"205"	205	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	9	1	0	"your mom"	"cutlass"	0.355368341261055
+"206"	206	"other/NA"	"yes"	18	"Captain Chunk's Canon Crew"	9	0	1	"Anicetus"	"cutlass"	0.358676276227925
+"207"	207	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	9	14	6	"Jack Sparrow"	"cutlass"	0.300931310445755
+"208"	208	"female"	"no"	28	"Captain Chunk's Canon Crew"	7	13	0	"Edward Low"	"sabre"	0.133195165923767
+"209"	209	"female"	"yes"	29	"Captain Chunk's Canon Crew"	8	2	8	"Hook"	"cutlass"	0.760817260571577
+"210"	210	"male"	"yes"	25	"Captain Chunk's Canon Crew"	5	2	3	"Jack Sparrow"	"cutlass"	0.27545507386094
+"211"	211	"male"	"yes"	23	"Captain Chunk's Canon Crew"	5	2	2	"Jack Sparrow"	"cutlass"	0.415125470026396
+"212"	212	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	8	9	4	"Blackbeard"	"cutlass"	0.346866381005384
+"213"	213	"male"	"yes"	28	"Jack Sparrow's School of Fashion and Piratry"	7	6	6	"Jack Sparrow"	"cutlass"	0.236168071278371
+"214"	214	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	10	10	1	"Blackbeard"	"cutlass"	1.00711233318707
+"215"	215	"male"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	11	7	0	"Anicetus"	"cutlass"	1.06282328715885
+"216"	216	"male"	"yes"	27	"Captain Chunk's Canon Crew"	14	3	1	"Lewis Scot"	"cutlass"	1.11928730382921
+"217"	217	"male"	"no"	28	"Captain Chunk's Canon Crew"	3	13	5	"Jack Sparrow"	"banana"	2.1882035379114
+"218"	218	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	12	10	0	"Lewis Scot"	"cutlass"	0.121719854823125
+"219"	219	"female"	"yes"	29	"Captain Chunk's Canon Crew"	7	10	0	"Lewis Scot"	"cutlass"	0.0888751479214989
+"220"	220	"male"	"yes"	21	"Captain Chunk's Canon Crew"	12	8	2	"Anicetus"	"cutlass"	0.0987337582277367
+"221"	221	"male"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	14	8	1	"Jack Sparrow"	"scimitar"	13.4174223889815
+"222"	222	"other/NA"	"yes"	27	"Captain Chunk's Canon Crew"	14	7	0	"Hook"	"cutlass"	0.669311755310565
+"223"	223	"male"	"yes"	28	"Captain Chunk's Canon Crew"	10	13	0	"Jack Sparrow"	"cutlass"	0.144471126841381
+"224"	224	"male"	"yes"	24	"Captain Chunk's Canon Crew"	8	8	3	"Jack Sparrow"	"cutlass"	0.672008842361209
+"225"	225	"male"	"yes"	21	"Captain Chunk's Canon Crew"	2	9	0	"Jack Sparrow"	"cutlass"	0.200046017416753
+"226"	226	"male"	"yes"	32	"Captain Chunk's Canon Crew"	10	4	5	"Jack Sparrow"	"cutlass"	0.208935159316752
+"227"	227	"female"	"yes"	23	"Captain Chunk's Canon Crew"	12	3	3	"Lewis Scot"	"cutlass"	0.0209021643921565
+"228"	228	"male"	"yes"	31	"Captain Chunk's Canon Crew"	7	1	1	"Jack Sparrow"	"cutlass"	1.08306014158316
+"229"	229	"male"	"yes"	24	"Captain Chunk's Canon Crew"	10	11	4	"Jack Sparrow"	"cutlass"	0.764610254528754
+"230"	230	"male"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	5	0	1	"Jack Sparrow"	"cutlass"	0.167505677381996
+"231"	231	"male"	"no"	21	"Captain Chunk's Canon Crew"	0	14	2	"Jack Sparrow"	"scimitar"	1.89034976058083
+"232"	232	"male"	"no"	31	"Jack Sparrow's School of Fashion and Piratry"	8	16	3	"Jack Sparrow"	"sabre"	0.0758080675261308
+"233"	233	"female"	"no"	28	"Jack Sparrow's School of Fashion and Piratry"	3	8	2	"Lewis Scot"	"sabre"	1.42730378938958
+"234"	234	"male"	"no"	25	"Captain Chunk's Canon Crew"	2	4	0	"Jack Sparrow"	"banana"	0.662743926817025
+"235"	235	"female"	"yes"	28	"Captain Chunk's Canon Crew"	4	1	1	"Anicetus"	"banana"	19.5077084160235
+"236"	236	"male"	"yes"	18	"Captain Chunk's Canon Crew"	5	2	0	"Jack Sparrow"	"sabre"	0.44794579812636
+"237"	237	"female"	"yes"	25	"Captain Chunk's Canon Crew"	11	11	0	"Lewis Scot"	"cutlass"	2.60999758944926
+"238"	238	"female"	"yes"	40	"Jack Sparrow's School of Fashion and Piratry"	12	3	4	"Hook"	"cutlass"	0.935396525670504
+"239"	239	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	17	5	3	"Jack Sparrow"	"cutlass"	1.91409791809249
+"240"	240	"female"	"no"	36	"Jack Sparrow's School of Fashion and Piratry"	8	41	8	"Anicetus"	"sabre"	0.109602213154955
+"241"	241	"female"	"yes"	33	"Captain Chunk's Canon Crew"	9	25	1	"Lewis Scot"	"cutlass"	0.761649708120905
+"242"	242	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	6	3	0	"Lewis Scot"	"cutlass"	2.28181316853412
+"243"	243	"male"	"no"	22	"Captain Chunk's Canon Crew"	1	0	1	"Jack Sparrow"	"scimitar"	1.94132454531095
+"244"	244	"female"	"yes"	27	"Captain Chunk's Canon Crew"	10	10	5	"Hook"	"cutlass"	0.268103673879523
+"245"	245	"female"	"yes"	31	"Captain Chunk's Canon Crew"	11	10	1	"Jack Sparrow"	"cutlass"	0.723998546574086
+"246"	246	"female"	"yes"	25	"Captain Chunk's Canon Crew"	12	0	1	"Hook"	"cutlass"	0.329453336328032
+"247"	247	"female"	"no"	21	"Captain Chunk's Canon Crew"	7	2	3	"Edward Low"	"banana"	0.696766305534601
+"248"	248	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	11	24	0	"Edward Low"	"cutlass"	0.27930777910264
+"249"	249	"male"	"yes"	20	"Captain Chunk's Canon Crew"	10	0	2	"Blackbeard"	"cutlass"	1.10727760237047
+"250"	250	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	16	2	8	"Jack Sparrow"	"cutlass"	0.389583585666736
+"251"	251	"male"	"yes"	19	"Captain Chunk's Canon Crew"	15	4	3	"Hook"	"cutlass"	0.154883853101637
+"252"	252	"female"	"yes"	29	"Captain Chunk's Canon Crew"	5	13	5	"Anicetus"	"cutlass"	0.807618419613511
+"253"	253	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	13	3	9	"Blackbeard"	"cutlass"	0.698992048829615
+"254"	254	"male"	"sometimes"	25	"Captain Chunk's Canon Crew"	12	17	1	"Jack Sparrow"	"cutlass"	0.455815868891597
+"255"	255	"male"	"yes"	27	"Captain Chunk's Canon Crew"	9	2	0	"Jack Sparrow"	"scimitar"	6.39352634528136
+"256"	256	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	8	12	1	"Lewis Scot"	"cutlass"	0.393532047455665
+"257"	257	"female"	"no"	33	"Captain Chunk's Canon Crew"	7	1	5	"Anicetus"	"banana"	0.987943857602836
+"258"	258	"male"	"no"	33	"Jack Sparrow's School of Fashion and Piratry"	0	1	2	"Jack Sparrow"	"scimitar"	4.03488589119272
+"259"	259	"male"	"yes"	25	"Captain Chunk's Canon Crew"	10	7	1	"Anicetus"	"cutlass"	0.742776778616764
+"260"	260	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	5	0	1	"Jack Sparrow"	"cutlass"	1.25101094361731
+"261"	261	"male"	"yes"	21	"Captain Chunk's Canon Crew"	8	1	1	"Jack Sparrow"	"cutlass"	0.513814535460624
+"262"	262	"male"	"yes"	27	"Captain Chunk's Canon Crew"	8	6	4	"Jack Sparrow"	"cutlass"	0.639414184816934
+"263"	263	"depends on who is offering"	"yes"	31	"Captain Chunk's Canon Crew"	11	2	5	"Edward Low"	"cutlass"	0.289156381846174
+"264"	264	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	4	0	5	"Lewis Scot"	"cutlass"	0.309418666292913
+"265"	265	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	8	8	0	"Lewis Scot"	"cutlass"	0.452261359288179
+"266"	266	"female"	"yes"	29	"Captain Chunk's Canon Crew"	14	13	3	"Edward Low"	"cutlass"	1.09280874780486
+"267"	267	"female"	"yes"	0	"Jack Sparrow's School of Fashion and Piratry"	14	11	1	"Edward Low"	"cutlass"	1.13095569186249
+"268"	268	"male"	"yes"	20	"Captain Chunk's Canon Crew"	16	6	2	"Jack Sparrow"	"cutlass"	1.38411864782497
+"269"	269	"other/NA"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	11	7	1	"Edward Low"	"cutlass"	1.87537936017591
+"270"	270	"female"	"yes"	19	"Captain Chunk's Canon Crew"	1	3	5	"Lewis Scot"	"cutlass"	0.999872247868791
+"271"	271	"female"	"yes"	23	"Captain Chunk's Canon Crew"	13	5	4	"Lewis Scot"	"cutlass"	1.16203019739465
+"272"	272	"female"	"yes"	28	"Captain Chunk's Canon Crew"	11	3	1	"Edward Low"	"scimitar"	5.40406390992193
+"273"	273	"male"	"yes"	19	"Captain Chunk's Canon Crew"	4	7	3	"Lewis Scot"	"cutlass"	1.50536014574154
+"274"	274	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	12	19	6	"Edward Low"	"cutlass"	0.210451398452278
+"275"	275	"other/NA"	"yes"	19	"Captain Chunk's Canon Crew"	13	5	8	"Blackbeard"	"cutlass"	0.730060551405706
+"276"	276	"male"	"yes"	18	"Captain Chunk's Canon Crew"	11	3	1	"Lewis Scot"	"cutlass"	0.488694570932359
+"277"	277	"female"	"yes"	20	"Captain Chunk's Canon Crew"	5	9	2	"Anicetus"	"cutlass"	0.0947759428527206
+"278"	278	"female"	"yes"	28	"Captain Chunk's Canon Crew"	8	1	4	"Hook"	"cutlass"	0.499813890756861
+"279"	279	"male"	"no"	27	"Captain Chunk's Canon Crew"	6	4	0	"Jack Sparrow"	"sabre"	0.283390381779696
+"280"	280	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	10	1	1	"Jack Sparrow"	"cutlass"	0.384206640883349
+"281"	281	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	15	18	3	"Lewis Scot"	"cutlass"	0.614003781313089
+"282"	282	"male"	"yes"	27	"Captain Chunk's Canon Crew"	14	1	2	"Jack Sparrow"	"cutlass"	2.00996727672148
+"283"	283	"male"	"no"	29	"Jack Sparrow's School of Fashion and Piratry"	1	4	1	"Jack Sparrow"	"scimitar"	0.0720407239471873
+"284"	284	"male"	"yes"	26	"Captain Chunk's Canon Crew"	13	8	3	"Jack Sparrow"	"cutlass"	0.5047551193012
+"285"	285	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	13	9	11	"Lewis Scot"	"cutlass"	0.964634788852775
+"286"	286	"male"	"yes"	26	"Captain Chunk's Canon Crew"	7	28	3	"Jack Sparrow"	"cutlass"	0.734900057405986
+"287"	287	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	7	2	1	"Hook"	"cutlass"	0.0975193601334468
+"288"	288	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	8	14	0	"Hook"	"scimitar"	2.24924377165735
+"289"	289	"male"	"yes"	18	"Captain Chunk's Canon Crew"	9	1	2	"Anicetus"	"cutlass"	0.19582666864153
+"290"	290	"female"	"yes"	27	"Captain Chunk's Canon Crew"	12	11	3	"Lewis Scot"	"sabre"	0.385016501083549
+"291"	291	"female"	"yes"	29	"Captain Chunk's Canon Crew"	9	3	0	"Anicetus"	"cutlass"	0.140746391228047
+"292"	292	"male"	"yes"	27	"Captain Chunk's Canon Crew"	14	13	15	"Jack Sparrow"	"cutlass"	1.72773135003208
+"293"	293	"female"	"yes"	22	"Captain Chunk's Canon Crew"	13	15	0	"Anicetus"	"cutlass"	1.32837307708832
+"294"	294	"male"	"yes"	26	"Captain Chunk's Canon Crew"	12	4	10	"Jack Sparrow"	"cutlass"	1.1057472298328
+"295"	295	"female"	"yes"	22	"Captain Chunk's Canon Crew"	12	12	1	"Jack Sparrow"	"cutlass"	0.151831541734282
+"296"	296	"female"	"yes"	27	"Captain Chunk's Canon Crew"	14	3	4	"Hook"	"cutlass"	0.887315353558973
+"297"	297	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	9	5	2	"Jack Sparrow"	"cutlass"	2.10034345029551
+"298"	298	"male"	"yes"	18	"Captain Chunk's Canon Crew"	7	1	0	"Jack Sparrow"	"cutlass"	0.769712927841403
+"299"	299	"male"	"yes"	19	"Captain Chunk's Canon Crew"	10	0	1	"Lewis Scot"	"cutlass"	1.12076598330738
+"300"	300	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	8	8	3	"Lewis Scot"	"cutlass"	0.647202113733448
+"301"	301	"male"	"yes"	30	"Captain Chunk's Canon Crew"	14	10	3	"Jack Sparrow"	"cutlass"	0.0768691473096727
+"302"	302	"other/NA"	"yes"	16	"Captain Chunk's Canon Crew"	12	8	3	"Hook"	"cutlass"	2.22149817609139
+"303"	303	"male"	"yes"	14	"Captain Chunk's Canon Crew"	11	0	4	"Jack Sparrow"	"cutlass"	0.452620119295836
+"304"	304	"male"	"yes"	30	"Captain Chunk's Canon Crew"	7	8	3	"Jack Sparrow"	"cutlass"	0.577397972202681
+"305"	305	"female"	"yes"	28	"Captain Chunk's Canon Crew"	11	4	9	"Hook"	"cutlass"	0.927284494921208
+"306"	306	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	9	4	3	"Lewis Scot"	"cutlass"	0.645855864115798
+"307"	307	"male"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	7	9	3	"Hook"	"scimitar"	7.34058039173978
+"308"	308	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	8	2	1	"Blackbeard"	"cutlass"	3.71639958561814
+"309"	309	"female"	"yes"	30	"Captain Chunk's Canon Crew"	16	1	0	"Blackbeard"	"cutlass"	0.708042253946707
+"310"	310	"female"	"yes"	26	"Captain Chunk's Canon Crew"	7	0	1	"Jack Sparrow"	"cutlass"	1.34319343133241
+"311"	311	"male"	"yes"	32	"Captain Chunk's Canon Crew"	8	7	1	"Jack Sparrow"	"scimitar"	1.32034827163503
+"312"	312	"female"	"yes"	19	"Captain Chunk's Canon Crew"	10	6	8	"Edward Low"	"cutlass"	0.815214326113284
+"313"	313	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	12	4	1	"Blackbeard"	"cutlass"	0.692977075788014
+"314"	314	"male"	"yes"	19	"Captain Chunk's Canon Crew"	7	12	4	"Edward Low"	"cutlass"	1.03403201205061
+"315"	315	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	1e+06	8	16	"Hook"	"cutlass"	0.446417387103023
+"316"	316	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	6	23	3	"Edward Low"	"cutlass"	0.157156193887431
+"317"	317	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	8	0	2	"Anicetus"	"cutlass"	1.10542405158618
+"318"	318	"male"	"yes"	21	"Captain Chunk's Canon Crew"	8	6	0	"Anicetus"	"cutlass"	0.261496632478126
+"319"	319	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	8	2	2	"Edward Low"	"cutlass"	0.440261534715969
+"320"	320	"male"	"yes"	28	"Captain Chunk's Canon Crew"	13	4	1	"Jack Sparrow"	"scimitar"	0.143032907508314
+"321"	321	"female"	"yes"	26	"Captain Chunk's Canon Crew"	11	12	7	"Jack Sparrow"	"cutlass"	0.330106070323382
+"322"	322	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	12	6	1	"Anicetus"	"cutlass"	2.44699938558884
+"323"	323	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	9	27	0	"Anicetus"	"cutlass"	0.448975109285761
+"324"	324	"male"	"yes"	28	"Captain Chunk's Canon Crew"	1e+06	8	3	"Hook"	"cutlass"	0.0858628100831993
+"325"	325	"male"	"no"	28	"Captain Chunk's Canon Crew"	6	5	0	"Jack Sparrow"	"scimitar"	0.33769622460461
+"326"	326	"male"	"yes"	31	"Captain Chunk's Canon Crew"	14	5	7	"Blackbeard"	"cutlass"	1.14180582686664
+"327"	327	"male"	"yes"	28	"Captain Chunk's Canon Crew"	11	0	1	"Jack Sparrow"	"cutlass"	1.61590909228234
+"328"	328	"female"	"yes"	26	"Captain Chunk's Canon Crew"	13	1	3	"Jack Sparrow"	"cutlass"	1.77953527764159
+"329"	329	"male"	"yes"	27	"Captain Chunk's Canon Crew"	12	9	3	"Jack Sparrow"	"cutlass"	0.23214165790705
+"330"	330	"male"	"yes"	18	"Captain Chunk's Canon Crew"	14	10	2	"Jack Sparrow"	"cutlass"	0.370409925817512
+"331"	331	"female"	"yes"	27	"Captain Chunk's Canon Crew"	8	19	2	"Hook"	"cutlass"	0.609095926603124
+"332"	332	"male"	"yes"	25	"Captain Chunk's Canon Crew"	8	3	1	"Jack Sparrow"	"cutlass"	0.0683845754247159
+"333"	333	"male"	"yes"	27	"Captain Chunk's Canon Crew"	10	15	5	"Jack Sparrow"	"cutlass"	0.11576934135519
+"334"	334	"male"	"yes"	29	"Captain Chunk's Canon Crew"	14	3	1	"Jack Sparrow"	"cutlass"	0.0722230892279185
+"335"	335	"male"	"yes"	20	"Captain Chunk's Canon Crew"	5	4	2	"Jack Sparrow"	"cutlass"	0.193155948945787
+"336"	336	"male"	"yes"	27	"Captain Chunk's Canon Crew"	12	4	1	"Jack Sparrow"	"cutlass"	0.633306627251961
+"337"	337	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	13	10	1	"Blackbeard"	"cutlass"	0.42301155300469
+"338"	338	"male"	"yes"	20	"Captain Chunk's Canon Crew"	12	3	1	"Jack Sparrow"	"cutlass"	0.445647176405561
+"339"	339	"female"	"yes"	31	"Captain Chunk's Canon Crew"	8	44	0	"Edward Low"	"cutlass"	1.5653452734543
+"340"	340	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	10	13	20	"Jack Sparrow"	"cutlass"	0.113815496733878
+"341"	341	"male"	"yes"	29	"Captain Chunk's Canon Crew"	9	8	2	"Jack Sparrow"	"cutlass"	0.491887287243691
+"342"	342	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	10	5	4	"Lewis Scot"	"cutlass"	0.256872405007016
+"343"	343	"female"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	9	5	3	"Jack Sparrow"	"sabre"	0.791461258195341
+"344"	344	"male"	"yes"	28	"Captain Chunk's Canon Crew"	13	6	5	"Jack Sparrow"	"cutlass"	0.683816803476595
+"345"	345	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	8	1	3	"Lewis Scot"	"cutlass"	0.0413104050676338
+"346"	346	"male"	"yes"	21	"Captain Chunk's Canon Crew"	5	1	1	"Jack Sparrow"	"cutlass"	0.409478765795939
+"347"	347	"male"	"yes"	29	"Captain Chunk's Canon Crew"	10	7	9	"Jack Sparrow"	"cutlass"	1.97632474223108
+"348"	348	"male"	"yes"	26	"Captain Chunk's Canon Crew"	7	4	6	"Jack Sparrow"	"scimitar"	19.2715809763151
+"349"	349	"male"	"yes"	17	"Captain Chunk's Canon Crew"	13	20	0	"Jack Sparrow"	"cutlass"	1.5521602793936
+"350"	350	"female"	"yes"	30	"Captain Chunk's Canon Crew"	5	1	3	"Anicetus"	"cutlass"	1.48186410187317
+"351"	351	"female"	"no"	29	"Jack Sparrow's School of Fashion and Piratry"	4	8	0	"Anicetus"	"scimitar"	0.256416837219149
+"352"	352	"male"	"yes"	18	"Captain Chunk's Canon Crew"	13	4	0	"Jack Sparrow"	"cutlass"	0.342479059763718
+"353"	353	"male"	"yes"	20	"Captain Chunk's Canon Crew"	9	1	3	"Jack Sparrow"	"cutlass"	1.51836897355078
+"354"	354	"other/NA"	"no"	16	"Captain Chunk's Canon Crew"	8	1	2	"Jack Sparrow"	"scimitar"	2.16274140395673
+"355"	355	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	13	15	1	"your mom"	"cutlass"	0.179822198697366
+"356"	356	"female"	"yes"	23	"Captain Chunk's Canon Crew"	12	5	1	"Hook"	"cutlass"	0.165672427392565
+"357"	357	"male"	"no"	21	"Captain Chunk's Canon Crew"	1	1	0	"Jack Sparrow"	"banana"	0.0914764303461546
+"358"	358	"male"	"yes"	26	"Captain Chunk's Canon Crew"	8	6	5	"Jack Sparrow"	"cutlass"	0.38956165604759
+"359"	359	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	17	15	8	"Jack Sparrow"	"cutlass"	1.94487371005791
+"360"	360	"male"	"no"	30	"Captain Chunk's Canon Crew"	7	13	3	"Jack Sparrow"	"banana"	15.6565928750573
+"361"	361	"female"	"yes"	27	"Captain Chunk's Canon Crew"	12	12	0	"Hook"	"cutlass"	0.398449761851225
+"362"	362	"male"	"yes"	20	"Captain Chunk's Canon Crew"	13	15	7	"Jack Sparrow"	"cutlass"	0.0735966724460013
+"363"	363	"male"	"sometimes"	30	"Jack Sparrow's School of Fashion and Piratry"	9	8	1	"Jack Sparrow"	"cutlass"	0.913116608228177
+"364"	364	"female"	"yes"	28	"Captain Chunk's Canon Crew"	13	12	0	"Edward Low"	"cutlass"	0.332014691957738
+"365"	365	"male"	"yes"	17	"Captain Chunk's Canon Crew"	9	1	0	"Jack Sparrow"	"cutlass"	0.405628836888354
+"366"	366	"male"	"no"	21	"Captain Chunk's Canon Crew"	5	2	6	"Hook"	"scimitar"	4.61395390621181
+"367"	367	"female"	"yes"	28	"Jack Sparrow's School of Fashion and Piratry"	12	38	3	"Edward Low"	"banana"	3.1024344092408
+"368"	368	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	6	12	1	"Lewis Scot"	"cutlass"	0.164331595879048
+"369"	369	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	9	8	1	"Jack Sparrow"	"cutlass"	0.113987859513145
+"370"	370	"male"	"yes"	15	"Captain Chunk's Canon Crew"	10	9	1	"Jack Sparrow"	"cutlass"	0.801015424050212
+"371"	371	"male"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	15	11	5	"Hook"	"cutlass"	0.361619973264169
+"372"	372	"male"	"yes"	12345	"Captain Chunk's Canon Crew"	12	1	3	"Blackbeard"	"cutlass"	1.47973957114427
+"373"	373	"female"	"yes"	21	"Captain Chunk's Canon Crew"	7	11	1	"Blackbeard"	"cutlass"	0.0693610525179747
+"374"	374	"male"	"yes"	22	"Captain Chunk's Canon Crew"	10	3	2	"Edward Low"	"cutlass"	0.114410584540278
+"375"	375	"male"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	10	5	7	"Jack Sparrow"	"cutlass"	0.21192251064349
+"376"	376	"male"	"yes"	20	"Captain Chunk's Canon Crew"	7	4	0	"Anicetus"	"cutlass"	0.433208483445924
+"377"	377	"male"	"yes"	22	"Captain Chunk's Canon Crew"	11	27	2	"Jack Sparrow"	"cutlass"	0.189168616489042
+"378"	378	"male"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	9	6	1	"Jack Sparrow"	"cutlass"	0.243180053141602
+"379"	379	"female"	"yes"	28	"Captain Chunk's Canon Crew"	10	4	2	"Jack Sparrow"	"cutlass"	0.147118733727623
+"380"	380	"male"	"yes"	30	"Captain Chunk's Canon Crew"	7	2	3	"Jack Sparrow"	"cutlass"	0.0276959670883378
+"381"	381	"male"	"yes"	21	"Captain Chunk's Canon Crew"	10	5	2	"Jack Sparrow"	"cutlass"	0.32498738146387
+"382"	382	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	11	11	4	"Lewis Scot"	"cutlass"	0.385901022236794
+"383"	383	"male"	"yes"	26	"Captain Chunk's Canon Crew"	11	4	1	"Jack Sparrow"	"cutlass"	0.300807691062196
+"384"	384	"male"	"yes"	25	"Captain Chunk's Canon Crew"	8	6	1	"Jack Sparrow"	"cutlass"	0.0728148230700754
+"385"	385	"male"	"yes"	0	"Jack Sparrow's School of Fashion and Piratry"	7	11	4	"Jack Sparrow"	"sabre"	15.6264154728793
+"386"	386	"female"	"yes"	27	"Captain Chunk's Canon Crew"	5	2	4	"Jack Sparrow"	"cutlass"	0.85509597379417
+"387"	387	"male"	"yes"	25	"Captain Chunk's Canon Crew"	5	8	0	"Edward Low"	"cutlass"	0.635096921815842
+"388"	388	"female"	"no"	26	"Captain Chunk's Canon Crew"	4	0	1	"Edward Low"	"banana"	0.588669345919561
+"389"	389	"male"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	9	28	3	"Jack Sparrow"	"cutlass"	0.396597261715215
+"390"	390	"male"	"yes"	17	"Captain Chunk's Canon Crew"	14	2	5	"Jack Sparrow"	"cutlass"	1.8942693992399
+"391"	391	"male"	"no"	35	"Jack Sparrow's School of Fashion and Piratry"	6	3	1	"Lewis Scot"	"sabre"	0.897978006063827
+"392"	392	"female"	"yes"	30	"Captain Chunk's Canon Crew"	13	1	12	"Lewis Scot"	"cutlass"	0.108261560671963
+"393"	393	"female"	"yes"	28	"Captain Chunk's Canon Crew"	11	13	3	"Edward Low"	"cutlass"	0.179715172802477
+"394"	394	"male"	"yes"	27	"Captain Chunk's Canon Crew"	14	12	2	"Jack Sparrow"	"cutlass"	0.760256589829743
+"395"	395	"female"	"what is a headband?"	33	"Jack Sparrow's School of Fashion and Piratry"	13	5	2	"Blackbeard"	"cutlass"	0.192086333959281
+"396"	396	"female"	"yes"	28	"Captain Chunk's Canon Crew"	13	5	2	"Jack Sparrow"	"cutlass"	0.537950094995841
+"397"	397	"male"	"yes"	21	"Captain Chunk's Canon Crew"	6	5	0	"Jack Sparrow"	"cutlass"	0.0261896822485141
+"398"	398	"other/NA"	"yes"	21	"Captain Chunk's Canon Crew"	9	7	1	"Anicetus"	"cutlass"	0.119136226773313
+"399"	399	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	17	10	11	"Blackbeard"	"cutlass"	0.755935654716388
+"400"	400	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	6	0	2	"Jack Sparrow"	"cutlass"	0.956752938165903
+"401"	401	"male"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	16	14	4	"Jack Sparrow"	"sabre"	6.26775522377896
+"402"	402	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	11	7	2	"Hook"	"cutlass"	1.25168826526276
+"403"	403	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	6	10	2	"Blackbeard"	"cutlass"	1.83579483524638
+"404"	404	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	7	15	6	"Lewis Scot"	"cutlass"	0.255326981192799
+"405"	405	"female"	"yes"	33	"Captain Chunk's Canon Crew"	-10	4	2	"Lewis Scot"	"scimitar"	1.93017970537767
+"406"	406	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	11	7	2	"your mom"	"cutlass"	1.04549087688369
+"407"	407	"male"	"yes"	22	"Captain Chunk's Canon Crew"	1	1	1	"Jack Sparrow"	"cutlass"	0.03806713264895
+"408"	408	"female"	"yes"	26	"Captain Chunk's Canon Crew"	9	3	1	"Lewis Scot"	"cutlass"	0.225588497123681
+"409"	409	"male"	"no"	23	"Captain Chunk's Canon Crew"	3	14	1	"Anicetus"	"cutlass"	0.521723492515689
+"410"	410	"female"	"yes"	18	"Captain Chunk's Canon Crew"	8	8	1	"Edward Low"	"cutlass"	0.477969679605968
+"411"	411	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	5	3	10	"Edward Low"	"cutlass"	0.0236688879779977
+"412"	412	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	15	22	6	"Blackbeard"	"cutlass"	0.406318649474997
+"413"	413	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	11	12	1	"Lewis Scot"	"cutlass"	0.419532700616401
+"414"	414	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	13	8	1	"Hook"	"cutlass"	0.480801772765637
+"415"	415	"female"	"yes"	29	"Captain Chunk's Canon Crew"	11	6	3	"Blackbeard"	"scimitar"	0.340125020598173
+"416"	416	"female"	"no"	28	"Captain Chunk's Canon Crew"	9	13	7	"Edward Low"	"sabre"	0.198709740569549
+"417"	417	"male"	"no"	26	"Captain Chunk's Canon Crew"	5	10	1	"Jack Sparrow"	"scimitar"	0.0405744263764713
+"418"	418	"female"	"no"	36	"Jack Sparrow's School of Fashion and Piratry"	0	1	7	"Lewis Scot"	"sabre"	6.12598048593743
+"419"	419	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	13	13	0	"your mom"	"cutlass"	2.95429290324401
+"420"	420	"male"	"no"	25	"Captain Chunk's Canon Crew"	7	3	5	"Blackbeard"	"sabre"	1.64724961981562
+"421"	421	"female"	"yes"	28	"Captain Chunk's Canon Crew"	5	9	0	"Edward Low"	"cutlass"	0.345262009068392
+"422"	422	"male"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	9	0	2	"Jack Sparrow"	"cutlass"	1.07687971782276
+"423"	423	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	10	5	3	"Jack Sparrow"	"cutlass"	0.892746817500904
+"424"	424	"other/NA"	"yes"	31	"Captain Chunk's Canon Crew"	9	2	0	"Anicetus"	"cutlass"	0.656903700993218
+"425"	425	"male"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	10	1	3	"Jack Sparrow"	"cutlass"	0.581319047909183
+"426"	426	"male"	"yes"	24	"Captain Chunk's Canon Crew"	8	0	2	"Jack Sparrow"	"cutlass"	0.791632445735678
+"427"	427	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	14	8	5	"Hook"	"cutlass"	0.613339989187017
+"428"	428	"male"	"yes"	21	"Captain Chunk's Canon Crew"	10	1	4	"Jack Sparrow"	"cutlass"	1.20311226876682
+"429"	429	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	14	3	0	"Lewis Scot"	"cutlass"	0.575027239497455
+"430"	430	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	13	4	3	"Hook"	"cutlass"	0.512883352107747
+"431"	431	"female"	"yes"	29	"Captain Chunk's Canon Crew"	11	5	0	"Anicetus"	"cutlass"	0.489873524612568
+"432"	432	"male"	"yes"	27	"Captain Chunk's Canon Crew"	7	2	0	"your mom"	"cutlass"	0.104553799028508
+"433"	433	"male"	"yes"	24	"Captain Chunk's Canon Crew"	9	11	0	"Hook"	"cutlass"	0.826429764830329
+"434"	434	"male"	"no"	999	"Captain Chunk's Canon Crew"	0	10	1	"Jack Sparrow"	"cutlass"	1.2275571250458
+"435"	435	"female"	"yes"	26	"Captain Chunk's Canon Crew"	12	3	2	"Lewis Scot"	"cutlass"	0.233736898808274
+"436"	436	"female"	"yes"	40	"Jack Sparrow's School of Fashion and Piratry"	10	0	4	"Lewis Scot"	"cutlass"	0.457937983420499
+"437"	437	"female"	"yes"	27	"Captain Chunk's Canon Crew"	8	11	4	"Hook"	"cutlass"	0.338817292649765
+"438"	438	"female"	"yes"	27	"Captain Chunk's Canon Crew"	13	4	2	"Lewis Scot"	"cutlass"	2.25352126509793
+"439"	439	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	12	5	5	"Jack Sparrow"	"cutlass"	2.58341586553402
+"440"	440	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	13	12	5	"Blackbeard"	"cutlass"	0.425396420469042
+"441"	441	"female"	"yes"	28	"Captain Chunk's Canon Crew"	10	5	1	"Blackbeard"	"cutlass"	3.40028583170162
+"442"	442	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	8	3	7	"Jack Sparrow"	"cutlass"	0.146833730395883
+"443"	443	"female"	"yes"	20	"Captain Chunk's Canon Crew"	8	3	5	"Edward Low"	"cutlass"	0.53893492261246
+"444"	444	"female"	"yes"	26	"Captain Chunk's Canon Crew"	10	2	1	"Blackbeard"	"cutlass"	1.24859202182257
+"445"	445	"male"	"yes"	24	"Captain Chunk's Canon Crew"	13	11	5	"Jack Sparrow"	"cutlass"	1.25771820074284
+"446"	446	"male"	"yes"	25	"Captain Chunk's Canon Crew"	13	4	1	"Jack Sparrow"	"cutlass"	1.14261600789787
+"447"	447	"male"	"yes"	22	"Captain Chunk's Canon Crew"	12	1	0	"Jack Sparrow"	"cutlass"	0.283796174575084
+"448"	448	"male"	"yes"	28	"Captain Chunk's Canon Crew"	10	4	0	"Jack Sparrow"	"cutlass"	0.123023258020245
+"449"	449	"female"	"yes"	39	"Jack Sparrow's School of Fashion and Piratry"	11	3	1	"Blackbeard"	"cutlass"	0.557123417357735
+"450"	450	"male"	"no"	27	"Captain Chunk's Canon Crew"	9	12	3	"Jack Sparrow"	"banana"	0.520203774878738
+"451"	451	"male"	"yes"	21	"Captain Chunk's Canon Crew"	10	2	0	"Jack Sparrow"	"cutlass"	0.102159402506231
+"452"	452	"male"	"yes"	23	"Captain Chunk's Canon Crew"	9	0	3	"Jack Sparrow"	"cutlass"	0.142652299749888
+"453"	453	"other/NA"	"yes"	31	"Captain Chunk's Canon Crew"	10	5	5	"Anicetus"	"cutlass"	0.282206292613409
+"454"	454	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	7	8	0	"Hook"	"cutlass"	1.06894372380544
+"455"	455	"male"	"yes"	28	"Jack Sparrow's School of Fashion and Piratry"	9	2	0	"Anicetus"	"scimitar"	1.62250263383612
+"456"	456	"male"	"yes"	31	"Captain Chunk's Canon Crew"	8	6	0	"Jack Sparrow"	"cutlass"	0.471180030700572
+"457"	457	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	2	11	2	"Edward Low"	"cutlass"	0.292325236951001
+"458"	458	"male"	"no"	28	"Captain Chunk's Canon Crew"	1	1	0	"Jack Sparrow"	"scimitar"	0.261335845571011
+"459"	459	"male"	"yes"	28	"Captain Chunk's Canon Crew"	9	0	2	"Jack Sparrow"	"cutlass"	0.484856818675308
+"460"	460	"male"	"yes"	17	"Captain Chunk's Canon Crew"	15	1	1	"Jack Sparrow"	"cutlass"	0.15140684961807
+"461"	461	"male"	"yes"	25	"Captain Chunk's Canon Crew"	7	2	1	"Jack Sparrow"	"cutlass"	0.00919017184060067
+"462"	462	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	10	6	12	"Anicetus"	"cutlass"	0.15696619375376
+"463"	463	"male"	"yes"	22	"Captain Chunk's Canon Crew"	8	4	3	"Edward Low"	"cutlass"	0.849519681042813
+"464"	464	"female"	"yes"	29	"Captain Chunk's Canon Crew"	9	16	1	"Edward Low"	"cutlass"	0.244663623830117
+"465"	465	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	13	65	1	"Edward Low"	"cutlass"	0.0563940665050869
+"466"	466	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	10	1	0	"Jack Sparrow"	"cutlass"	2.27660371118317
+"467"	467	"female"	"yes"	25	"Captain Chunk's Canon Crew"	11	45	2	"Lewis Scot"	"sabre"	3.19957531353736
+"468"	468	"male"	"no"	19	"Captain Chunk's Canon Crew"	0	1	1	"Hook"	"sabre"	1.1785713236711
+"469"	469	"female"	"yes"	35	NA	12	4	3	"Hook"	"cutlass"	0.671835092917837
+"470"	470	"male"	"yes"	25	"Captain Chunk's Canon Crew"	8	13	1	"Edward Low"	"cutlass"	0.108069180525466
+"471"	471	"female"	"yes"	39	"Jack Sparrow's School of Fashion and Piratry"	7	1	2	"Anicetus"	"cutlass"	0.318545860493826
+"472"	472	"male"	"no"	22	NA	3	4	1	"Jack Sparrow"	"banana"	3.23264824030548
+"473"	473	"female"	"no"	25	"Captain Chunk's Canon Crew"	3	2	1	"Hook"	"cutlass"	1.0400590551387
+"474"	474	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	14	2	1	"Lewis Scot"	"cutlass"	1.7520224348523
+"475"	475	"female"	"no"	32	"Jack Sparrow's School of Fashion and Piratry"	0	2	3	"Hook"	"banana"	3.19712829379963
+"476"	476	"female"	"yes"	30	"Captain Chunk's Canon Crew"	10	5	3	"Edward Low"	"cutlass"	0.486456846675657
+"477"	477	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	10	3	8	"Hook"	"cutlass"	0.85177593338006
+"478"	478	"female"	"yes"	27	"Captain Chunk's Canon Crew"	7	5	4	"Edward Low"	"cutlass"	1.07473479112947
+"479"	479	"female"	"yes"	26	"Captain Chunk's Canon Crew"	6	4	2	"Anicetus"	"cutlass"	0.668491236257188
+"480"	480	"female"	"yes"	28	"Captain Chunk's Canon Crew"	12	43	2	"Edward Low"	"sabre"	3.81143193988407
+"481"	481	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	11	1	0	"Anicetus"	"cutlass"	0.535499009752346
+"482"	482	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	15	0	1	"Anicetus"	"scimitar"	5.62194278442717
+"483"	483	"female"	"no"	37	"Jack Sparrow's School of Fashion and Piratry"	1	22	7	"Lewis Scot"	"sabre"	2.07965782193881
+"484"	484	"male"	"yes"	20	"Captain Chunk's Canon Crew"	3	4	1	"Jack Sparrow"	"cutlass"	0.437432925656259
+"485"	485	"female"	"no"	31	"Jack Sparrow's School of Fashion and Piratry"	0	2	1	"Hook"	"sabre"	0.541589065854039
+"486"	486	"female"	"yes"	22	"Captain Chunk's Canon Crew"	8	3	6	"Anicetus"	"cutlass"	0.281233891728334
+"487"	487	"other/NA"	"yes"	24	"Captain Chunk's Canon Crew"	10	1	0	"Anicetus"	"cutlass"	1.01229606063468
+"488"	488	"male"	"yes"	16	"Captain Chunk's Canon Crew"	10	2	2	"Edward Low"	"cutlass"	0.521984376711291
+"489"	489	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	12	2	4	"Jack Sparrow"	"cutlass"	0.546764613801435
+"490"	490	"female"	"no"	28	"Captain Chunk's Canon Crew"	3	1	0	"Anicetus"	"scimitar"	0.195578770685724
+"491"	491	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	12	0	2	"Edward Low"	"cutlass"	0.278666697558947
+"492"	492	"male"	"yes"	25	"Captain Chunk's Canon Crew"	8	1	0	"Jack Sparrow"	"cutlass"	0.0757250385562976
+"493"	493	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	8	19	1	"Lewis Scot"	"cutlass"	0.830063170261502
+"494"	494	"male"	"yes"	26	"Captain Chunk's Canon Crew"	11	3	0	"Jack Sparrow"	"cutlass"	0.023774041586398
+"495"	495	"female"	"no"	27	"Captain Chunk's Canon Crew"	6	1	2	"Blackbeard"	"scimitar"	1.2008075351275
+"496"	496	"female"	"yes"	22	"Captain Chunk's Canon Crew"	11	2	3	"Jack Sparrow"	"cutlass"	0.0121939882817267
+"497"	497	"female"	"yes"	29	"Captain Chunk's Canon Crew"	8	13	1	"Edward Low"	"cutlass"	0.464159743288472
+"498"	498	"female"	"yes"	26	"Captain Chunk's Canon Crew"	10	12	2	"Blackbeard"	"cutlass"	1.36868715860455
+"499"	499	"male"	"no"	31	"Jack Sparrow's School of Fashion and Piratry"	6	0	0	"Jack Sparrow"	"sabre"	0.988711411399501
+"500"	500	"male"	"yes"	29	"Captain Chunk's Canon Crew"	9	1	0	"Jack Sparrow"	"cutlass"	0.984956293620533
+"501"	501	"male"	"yes"	23	"Captain Chunk's Canon Crew"	11	12	4	"Jack Sparrow"	"cutlass"	1.93123613473702
+"502"	502	"female"	"yes"	27	"Captain Chunk's Canon Crew"	9	6	3	"Lewis Scot"	"cutlass"	0.119107472710311
+"503"	503	"female"	"yes"	20	"Captain Chunk's Canon Crew"	9	9	0	"Blackbeard"	"cutlass"	0.316696421650704
+"504"	504	"male"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	7	23	2	"Jack Sparrow"	"cutlass"	1.6203041292405
+"505"	505	"female"	"yes"	28	"Captain Chunk's Canon Crew"	12	5	0	"Edward Low"	"cutlass"	0.896987230464459
+"506"	506	"female"	"yes"	46	"Jack Sparrow's School of Fashion and Piratry"	14	12	3	"Anicetus"	"cutlass"	0.294442925078329
+"507"	507	"male"	"yes"	27	"Captain Chunk's Canon Crew"	11	5	2	"Jack Sparrow"	"cutlass"	0.651249304038294
+"508"	508	"male"	"yes"	27	"Captain Chunk's Canon Crew"	7	2	1	"Hook"	"cutlass"	1.12583603471854
+"509"	509	"female"	"yes"	24	"Captain Chunk's Canon Crew"	10	18	0	"Blackbeard"	"cutlass"	0.519416543903388
+"510"	510	"female"	"yes"	30	"Captain Chunk's Canon Crew"	10	3	1	"Lewis Scot"	"cutlass"	0.409660946170334
+"511"	511	"male"	"yes"	20	"Captain Chunk's Canon Crew"	12	0	1	"Jack Sparrow"	"cutlass"	0.129864383197855
+"512"	512	"female"	"yes"	23	"Captain Chunk's Canon Crew"	12	8	0	"Blackbeard"	"cutlass"	0.300530304084532
+"513"	513	"male"	"yes"	28	"Captain Chunk's Canon Crew"	8	17	3	"Anicetus"	"cutlass"	0.0299469215678982
+"514"	514	"female"	"no"	29	"Jack Sparrow's School of Fashion and Piratry"	4	2	2	"Jack Sparrow"	"scimitar"	0.576074980199337
+"515"	515	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	9	7	7	"Blackbeard"	"cutlass"	1.26058664284052
+"516"	516	"male"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	10	3	4	"Jack Sparrow"	"cutlass"	0.435838635868214
+"517"	517	"male"	"yes"	28	"Captain Chunk's Canon Crew"	8	4	0	"Jack Sparrow"	"cutlass"	0.767995755278327
+"518"	518	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	13	4	2	"Hook"	"cutlass"	1.17104252678679
+"519"	519	"female"	"yes"	27	"Captain Chunk's Canon Crew"	11	2	4	"Anicetus"	"cutlass"	0.279707056470215
+"520"	520	"male"	"yes"	19	"Captain Chunk's Canon Crew"	4	0	1	"Jack Sparrow"	"cutlass"	0.125488515768666
+"521"	521	"male"	"yes"	21	"Captain Chunk's Canon Crew"	7	4	6	"Jack Sparrow"	"cutlass"	0.0354141305433586
+"522"	522	"female"	"yes"	22	"Captain Chunk's Canon Crew"	12	10	1	"Lewis Scot"	"cutlass"	0.799003659412166
+"523"	523	"male"	"yes"	22	"Captain Chunk's Canon Crew"	13	1	1	"Jack Sparrow"	"cutlass"	1.53053930370642
+"524"	524	"other/NA"	"yes"	28	"Captain Chunk's Canon Crew"	8	1	7	"Hook"	"cutlass"	0.178236270439811
+"525"	525	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	10	7	2	"Anicetus"	"cutlass"	0.281651646946557
+"526"	526	"female"	"yes"	27	"Captain Chunk's Canon Crew"	9	7	1	"Edward Low"	"cutlass"	0.441494790420302
+"527"	527	"male"	"yes"	27	"Captain Chunk's Canon Crew"	8	2	3	"Edward Low"	"cutlass"	0.47295576308091
+"528"	528	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	5	1	4	"Edward Low"	"cutlass"	1.15057677374558
+"529"	529	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	10	1	1	"Blackbeard"	"cutlass"	0.419708097178955
+"530"	530	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	7	9	2	"Lewis Scot"	"cutlass"	0.236599016643595
+"531"	531	"male"	"yes"	27	"Captain Chunk's Canon Crew"	7	12	1	"Jack Sparrow"	"cutlass"	0.503266304123037
+"532"	532	"female"	"no"	31	"Jack Sparrow's School of Fashion and Piratry"	1	3	1	"Hook"	"banana"	2.58749588895469
+"533"	533	"male"	"yes"	25	"Captain Chunk's Canon Crew"	10	1	12	"Hook"	"cutlass"	0.338236404350027
+"534"	534	"male"	"yes"	29	"Captain Chunk's Canon Crew"	10	2	1	"Lewis Scot"	"cutlass"	0.0494019670319616
+"535"	535	"male"	"yes"	35	NA	15	6	0	"Jack Sparrow"	"cutlass"	0.435469644699998
+"536"	536	"male"	"yes"	26	"Captain Chunk's Canon Crew"	7	15	2	"Jack Sparrow"	"cutlass"	0.422186302312184
+"537"	537	"male"	"yes"	19	"Captain Chunk's Canon Crew"	11	3	0	"Jack Sparrow"	"cutlass"	0.349912681267597
+"538"	538	"female"	"yes"	40	"Jack Sparrow's School of Fashion and Piratry"	10	2	0	"Edward Low"	"cutlass"	0.207401762309019
+"539"	539	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	13	12	8	"Hook"	"scimitar"	0.121037590768959
+"540"	540	"male"	"yes"	21	"Captain Chunk's Canon Crew"	12	8	0	"Hook"	"cutlass"	0.173886979173403
+"541"	541	"other/NA"	"yes"	23	"Captain Chunk's Canon Crew"	11	1	0	"Jack Sparrow"	"cutlass"	1.65298516814022
+"542"	542	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	9	5	1	"Blackbeard"	"cutlass"	0.50623826505319
+"543"	543	"female"	"yes"	31	"Captain Chunk's Canon Crew"	11	3	0	"Jack Sparrow"	"cutlass"	0.0382967002224177
+"544"	544	"female"	"yes"	18	"Captain Chunk's Canon Crew"	13	0	1	"Jack Sparrow"	"cutlass"	0.334204600076191
+"545"	545	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	10	3	1	"Jack Sparrow"	"cutlass"	0.397966240416281
+"546"	546	"male"	"no"	19	"Captain Chunk's Canon Crew"	7	6	0	"Jack Sparrow"	"sabre"	1.93730439851712
+"547"	547	"male"	"yes"	23	"Captain Chunk's Canon Crew"	12	2	3	"Jack Sparrow"	"cutlass"	1.17670407397078
+"548"	548	"female"	"no"	33	"Jack Sparrow's School of Fashion and Piratry"	5	18	6	"Edward Low"	"cutlass"	0.142949451692402
+"549"	549	"male"	"yes"	24	"Captain Chunk's Canon Crew"	14	1	4	"Jack Sparrow"	"cutlass"	1.54337729254468
+"550"	550	"male"	"yes"	27	"Captain Chunk's Canon Crew"	11	13	8	"Edward Low"	"cutlass"	0.760387126330108
+"551"	551	"male"	"yes"	19	"Captain Chunk's Canon Crew"	10	3	5	"Jack Sparrow"	"sabre"	4.00581953101758
+"552"	552	"male"	"sometimes"	23	NA	13	3	2	"Jack Sparrow"	"cutlass"	0.842312981813967
+"553"	553	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	9	4	1	"Jack Sparrow"	"cutlass"	1.21404322208242
+"554"	554	"male"	"yes"	22	"Captain Chunk's Canon Crew"	5	1	3	"Jack Sparrow"	"cutlass"	0.441345634138193
+"555"	555	"other/NA"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	7	2	4	"Blackbeard"	"cutlass"	0.523036556725052
+"556"	556	"male"	"yes"	24	"Captain Chunk's Canon Crew"	14	26	4	"Jack Sparrow"	"cutlass"	0.369480015069712
+"557"	557	"male"	"yes"	8	"Captain Chunk's Canon Crew"	12	6	1	"Jack Sparrow"	"cutlass"	0.0948745073401369
+"558"	558	"female"	"yes"	39	"Jack Sparrow's School of Fashion and Piratry"	8	5	1	"Jack Sparrow"	"cutlass"	2.58849003688343
+"559"	559	"female"	"yes"	21	"Captain Chunk's Canon Crew"	1	4	0	"Lewis Scot"	"cutlass"	1.22658351663837
+"560"	560	"female"	"no"	35	"Jack Sparrow's School of Fashion and Piratry"	8	2	7	"Blackbeard"	"banana"	1.28249957627909
+"561"	561	"female"	"yes"	29	"Captain Chunk's Canon Crew"	12	3	2	"Blackbeard"	"cutlass"	0.104787572636269
+"562"	562	"male"	"yes"	28	"Captain Chunk's Canon Crew"	8	1	1	"Jack Sparrow"	"scimitar"	3.18041792372242
+"563"	563	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	6	5	1	"Lewis Scot"	"cutlass"	1.30117232554166
+"564"	564	"male"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	8	6	1	"Anicetus"	"cutlass"	0.25956316589145
+"565"	565	"female"	"no"	42	"Jack Sparrow's School of Fashion and Piratry"	2	5	7	"Edward Low"	"scimitar"	0.699731869192213
+"566"	566	"other/NA"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	8	10	1	"your mom"	"cutlass"	0.0755468775960217
+"567"	567	"male"	"yes"	22	"Captain Chunk's Canon Crew"	10	4	2	"Jack Sparrow"	"cutlass"	0.149574811512139
+"568"	568	"other/NA"	"yes"	41	"Jack Sparrow's School of Fashion and Piratry"	12	9	2	"Jack Sparrow"	"cutlass"	0.396905882225838
+"569"	569	"female"	"no"	24	"Captain Chunk's Canon Crew"	0	2	1	"Edward Low"	"sabre"	1.31388377019038
+"570"	570	"male"	"yes"	999	"Captain Chunk's Canon Crew"	7	1	2	"Jack Sparrow"	"cutlass"	0.825497219005695
+"571"	571	"male"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	13	9	9	"Jack Sparrow"	"cutlass"	0.279632752353791
+"572"	572	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	15	0	1	"Blackbeard"	"cutlass"	1.23902582441793
+"573"	573	"female"	"yes"	29	"Captain Chunk's Canon Crew"	10	7	0	"Jack Sparrow"	"cutlass"	0.317841295327526
+"574"	574	"male"	"yes"	22	"Captain Chunk's Canon Crew"	11	3	4	"Jack Sparrow"	"cutlass"	0.645217039828941
+"575"	575	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	7	5	1	"Hook"	"cutlass"	0.0781871154322289
+"576"	576	"female"	"yes"	25	"Captain Chunk's Canon Crew"	13	1	2	"Blackbeard"	"cutlass"	0.41327334853122
+"577"	577	"male"	"yes"	24	"Captain Chunk's Canon Crew"	6	19	1	"Jack Sparrow"	"cutlass"	0.00786157621946988
+"578"	578	"male"	"no"	19	"Captain Chunk's Canon Crew"	2	3	2	"Jack Sparrow"	"sabre"	0.751904428138265
+"579"	579	"female"	"yes"	39	"Jack Sparrow's School of Fashion and Piratry"	8	2	0	"Jack Sparrow"	"sabre"	5.62973586850378
+"580"	580	"other/NA"	"yes"	21	"Captain Chunk's Canon Crew"	9	2	0	"Hook"	"cutlass"	0.334720055398066
+"581"	581	"female"	"yes"	27	"Captain Chunk's Canon Crew"	6	0	7	"Blackbeard"	"cutlass"	0.114051117914517
+"582"	582	"male"	"no"	37	"Jack Sparrow's School of Fashion and Piratry"	2	6	9	"Hook"	"banana"	0.507763567012063
+"583"	583	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	11	7	1	"Blackbeard"	"cutlass"	1.22334268404508
+"584"	584	"female"	"yes"	19	"Captain Chunk's Canon Crew"	8	2	1	"Blackbeard"	"cutlass"	0.10643474990502
+"585"	585	"female"	"yes"	22	"Captain Chunk's Canon Crew"	11	16	3	"Edward Low"	"cutlass"	0.0579497919235731
+"586"	586	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	8	1	4	"Edward Low"	"cutlass"	0.686522648619255
+"587"	587	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	8	8	3	"Hook"	"cutlass"	0.289807898960472
+"588"	588	"female"	"yes"	29	"Captain Chunk's Canon Crew"	9	4	3	"Jack Sparrow"	"cutlass"	0.567656013855532
+"589"	589	"female"	"yes"	30	"Captain Chunk's Canon Crew"	8	2	1	"Anicetus"	"cutlass"	0.358033261727542
+"590"	590	"female"	"yes"	25	"Captain Chunk's Canon Crew"	12	7	8	"Edward Low"	"cutlass"	0.607278396465637
+"591"	591	"male"	"yes"	26	"Captain Chunk's Canon Crew"	9	6	1	"Jack Sparrow"	"cutlass"	0.18585869402159
+"592"	592	"male"	"yes"	23	"Captain Chunk's Canon Crew"	6	7	2	"Jack Sparrow"	"cutlass"	0.0552519454504363
+"593"	593	"male"	"yes"	24	"Captain Chunk's Canon Crew"	9	9	1	"Jack Sparrow"	"cutlass"	0.172235983191058
+"594"	594	"male"	"what is a headband?"	28	"Captain Chunk's Canon Crew"	14	9	2	"Anicetus"	"cutlass"	0.242771888733841
+"595"	595	"female"	"yes"	29	"Captain Chunk's Canon Crew"	10	30	1	"Hook"	"cutlass"	0.0215440347648974
+"596"	596	"female"	"yes"	31	"Captain Chunk's Canon Crew"	11	5	2	"Blackbeard"	"scimitar"	3.94649528981094
+"597"	597	"male"	"yes"	18	"Captain Chunk's Canon Crew"	8	8	0	"Anicetus"	"cutlass"	0.657020641930223
+"598"	598	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	8	5	4	"Anicetus"	"cutlass"	1.19537392160261
+"599"	599	"female"	"yes"	25	"Captain Chunk's Canon Crew"	9	2	0	"Hook"	"cutlass"	1.30690670913591
+"600"	600	"male"	"yes"	20	"Captain Chunk's Canon Crew"	13	4	5	"Anicetus"	"cutlass"	0.643077854914542
+"601"	601	"male"	"no"	24	"Captain Chunk's Canon Crew"	8	12	3	"Jack Sparrow"	"sabre"	0.374234567195319
+"602"	602	"male"	"yes"	18	"Captain Chunk's Canon Crew"	6	4	0	"Jack Sparrow"	"cutlass"	0.792201731211327
+"603"	603	"male"	"yes"	27	"Captain Chunk's Canon Crew"	7	1	1	"Jack Sparrow"	"cutlass"	0.00829765747766942
+"604"	604	"female"	"yes"	33	"Captain Chunk's Canon Crew"	12	6	2	"Hook"	"cutlass"	0.098562347702682
+"605"	605	"male"	"yes"	25	"Captain Chunk's Canon Crew"	6	2	2	"Anicetus"	"cutlass"	0.253866539424277
+"606"	606	"male"	"yes"	17	"Captain Chunk's Canon Crew"	NA	4	4	"Jack Sparrow"	"cutlass"	0.342226283682976
+"607"	607	"female"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	12	0	0	"Hook"	"cutlass"	0.486526539290145
+"608"	608	"female"	"no"	35	"Jack Sparrow's School of Fashion and Piratry"	4	7	5	"Hook"	"scimitar"	0.873686970056345
+"609"	609	"female"	"sometimes"	24	"Captain Chunk's Canon Crew"	8	1	1	"Lewis Scot"	"cutlass"	1.31623910382895
+"610"	610	"male"	"yes"	23	"Captain Chunk's Canon Crew"	11	13	2	"Jack Sparrow"	"scimitar"	2.53063269658014
+"611"	611	"male"	"yes"	23	"Captain Chunk's Canon Crew"	19	7	0	"Jack Sparrow"	"cutlass"	1.23213183129543
+"612"	612	"male"	"yes"	18	"Captain Chunk's Canon Crew"	8	7	2	"Jack Sparrow"	"cutlass"	0.0640509542427026
+"613"	613	"female"	"yes"	28	"Jack Sparrow's School of Fashion and Piratry"	8	9	1	"Hook"	"cutlass"	0.737793202834957
+"614"	614	"male"	"yes"	29	"Captain Chunk's Canon Crew"	10	13	6	"Jack Sparrow"	"cutlass"	0.504549893058658
+"615"	615	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	12	7	2	"Anicetus"	"cutlass"	0.122103465837426
+"616"	616	"male"	"no"	27	"Captain Chunk's Canon Crew"	9	2	1	"Anicetus"	"scimitar"	1.71170148991497
+"617"	617	"female"	"yes"	28	"Jack Sparrow's School of Fashion and Piratry"	10	4	1	"Edward Low"	"cutlass"	1.13795406529085
+"618"	618	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	3	3	9	"Lewis Scot"	"cutlass"	0.138411334185991
+"619"	619	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	7	15	4	"Edward Low"	"cutlass"	1.58338334590824
+"620"	620	"male"	"yes"	20	"Captain Chunk's Canon Crew"	13	10	7	"Anicetus"	"cutlass"	0.524550459787071
+"621"	621	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	6	9	1	"Jack Sparrow"	"cutlass"	0.0504218359128572
+"622"	622	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	7	2	0	"Lewis Scot"	"cutlass"	1.04495163419621
+"623"	623	"male"	"yes"	14	"Captain Chunk's Canon Crew"	10	3	1	"Jack Sparrow"	"sabre"	1.51973876636475
+"624"	624	"female"	"yes"	33	"Captain Chunk's Canon Crew"	13	23	1	"Blackbeard"	"cutlass"	0.937997573002815
+"625"	625	"male"	"yes"	18	"Captain Chunk's Canon Crew"	14	0	7	"Jack Sparrow"	"cutlass"	0.0345923629356548
+"626"	626	"female"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	8	5	0	"Anicetus"	"cutlass"	0.30539984581992
+"627"	627	"male"	"yes"	17	"Captain Chunk's Canon Crew"	5	2	2	"Jack Sparrow"	"cutlass"	0.672343146262512
+"628"	628	"male"	"yes"	22	"Captain Chunk's Canon Crew"	11	1	3	"Jack Sparrow"	"cutlass"	0.340648822020739
+"629"	629	"female"	"yes"	28	"Captain Chunk's Canon Crew"	10	8	1	"Blackbeard"	"sabre"	0.146877185131113
+"630"	630	"female"	"yes"	999	"Captain Chunk's Canon Crew"	9	3	4	"Blackbeard"	"cutlass"	0.181047822554887
+"631"	631	"male"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	6	7	4	"Jack Sparrow"	"cutlass"	0.168543241452426
+"632"	632	"male"	"what is a headband?"	20	"Captain Chunk's Canon Crew"	15	3	5	"Edward Low"	"cutlass"	1.26524628484027
+"633"	633	"male"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	14	15	2	"Jack Sparrow"	"cutlass"	0.126678155502304
+"634"	634	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	16	4	1	"Jack Sparrow"	"cutlass"	0.487757135389194
+"635"	635	"female"	"yes"	25	"Captain Chunk's Canon Crew"	9	1	3	"Anicetus"	"scimitar"	2.08044377621263
+"636"	636	"female"	"no"	34	"Jack Sparrow's School of Fashion and Piratry"	5	4	2	"Blackbeard"	"sabre"	0.434601872361132
+"637"	637	"male"	"no"	24	"Captain Chunk's Canon Crew"	2	1	1	"Jack Sparrow"	"sabre"	0.114588720857033
+"638"	638	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	15	17	7	"Jack Sparrow"	"cutlass"	0.418684395062277
+"639"	639	"male"	"yes"	25	"Captain Chunk's Canon Crew"	13	7	1	"Jack Sparrow"	"cutlass"	0.19355215179487
+"640"	640	"male"	"yes"	21	"Captain Chunk's Canon Crew"	6	2	4	"Lewis Scot"	"cutlass"	1.75658987358886
+"641"	641	"male"	"yes"	15	"Captain Chunk's Canon Crew"	12	1	0	"Jack Sparrow"	"cutlass"	0.875052177151448
+"642"	642	"male"	"yes"	24	"Captain Chunk's Canon Crew"	11	4	2	"Lewis Scot"	"cutlass"	0.310487261158414
+"643"	643	"male"	"yes"	999	"Captain Chunk's Canon Crew"	11	14	0	"Anicetus"	"cutlass"	0.737325423370868
+"644"	644	"male"	"yes"	25	"Captain Chunk's Canon Crew"	8	20	0	"Jack Sparrow"	"cutlass"	2.47948801481076
+"645"	645	"male"	"no"	22	"Captain Chunk's Canon Crew"	7	1	3	"Jack Sparrow"	"sabre"	2.6509777614977
+"646"	646	"male"	"yes"	26	"Captain Chunk's Canon Crew"	8	10	4	"Jack Sparrow"	"cutlass"	0.8533838949835
+"647"	647	"male"	"yes"	10	"Captain Chunk's Canon Crew"	11	6	3	"Anicetus"	"cutlass"	0.836168674842276
+"648"	648	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	10	3	8	"Hook"	"cutlass"	0.331953288696241
+"649"	649	"male"	"yes"	20	"Captain Chunk's Canon Crew"	14	4	2	"Jack Sparrow"	"cutlass"	0.821002542480648
+"650"	650	"other/NA"	"yes"	26	"Captain Chunk's Canon Crew"	10	11	0	"Blackbeard"	"cutlass"	0.370048146869522
+"651"	651	"male"	"yes"	19	"Captain Chunk's Canon Crew"	12	2	2	"Jack Sparrow"	"cutlass"	1.19661350380035
+"652"	652	"male"	"yes"	28	"Captain Chunk's Canon Crew"	12	3	5	"Lewis Scot"	"cutlass"	0.261583419051021
+"653"	653	"male"	"no"	27	"Captain Chunk's Canon Crew"	13	1	1	"Jack Sparrow"	"banana"	0.786146419441264
+"654"	654	"male"	"yes"	11	"Captain Chunk's Canon Crew"	13	4	0	"Jack Sparrow"	"cutlass"	0.202923358189137
+"655"	655	"female"	"no"	26	"Captain Chunk's Canon Crew"	5	7	0	"Lewis Scot"	"sabre"	0.281070822716824
+"656"	656	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	9	9	2	"Edward Low"	"cutlass"	0.355776018113829
+"657"	657	"female"	"yes"	25	"Captain Chunk's Canon Crew"	5	4	3	"Anicetus"	"cutlass"	0.0770624133292586
+"658"	658	"female"	"yes"	28	"Captain Chunk's Canon Crew"	7	6	6	"Anicetus"	"cutlass"	1.66894695364444
+"659"	659	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	11	51	15	"Jack Sparrow"	"cutlass"	1.35988643306869
+"660"	660	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	8	11	4	"Jack Sparrow"	"cutlass"	0.0562787882518023
+"661"	661	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	11	5	3	"Blackbeard"	"cutlass"	0.331872763345018
+"662"	662	"male"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	9	20	3	"Edward Low"	"sabre"	4.17075288157567
+"663"	663	"other/NA"	"yes"	24	"Captain Chunk's Canon Crew"	11	1	1	"Jack Sparrow"	"cutlass"	0.12813761746898
+"664"	664	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	8	35	1	"Blackbeard"	"sabre"	1.37851669297864
+"665"	665	"male"	"yes"	28	"Captain Chunk's Canon Crew"	7	2	3	"Jack Sparrow"	"cutlass"	0.240589133172307
+"666"	666	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	13	1	2	"Lewis Scot"	"cutlass"	0.215860222233459
+"667"	667	"male"	"yes"	22	"Captain Chunk's Canon Crew"	7	14	3	"Jack Sparrow"	"cutlass"	0.47658269582019
+"668"	668	"female"	"yes"	30	"Captain Chunk's Canon Crew"	13	3	0	"Jack Sparrow"	"cutlass"	1.14631604624006
+"669"	669	"male"	"yes"	24	"Captain Chunk's Canon Crew"	8	1	0	"Jack Sparrow"	"cutlass"	1.07490035901157
+"670"	670	"male"	"no"	23	"Captain Chunk's Canon Crew"	8	0	5	"Jack Sparrow"	"banana"	1.2175344121418
+"671"	671	"male"	"yes"	22	"Captain Chunk's Canon Crew"	6	16	1	"Jack Sparrow"	"sabre"	1.0476143360588
+"672"	672	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	11	23	4	"Jack Sparrow"	"cutlass"	0.184181289223488
+"673"	673	"male"	"yes"	26	"Captain Chunk's Canon Crew"	16	2	3	"Jack Sparrow"	"cutlass"	0.424890344729647
+"674"	674	"male"	"yes"	20	"Captain Chunk's Canon Crew"	15	2	1	"Jack Sparrow"	"cutlass"	1.88662694756615
+"675"	675	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	10	4	41	"Jack Sparrow"	"cutlass"	2.09464504838663
+"676"	676	"male"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	10	8	9	"Lewis Scot"	"cutlass"	0.375564091082197
+"677"	677	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	7	3	0	"Hook"	"cutlass"	0.369884013780393
+"678"	678	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	2	1	8	"Jack Sparrow"	"cutlass"	0.338835292637378
+"679"	679	"male"	"yes"	15	"Captain Chunk's Canon Crew"	13	2	1	"Jack Sparrow"	"cutlass"	0.238567595661152
+"680"	680	"female"	"yes"	24	"Captain Chunk's Canon Crew"	7	16	1	"Jack Sparrow"	"cutlass"	0.0776076028705575
+"681"	681	"male"	"yes"	25	"Captain Chunk's Canon Crew"	14	5	2	"Lewis Scot"	"cutlass"	0.437151802444652
+"682"	682	"male"	"yes"	25	"Captain Chunk's Canon Crew"	8	9	1	"Anicetus"	"cutlass"	0.824797219803378
+"683"	683	"female"	"yes"	28	"Captain Chunk's Canon Crew"	7	33	0	"Hook"	"cutlass"	0.715150270817623
+"684"	684	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	9	9	5	"Lewis Scot"	"cutlass"	1.86201514665711
+"685"	685	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	9	4	1	"Edward Low"	"sabre"	2.11158854576449
+"686"	686	"male"	"yes"	29	"Captain Chunk's Canon Crew"	10	3	3	"Anicetus"	"cutlass"	0.0188572994799502
+"687"	687	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	7	14	1	"Blackbeard"	"cutlass"	0.0328552808832854
+"688"	688	"female"	"yes"	17	"Captain Chunk's Canon Crew"	10	2	1	"Jack Sparrow"	"cutlass"	0.923523199692011
+"689"	689	"male"	"no"	26	"Captain Chunk's Canon Crew"	6	3	0	"Jack Sparrow"	"sabre"	0.617553575026971
+"690"	690	"male"	"yes"	27	"Captain Chunk's Canon Crew"	8	13	2	"Jack Sparrow"	"cutlass"	0.159292673643668
+"691"	691	"other/NA"	"yes"	21	"Captain Chunk's Canon Crew"	11	5	2	"Lewis Scot"	"cutlass"	2.29774996974416
+"692"	692	"female"	"yes"	18	"Captain Chunk's Canon Crew"	8	2	1	"Edward Low"	"cutlass"	0.482372094766488
+"693"	693	"male"	"yes"	23	"Captain Chunk's Canon Crew"	11	18	0	"Jack Sparrow"	"cutlass"	0.0961496061780669
+"694"	694	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	11	10	4	"Jack Sparrow"	"cutlass"	0.892944633908212
+"695"	695	"female"	"sometimes"	33	"Jack Sparrow's School of Fashion and Piratry"	9	0	1	"Lewis Scot"	"cutlass"	0.0977058452554047
+"696"	696	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	12	5	7	"Jack Sparrow"	"cutlass"	0.205016222025733
+"697"	697	"male"	"yes"	24	"Captain Chunk's Canon Crew"	13	2	2	"Jack Sparrow"	"cutlass"	1.12339927111158
+"698"	698	"other/NA"	"yes"	29	"Captain Chunk's Canon Crew"	7	3	6	"Blackbeard"	"cutlass"	1.86634374306279
+"699"	699	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	11	13	2	"Lewis Scot"	"cutlass"	0.0467185362242692
+"700"	700	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	16	2	5	"Jack Sparrow"	"scimitar"	6.05543493737883
+"701"	701	"male"	"yes"	18	"Captain Chunk's Canon Crew"	18	9	3	"Jack Sparrow"	"cutlass"	0.168325420236215
+"702"	702	"female"	"yes"	28	"Captain Chunk's Canon Crew"	14	0	0	"Hook"	"cutlass"	2.34368806109674
+"703"	703	"male"	"yes"	27	"Captain Chunk's Canon Crew"	9	3	0	"Hook"	"cutlass"	0.838358623415053
+"704"	704	"male"	"yes"	23	"Captain Chunk's Canon Crew"	4	0	2	"Jack Sparrow"	"cutlass"	0.0219793037446628
+"705"	705	"male"	"yes"	23	"Captain Chunk's Canon Crew"	10	3	2	"Jack Sparrow"	"cutlass"	0.380744768772274
+"706"	706	"other/NA"	"yes"	24	"Captain Chunk's Canon Crew"	8	26	1	"Blackbeard"	"cutlass"	1.26498343417758
+"707"	707	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	5	4	2	"Hook"	"cutlass"	2.60401011661705
+"708"	708	"female"	"no"	36	"Jack Sparrow's School of Fashion and Piratry"	8	8	1	"Blackbeard"	"scimitar"	1.66746224735381
+"709"	709	"female"	"yes"	40	"Jack Sparrow's School of Fashion and Piratry"	12	13	1	"Hook"	"cutlass"	0.353467089880724
+"710"	710	"male"	"yes"	28	"Captain Chunk's Canon Crew"	19	4	1	"Lewis Scot"	"cutlass"	1.05524460896255
+"711"	711	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	11	1	1	"Edward Low"	"cutlass"	0.176968547748402
+"712"	712	"male"	"yes"	27	"Captain Chunk's Canon Crew"	9	4	3	"Jack Sparrow"	"cutlass"	0.302098381216638
+"713"	713	"female"	"yes"	28	"Captain Chunk's Canon Crew"	11	14	1	"Hook"	"cutlass"	1.10567260877566
+"714"	714	"female"	"yes"	27	"Captain Chunk's Canon Crew"	7	6	10	"Anicetus"	"cutlass"	1.70550420988856
+"715"	715	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	14	29	2	"Blackbeard"	"cutlass"	0.299344229570124
+"716"	716	"male"	"yes"	13	"Captain Chunk's Canon Crew"	8	1	0	"Blackbeard"	"banana"	2.89231784861315
+"717"	717	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	7	14	0	"Hook"	"cutlass"	0.687984558145337
+"718"	718	"other/NA"	"yes"	24	"Captain Chunk's Canon Crew"	13	1	0	"Hook"	"cutlass"	0.297818312537856
+"719"	719	"female"	"yes"	16	"Captain Chunk's Canon Crew"	5	0	1	"Blackbeard"	"cutlass"	0.138760917179752
+"720"	720	"male"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	10	9	1	"Lewis Scot"	"cutlass"	0.064617732714396
+"721"	721	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	15	9	3	"Anicetus"	"cutlass"	0.721288706835379
+"722"	722	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	13	2	3	"Anicetus"	"cutlass"	0.25484614277957
+"723"	723	"male"	"yes"	24	"Captain Chunk's Canon Crew"	10	3	1	"Jack Sparrow"	"cutlass"	0.0754760979907587
+"724"	724	"male"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	7	8	1	"Jack Sparrow"	"cutlass"	0.223623249558269
+"725"	725	"male"	"yes"	21	"Captain Chunk's Canon Crew"	11	3	2	"Jack Sparrow"	"cutlass"	0.285719094986819
+"726"	726	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	13	2	1	"Blackbeard"	"cutlass"	0.810349900249213
+"727"	727	"female"	"yes"	28	"Captain Chunk's Canon Crew"	13	4	9	"Jack Sparrow"	"scimitar"	9.25542670260084
+"728"	728	"male"	"yes"	18	"Captain Chunk's Canon Crew"	9	9	1	"Jack Sparrow"	"cutlass"	0.720999047017478
+"729"	729	"female"	"yes"	30	"Captain Chunk's Canon Crew"	8	3	3	"Blackbeard"	"cutlass"	0.316720795315573
+"730"	730	"female"	"yes"	28	"Captain Chunk's Canon Crew"	9	20	1	"Anicetus"	"cutlass"	0.250253115955275
+"731"	731	"male"	"yes"	28	"Captain Chunk's Canon Crew"	14	9	0	"Jack Sparrow"	"cutlass"	0.320495452324394
+"732"	732	"other/NA"	"yes"	31	"Captain Chunk's Canon Crew"	10	3	4	"Lewis Scot"	"cutlass"	1.03397588705981
+"733"	733	"male"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	14	9	2	"Jack Sparrow"	"cutlass"	0.46835613667202
+"734"	734	"male"	"yes"	27	"Captain Chunk's Canon Crew"	12	4	5	"your mom"	"cutlass"	0.550599478857413
+"735"	735	"male"	"yes"	23	"Captain Chunk's Canon Crew"	9	0	6	"Jack Sparrow"	"cutlass"	0.714291498853646
+"736"	736	"female"	"yes"	30	"Captain Chunk's Canon Crew"	10	16	0	"Jack Sparrow"	"cutlass"	0.0351671045063995
+"737"	737	"male"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	-10	36	12	"Jack Sparrow"	"cutlass"	0.373807359355012
+"738"	738	"female"	"yes"	29	"Captain Chunk's Canon Crew"	4	3	1	"Hook"	"cutlass"	0.297958357057982
+"739"	739	"male"	"yes"	28	"Jack Sparrow's School of Fashion and Piratry"	8	2	1	"Blackbeard"	"cutlass"	0.0264870491810143
+"740"	740	"male"	"yes"	29	"Captain Chunk's Canon Crew"	8	2	0	"Blackbeard"	"cutlass"	0.134210642136168
+"741"	741	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	12	2	5	"Jack Sparrow"	"cutlass"	1.08810594765806
+"742"	742	"male"	"no"	26	"Captain Chunk's Canon Crew"	6	3	6	"Jack Sparrow"	"scimitar"	1.26839449180057
+"743"	743	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	12	0	5	"Jack Sparrow"	"cutlass"	1.28927395091729
+"744"	744	"male"	"no"	26	"Captain Chunk's Canon Crew"	5	1	1	"Jack Sparrow"	"banana"	0.58781052191478
+"745"	745	"male"	"yes"	22	"Captain Chunk's Canon Crew"	13	3	0	"Lewis Scot"	"cutlass"	2.29277038351543
+"746"	746	"male"	"yes"	23	"Captain Chunk's Canon Crew"	9	1	1	"Anicetus"	"scimitar"	12.872394037894
+"747"	747	"female"	"yes"	25	"Captain Chunk's Canon Crew"	8	0	1	"Hook"	"cutlass"	0.204195439873729
+"748"	748	"male"	"yes"	24	"Captain Chunk's Canon Crew"	14	12	6	"Edward Low"	"cutlass"	2.08133695636618
+"749"	749	"male"	"yes"	21	"Captain Chunk's Canon Crew"	10	5	1	"Lewis Scot"	"cutlass"	0.0188917791820131
+"750"	750	"male"	"yes"	24	"Captain Chunk's Canon Crew"	9	9	1	"Jack Sparrow"	"cutlass"	0.123813104873989
+"751"	751	"male"	"yes"	17	"Captain Chunk's Canon Crew"	9	6	1	"Jack Sparrow"	"cutlass"	0.020190600771457
+"752"	752	"male"	"yes"	21	"Captain Chunk's Canon Crew"	14	6	0	"Jack Sparrow"	"cutlass"	0.348077087546699
+"753"	753	"other/NA"	"yes"	26	"Captain Chunk's Canon Crew"	1e+06	2	1	"Lewis Scot"	"cutlass"	1.02298744832502
+"754"	754	"male"	"yes"	24	"Captain Chunk's Canon Crew"	8	11	1	"Jack Sparrow"	"sabre"	2.08094097208232
+"755"	755	"female"	"yes"	25	"Captain Chunk's Canon Crew"	13	11	1	"Anicetus"	"cutlass"	0.0471623404882848
+"756"	756	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	9	3	2	"Anicetus"	"cutlass"	1.71722130027173
+"757"	757	"male"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	17	15	6	"Jack Sparrow"	"cutlass"	0.133116496726871
+"758"	758	"male"	"yes"	27	"Captain Chunk's Canon Crew"	8	1	1	"Jack Sparrow"	"cutlass"	0.669265597799614
+"759"	759	"female"	"yes"	25	"Captain Chunk's Canon Crew"	7	2	2	"Jack Sparrow"	"cutlass"	0.393187552981544
+"760"	760	"male"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	12	5	4	"Jack Sparrow"	"cutlass"	0.00420422642491758
+"761"	761	"male"	"yes"	30	"Captain Chunk's Canon Crew"	8	7	1	"Lewis Scot"	"scimitar"	2.02616156311706
+"762"	762	"female"	"yes"	28	"Captain Chunk's Canon Crew"	11	0	4	"Lewis Scot"	"cutlass"	1.56052911296992
+"763"	763	"male"	"yes"	22	"Captain Chunk's Canon Crew"	12	5	0	"Blackbeard"	"cutlass"	0.884549189306438
+"764"	764	"male"	"no"	25	"Captain Chunk's Canon Crew"	0	1	1	"Jack Sparrow"	"banana"	1.11204275361921
+"765"	765	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	10	9	0	"Blackbeard"	"cutlass"	0.145107396529056
+"766"	766	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	9	7	4	"Anicetus"	"cutlass"	0.0129301674314775
+"767"	767	"male"	"yes"	18	"Captain Chunk's Canon Crew"	8	3	4	"Jack Sparrow"	"sabre"	0.607650890015066
+"768"	768	"male"	"yes"	27	"Captain Chunk's Canon Crew"	6	4	1	"Jack Sparrow"	"cutlass"	0.267238413507584
+"769"	769	"other/NA"	"yes"	20	"Captain Chunk's Canon Crew"	8	0	2	"Lewis Scot"	"cutlass"	0.410761306993663
+"770"	770	"male"	"yes"	22	"Captain Chunk's Canon Crew"	6	5	1	"Jack Sparrow"	"cutlass"	0.520121219425283
+"771"	771	"other/NA"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	15	16	1	"Hook"	"cutlass"	0.398589609831106
+"772"	772	"male"	"yes"	22	"Captain Chunk's Canon Crew"	10	28	4	"Jack Sparrow"	"cutlass"	0.365538870391902
+"773"	773	"other/NA"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	8	2	2	"Jack Sparrow"	"cutlass"	0.47872055309025
+"774"	774	"female"	"yes"	12	"Captain Chunk's Canon Crew"	9	7	0	"Lewis Scot"	"cutlass"	0.0215812679051222
+"775"	775	"male"	"yes"	19	"Captain Chunk's Canon Crew"	5	3	3	"Jack Sparrow"	"cutlass"	0.0935334144742228
+"776"	776	"male"	"yes"	14	"Captain Chunk's Canon Crew"	13	1	0	"Jack Sparrow"	"scimitar"	1.89514057012275
+"777"	777	"male"	"yes"	22	"Captain Chunk's Canon Crew"	9	2	3	"Jack Sparrow"	"cutlass"	0.142937810982453
+"778"	778	"male"	"yes"	25	"Captain Chunk's Canon Crew"	10	9	4	"Jack Sparrow"	"cutlass"	0.0430921337101609
+"779"	779	"female"	"yes"	24	"Captain Chunk's Canon Crew"	8	7	0	"Jack Sparrow"	"cutlass"	0.165844075963832
+"780"	780	"male"	"yes"	24	"Captain Chunk's Canon Crew"	9	1	1	"Jack Sparrow"	"cutlass"	0.45521162098442
+"781"	781	"male"	"no"	22	"Captain Chunk's Canon Crew"	4	16	1	"Jack Sparrow"	"banana"	0.271550891818499
+"782"	782	"female"	"yes"	25	"Captain Chunk's Canon Crew"	11	2	4	"Hook"	"cutlass"	1.26290476410055
+"783"	783	"male"	"yes"	8	"Captain Chunk's Canon Crew"	12	5	1	"your mom"	"cutlass"	0.565997781876591
+"784"	784	"female"	"yes"	27	"Captain Chunk's Canon Crew"	7	1	2	"Edward Low"	"cutlass"	0.228990777293973
+"785"	785	"male"	"yes"	21	"Captain Chunk's Canon Crew"	10	2	0	"Edward Low"	"cutlass"	0.200348743743807
+"786"	786	"male"	"yes"	20	"Captain Chunk's Canon Crew"	7	7	1	"Hook"	"cutlass"	1.02937571253581
+"787"	787	"female"	"yes"	31	"Captain Chunk's Canon Crew"	16	1	3	"Edward Low"	"cutlass"	0.641394365823344
+"788"	788	"male"	"yes"	18	"Captain Chunk's Canon Crew"	9	1	1	"Jack Sparrow"	"cutlass"	1.09891723486932
+"789"	789	"male"	"yes"	25	"Captain Chunk's Canon Crew"	4	2	1	"Jack Sparrow"	"cutlass"	0.040003957868458
+"790"	790	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	9	0	0	"Hook"	"sabre"	2.75393369994527
+"791"	791	"female"	"yes"	25	"Captain Chunk's Canon Crew"	13	9	0	"Lewis Scot"	"cutlass"	0.179392618865054
+"792"	792	"female"	"yes"	32	"Captain Chunk's Canon Crew"	12	2	7	"Lewis Scot"	"cutlass"	0.475608687821597
+"793"	793	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	9	28	10	"Hook"	"cutlass"	0.488193715547033
+"794"	794	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	1e+06	8	3	"Blackbeard"	"cutlass"	2.22195282914586
+"795"	795	"male"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	15	23	3	"Edward Low"	"cutlass"	0.0802835827926174
+"796"	796	"male"	"yes"	27	"Captain Chunk's Canon Crew"	9	12	5	"Jack Sparrow"	"cutlass"	0.377437520364765
+"797"	797	"female"	"no"	29	"Captain Chunk's Canon Crew"	3	3	6	"Blackbeard"	"cutlass"	1.14497906242715
+"798"	798	"female"	"yes"	28	"Captain Chunk's Canon Crew"	6	10	1	"Edward Low"	"cutlass"	3.25768352648018
+"799"	799	"female"	"yes"	31	"Captain Chunk's Canon Crew"	9	1	1	"Hook"	"cutlass"	0.49362255780918
+"800"	800	"female"	"yes"	23	"Captain Chunk's Canon Crew"	7	7	1	"Edward Low"	"cutlass"	0.869178919767604
+"801"	801	"male"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	11	4	2	"Jack Sparrow"	"scimitar"	7.27929249363852
+"802"	802	"female"	"yes"	29	"Captain Chunk's Canon Crew"	11	1	1	"Jack Sparrow"	"cutlass"	0.226685947529175
+"803"	803	"female"	"yes"	31	"Captain Chunk's Canon Crew"	14	15	3	"Blackbeard"	"cutlass"	0.49030005871021
+"804"	804	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	6	2	27	"Hook"	"cutlass"	0.329132496262901
+"805"	805	"female"	"yes"	26	"Captain Chunk's Canon Crew"	5	4	0	"Jack Sparrow"	"cutlass"	2.3894831851209
+"806"	806	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	12	1	2	"Hook"	"cutlass"	0.267625293927267
+"807"	807	"male"	"yes"	25	"Captain Chunk's Canon Crew"	13	27	1	"Jack Sparrow"	"sabre"	6.97484127514275
+"808"	808	"male"	"yes"	22	"Captain Chunk's Canon Crew"	9	13	8	"Jack Sparrow"	"cutlass"	0.508221368046299
+"809"	809	"male"	"yes"	24	"Captain Chunk's Canon Crew"	12	3	5	"Blackbeard"	"cutlass"	0.0230927741910556
+"810"	810	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	8	3	1	"Edward Low"	"cutlass"	0.0661109232778571
+"811"	811	"female"	"yes"	27	"Captain Chunk's Canon Crew"	8	1	1	"Jack Sparrow"	"cutlass"	1.60075160084797
+"812"	812	"male"	"yes"	20	"Captain Chunk's Canon Crew"	11	1	1	"Jack Sparrow"	"cutlass"	0.95336851891467
+"813"	813	"male"	"yes"	25	"Captain Chunk's Canon Crew"	11	1	3	"Jack Sparrow"	"cutlass"	0.731734489471395
+"814"	814	"female"	"what is a headband?"	31	"Captain Chunk's Canon Crew"	6	2	3	"Hook"	"sabre"	5.13284567715534
+"815"	815	"male"	"yes"	18	"Captain Chunk's Canon Crew"	7	0	0	"Jack Sparrow"	"cutlass"	0.606039260138579
+"816"	816	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	11	8	3	"Lewis Scot"	"cutlass"	0.182432517176494
+"817"	817	"other/NA"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	15	15	5	"Anicetus"	"cutlass"	0.350595792406239
+"818"	818	"female"	"yes"	23	"Captain Chunk's Canon Crew"	13	8	1	"Anicetus"	"cutlass"	1.56697460558771
+"819"	819	"female"	"yes"	20	"Captain Chunk's Canon Crew"	12	8	1	"Blackbeard"	"cutlass"	0.164188003982417
+"820"	820	"male"	"yes"	27	"Captain Chunk's Canon Crew"	8	0	3	"Jack Sparrow"	"cutlass"	0.76107853839048
+"821"	821	"male"	"yes"	26	"Captain Chunk's Canon Crew"	8	4	9	"Jack Sparrow"	"cutlass"	0.435693491668621
+"822"	822	"male"	"yes"	28	"Captain Chunk's Canon Crew"	0	0	1	"Jack Sparrow"	"cutlass"	0.627406016547986
+"823"	823	"male"	"yes"	25	"Captain Chunk's Canon Crew"	13	26	2	"Jack Sparrow"	"cutlass"	0.59131924875249
+"824"	824	"male"	"yes"	21	"Captain Chunk's Canon Crew"	9	15	2	"Jack Sparrow"	"cutlass"	0.791992552714174
+"825"	825	"male"	"yes"	32	"Captain Chunk's Canon Crew"	6	2	1	"Jack Sparrow"	"cutlass"	0.571874963675228
+"826"	826	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	15	6	4	"Lewis Scot"	"cutlass"	0.00151303400524904
+"827"	827	"female"	"yes"	32	"Captain Chunk's Canon Crew"	13	18	2	"Blackbeard"	"cutlass"	0.0212299707346974
+"828"	828	"male"	"yes"	28	"Captain Chunk's Canon Crew"	13	14	0	"Jack Sparrow"	"cutlass"	1.37316708781718
+"829"	829	"female"	"yes"	26	"Captain Chunk's Canon Crew"	6	4	0	"Hook"	"cutlass"	0.00375071918824688
+"830"	830	"male"	"yes"	26	"Captain Chunk's Canon Crew"	6	18	2	"Jack Sparrow"	"cutlass"	0.205134869379087
+"831"	831	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	11	6	1	"Jack Sparrow"	"cutlass"	0.235485352168325
+"832"	832	"female"	"yes"	26	"Captain Chunk's Canon Crew"	10	4	2	"Anicetus"	"cutlass"	0.610106731738716
+"833"	833	"female"	"yes"	29	"Captain Chunk's Canon Crew"	7	0	4	"Edward Low"	"cutlass"	0.281481449231838
+"834"	834	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	6	3	1	"Edward Low"	"cutlass"	0.0118012563325465
+"835"	835	"female"	"yes"	500	"Jack Sparrow's School of Fashion and Piratry"	16	4	0	"Edward Low"	"cutlass"	0.102197446394712
+"836"	836	"female"	"yes"	29	"Captain Chunk's Canon Crew"	12	12	1	"Anicetus"	"cutlass"	0.0891807304391541
+"837"	837	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	14	0	1	"Jack Sparrow"	"sabre"	0.546032548882067
+"838"	838	"male"	"yes"	23	"Captain Chunk's Canon Crew"	12	22	2	"Anicetus"	"cutlass"	0.938499371411065
+"839"	839	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	9	12	1	"Blackbeard"	"cutlass"	0.00169235230419049
+"840"	840	"male"	"no"	27	"Captain Chunk's Canon Crew"	7	11	1	"Anicetus"	"sabre"	0.0482684886083007
+"841"	841	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	9	4	5	"Jack Sparrow"	"cutlass"	0.811298495365128
+"842"	842	"male"	"yes"	21	"Captain Chunk's Canon Crew"	5	2	0	"Jack Sparrow"	"scimitar"	13.0617008388665
+"843"	843	"male"	"yes"	28	"Captain Chunk's Canon Crew"	7	9	2	"Jack Sparrow"	"scimitar"	3.43651962932199
+"844"	844	"female"	"yes"	40	"Jack Sparrow's School of Fashion and Piratry"	11	1	6	"Anicetus"	"cutlass"	0.229017259510458
+"845"	845	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	9	4	1	"Hook"	"cutlass"	0.531149163372592
+"846"	846	"male"	"yes"	16	"Captain Chunk's Canon Crew"	8	8	4	"Jack Sparrow"	"cutlass"	0.145725954008097
+"847"	847	"female"	"yes"	40	"Jack Sparrow's School of Fashion and Piratry"	10	27	1	"Edward Low"	"cutlass"	0.834454235710956
+"848"	848	"male"	"yes"	23	"Captain Chunk's Canon Crew"	10	8	2	"Anicetus"	"cutlass"	0.0269080448197201
+"849"	849	"male"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	10	5	0	"Anicetus"	"cutlass"	0.592899498223178
+"850"	850	"male"	"yes"	24	"Captain Chunk's Canon Crew"	8	4	4	"Hook"	"cutlass"	0.114462353812996
+"851"	851	"female"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	10	23	7	"Hook"	"cutlass"	0.495776983999469
+"852"	852	"male"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	6	18	4	"Jack Sparrow"	"banana"	12.8934865107994
+"853"	853	"male"	"yes"	18	"Captain Chunk's Canon Crew"	10	2	2	"Jack Sparrow"	"cutlass"	0.218917717284057
+"854"	854	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	9	5	1	"Anicetus"	"cutlass"	1.41795895636587
+"855"	855	"female"	"yes"	39	"Jack Sparrow's School of Fashion and Piratry"	10	48	8	"Blackbeard"	"scimitar"	19.6346894920546
+"856"	856	"other/NA"	"no"	26	"Captain Chunk's Canon Crew"	8	4	2	"Edward Low"	"banana"	6.68400262017375
+"857"	857	"male"	"yes"	27	"Captain Chunk's Canon Crew"	4	1	4	"Jack Sparrow"	"cutlass"	0.359748092058023
+"858"	858	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	10	12	2	"Anicetus"	"cutlass"	0.289955716871191
+"859"	859	"male"	"yes"	21	"Captain Chunk's Canon Crew"	13	8	1	"Jack Sparrow"	"cutlass"	0.341430087282788
+"860"	860	"female"	"yes"	18	"Captain Chunk's Canon Crew"	6	8	0	"Edward Low"	"banana"	2.87382634585494
+"861"	861	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	7	6	4	"Jack Sparrow"	"cutlass"	1.81373366166185
+"862"	862	"female"	"yes"	28	"Captain Chunk's Canon Crew"	11	25	8	"Hook"	"cutlass"	0.785583166262888
+"863"	863	"other/NA"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	7	7	6	"Anicetus"	"cutlass"	0.550037284534258
+"864"	864	"male"	"yes"	32	"Captain Chunk's Canon Crew"	11	2	4	"Jack Sparrow"	"cutlass"	0.102498511510572
+"865"	865	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	10	1	4	"Blackbeard"	"cutlass"	0.05576521957135
+"866"	866	"female"	"no"	31	"Jack Sparrow's School of Fashion and Piratry"	8	1	10	"Jack Sparrow"	"banana"	0.89512096367474
+"867"	867	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	8	3	1	"Anicetus"	"cutlass"	0.222302339117396
+"868"	868	"other/NA"	"yes"	28	"Captain Chunk's Canon Crew"	7	12	1	"Hook"	"cutlass"	1.57834567936643
+"869"	869	"male"	"yes"	27	"Captain Chunk's Canon Crew"	13	2	3	"Jack Sparrow"	"cutlass"	0.379211022227537
+"870"	870	"male"	"yes"	24	"Captain Chunk's Canon Crew"	5	6	2	"Jack Sparrow"	"cutlass"	0.18701871428919
+"871"	871	"female"	"yes"	27	"Captain Chunk's Canon Crew"	11	1	1	"Anicetus"	"cutlass"	0.00795579340774566
+"872"	872	"female"	"yes"	21	"Captain Chunk's Canon Crew"	16	6	1	"Blackbeard"	"cutlass"	0.557713042536628
+"873"	873	"male"	"yes"	25	"Captain Chunk's Canon Crew"	11	22	0	"Blackbeard"	"cutlass"	1.50510932660235
+"874"	874	"male"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	16	1	17	"Jack Sparrow"	"cutlass"	0.174470852714543
+"875"	875	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	8	12	0	"Lewis Scot"	"cutlass"	0.993821874674052
+"876"	876	"male"	"yes"	15	"Captain Chunk's Canon Crew"	11	16	1	"Jack Sparrow"	"cutlass"	0.0346391357015818
+"877"	877	"male"	"yes"	23	"Captain Chunk's Canon Crew"	12	2	1	"Jack Sparrow"	"cutlass"	0.319242205770733
+"878"	878	"female"	"yes"	27	"Captain Chunk's Canon Crew"	9	23	1	"Anicetus"	"sabre"	14.4908503310425
+"879"	879	"male"	"yes"	30	"Captain Chunk's Canon Crew"	10	2	4	"Jack Sparrow"	"cutlass"	0.0690279444097541
+"880"	880	"female"	"yes"	26	"Captain Chunk's Canon Crew"	10	28	2	"Blackbeard"	"cutlass"	0.373295720492024
+"881"	881	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	7	1	1	"Blackbeard"	"cutlass"	0.744570799262084
+"882"	882	"male"	"no"	18	"Captain Chunk's Canon Crew"	6	5	1	"Jack Sparrow"	"banana"	0.654559457140895
+"883"	883	"male"	"yes"	23	"Captain Chunk's Canon Crew"	4	4	0	"Jack Sparrow"	"cutlass"	0.591424090231965
+"884"	884	"male"	"yes"	25	"Captain Chunk's Canon Crew"	8	4	2	"Anicetus"	"cutlass"	0.375458669441286
+"885"	885	"female"	"yes"	26	"Captain Chunk's Canon Crew"	11	2	4	"Lewis Scot"	"cutlass"	0.551661328619167
+"886"	886	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	9	1	1	"Hook"	"cutlass"	0.92425553542734
+"887"	887	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	5	11	1	"your mom"	"cutlass"	0.363922537653707
+"888"	888	"male"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	5	14	10	"Jack Sparrow"	"cutlass"	1.08872844250278
+"889"	889	"female"	"yes"	25	"Captain Chunk's Canon Crew"	13	15	1	"Edward Low"	"cutlass"	0.620318470729336
+"890"	890	"male"	"yes"	28	"Captain Chunk's Canon Crew"	14	5	5	"Jack Sparrow"	"scimitar"	9.03887420850706
+"891"	891	"female"	"no"	33	"Jack Sparrow's School of Fashion and Piratry"	12	10	8	"Lewis Scot"	"sabre"	0.820633552170226
+"892"	892	"male"	"yes"	27	"Captain Chunk's Canon Crew"	11	34	0	"Jack Sparrow"	"scimitar"	4.52298769240683
+"893"	893	"male"	"yes"	23	"Captain Chunk's Canon Crew"	15	4	1	"Jack Sparrow"	"cutlass"	0.282790509227198
+"894"	894	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	6	1	0	"Hook"	"cutlass"	0.435149684172876
+"895"	895	"male"	"no"	27	"Captain Chunk's Canon Crew"	4	10	2	"Jack Sparrow"	"scimitar"	0.588888927207639
+"896"	896	"other/NA"	"yes"	27	"Captain Chunk's Canon Crew"	13	12	7	"Lewis Scot"	"cutlass"	0.60443007093557
+"897"	897	"female"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	11	3	4	"Blackbeard"	"cutlass"	0.867304400386731
+"898"	898	"female"	"no"	31	"Jack Sparrow's School of Fashion and Piratry"	10	8	1	"Lewis Scot"	"banana"	7.14466697908764
+"899"	899	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	10	0	2	"Hook"	"scimitar"	4.73092044860111
+"900"	900	"female"	"yes"	36	"Jack Sparrow's School of Fashion and Piratry"	7	13	4	"Lewis Scot"	"cutlass"	0.6982503283972
+"901"	901	"female"	"yes"	30	"Captain Chunk's Canon Crew"	9	15	1	"Blackbeard"	"cutlass"	0.0749206685577519
+"902"	902	"other/NA"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	10	25	1	"Blackbeard"	"cutlass"	1.06861953618342
+"903"	903	"female"	"yes"	23	"Captain Chunk's Canon Crew"	12	12	2	"Hook"	"cutlass"	1.16182806663552
+"904"	904	"male"	"yes"	20	"Captain Chunk's Canon Crew"	10	2	3	"Jack Sparrow"	"cutlass"	0.0809291587211192
+"905"	905	"female"	"yes"	28	"Jack Sparrow's School of Fashion and Piratry"	8	4	0	"Edward Low"	"cutlass"	0.0528589826120417
+"906"	906	"female"	"yes"	23	"Captain Chunk's Canon Crew"	6	20	1	"Anicetus"	"cutlass"	0.769987854265429
+"907"	907	"male"	"yes"	999	"Jack Sparrow's School of Fashion and Piratry"	10	4	3	"Blackbeard"	"cutlass"	0.547859229237594
+"908"	908	"male"	"no"	29	"Captain Chunk's Canon Crew"	7	5	1	"Jack Sparrow"	"scimitar"	1.37739721833867
+"909"	909	"female"	"yes"	29	"Captain Chunk's Canon Crew"	13	17	8	"Anicetus"	"cutlass"	0.443403880564378
+"910"	910	"male"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	11	2	10	"Jack Sparrow"	"cutlass"	0.118271969549824
+"911"	911	"other/NA"	"yes"	28	"Captain Chunk's Canon Crew"	9	7	4	"Blackbeard"	"cutlass"	0.49483429114037
+"912"	912	"female"	"yes"	29	"Captain Chunk's Canon Crew"	7	0	1	"Lewis Scot"	"cutlass"	0.440836435788708
+"913"	913	"male"	"yes"	999	"Captain Chunk's Canon Crew"	12	6	1	"Jack Sparrow"	"cutlass"	0.113656061157902
+"914"	914	"male"	"yes"	35	"Jack Sparrow's School of Fashion and Piratry"	13	2	1	"Blackbeard"	"cutlass"	0.406052644830197
+"915"	915	"female"	"yes"	30	"Captain Chunk's Canon Crew"	9	21	3	"Lewis Scot"	"scimitar"	0.368484049104154
+"916"	916	"male"	"yes"	500	"Captain Chunk's Canon Crew"	8	13	0	"Jack Sparrow"	"cutlass"	0.570841181654546
+"917"	917	"male"	"yes"	22	"Captain Chunk's Canon Crew"	14	4	3	"Jack Sparrow"	"cutlass"	0.370303427916951
+"918"	918	"female"	"yes"	44	"Jack Sparrow's School of Fashion and Piratry"	9	9	3	"Anicetus"	"scimitar"	3.55716631726778
+"919"	919	"other/NA"	"no"	28	"Captain Chunk's Canon Crew"	4	20	1	"Blackbeard"	"scimitar"	2.77634142130011
+"920"	920	"male"	"yes"	19	"Captain Chunk's Canon Crew"	12	0	4	"Jack Sparrow"	"cutlass"	1.61239556378259
+"921"	921	"male"	"yes"	26	"Captain Chunk's Canon Crew"	10	36	2	"Jack Sparrow"	"cutlass"	0.108203261333983
+"922"	922	"male"	"yes"	21	"Captain Chunk's Canon Crew"	7	2	0	"Jack Sparrow"	"cutlass"	0.37996913510908
+"923"	923	"female"	"yes"	23	"Captain Chunk's Canon Crew"	9	10	0	"Edward Low"	"cutlass"	1.52652493513888
+"924"	924	"male"	"yes"	19	NA	8	2	1	"Jack Sparrow"	"cutlass"	0.114455290604383
+"925"	925	"female"	"yes"	29	"Captain Chunk's Canon Crew"	13	5	4	"Anicetus"	"cutlass"	2.39274314940818
+"926"	926	"male"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	6	2	0	"Jack Sparrow"	"cutlass"	0.822484937935889
+"927"	927	"male"	"no"	26	"Captain Chunk's Canon Crew"	6	9	0	"Blackbeard"	"banana"	1.40088699383085
+"928"	928	"female"	"no"	32	"Jack Sparrow's School of Fashion and Piratry"	3	6	8	"Edward Low"	"cutlass"	0.640134463531381
+"929"	929	"female"	"yes"	29	"Captain Chunk's Canon Crew"	10	4	1	"Lewis Scot"	"cutlass"	1.01754623809235
+"930"	930	"yes please!"	"yes"	27	"Captain Chunk's Canon Crew"	10	1	3	"Hook"	"scimitar"	1.06998354429379
+"931"	931	"male"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	15	8	1	"Jack Sparrow"	"cutlass"	0.358410396729596
+"932"	932	"female"	"no"	27	"Captain Chunk's Canon Crew"	13	1	4	"Edward Low"	"cutlass"	0.346048900624737
+"933"	933	"female"	"yes"	24	"Captain Chunk's Canon Crew"	10	2	4	"Jack Sparrow"	"cutlass"	1.00661530162004
+"934"	934	"male"	"yes"	29	"Captain Chunk's Canon Crew"	9	3	3	"Jack Sparrow"	"cutlass"	1.64537895346566
+"935"	935	"female"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	5	5	7	"Blackbeard"	"cutlass"	0.320853281511049
+"936"	936	"female"	"yes"	27	NA	7	12	2	"Edward Low"	"sabre"	1.58303222463777
+"937"	937	"male"	"yes"	-99	"Captain Chunk's Canon Crew"	6	7	0	"Jack Sparrow"	"scimitar"	0.24876557989046
+"938"	938	"male"	"yes"	18	"Captain Chunk's Canon Crew"	11	0	0	"Jack Sparrow"	"cutlass"	2.92867926166472
+"939"	939	"male"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	11	15	3	"Jack Sparrow"	"cutlass"	0.350943105004262
+"940"	940	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	7	3	10	"Edward Low"	"cutlass"	1.21057435282843
+"941"	941	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	9	30	7	"Hook"	"cutlass"	0.475969315087113
+"942"	942	"male"	"yes"	28	"Captain Chunk's Canon Crew"	6	3	1	"Edward Low"	"scimitar"	5.04788345621895
+"943"	943	"other/NA"	"yes"	26	"Captain Chunk's Canon Crew"	9	2	1	"Anicetus"	"cutlass"	0.156485581895547
+"944"	944	"female"	"yes"	38	"Jack Sparrow's School of Fashion and Piratry"	4	3	1	"Hook"	"cutlass"	0.300284350814763
+"945"	945	"other/NA"	"yes"	25	"Captain Chunk's Canon Crew"	10	11	0	"Hook"	"cutlass"	0.507193507772765
+"946"	946	"female"	"yes"	23	"Captain Chunk's Canon Crew"	12	14	3	"Anicetus"	"scimitar"	0.231265253387392
+"947"	947	"female"	"yes"	37	"Jack Sparrow's School of Fashion and Piratry"	10	8	5	"Lewis Scot"	"cutlass"	0.225136886874679
+"948"	948	"male"	"yes"	20	"Captain Chunk's Canon Crew"	3	3	2	"Anicetus"	"cutlass"	0.130937936773989
+"949"	949	"female"	"yes"	29	"Captain Chunk's Canon Crew"	4	2	2	"Blackbeard"	"cutlass"	0.886972517421112
+"950"	950	"male"	"yes"	26	"Captain Chunk's Canon Crew"	8	2	2	"Lewis Scot"	"cutlass"	0.0114149657121634
+"951"	951	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	10	10	2	"Anicetus"	"cutlass"	0.140240066102706
+"952"	952	"male"	"yes"	14	"Captain Chunk's Canon Crew"	10	1	1	"Blackbeard"	"cutlass"	0.758106531549066
+"953"	953	"other/NA"	"no"	33	"Jack Sparrow's School of Fashion and Piratry"	6	21	1	"Hook"	"sabre"	0.652871959443603
+"954"	954	"female"	"yes"	28	"Captain Chunk's Canon Crew"	16	9	3	"Jack Sparrow"	"cutlass"	1.0721623632262
+"955"	955	"male"	"no"	-99	"Captain Chunk's Canon Crew"	2	5	5	"Jack Sparrow"	"scimitar"	0.566516032462309
+"956"	956	"male"	"yes"	26	"Captain Chunk's Canon Crew"	11	5	3	"Jack Sparrow"	"cutlass"	0.676470291774541
+"957"	957	"male"	"yes"	29	"Captain Chunk's Canon Crew"	10	3	1	"Jack Sparrow"	"cutlass"	0.011338792683091
+"958"	958	"male"	"yes"	27	"Captain Chunk's Canon Crew"	8	19	6	"Jack Sparrow"	"sabre"	2.14866632285217
+"959"	959	"male"	"no"	28	"Captain Chunk's Canon Crew"	4	14	2	"Jack Sparrow"	"banana"	7.07124337267855
+"960"	960	"male"	"yes"	25	"Captain Chunk's Canon Crew"	15	2	5	"Anicetus"	"cutlass"	1.56447255393995
+"961"	961	"female"	"yes"	27	"Captain Chunk's Canon Crew"	1	28	4	"Anicetus"	"cutlass"	0.757531708196558
+"962"	962	"female"	"no"	27	"Jack Sparrow's School of Fashion and Piratry"	8	8	1	"Anicetus"	"banana"	1.51264909502692
+"963"	963	"male"	"yes"	26	"Captain Chunk's Canon Crew"	7	11	1	"Jack Sparrow"	"cutlass"	0.121951838082168
+"964"	964	"female"	"what is a headband?"	29	"Jack Sparrow's School of Fashion and Piratry"	8	2	1	"Edward Low"	"cutlass"	1.17276319413783
+"965"	965	"other/NA"	"yes"	23	"Captain Chunk's Canon Crew"	9	2	1	"Lewis Scot"	"cutlass"	0.540427412462242
+"966"	966	"female"	"yes"	39	"Jack Sparrow's School of Fashion and Piratry"	6	4	21	"Lewis Scot"	"cutlass"	0.253280444012489
+"967"	967	"female"	"yes"	21	"Captain Chunk's Canon Crew"	8	5	2	"Blackbeard"	"banana"	4.11933631758084
+"968"	968	"male"	"yes"	22	"Captain Chunk's Canon Crew"	13	5	1	"Jack Sparrow"	"cutlass"	1.32578909681378
+"969"	969	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	9	11	9	"Hook"	"scimitar"	1.58893485087901
+"970"	970	"female"	"yes"	30	"Jack Sparrow's School of Fashion and Piratry"	13	1	0	"Anicetus"	"cutlass"	0.161011957018889
+"971"	971	"female"	"yes"	32	"Jack Sparrow's School of Fashion and Piratry"	15	14	5	"Blackbeard"	"cutlass"	0.137903692201819
+"972"	972	"female"	"yes"	26	"Captain Chunk's Canon Crew"	9	10	0	"Hook"	"cutlass"	0.685197428075418
+"973"	973	"male"	"yes"	26	"Captain Chunk's Canon Crew"	8	14	4	"Jack Sparrow"	"scimitar"	17.3008218771758
+"974"	974	"female"	"yes"	27	"Captain Chunk's Canon Crew"	5	5	5	"Hook"	"cutlass"	0.231749163358472
+"975"	975	"female"	"yes"	29	"Captain Chunk's Canon Crew"	10	10	2	"Hook"	"cutlass"	0.0553007888647596
+"976"	976	"female"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	11	13	2	"Jack Sparrow"	"cutlass"	0.396750260842964
+"977"	977	"male"	"yes"	17	"Captain Chunk's Canon Crew"	8	6	1	"Edward Low"	"sabre"	0.0911709014326334
+"978"	978	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	13	23	0	"Lewis Scot"	"cutlass"	0.591512235884252
+"979"	979	"male"	"yes"	21	"Captain Chunk's Canon Crew"	11	1	2	"Jack Sparrow"	"cutlass"	0.0803420008742251
+"980"	980	"male"	"yes"	27	"Captain Chunk's Canon Crew"	10	9	5	"Jack Sparrow"	"cutlass"	0.925455314520389
+"981"	981	"female"	"yes"	33	"Jack Sparrow's School of Fashion and Piratry"	10	2	12	"Jack Sparrow"	"cutlass"	0.218002960318699
+"982"	982	"male"	"yes"	18	"Captain Chunk's Canon Crew"	12	4	4	"Jack Sparrow"	"cutlass"	0.680383105619632
+"983"	983	"male"	"yes"	-99	"Captain Chunk's Canon Crew"	10	5	2	"Jack Sparrow"	"cutlass"	0.362910790136084
+"984"	984	"female"	"yes"	26	"Captain Chunk's Canon Crew"	4	0	2	"Edward Low"	"cutlass"	0.466830665801473
+"985"	985	"male"	"yes"	28	"Captain Chunk's Canon Crew"	13	20	3	"Jack Sparrow"	"cutlass"	0.76101873241999
+"986"	986	"male"	"yes"	23	"Captain Chunk's Canon Crew"	12	1	4	"Hook"	"cutlass"	0.0881506964043648
+"987"	987	"male"	"yes"	31	"Jack Sparrow's School of Fashion and Piratry"	13	5	4	"Jack Sparrow"	"cutlass"	2.17557618730612
+"988"	988	"male"	"yes"	19	"Captain Chunk's Canon Crew"	16	36	1	"Jack Sparrow"	"cutlass"	0.894082926626891
+"989"	989	"female"	"yes"	27	"Captain Chunk's Canon Crew"	9	7	9	"Lewis Scot"	"cutlass"	0.558182712132268
+"990"	990	"male"	"yes"	28	"Captain Chunk's Canon Crew"	13	5	1	"Jack Sparrow"	"cutlass"	0.886349559243411
+"991"	991	"female"	"yes"	24	"Captain Chunk's Canon Crew"	6	3	4	"Lewis Scot"	"scimitar"	19.7277792485656
+"992"	992	"female"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	14	9	3	"Lewis Scot"	"cutlass"	0.676676271488206
+"993"	993	"male"	"yes"	24	"Captain Chunk's Canon Crew"	12	9	1	"Anicetus"	"cutlass"	0.150713938637637
+"994"	994	"female"	"no"	34	"Jack Sparrow's School of Fashion and Piratry"	4	9	2	"Jack Sparrow"	"cutlass"	0.185416908535037
+"995"	995	"female"	"yes"	29	"Captain Chunk's Canon Crew"	11	1	0	"Blackbeard"	"cutlass"	0.575911932715509
+"996"	996	"male"	"yes"	11	"Captain Chunk's Canon Crew"	8	2	1	"Anicetus"	"cutlass"	0.824636735461474
+"997"	997	"other/NA"	"yes"	34	"Jack Sparrow's School of Fashion and Piratry"	13	1	7	"Anicetus"	"cutlass"	0.379018905697852
+"998"	998	"male"	"yes"	12345	"Captain Chunk's Canon Crew"	8	0	2	"Jack Sparrow"	"cutlass"	1.42926915191619
+"999"	999	"male"	"yes"	16	"Captain Chunk's Canon Crew"	13	0	2	"Jack Sparrow"	"sabre"	1.03950514302573
+"1000"	1000	"female"	"yes"	29	"Jack Sparrow's School of Fashion and Piratry"	8	2	0	"Blackbeard"	"cutlass"	0.375746497884393
