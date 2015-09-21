@@ -1,9 +1,9 @@
 \indexentry{license|hyperpage}{2}
-\indexentry{c()|hyperpage}{24}
-\indexentry{length()|hyperpage}{25}
+\indexentry{c()|hyperpage}{25}
+\indexentry{length()|hyperpage}{26}
 \indexentry{a:b|hyperpage}{26}
 \indexentry{seq()|hyperpage}{27}
-\indexentry{rep()|hyperpage}{27}
+\indexentry{rep()|hyperpage}{28}
 \indexentry{rnorm()|hyperpage}{32}
 \indexentry{runif()|hyperpage}{33}
 \indexentry{sample()|hyperpage}{34}
@@ -15,32 +15,31 @@
 \indexentry{data.frame()|hyperpage}{56}
 \indexentry{head()|hyperpage}{57}
 \indexentry{View()|hyperpage}{58}
-\indexentry{readltab.e()|hyperpage}{59}
-\indexentry{with()|hyperpage}{67}
+\indexentry{read.table()|hyperpage}{59}
+\indexentry{with()|hyperpage}{66}
 \indexentry{subset()|hyperpage}{70}
-\indexentry{Sammy Davis Jr.|hyperpage}{75}
-\indexentry{plot()|hyperpage}{76}
-\indexentry{hist()|hyperpage}{78}
-\indexentry{boxplot()|hyperpage}{79}
-\indexentry{beanplot()|hyperpage}{81}
-\indexentry{points()|hyperpage}{83}
-\indexentry{abline()|hyperpage}{84}
-\indexentry{text()|hyperpage}{85}
-\indexentry{paste()|hyperpage}{86}
-\indexentry{curve()|hyperpage}{87}
-\indexentry{legend()|hyperpage}{88}
-\indexentry{rgb()|hyperpage}{96}
-\indexentry{cut()|hyperpage}{113}
-\indexentry{aggregate()|hyperpage}{115}
-\indexentry{dplyr()|hyperpage}{119}
-\indexentry{merge()|hyperpage}{121}
-\indexentry{t-test|hyperpage}{126}
-\indexentry{t-test!t.test()|hyperpage}{126}
-\indexentry{t-test!t.test()|hyperpage}{129}
-\indexentry{correlation|hyperpage}{131}
-\indexentry{cor.test()|hyperpage}{132}
-\indexentry{chisq.test()|hyperpage}{133}
-\indexentry{Linear Model|hyperpage}{135}
-\indexentry{lm()|hyperpage}{135}
-\indexentry{glm()|hyperpage}{137}
-\indexentry{General Linear Model!anova()|hyperpage}{139}
+\indexentry{Sammy Davis Jr.|hyperpage}{77}
+\indexentry{plot()|hyperpage}{78}
+\indexentry{hist()|hyperpage}{80}
+\indexentry{boxplot()|hyperpage}{81}
+\indexentry{beanplot()|hyperpage}{83}
+\indexentry{points()|hyperpage}{85}
+\indexentry{abline()|hyperpage}{86}
+\indexentry{text()|hyperpage}{87}
+\indexentry{paste()|hyperpage}{88}
+\indexentry{curve()|hyperpage}{89}
+\indexentry{legend()|hyperpage}{90}
+\indexentry{rgb()|hyperpage}{98}
+\indexentry{cut()|hyperpage}{115}
+\indexentry{aggregate()|hyperpage}{117}
+\indexentry{dplyr()|hyperpage}{121}
+\indexentry{merge()|hyperpage}{123}
+\indexentry{t-test|hyperpage}{128}
+\indexentry{t-test!t.test()|hyperpage}{128}
+\indexentry{t-test!t.test()|hyperpage}{131}
+\indexentry{correlation|hyperpage}{133}
+\indexentry{cor.test()|hyperpage}{134}
+\indexentry{chisq.test()|hyperpage}{135}
+\indexentry{Linear Model|hyperpage}{137}
+\indexentry{lm()|hyperpage}{138}
+\indexentry{glm()|hyperpage}{145}

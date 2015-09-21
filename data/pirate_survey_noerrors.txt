@@ -1,0 +1,1001 @@
+"id"	"sex"	"headband"	"age"	"college"	"tattoos"	"tchests.found"	"parrots.lifetime"	"favorite.pirate"	"sword.type"	"sword.speed"
+"1"	1	"female"	"yes"	35	"JSSFP"	18	8	9	"Blackbeard"	"cutlass"	0.0638977083570896
+"2"	2	"male"	"yes"	21	"CCCC"	6	5	1	"Blackbeard"	"cutlass"	0.560167576286948
+"3"	3	"female"	"yes"	27	"CCCC"	12	8	1	"Anicetus"	"cutlass"	0.000540017208550125
+"4"	4	"male"	"yes"	19	"CCCC"	9	8	1	"Jack Sparrow"	"cutlass"	3.87703969122326
+"5"	5	"male"	"yes"	31	"CCCC"	11	2	13	"Jack Sparrow"	"cutlass"	0.508059423856258
+"6"	6	"male"	"yes"	21	"CCCC"	7	1	0	"Jack Sparrow"	"cutlass"	0.624801934437648
+"7"	7	"female"	"yes"	31	"JSSFP"	11	4	0	"Anicetus"	"cutlass"	0.369827238027938
+"8"	8	"female"	"yes"	35	"JSSFP"	7	17	3	"Lewis Scot"	"cutlass"	0.13374597474467
+"9"	9	"female"	"yes"	26	"CCCC"	11	11	1	"Blackbeard"	"cutlass"	0.375482115778141
+"10"	10	"male"	"yes"	19	"CCCC"	12	0	2	"Blackbeard"	"cutlass"	1.93948152464557
+"11"	11	"male"	"yes"	20	"CCCC"	7	6	0	"Blackbeard"	"cutlass"	2.42743192576714
+"12"	12	"male"	"yes"	26	"CCCC"	13	1	0	"Jack Sparrow"	"cutlass"	1.54201503718777
+"13"	13	"female"	"yes"	25	"CCCC"	11	2	1	"Edward Low"	"cutlass"	0.111381988116992
+"14"	14	"male"	"yes"	24	"CCCC"	8	0	1	"Jack Sparrow"	"cutlass"	0.133043399858674
+"15"	15	"male"	"yes"	28	"CCCC"	9	24	0	"Hook"	"cutlass"	0.104916534328368
+"16"	16	"male"	"yes"	33	"CCCC"	8	0	0	"Jack Sparrow"	"cutlass"	0.557600011278779
+"17"	17	"female"	"yes"	35	"JSSFP"	14	1	2	"Edward Low"	"cutlass"	0.077538026671391
+"18"	18	"male"	"yes"	28	"JSSFP"	10	0	4	"Blackbeard"	"cutlass"	0.275041162967682
+"19"	19	"female"	"no"	41	"JSSFP"	3	6	4	"Lewis Scot"	"scimitar"	1.41898998673213
+"20"	20	"female"	"yes"	30	"CCCC"	13	0	0	"Edward Low"	"cutlass"	0.446034517705561
+"21"	21	"male"	"yes"	28	"JSSFP"	9	7	6	"Anicetus"	"cutlass"	2.79251179874954
+"22"	22	"female"	"yes"	19	"CCCC"	11	10	0	"Anicetus"	"cutlass"	0.199807332828641
+"23"	23	"female"	"yes"	22	"CCCC"	16	4	0	"Edward Low"	"cutlass"	0.702199435883023
+"24"	24	"female"	"no"	29	"CCCC"	4	8	7	"Lewis Scot"	"sabre"	0.882905277290515
+"25"	25	"male"	"yes"	27	"JSSFP"	10	2	5	"Jack Sparrow"	"cutlass"	0.0841380396741442
+"26"	26	"female"	"yes"	28	"CCCC"	8	18	2	"Edward Low"	"cutlass"	0.0211472651995075
+"27"	27	"female"	"yes"	29	"CCCC"	6	7	5	"Anicetus"	"cutlass"	1.54957854873769
+"28"	28	"female"	"yes"	36	"JSSFP"	13	26	0	"Edward Low"	"cutlass"	0.577014384539293
+"29"	29	"male"	"yes"	35	"JSSFP"	6	1	0	"Jack Sparrow"	"cutlass"	0.728366128312666
+"30"	30	"female"	"yes"	26	"CCCC"	12	0	9	"Lewis Scot"	"cutlass"	0.692660962205202
+"31"	31	"female"	"yes"	28	"CCCC"	10	8	2	"Anicetus"	"cutlass"	0.497195706094436
+"32"	32	"female"	"yes"	31	"CCCC"	7	9	0	"Jack Sparrow"	"cutlass"	0.24176136153983
+"33"	33	"male"	"yes"	24	"CCCC"	10	1	6	"Jack Sparrow"	"cutlass"	0.700876946767613
+"34"	34	"male"	"yes"	20	"CCCC"	10	31	1	"Jack Sparrow"	"cutlass"	0.224169965949841
+"35"	35	"male"	"yes"	24	"CCCC"	11	1	2	"Jack Sparrow"	"cutlass"	0.0892565882531926
+"36"	36	"female"	"yes"	36	"JSSFP"	12	8	1	"Hook"	"cutlass"	0.143017787486315
+"37"	37	"female"	"yes"	30	"CCCC"	8	6	0	"Hook"	"cutlass"	1.04577728076243
+"38"	38	"female"	"yes"	31	"JSSFP"	12	4	2	"Anicetus"	"cutlass"	1.38192679608746
+"39"	39	"female"	"no"	34	"JSSFP"	0	1	3	"Lewis Scot"	"sabre"	2.69283908716674e-06
+"40"	40	"female"	"yes"	32	"CCCC"	13	8	3	"Hook"	"cutlass"	0.0849792730878107
+"41"	41	"male"	"yes"	26	"CCCC"	10	1	1	"Jack Sparrow"	"cutlass"	0.178809262870345
+"42"	42	"male"	"yes"	34	"JSSFP"	11	8	2	"Jack Sparrow"	"cutlass"	2.17707595175663
+"43"	43	"male"	"yes"	30	"JSSFP"	9	24	1	"Jack Sparrow"	"cutlass"	0.108335926197469
+"44"	44	"male"	"no"	34	"JSSFP"	6	17	4	"Jack Sparrow"	"sabre"	3.28900963848281
+"45"	45	"female"	"no"	29	"CCCC"	3	0	0	"Jack Sparrow"	"cutlass"	0.7068145609972
+"46"	46	"female"	"yes"	24	"CCCC"	17	8	0	"Blackbeard"	"cutlass"	0.789672092624761
+"47"	47	"male"	"yes"	25	"CCCC"	14	4	2	"Jack Sparrow"	"cutlass"	0.515224661186159
+"48"	48	"other"	"yes"	36	"JSSFP"	8	18	3	"Anicetus"	"cutlass"	0.264997178164776
+"49"	49	"female"	"no"	32	"JSSFP"	11	4	2	"Blackbeard"	"sabre"	2.77204276449684
+"50"	50	"male"	"no"	29	"CCCC"	2	9	4	"Jack Sparrow"	"scimitar"	3.16547173682257
+"51"	51	"female"	"yes"	33	"JSSFP"	9	1	2	"Anicetus"	"cutlass"	1.32143135058267
+"52"	52	"male"	"yes"	25	"CCCC"	19	4	7	"Jack Sparrow"	"cutlass"	0.480591798524194
+"53"	53	"male"	"yes"	22	"CCCC"	11	4	2	"Jack Sparrow"	"cutlass"	0.999996153352425
+"54"	54	"female"	"yes"	28	"CCCC"	10	14	2	"Lewis Scot"	"cutlass"	1.78349207144904
+"55"	55	"female"	"yes"	18	"CCCC"	3	1	3	"Anicetus"	"cutlass"	1.94729558181691
+"56"	56	"female"	"no"	29	"CCCC"	3	2	1	"Lewis Scot"	"scimitar"	0.0489880723039466
+"57"	57	"female"	"yes"	30	"CCCC"	8	5	1	"Anicetus"	"cutlass"	2.69856308803973
+"58"	58	"male"	"yes"	29	"CCCC"	12	12	1	"Jack Sparrow"	"sabre"	3.11679477667879
+"59"	59	"female"	"yes"	34	"JSSFP"	8	4	0	"Hook"	"scimitar"	4.11729048122153
+"60"	60	"other"	"yes"	26	"CCCC"	11	2	1	"Edward Low"	"cutlass"	0.55119565485912
+"61"	61	"male"	"yes"	23	"CCCC"	10	1	2	"Jack Sparrow"	"cutlass"	0.907458636673663
+"62"	62	"female"	"yes"	38	"JSSFP"	12	7	9	"Jack Sparrow"	"sabre"	0.282005635090172
+"63"	63	"female"	"yes"	40	"JSSFP"	11	7	6	"Edward Low"	"cutlass"	0.431098612316418
+"64"	64	"male"	"yes"	18	"CCCC"	3	4	2	"Jack Sparrow"	"cutlass"	0.890363472228512
+"65"	65	"male"	"yes"	30	"CCCC"	11	5	5	"Jack Sparrow"	"cutlass"	1.14815160161221
+"66"	66	"female"	"yes"	31	"JSSFP"	8	3	6	"Lewis Scot"	"cutlass"	0.384325160412118
+"67"	67	"female"	"yes"	30	"CCCC"	9	1	0	"Edward Low"	"cutlass"	0.233292061311658
+"68"	68	"female"	"yes"	30	"JSSFP"	10	15	6	"Anicetus"	"cutlass"	1.4656538573703
+"69"	69	"male"	"yes"	23	"CCCC"	11	0	6	"Jack Sparrow"	"cutlass"	0.833611730459899
+"70"	70	"female"	"no"	22	"CCCC"	3	6	1	"Blackbeard"	"scimitar"	0.141890653564284
+"71"	71	"female"	"no"	36	"JSSFP"	3	4	0	"Lewis Scot"	"banana"	3.69501693637537
+"72"	72	"male"	"yes"	26	"CCCC"	11	4	0	"Hook"	"cutlass"	0.274335886060726
+"73"	73	"female"	"yes"	30	"JSSFP"	10	25	1	"Lewis Scot"	"cutlass"	0.831472806722678
+"74"	74	"male"	"yes"	26	"CCCC"	5	7	0	"Jack Sparrow"	"cutlass"	0.107875450339634
+"75"	75	"male"	"yes"	31	"JSSFP"	7	11	9	"Jack Sparrow"	"cutlass"	0.675393725200148
+"76"	76	"male"	"yes"	16	"CCCC"	15	2	0	"Jack Sparrow"	"cutlass"	0.810465099613004
+"77"	77	"male"	"yes"	24	"CCCC"	11	12	2	"Jack Sparrow"	"cutlass"	0.00814973347587511
+"78"	78	"male"	"yes"	26	"CCCC"	8	6	1	"Jack Sparrow"	"cutlass"	1.84332824141876
+"79"	79	"female"	"yes"	34	"JSSFP"	10	28	7	"Jack Sparrow"	"cutlass"	1.26895621646532
+"80"	80	"female"	"no"	32	"JSSFP"	0	18	1	"Jack Sparrow"	"sabre"	0.234282959385642
+"81"	81	"male"	"yes"	27	"CCCC"	9	5	3	"Jack Sparrow"	"cutlass"	0.730586975088164
+"82"	82	"female"	"yes"	25	"CCCC"	4	4	0	"Anicetus"	"cutlass"	0.419425254804082
+"83"	83	"male"	"yes"	42	"JSSFP"	10	1	4	"Anicetus"	"cutlass"	1.21554478764871
+"84"	84	"female"	"yes"	35	"JSSFP"	9	5	1	"Edward Low"	"cutlass"	2.28831224965641
+"85"	85	"female"	"yes"	31	"JSSFP"	4	4	1	"Blackbeard"	"cutlass"	0.799353265875772
+"86"	86	"female"	"no"	32	"JSSFP"	5	0	1	"Blackbeard"	"scimitar"	0.0668322578171461
+"87"	87	"male"	"no"	22	"CCCC"	0	1	1	"Jack Sparrow"	"banana"	2.36987674679014
+"88"	88	"female"	"yes"	22	"CCCC"	13	4	0	"Edward Low"	"cutlass"	1.11824465135917
+"89"	89	"male"	"yes"	28	"CCCC"	8	7	2	"Jack Sparrow"	"cutlass"	0.638037438452463
+"90"	90	"male"	"no"	30	"JSSFP"	6	22	4	"Jack Sparrow"	"cutlass"	0.593765696489668
+"91"	91	"male"	"yes"	33	"JSSFP"	18	1	4	"Lewis Scot"	"sabre"	3.42275444093748
+"92"	92	"female"	"yes"	35	"JSSFP"	10	16	11	"Anicetus"	"cutlass"	0.288484285993036
+"93"	93	"male"	"yes"	15	"CCCC"	9	1	1	"Jack Sparrow"	"cutlass"	1.18321176845917
+"94"	94	"male"	"yes"	26	"CCCC"	8	5	5	"Jack Sparrow"	"cutlass"	2.32933335993851
+"95"	95	"male"	"yes"	28	"CCCC"	5	11	2	"Blackbeard"	"banana"	4.37498190785342
+"96"	96	"female"	"yes"	32	"JSSFP"	16	9	0	"Lewis Scot"	"cutlass"	0.446176805390798
+"97"	97	"female"	"yes"	24	"CCCC"	12	2	2	"Hook"	"cutlass"	4.46964309649693
+"98"	98	"male"	"no"	23	"CCCC"	1	15	4	"Jack Sparrow"	"banana"	0.438182542506523
+"99"	99	"female"	"yes"	30	"CCCC"	11	2	1	"Blackbeard"	"cutlass"	0.00658935499809737
+"100"	100	"male"	"yes"	23	"CCCC"	9	1	0	"Jack Sparrow"	"cutlass"	0.0258158185170032
+"101"	101	"other"	"yes"	21	"CCCC"	11	2	2	"Hook"	"cutlass"	1.20847800392063
+"102"	102	"male"	"yes"	33	"JSSFP"	8	0	6	"Jack Sparrow"	"cutlass"	2.18392606229432
+"103"	103	"female"	"yes"	30	"JSSFP"	12	2	1	"Hook"	"cutlass"	1.62082113201304
+"104"	104	"other"	"no"	16	"CCCC"	6	2	1	"Edward Low"	"banana"	2.58591385291736
+"105"	105	"female"	"yes"	32	"JSSFP"	9	10	4	"Blackbeard"	"sabre"	16.0098179793897
+"106"	106	"female"	"yes"	31	"JSSFP"	16	15	6	"Lewis Scot"	"scimitar"	2.14782449882478
+"107"	107	"female"	"yes"	33	"JSSFP"	7	11	5	"Hook"	"cutlass"	0.777514415363476
+"108"	108	"female"	"yes"	36	"JSSFP"	12	4	3	"Anicetus"	"cutlass"	2.3587397053922
+"109"	109	"female"	"yes"	30	"JSSFP"	11	2	3	"Lewis Scot"	"cutlass"	1.44285077337681
+"110"	110	"male"	"yes"	28	"CCCC"	10	9	1	"Jack Sparrow"	"cutlass"	0.57163326004116
+"111"	111	"male"	"yes"	22	"CCCC"	13	2	0	"Jack Sparrow"	"cutlass"	0.254527104552835
+"112"	112	"female"	"yes"	28	"CCCC"	10	6	6	"Anicetus"	"cutlass"	0.150604064666327
+"113"	113	"female"	"yes"	22	"CCCC"	7	1	0	"Jack Sparrow"	"cutlass"	0.729819803938091
+"114"	114	"female"	"yes"	30	"JSSFP"	11	8	1	"Anicetus"	"cutlass"	1.1502446932193
+"115"	115	"female"	"yes"	35	"JSSFP"	13	1	6	"Anicetus"	"cutlass"	0.322630842748402
+"116"	116	"female"	"yes"	15	"CCCC"	14	24	5	"Jack Sparrow"	"cutlass"	0.364945340261329
+"117"	117	"female"	"yes"	18	"CCCC"	8	10	1	"Lewis Scot"	"cutlass"	0.28942857083166
+"118"	118	"female"	"yes"	29	"JSSFP"	8	17	6	"Lewis Scot"	"cutlass"	0.589654109763734
+"119"	119	"male"	"yes"	31	"JSSFP"	12	36	0	"Hook"	"cutlass"	0.586389850915231
+"120"	120	"male"	"yes"	26	"CCCC"	8	6	1	"Lewis Scot"	"cutlass"	0.456006435721091
+"121"	121	"male"	"yes"	21	"CCCC"	13	2	1	"Anicetus"	"cutlass"	0.107736007092949
+"122"	122	"male"	"yes"	23	"CCCC"	11	6	0	"Edward Low"	"cutlass"	0.200771123345476
+"123"	123	"male"	"yes"	21	"CCCC"	13	35	0	"Jack Sparrow"	"cutlass"	0.147088993129733
+"124"	124	"male"	"yes"	20	"CCCC"	13	6	1	"Jack Sparrow"	"cutlass"	0.118959316750988
+"125"	125	"male"	"yes"	27	"CCCC"	6	18	1	"Jack Sparrow"	"cutlass"	0.05218669452006
+"126"	126	"female"	"yes"	35	"JSSFP"	11	1	10	"Hook"	"cutlass"	0.762946001460597
+"127"	127	"female"	"yes"	24	"CCCC"	10	12	2	"Hook"	"cutlass"	1.01865178603463
+"128"	128	"male"	"yes"	22	"CCCC"	12	5	3	"Jack Sparrow"	"cutlass"	0.812841015841633
+"129"	129	"female"	"yes"	28	"CCCC"	11	2	5	"Edward Low"	"cutlass"	0.0692856041132472
+"130"	130	"male"	"yes"	31	"JSSFP"	7	1	1	"Jack Sparrow"	"cutlass"	1.07929804108112
+"131"	131	"female"	"yes"	29	"JSSFP"	12	24	6	"Anicetus"	"cutlass"	0.068128818529658
+"132"	132	"female"	"yes"	18	"CCCC"	15	25	6	"Blackbeard"	"cutlass"	0.163748389459215
+"133"	133	"female"	"yes"	30	"CCCC"	7	3	2	"Anicetus"	"cutlass"	0.29439689322677
+"134"	134	"other"	"yes"	27	"CCCC"	8	14	1	"Anicetus"	"cutlass"	0.290684722713195
+"135"	135	"male"	"yes"	36	"JSSFP"	6	37	0	"Jack Sparrow"	"scimitar"	1.75596707733348
+"136"	136	"male"	"yes"	21	"CCCC"	5	1	1	"Jack Sparrow"	"cutlass"	0.765334869475857
+"137"	137	"female"	"yes"	27	"CCCC"	6	8	1	"Anicetus"	"cutlass"	0.26026335781095
+"138"	138	"female"	"yes"	27	"CCCC"	13	1	3	"Hook"	"cutlass"	0.935834532085449
+"139"	139	"female"	"yes"	33	"JSSFP"	6	16	5	"Hook"	"cutlass"	3.48182602764523
+"140"	140	"female"	"yes"	41	"JSSFP"	10	4	9	"Lewis Scot"	"cutlass"	0.617175190745519
+"141"	141	"female"	"yes"	24	"CCCC"	13	7	0	"Blackbeard"	"cutlass"	0.618630471392825
+"142"	142	"female"	"yes"	34	"JSSFP"	9	1	4	"Edward Low"	"cutlass"	2.40057225675233
+"143"	143	"male"	"yes"	30	"CCCC"	4	3	1	"Jack Sparrow"	"cutlass"	0.320522359688766
+"144"	144	"male"	"yes"	23	"CCCC"	13	3	3	"Jack Sparrow"	"cutlass"	1.854972531914
+"145"	145	"male"	"no"	25	"CCCC"	2	4	1	"Edward Low"	"sabre"	2.42587572769186
+"146"	146	"female"	"yes"	34	"JSSFP"	6	5	5	"Jack Sparrow"	"scimitar"	6.50390119736499
+"147"	147	"male"	"yes"	26	"CCCC"	11	5	1	"Jack Sparrow"	"cutlass"	0.450250882978372
+"148"	148	"male"	"yes"	25	"CCCC"	8	4	3	"Jack Sparrow"	"cutlass"	0.163826721254628
+"149"	149	"female"	"yes"	30	"CCCC"	7	19	0	"Edward Low"	"cutlass"	2.20400684818769
+"150"	150	"female"	"yes"	18	"CCCC"	12	1	1	"Edward Low"	"cutlass"	0.827234503162938
+"151"	151	"female"	"no"	32	"JSSFP"	0	2	2	"Hook"	"cutlass"	0.00999191589653492
+"152"	152	"female"	"yes"	32	"JSSFP"	9	5	1	"Hook"	"cutlass"	0.332620706674746
+"153"	153	"female"	"yes"	34	"JSSFP"	2	3	12	"Jack Sparrow"	"sabre"	1.83013611783584
+"154"	154	"female"	"yes"	35	"JSSFP"	13	3	7	"Jack Sparrow"	"cutlass"	0.347427176020574
+"155"	155	"male"	"yes"	23	"CCCC"	10	0	0	"Jack Sparrow"	"cutlass"	0.719802695649497
+"156"	156	"female"	"yes"	18	"CCCC"	7	5	2	"Edward Low"	"cutlass"	0.536317573583163
+"157"	157	"female"	"no"	25	"CCCC"	8	0	3	"Hook"	"cutlass"	0.287619735579938
+"158"	158	"male"	"yes"	29	"JSSFP"	12	3	3	"Jack Sparrow"	"cutlass"	0.123735652596224
+"159"	159	"male"	"yes"	17	"CCCC"	9	4	4	"Lewis Scot"	"cutlass"	1.29708968679757
+"160"	160	"male"	"yes"	23	"CCCC"	8	20	3	"Jack Sparrow"	"cutlass"	0.293700103648007
+"161"	161	"male"	"yes"	24	"CCCC"	10	1	4	"Jack Sparrow"	"cutlass"	0.324731018044986
+"162"	162	"female"	"yes"	24	"CCCC"	13	4	3	"Blackbeard"	"cutlass"	0.0819975152262487
+"163"	163	"male"	"yes"	32	"JSSFP"	7	1	3	"Edward Low"	"cutlass"	0.00546818657312542
+"164"	164	"female"	"yes"	29	"CCCC"	8	4	0	"Blackbeard"	"cutlass"	0.849093805392549
+"165"	165	"female"	"yes"	30	"JSSFP"	10	10	3	"Hook"	"cutlass"	1.78325814184475
+"166"	166	"female"	"yes"	30	"CCCC"	6	2	3	"Anicetus"	"cutlass"	0.229379548109137
+"167"	167	"male"	"yes"	25	"CCCC"	10	13	1	"Blackbeard"	"cutlass"	0.0604573853245453
+"168"	168	"female"	"yes"	32	"JSSFP"	6	6	1	"Lewis Scot"	"cutlass"	0.413334441254847
+"169"	169	"female"	"yes"	29	"JSSFP"	1	4	4	"Anicetus"	"cutlass"	1.28791435150766
+"170"	170	"male"	"yes"	24	"CCCC"	3	19	11	"Edward Low"	"cutlass"	1.56593053244559
+"171"	171	"male"	"no"	20	"CCCC"	3	1	1	"Anicetus"	"scimitar"	1.28749132149371
+"172"	172	"female"	"yes"	36	"JSSFP"	12	7	2	"Lewis Scot"	"cutlass"	1.28363176243717
+"173"	173	"female"	"yes"	43	"JSSFP"	6	3	4	"Lewis Scot"	"cutlass"	1.30629524697124
+"174"	174	"male"	"yes"	28	"CCCC"	12	13	5	"Jack Sparrow"	"cutlass"	0.887160441376379
+"175"	175	"male"	"yes"	30	"JSSFP"	10	24	2	"Jack Sparrow"	"scimitar"	0.535002127289772
+"176"	176	"female"	"yes"	26	"CCCC"	12	2	0	"Edward Low"	"cutlass"	2.22907350734718
+"177"	177	"female"	"yes"	34	"JSSFP"	19	11	2	"Hook"	"cutlass"	1.261340361036
+"178"	178	"male"	"no"	29	"JSSFP"	12	43	1	"Hook"	"scimitar"	0.0334597541950643
+"179"	179	"male"	"yes"	26	"CCCC"	7	1	6	"Jack Sparrow"	"cutlass"	1.11907968059519
+"180"	180	"female"	"yes"	37	"JSSFP"	4	0	4	"Jack Sparrow"	"cutlass"	0.279104423534591
+"181"	181	"male"	"yes"	27	"CCCC"	11	0	2	"Anicetus"	"cutlass"	0.368829513899982
+"182"	182	"female"	"yes"	29	"CCCC"	11	4	0	"Blackbeard"	"cutlass"	1.50199764269796
+"183"	183	"female"	"yes"	33	"JSSFP"	10	10	10	"Edward Low"	"cutlass"	0.244030800751166
+"184"	184	"female"	"yes"	25	"CCCC"	7	6	2	"Blackbeard"	"cutlass"	0.106403169124228
+"185"	185	"female"	"yes"	31	"JSSFP"	8	3	6	"Hook"	"cutlass"	0.405472753045615
+"186"	186	"male"	"yes"	26	"CCCC"	10	1	10	"Edward Low"	"cutlass"	0.00834428599790058
+"187"	187	"female"	"yes"	32	"JSSFP"	11	3	1	"Jack Sparrow"	"cutlass"	0.231197756365873
+"188"	188	"male"	"yes"	22	"CCCC"	7	6	0	"Jack Sparrow"	"cutlass"	1.58749742076306
+"189"	189	"male"	"yes"	28	"CCCC"	11	1	3	"Jack Sparrow"	"cutlass"	0.560450387975954
+"190"	190	"male"	"yes"	29	"CCCC"	13	2	0	"Hook"	"cutlass"	0.265148338221479
+"191"	191	"male"	"yes"	16	"CCCC"	11	19	1	"Jack Sparrow"	"banana"	15.6851267837504
+"192"	192	"male"	"yes"	23	"CCCC"	11	24	3	"Hook"	"cutlass"	1.0996161493879
+"193"	193	"female"	"yes"	33	"JSSFP"	6	14	2	"Blackbeard"	"cutlass"	1.18296384922566
+"194"	194	"male"	"yes"	22	"CCCC"	11	13	1	"Jack Sparrow"	"cutlass"	1.28088492312805
+"195"	195	"female"	"yes"	24	"CCCC"	16	3	0	"Anicetus"	"cutlass"	0.402231718471739
+"196"	196	"female"	"yes"	34	"JSSFP"	8	32	0	"Anicetus"	"cutlass"	4.14600090275467
+"197"	197	"male"	"yes"	19	"CCCC"	14	2	3	"Jack Sparrow"	"cutlass"	0.133454449151466
+"198"	198	"male"	"yes"	11	"CCCC"	10	1	1	"Jack Sparrow"	"cutlass"	0.325193972676061
+"199"	199	"female"	"no"	36	"JSSFP"	3	0	7	"Blackbeard"	"banana"	2.10530952748969
+"200"	200	"female"	"yes"	26	"CCCC"	13	5	2	"Blackbeard"	"cutlass"	0.0655907948384993
+"201"	201	"male"	"yes"	29	"CCCC"	7	7	2	"Jack Sparrow"	"cutlass"	1.9085601576485
+"202"	202	"female"	"no"	31	"JSSFP"	1	2	3	"Lewis Scot"	"sabre"	1.1823582528018
+"203"	203	"female"	"yes"	35	"JSSFP"	18	19	4	"Blackbeard"	"cutlass"	1.03358084215795
+"204"	204	"male"	"yes"	16	"CCCC"	9	3	0	"Jack Sparrow"	"cutlass"	0.333175716223195
+"205"	205	"male"	"no"	34	"JSSFP"	4	2	5	"Jack Sparrow"	"sabre"	1.64848784777056
+"206"	206	"male"	"yes"	31	"JSSFP"	14	1	1	"Jack Sparrow"	"cutlass"	0.535116218353443
+"207"	207	"female"	"yes"	30	"JSSFP"	7	12	7	"Blackbeard"	"scimitar"	4.93365952258414
+"208"	208	"female"	"yes"	35	"JSSFP"	12	2	1	"Anicetus"	"sabre"	7.34581214699365
+"209"	209	"male"	"yes"	15	"CCCC"	4	1	1	"Jack Sparrow"	"cutlass"	0.100771308352705
+"210"	210	"female"	"yes"	18	"CCCC"	11	6	0	"Anicetus"	"cutlass"	0.346916705608693
+"211"	211	"male"	"yes"	24	"CCCC"	9	6	0	"Edward Low"	"cutlass"	0.217179507413021
+"212"	212	"male"	"yes"	32	"JSSFP"	11	9	5	"Jack Sparrow"	"cutlass"	0.120580267598455
+"213"	213	"female"	"yes"	22	"CCCC"	10	3	0	"Edward Low"	"cutlass"	0.134752463471511
+"214"	214	"female"	"yes"	33	"JSSFP"	8	3	4	"Hook"	"cutlass"	0.0182011359720491
+"215"	215	"male"	"yes"	24	"CCCC"	9	0	1	"Blackbeard"	"cutlass"	0.220395834185183
+"216"	216	"male"	"yes"	23	"CCCC"	8	6	1	"Jack Sparrow"	"cutlass"	0.797232396990813
+"217"	217	"female"	"yes"	29	"JSSFP"	4	37	5	"Hook"	"cutlass"	1.13471892738468
+"218"	218	"female"	"yes"	34	"JSSFP"	6	5	1	"Anicetus"	"cutlass"	1.00139607996533
+"219"	219	"male"	"yes"	25	"CCCC"	10	3	2	"Jack Sparrow"	"cutlass"	0.210633645183407
+"220"	220	"female"	"yes"	25	"CCCC"	8	0	1	"Anicetus"	"cutlass"	0.297157183062674
+"221"	221	"female"	"yes"	30	"JSSFP"	12	4	1	"Edward Low"	"cutlass"	1.50197820148005
+"222"	222	"male"	"yes"	31	"JSSFP"	11	1	0	"Lewis Scot"	"cutlass"	0.140993014106207
+"223"	223	"male"	"yes"	33	"JSSFP"	13	7	2	"Jack Sparrow"	"sabre"	1.9644262517492
+"224"	224	"male"	"yes"	20	"CCCC"	13	4	4	"Jack Sparrow"	"cutlass"	1.41310082158579
+"225"	225	"male"	"no"	21	"CCCC"	4	13	0	"Jack Sparrow"	"banana"	3.66617350192271
+"226"	226	"female"	"yes"	30	"CCCC"	11	6	6	"Blackbeard"	"cutlass"	0.955608373356205
+"227"	227	"male"	"no"	22	"CCCC"	6	5	3	"Hook"	"banana"	4.43493731337909
+"228"	228	"male"	"yes"	19	"CCCC"	8	1	5	"Jack Sparrow"	"cutlass"	0.577276126553289
+"229"	229	"male"	"yes"	23	"CCCC"	10	10	6	"Jack Sparrow"	"cutlass"	0.401363650162239
+"230"	230	"male"	"yes"	28	"CCCC"	13	11	3	"Edward Low"	"cutlass"	0.236584965605289
+"231"	231	"female"	"yes"	24	"CCCC"	10	0	0	"Anicetus"	"cutlass"	1.04092986249507
+"232"	232	"female"	"yes"	24	"CCCC"	9	9	2	"Anicetus"	"cutlass"	0.144262881658506
+"233"	233	"female"	"yes"	37	"JSSFP"	13	2	3	"Lewis Scot"	"cutlass"	0.144518027955201
+"234"	234	"female"	"yes"	28	"CCCC"	9	2	2	"Anicetus"	"cutlass"	0.122463159204926
+"235"	235	"male"	"yes"	26	"CCCC"	10	2	3	"Jack Sparrow"	"cutlass"	0.0345942779501687
+"236"	236	"female"	"yes"	23	"CCCC"	11	9	1	"Anicetus"	"cutlass"	0.00568398340413851
+"237"	237	"male"	"yes"	23	"CCCC"	11	3	7	"Jack Sparrow"	"cutlass"	0.421160785190295
+"238"	238	"male"	"yes"	34	"JSSFP"	10	9	3	"Edward Low"	"cutlass"	0.497479535974765
+"239"	239	"other"	"yes"	28	"CCCC"	7	1	0	"Blackbeard"	"cutlass"	0.558538309388615
+"240"	240	"female"	"yes"	21	"CCCC"	5	9	3	"Hook"	"cutlass"	1.9228155723654
+"241"	241	"female"	"yes"	22	"CCCC"	13	11	5	"Edward Low"	"cutlass"	0.281560069997795
+"242"	242	"female"	"yes"	35	"JSSFP"	11	7	2	"Jack Sparrow"	"cutlass"	0.321471956267487
+"243"	243	"male"	"yes"	23	"CCCC"	3	1	5	"Jack Sparrow"	"cutlass"	0.471345972592764
+"244"	244	"female"	"yes"	40	"JSSFP"	13	37	0	"Anicetus"	"cutlass"	0.408272722852416
+"245"	245	"female"	"no"	27	"CCCC"	5	5	3	"Jack Sparrow"	"sabre"	0.433084682694503
+"246"	246	"female"	"yes"	25	"CCCC"	13	6	6	"Hook"	"scimitar"	4.89143946760643
+"247"	247	"female"	"yes"	27	"CCCC"	9	16	3	"Jack Sparrow"	"cutlass"	0.432380255078897
+"248"	248	"female"	"yes"	37	"JSSFP"	12	26	2	"Anicetus"	"cutlass"	0.361003316065762
+"249"	249	"male"	"yes"	26	"CCCC"	9	1	3	"Jack Sparrow"	"cutlass"	0.775024655132376
+"250"	250	"other"	"yes"	25	"CCCC"	6	4	0	"Lewis Scot"	"cutlass"	0.115069631113937
+"251"	251	"male"	"yes"	27	"CCCC"	11	23	5	"Lewis Scot"	"cutlass"	0.0427954191900254
+"252"	252	"male"	"yes"	21	"CCCC"	9	1	1	"Jack Sparrow"	"cutlass"	1.51617449816822
+"253"	253	"female"	"yes"	24	"CCCC"	5	5	6	"Hook"	"cutlass"	0.424559118691832
+"254"	254	"male"	"yes"	23	"CCCC"	11	2	0	"Jack Sparrow"	"cutlass"	0.185390349652153
+"255"	255	"female"	"yes"	30	"CCCC"	4	7	6	"Lewis Scot"	"cutlass"	0.0368858508715994
+"256"	256	"male"	"yes"	23	"CCCC"	9	7	0	"Jack Sparrow"	"cutlass"	0.637719696361393
+"257"	257	"female"	"yes"	35	"JSSFP"	6	4	6	"Blackbeard"	"cutlass"	1.48375721989705
+"258"	258	"female"	"no"	30	"JSSFP"	5	8	3	"Anicetus"	"sabre"	4.77110964887319
+"259"	259	"male"	"yes"	30	"CCCC"	6	18	7	"Jack Sparrow"	"cutlass"	0.381105116102844
+"260"	260	"other"	"yes"	38	"JSSFP"	8	4	1	"Lewis Scot"	"cutlass"	0.0661990430671722
+"261"	261	"male"	"yes"	32	"JSSFP"	14	11	1	"Jack Sparrow"	"cutlass"	0.219804158751018
+"262"	262	"other"	"yes"	33	"JSSFP"	7	5	2	"Blackbeard"	"cutlass"	0.625349073401826
+"263"	263	"female"	"yes"	32	"JSSFP"	12	13	6	"Edward Low"	"cutlass"	0.351207727799192
+"264"	264	"female"	"yes"	20	"CCCC"	11	6	6	"Anicetus"	"cutlass"	0.291050094132637
+"265"	265	"other"	"no"	31	"JSSFP"	4	0	4	"Lewis Scot"	"scimitar"	1.43689082008497
+"266"	266	"male"	"yes"	20	"CCCC"	8	6	2	"Jack Sparrow"	"sabre"	2.1711300391083
+"267"	267	"male"	"yes"	25	"CCCC"	17	11	4	"Jack Sparrow"	"cutlass"	0.222063481924124
+"268"	268	"female"	"yes"	29	"CCCC"	11	8	0	"Anicetus"	"cutlass"	0.162649419152809
+"269"	269	"female"	"yes"	28	"CCCC"	4	9	2	"Jack Sparrow"	"cutlass"	1.73202457946299
+"270"	270	"female"	"no"	31	"CCCC"	3	3	1	"Hook"	"sabre"	0.331281873264483
+"271"	271	"female"	"yes"	37	"JSSFP"	10	2	0	"Jack Sparrow"	"scimitar"	6.80830798556513
+"272"	272	"female"	"yes"	32	"JSSFP"	11	2	6	"Edward Low"	"cutlass"	0.720843611026004
+"273"	273	"male"	"yes"	24	"CCCC"	5	11	4	"Jack Sparrow"	"cutlass"	0.619450526402153
+"274"	274	"male"	"no"	23	"CCCC"	8	1	9	"Blackbeard"	"cutlass"	0.302575945854187
+"275"	275	"female"	"yes"	30	"JSSFP"	10	0	0	"Edward Low"	"cutlass"	3.71242209316647
+"276"	276	"male"	"yes"	28	"CCCC"	12	2	0	"Jack Sparrow"	"cutlass"	0.0110169370341223
+"277"	277	"female"	"yes"	33	"JSSFP"	11	0	1	"Edward Low"	"cutlass"	1.45248191306873
+"278"	278	"female"	"yes"	29	"CCCC"	12	3	5	"Blackbeard"	"cutlass"	0.323247591441032
+"279"	279	"female"	"yes"	33	"JSSFP"	9	0	6	"Lewis Scot"	"cutlass"	1.94206987031478
+"280"	280	"female"	"yes"	28	"CCCC"	13	10	1	"Lewis Scot"	"cutlass"	0.229580208544864
+"281"	281	"female"	"yes"	31	"CCCC"	13	19	2	"Blackbeard"	"cutlass"	2.47503474690862
+"282"	282	"male"	"yes"	21	"CCCC"	12	11	4	"Jack Sparrow"	"cutlass"	0.261812040407676
+"283"	283	"female"	"yes"	27	"CCCC"	12	9	1	"Edward Low"	"cutlass"	1.34184385758399
+"284"	284	"female"	"no"	27	"CCCC"	3	6	2	"Anicetus"	"scimitar"	0.207053255485733
+"285"	285	"female"	"yes"	29	"CCCC"	5	1	4	"Hook"	"cutlass"	0.460233486894927
+"286"	286	"male"	"yes"	26	"CCCC"	11	9	0	"Jack Sparrow"	"cutlass"	0.396390189416707
+"287"	287	"male"	"yes"	26	"CCCC"	9	1	3	"Jack Sparrow"	"sabre"	0.880098232941351
+"288"	288	"female"	"yes"	23	"CCCC"	8	0	4	"Hook"	"cutlass"	0.0370305948308669
+"289"	289	"male"	"yes"	26	"CCCC"	9	32	0	"Blackbeard"	"cutlass"	5.58563827039832
+"290"	290	"male"	"yes"	28	"CCCC"	13	4	1	"Jack Sparrow"	"cutlass"	0.159419327082226
+"291"	291	"male"	"yes"	28	"CCCC"	2	3	1	"Edward Low"	"cutlass"	0.507944914835326
+"292"	292	"male"	"yes"	23	"CCCC"	13	1	5	"Jack Sparrow"	"cutlass"	2.23668117412277
+"293"	293	"male"	"yes"	30	"CCCC"	11	16	1	"Lewis Scot"	"cutlass"	0.449771927172916
+"294"	294	"male"	"yes"	22	"CCCC"	13	5	3	"Jack Sparrow"	"cutlass"	0.112434629593573
+"295"	295	"male"	"no"	28	"CCCC"	5	2	3	"Jack Sparrow"	"scimitar"	0.506388138358792
+"296"	296	"male"	"no"	18	"CCCC"	4	4	2	"Jack Sparrow"	"sabre"	1.97918105731438
+"297"	297	"male"	"yes"	26	"CCCC"	8	2	6	"Jack Sparrow"	"cutlass"	0.831328398754642
+"298"	298	"female"	"yes"	21	"CCCC"	9	1	2	"Blackbeard"	"cutlass"	0.263401276315562
+"299"	299	"male"	"yes"	32	"JSSFP"	8	2	7	"Jack Sparrow"	"cutlass"	0.883750354352981
+"300"	300	"male"	"yes"	21	"CCCC"	7	1	2	"Jack Sparrow"	"cutlass"	0.221755347416866
+"301"	301	"male"	"yes"	23	"CCCC"	8	17	3	"Jack Sparrow"	"cutlass"	0.430993247719016
+"302"	302	"female"	"yes"	41	"JSSFP"	12	12	8	"Hook"	"cutlass"	0.218235294159967
+"303"	303	"male"	"yes"	20	"CCCC"	8	2	2	"Jack Sparrow"	"cutlass"	0.225121464172844
+"304"	304	"female"	"no"	27	"CCCC"	8	6	3	"Lewis Scot"	"sabre"	0.204558210309521
+"305"	305	"male"	"yes"	15	"CCCC"	12	7	1	"Jack Sparrow"	"cutlass"	0.0861693627666682
+"306"	306	"male"	"yes"	30	"CCCC"	9	3	2	"Jack Sparrow"	"cutlass"	1.30522223763673
+"307"	307	"female"	"yes"	36	"JSSFP"	13	15	0	"Edward Low"	"cutlass"	0.441645167276085
+"308"	308	"female"	"yes"	32	"JSSFP"	11	9	7	"Jack Sparrow"	"cutlass"	0.259198342977961
+"309"	309	"male"	"yes"	32	"JSSFP"	9	1	0	"Blackbeard"	"cutlass"	0.16843124346743
+"310"	310	"male"	"yes"	25	"CCCC"	5	10	0	"Jack Sparrow"	"cutlass"	0.0407804858154072
+"311"	311	"male"	"yes"	25	"CCCC"	14	7	7	"Jack Sparrow"	"cutlass"	1.0893605550913
+"312"	312	"male"	"yes"	24	"CCCC"	12	24	1	"Jack Sparrow"	"cutlass"	0.746045568707695
+"313"	313	"male"	"yes"	34	"JSSFP"	6	1	0	"Blackbeard"	"cutlass"	0.38928966736421
+"314"	314	"male"	"yes"	28	"CCCC"	11	10	2	"Jack Sparrow"	"cutlass"	1.24431997183116
+"315"	315	"male"	"yes"	21	"CCCC"	10	9	0	"Jack Sparrow"	"cutlass"	1.0730965330206
+"316"	316	"male"	"yes"	24	"CCCC"	11	1	1	"Jack Sparrow"	"cutlass"	1.93920407406195
+"317"	317	"male"	"yes"	29	"CCCC"	11	16	1	"Jack Sparrow"	"cutlass"	0.20754834782565
+"318"	318	"male"	"yes"	29	"JSSFP"	8	6	2	"Jack Sparrow"	"cutlass"	0.650978430613697
+"319"	319	"male"	"yes"	23	"CCCC"	3	9	1	"Blackbeard"	"cutlass"	0.11392500862712
+"320"	320	"female"	"yes"	24	"CCCC"	8	10	0	"Edward Low"	"cutlass"	2.21882271983743
+"321"	321	"female"	"yes"	36	"JSSFP"	13	1	2	"Hook"	"cutlass"	0.754601520576336
+"322"	322	"male"	"yes"	28	"CCCC"	15	2	2	"Jack Sparrow"	"cutlass"	0.213848301209509
+"323"	323	"female"	"yes"	36	"JSSFP"	9	10	4	"Blackbeard"	"cutlass"	0.419205745565705
+"324"	324	"male"	"yes"	31	"JSSFP"	12	11	4	"Jack Sparrow"	"cutlass"	0.949430637940407
+"325"	325	"male"	"yes"	24	"CCCC"	11	0	1	"Jack Sparrow"	"cutlass"	1.93703789719123
+"326"	326	"female"	"yes"	30	"JSSFP"	13	0	1	"Lewis Scot"	"cutlass"	0.170133959327359
+"327"	327	"male"	"yes"	26	"JSSFP"	15	0	0	"Jack Sparrow"	"cutlass"	0.274855396390386
+"328"	328	"male"	"yes"	21	"CCCC"	10	4	1	"Jack Sparrow"	"cutlass"	0.619907917544998
+"329"	329	"female"	"no"	30	"CCCC"	6	12	2	"Blackbeard"	"scimitar"	1.36849281343981
+"330"	330	"male"	"yes"	19	"CCCC"	7	0	3	"Jack Sparrow"	"cutlass"	0.133983188716229
+"331"	331	"other"	"no"	37	"JSSFP"	8	7	1	"Jack Sparrow"	"sabre"	0.530780382935748
+"332"	332	"other"	"yes"	24	"CCCC"	15	2	5	"Hook"	"cutlass"	0.49295885543973
+"333"	333	"female"	"yes"	39	"JSSFP"	5	21	4	"Hook"	"cutlass"	0.370010190526955
+"334"	334	"male"	"yes"	30	"CCCC"	14	8	5	"Jack Sparrow"	"cutlass"	0.59264966759844
+"335"	335	"male"	"yes"	29	"CCCC"	14	5	0	"Jack Sparrow"	"cutlass"	0.522990937434889
+"336"	336	"male"	"yes"	20	"CCCC"	13	12	2	"Lewis Scot"	"cutlass"	1.05991828017274
+"337"	337	"male"	"yes"	25	"CCCC"	10	4	1	"Jack Sparrow"	"cutlass"	0.378356193541549
+"338"	338	"male"	"yes"	32	"JSSFP"	10	5	6	"Jack Sparrow"	"cutlass"	0.76125042044726
+"339"	339	"male"	"yes"	13	"CCCC"	10	15	1	"Blackbeard"	"cutlass"	1.62989997413515
+"340"	340	"female"	"yes"	34	"JSSFP"	9	20	1	"Hook"	"sabre"	4.61752486711645
+"341"	341	"female"	"no"	32	"JSSFP"	8	6	4	"Edward Low"	"scimitar"	1.26648378551455
+"342"	342	"male"	"yes"	29	"JSSFP"	10	12	3	"Jack Sparrow"	"cutlass"	0.169090620183852
+"343"	343	"male"	"yes"	26	"CCCC"	10	2	1	"Jack Sparrow"	"cutlass"	0.0411751052162222
+"344"	344	"male"	"no"	24	"CCCC"	6	9	7	"Jack Sparrow"	"banana"	2.1928122998158
+"345"	345	"male"	"yes"	42	"JSSFP"	14	2	6	"Jack Sparrow"	"cutlass"	0.589732501513146
+"346"	346	"male"	"yes"	18	"CCCC"	14	9	0	"Jack Sparrow"	"cutlass"	0.376606037607417
+"347"	347	"female"	"yes"	30	"CCCC"	14	14	3	"Jack Sparrow"	"cutlass"	0.301305518951267
+"348"	348	"female"	"yes"	36	"JSSFP"	7	5	1	"Hook"	"cutlass"	0.0515913303264832
+"349"	349	"male"	"yes"	28	"CCCC"	7	1	1	"Jack Sparrow"	"cutlass"	0.068670088367071
+"350"	350	"male"	"yes"	33	"JSSFP"	10	14	0	"Jack Sparrow"	"cutlass"	1.70348766834049
+"351"	351	"male"	"yes"	32	"JSSFP"	18	31	3	"Jack Sparrow"	"cutlass"	0.0936605178867467
+"352"	352	"female"	"yes"	26	"CCCC"	8	10	1	"Jack Sparrow"	"cutlass"	0.603414638290934
+"353"	353	"male"	"yes"	33	"JSSFP"	11	7	5	"Jack Sparrow"	"cutlass"	0.207405979576528
+"354"	354	"male"	"yes"	24	"CCCC"	12	5	1	"Anicetus"	"cutlass"	0.24966503639007
+"355"	355	"male"	"yes"	33	"JSSFP"	11	10	1	"Jack Sparrow"	"cutlass"	1.87002131322683
+"356"	356	"male"	"yes"	27	"CCCC"	13	6	1	"Jack Sparrow"	"cutlass"	0.651973668262944
+"357"	357	"female"	"yes"	46	"JSSFP"	9	10	14	"Edward Low"	"cutlass"	0.181589100286613
+"358"	358	"female"	"yes"	28	"CCCC"	12	9	2	"Jack Sparrow"	"cutlass"	0.0726769911125302
+"359"	359	"male"	"yes"	29	"CCCC"	5	14	4	"Edward Low"	"cutlass"	0.110431776556652
+"360"	360	"female"	"yes"	28	"CCCC"	11	3	0	"Hook"	"cutlass"	0.516318904093288
+"361"	361	"female"	"yes"	31	"JSSFP"	10	1	5	"Lewis Scot"	"cutlass"	0.904875656789989
+"362"	362	"female"	"yes"	27	"CCCC"	8	1	3	"Anicetus"	"cutlass"	0.961152935580924
+"363"	363	"male"	"yes"	23	"CCCC"	10	7	2	"Anicetus"	"cutlass"	0.00607445992792655
+"364"	364	"male"	"yes"	14	"CCCC"	11	1	1	"Jack Sparrow"	"cutlass"	0.338950728473719
+"365"	365	"female"	"yes"	25	"CCCC"	10	6	2	"Lewis Scot"	"cutlass"	0.520959397686486
+"366"	366	"female"	"yes"	26	"CCCC"	9	5	1	"Anicetus"	"cutlass"	0.517257872778394
+"367"	367	"male"	"no"	30	"CCCC"	4	2	1	"Jack Sparrow"	"scimitar"	0.944163540843874
+"368"	368	"male"	"yes"	21	"CCCC"	10	1	2	"Edward Low"	"sabre"	2.9170651018461
+"369"	369	"other"	"yes"	29	"CCCC"	9	5	1	"Lewis Scot"	"cutlass"	0.392657734046225
+"370"	370	"female"	"yes"	33	"JSSFP"	9	1	2	"Lewis Scot"	"cutlass"	0.347303584276233
+"371"	371	"male"	"yes"	24	"CCCC"	8	6	3	"Jack Sparrow"	"cutlass"	1.36204646310343
+"372"	372	"male"	"yes"	35	"JSSFP"	8	13	0	"Edward Low"	"cutlass"	0.0629926682449877
+"373"	373	"male"	"yes"	31	"JSSFP"	11	3	9	"Jack Sparrow"	"cutlass"	0.0118740848847665
+"374"	374	"male"	"yes"	24	"CCCC"	13	3	4	"Jack Sparrow"	"cutlass"	1.65907922542228
+"375"	375	"male"	"yes"	27	"JSSFP"	9	3	1	"Jack Sparrow"	"cutlass"	0.107526399080578
+"376"	376	"male"	"yes"	30	"CCCC"	10	2	3	"Jack Sparrow"	"cutlass"	0.919997140247017
+"377"	377	"female"	"yes"	31	"JSSFP"	11	27	2	"Hook"	"cutlass"	0.157724704185966
+"378"	378	"male"	"yes"	23	"CCCC"	13	6	0	"Jack Sparrow"	"cutlass"	1.98440933278998
+"379"	379	"female"	"yes"	29	"CCCC"	13	3	2	"Hook"	"cutlass"	1.52171831453724
+"380"	380	"male"	"yes"	24	"CCCC"	11	5	1	"Anicetus"	"scimitar"	5.1367419661843
+"381"	381	"male"	"yes"	35	"JSSFP"	9	8	13	"Lewis Scot"	"cutlass"	0.568249380422577
+"382"	382	"female"	"yes"	34	"JSSFP"	7	3	1	"Blackbeard"	"cutlass"	2.14873809822577
+"383"	383	"male"	"yes"	32	"JSSFP"	7	11	2	"Blackbeard"	"cutlass"	0.274130105681252
+"384"	384	"male"	"yes"	20	"CCCC"	15	6	0	"Hook"	"cutlass"	0.357896046480164
+"385"	385	"male"	"yes"	28	"JSSFP"	15	18	0	"Hook"	"cutlass"	0.319400639564265
+"386"	386	"female"	"no"	21	"CCCC"	4	7	0	"Edward Low"	"sabre"	3.35047412379602
+"387"	387	"male"	"yes"	31	"CCCC"	6	9	0	"Jack Sparrow"	"sabre"	4.05669080700382
+"388"	388	"female"	"yes"	32	"JSSFP"	11	2	2	"Blackbeard"	"cutlass"	0.776628282011308
+"389"	389	"female"	"yes"	34	"JSSFP"	2	4	2	"Edward Low"	"cutlass"	0.471017274513662
+"390"	390	"male"	"yes"	31	"JSSFP"	9	1	3	"Lewis Scot"	"cutlass"	1.70377908848731
+"391"	391	"male"	"yes"	24	"CCCC"	12	6	2	"Jack Sparrow"	"cutlass"	0.556102467395214
+"392"	392	"female"	"yes"	34	"JSSFP"	7	1	2	"Hook"	"cutlass"	0.519815592237745
+"393"	393	"male"	"yes"	39	"JSSFP"	11	5	13	"Jack Sparrow"	"cutlass"	0.391263476922177
+"394"	394	"male"	"yes"	28	"CCCC"	9	3	3	"Jack Sparrow"	"cutlass"	0.986142633938184
+"395"	395	"female"	"yes"	26	"CCCC"	7	10	0	"Jack Sparrow"	"cutlass"	1.11100465738782
+"396"	396	"male"	"yes"	11	"CCCC"	11	4	2	"Jack Sparrow"	"cutlass"	0.277189370331293
+"397"	397	"male"	"yes"	22	"CCCC"	13	1	1	"Hook"	"cutlass"	0.649718442876589
+"398"	398	"male"	"yes"	24	"CCCC"	11	0	3	"Jack Sparrow"	"cutlass"	0.0615095367538743
+"399"	399	"male"	"yes"	20	"CCCC"	13	15	5	"Jack Sparrow"	"cutlass"	0.105967619456351
+"400"	400	"female"	"yes"	25	"CCCC"	9	5	5	"Edward Low"	"cutlass"	0.186850176251028
+"401"	401	"female"	"yes"	29	"CCCC"	15	9	8	"Blackbeard"	"cutlass"	0.585223489880383
+"402"	402	"female"	"yes"	33	"JSSFP"	12	2	8	"Jack Sparrow"	"cutlass"	0.240876279422082
+"403"	403	"female"	"yes"	22	"CCCC"	9	6	3	"Lewis Scot"	"cutlass"	0.727933878052801
+"404"	404	"other"	"yes"	34	"JSSFP"	14	11	6	"Edward Low"	"cutlass"	0.661591044600874
+"405"	405	"male"	"yes"	36	"JSSFP"	11	0	1	"Jack Sparrow"	"scimitar"	22.7558053042097
+"406"	406	"female"	"yes"	36	"JSSFP"	11	1	1	"Jack Sparrow"	"cutlass"	0.0365622084871192
+"407"	407	"female"	"yes"	25	"CCCC"	8	4	0	"Lewis Scot"	"cutlass"	1.4634786995184
+"408"	408	"male"	"yes"	24	"CCCC"	7	9	1	"Jack Sparrow"	"cutlass"	0.0714457419235259
+"409"	409	"female"	"no"	31	"CCCC"	5	13	0	"Lewis Scot"	"scimitar"	0.250580681866625
+"410"	410	"female"	"yes"	36	"JSSFP"	15	17	12	"Hook"	"cutlass"	0.0355557961036624
+"411"	411	"male"	"yes"	30	"CCCC"	9	5	2	"Jack Sparrow"	"cutlass"	0.482205169593729
+"412"	412	"male"	"yes"	23	"CCCC"	8	15	5	"Jack Sparrow"	"cutlass"	0.674779901720405
+"413"	413	"female"	"yes"	21	"CCCC"	7	9	5	"Jack Sparrow"	"cutlass"	0.305491421604529
+"414"	414	"male"	"yes"	20	"CCCC"	14	8	0	"Jack Sparrow"	"cutlass"	0.34180943883257
+"415"	415	"male"	"yes"	19	"CCCC"	8	1	0	"Jack Sparrow"	"cutlass"	0.631864911673788
+"416"	416	"female"	"yes"	25	"CCCC"	6	0	4	"Anicetus"	"cutlass"	0.187314177164808
+"417"	417	"male"	"no"	27	"CCCC"	8	0	3	"Jack Sparrow"	"sabre"	1.55492603107607
+"418"	418	"female"	"yes"	26	"CCCC"	12	3	4	"Jack Sparrow"	"cutlass"	0.0173212875961326
+"419"	419	"male"	"yes"	23	"CCCC"	9	12	2	"Jack Sparrow"	"cutlass"	0.196104430069681
+"420"	420	"male"	"yes"	22	"CCCC"	8	5	4	"Anicetus"	"cutlass"	0.0905369350221008
+"421"	421	"female"	"yes"	32	"JSSFP"	10	0	1	"Edward Low"	"cutlass"	0.387496071052738
+"422"	422	"female"	"yes"	23	"CCCC"	4	5	1	"Jack Sparrow"	"cutlass"	1.16504008201568
+"423"	423	"male"	"yes"	31	"JSSFP"	9	1	3	"Jack Sparrow"	"cutlass"	0.631862246055909
+"424"	424	"male"	"yes"	29	"CCCC"	12	0	0	"Jack Sparrow"	"cutlass"	1.49726925991981
+"425"	425	"female"	"yes"	35	"JSSFP"	9	25	1	"Jack Sparrow"	"sabre"	0.243979997847029
+"426"	426	"male"	"yes"	24	"CCCC"	13	4	2	"Jack Sparrow"	"cutlass"	0.695962362780057
+"427"	427	"female"	"yes"	24	"CCCC"	11	2	4	"Blackbeard"	"cutlass"	0.291033719258849
+"428"	428	"female"	"yes"	27	"CCCC"	6	3	1	"Edward Low"	"cutlass"	0.910346333350629
+"429"	429	"female"	"yes"	35	"JSSFP"	14	5	2	"Edward Low"	"cutlass"	0.0643746842979454
+"430"	430	"female"	"yes"	25	"CCCC"	9	2	3	"Lewis Scot"	"scimitar"	19.6989596903998
+"431"	431	"female"	"yes"	32	"JSSFP"	7	4	0	"Jack Sparrow"	"cutlass"	1.66518967008723
+"432"	432	"male"	"yes"	22	"CCCC"	5	13	4	"Jack Sparrow"	"cutlass"	0.812183919452883
+"433"	433	"male"	"yes"	30	"JSSFP"	8	3	2	"Jack Sparrow"	"scimitar"	1.49612692985156
+"434"	434	"male"	"yes"	34	"JSSFP"	5	15	6	"Jack Sparrow"	"cutlass"	0.810582946843289
+"435"	435	"male"	"yes"	20	"CCCC"	14	2	1	"Jack Sparrow"	"cutlass"	1.98508616060692
+"436"	436	"male"	"no"	24	"CCCC"	8	2	1	"Hook"	"sabre"	0.291449989059142
+"437"	437	"female"	"yes"	27	"CCCC"	9	18	0	"Lewis Scot"	"cutlass"	2.18657512553878
+"438"	438	"female"	"yes"	29	"JSSFP"	11	5	8	"Anicetus"	"cutlass"	0.864276187468141
+"439"	439	"female"	"yes"	31	"JSSFP"	6	4	5	"Hook"	"cutlass"	0.514437676999183
+"440"	440	"male"	"yes"	31	"JSSFP"	12	2	6	"Jack Sparrow"	"cutlass"	0.264233761117794
+"441"	441	"male"	"no"	22	"CCCC"	9	5	1	"Jack Sparrow"	"sabre"	0.0950681515970338
+"442"	442	"female"	"yes"	35	"JSSFP"	13	1	14	"Anicetus"	"cutlass"	3.14650005758987
+"443"	443	"male"	"yes"	30	"JSSFP"	10	5	4	"Jack Sparrow"	"cutlass"	0.520012527825453
+"444"	444	"male"	"yes"	33	"JSSFP"	16	7	2	"Jack Sparrow"	"cutlass"	1.41345635992653
+"445"	445	"female"	"yes"	34	"JSSFP"	6	8	4	"Blackbeard"	"sabre"	2.57801730171744
+"446"	446	"female"	"yes"	22	"CCCC"	10	6	2	"Jack Sparrow"	"cutlass"	0.473980182577865
+"447"	447	"male"	"yes"	23	"CCCC"	7	33	1	"Jack Sparrow"	"cutlass"	0.033124578985316
+"448"	448	"female"	"yes"	41	"JSSFP"	14	1	1	"Edward Low"	"cutlass"	1.76658977743912
+"449"	449	"female"	"yes"	42	"JSSFP"	6	4	7	"Anicetus"	"cutlass"	0.508445137161424
+"450"	450	"female"	"yes"	22	"CCCC"	14	3	1	"Hook"	"cutlass"	0.133681252831928
+"451"	451	"male"	"yes"	35	"JSSFP"	15	15	10	"Jack Sparrow"	"scimitar"	10.5641862014477
+"452"	452	"female"	"yes"	19	"CCCC"	10	2	0	"Lewis Scot"	"cutlass"	0.670206618352615
+"453"	453	"male"	"yes"	28	"JSSFP"	12	13	6	"Jack Sparrow"	"cutlass"	0.124681475087508
+"454"	454	"male"	"yes"	27	"CCCC"	17	7	5	"Jack Sparrow"	"cutlass"	1.40747468771469
+"455"	455	"male"	"yes"	28	"JSSFP"	10	10	1	"Edward Low"	"cutlass"	0.733324022704557
+"456"	456	"male"	"yes"	26	"CCCC"	11	1	3	"Jack Sparrow"	"cutlass"	0.0191390112740919
+"457"	457	"female"	"yes"	39	"JSSFP"	11	4	11	"Hook"	"cutlass"	0.0563663698267192
+"458"	458	"male"	"yes"	24	"CCCC"	9	6	0	"Edward Low"	"cutlass"	0.846151593115002
+"459"	459	"male"	"yes"	16	"CCCC"	11	9	5	"Jack Sparrow"	"cutlass"	1.31538776323704
+"460"	460	"male"	"yes"	21	"CCCC"	9	14	2	"Jack Sparrow"	"cutlass"	1.41323763754435
+"461"	461	"male"	"yes"	23	"CCCC"	6	8	2	"Jack Sparrow"	"cutlass"	0.74014503622596
+"462"	462	"male"	"yes"	24	"CCCC"	9	17	1	"Jack Sparrow"	"cutlass"	0.456043756540686
+"463"	463	"male"	"yes"	28	"CCCC"	9	2	6	"Jack Sparrow"	"cutlass"	0.506920934395686
+"464"	464	"female"	"yes"	31	"JSSFP"	9	13	3	"Blackbeard"	"cutlass"	1.29095627222547
+"465"	465	"female"	"yes"	38	"JSSFP"	12	1	8	"Jack Sparrow"	"sabre"	4.02384671058162
+"466"	466	"male"	"yes"	16	"CCCC"	9	6	1	"Jack Sparrow"	"cutlass"	0.847326765043482
+"467"	467	"male"	"yes"	31	"JSSFP"	9	14	0	"Anicetus"	"cutlass"	0.684495128781356
+"468"	468	"male"	"no"	18	"CCCC"	3	5	1	"Jack Sparrow"	"sabre"	0.658284926653973
+"469"	469	"male"	"yes"	27	"CCCC"	6	9	2	"Jack Sparrow"	"cutlass"	0.22550820000226
+"470"	470	"male"	"yes"	24	"CCCC"	13	51	0	"Lewis Scot"	"cutlass"	0.161914696509484
+"471"	471	"male"	"yes"	22	"CCCC"	10	2	0	"Anicetus"	"cutlass"	0.196131009724922
+"472"	472	"male"	"yes"	33	"JSSFP"	17	56	3	"Jack Sparrow"	"cutlass"	2.10082345165986
+"473"	473	"female"	"yes"	29	"CCCC"	5	0	2	"Anicetus"	"cutlass"	0.0567803982994519
+"474"	474	"male"	"yes"	24	"CCCC"	8	13	2	"Lewis Scot"	"cutlass"	0.669696562082328
+"475"	475	"male"	"yes"	23	"CCCC"	11	4	2	"Jack Sparrow"	"cutlass"	0.562013689169481
+"476"	476	"female"	"yes"	36	"JSSFP"	15	21	2	"Jack Sparrow"	"cutlass"	0.499986147016108
+"477"	477	"female"	"yes"	30	"CCCC"	9	3	1	"Blackbeard"	"cutlass"	0.0979057135802456
+"478"	478	"male"	"no"	18	"CCCC"	3	0	0	"Jack Sparrow"	"banana"	0.870783827656229
+"479"	479	"male"	"yes"	28	"JSSFP"	9	15	1	"Edward Low"	"cutlass"	0.797167865198135
+"480"	480	"female"	"yes"	35	"JSSFP"	9	18	1	"Lewis Scot"	"cutlass"	0.233648943831213
+"481"	481	"male"	"yes"	25	"CCCC"	12	18	6	"Edward Low"	"cutlass"	0.665759808173861
+"482"	482	"male"	"yes"	31	"CCCC"	12	4	1	"Jack Sparrow"	"cutlass"	0.997312661440686
+"483"	483	"male"	"yes"	13	"CCCC"	15	9	1	"Jack Sparrow"	"sabre"	2.51230794372155
+"484"	484	"male"	"no"	25	"CCCC"	6	3	1	"Jack Sparrow"	"sabre"	0.870373092059578
+"485"	485	"female"	"yes"	23	"CCCC"	2	3	2	"Anicetus"	"cutlass"	0.0867570281843655
+"486"	486	"male"	"yes"	22	"CCCC"	13	20	1	"Hook"	"cutlass"	1.2242827109933
+"487"	487	"other"	"yes"	27	"CCCC"	14	12	2	"Anicetus"	"sabre"	1.25860820092795
+"488"	488	"male"	"yes"	32	"JSSFP"	9	8	0	"Jack Sparrow"	"cutlass"	0.000634177106687789
+"489"	489	"female"	"yes"	29	"JSSFP"	12	17	3	"Jack Sparrow"	"cutlass"	0.0452418005443178
+"490"	490	"male"	"yes"	20	"CCCC"	10	1	2	"Jack Sparrow"	"cutlass"	0.710053911289953
+"491"	491	"male"	"yes"	30	"CCCC"	8	1	4	"Jack Sparrow"	"cutlass"	0.544290551889509
+"492"	492	"male"	"yes"	35	"JSSFP"	11	1	2	"Jack Sparrow"	"cutlass"	0.973860808828488
+"493"	493	"female"	"yes"	32	"JSSFP"	7	1	5	"Anicetus"	"cutlass"	0.239794627705123
+"494"	494	"male"	"yes"	27	"CCCC"	7	3	5	"Anicetus"	"cutlass"	0.456656586300245
+"495"	495	"male"	"no"	25	"CCCC"	5	3	3	"Jack Sparrow"	"scimitar"	0.360578100662678
+"496"	496	"other"	"yes"	21	"CCCC"	9	6	0	"Hook"	"cutlass"	0.604608461700201
+"497"	497	"female"	"yes"	39	"JSSFP"	8	12	0	"Blackbeard"	"cutlass"	0.577323175688538
+"498"	498	"male"	"yes"	31	"CCCC"	16	7	1	"Lewis Scot"	"cutlass"	1.59007670827135
+"499"	499	"other"	"yes"	31	"JSSFP"	6	29	3	"Lewis Scot"	"cutlass"	0.963660905513034
+"500"	500	"female"	"yes"	30	"CCCC"	10	1	4	"Hook"	"cutlass"	0.234449675190262
+"501"	501	"female"	"yes"	27	"CCCC"	11	3	0	"Blackbeard"	"cutlass"	1.14313065301964
+"502"	502	"male"	"yes"	19	"CCCC"	8	1	1	"Jack Sparrow"	"cutlass"	0.426395168178715
+"503"	503	"female"	"yes"	29	"JSSFP"	11	2	9	"Blackbeard"	"cutlass"	0.24000198159818
+"504"	504	"female"	"yes"	30	"JSSFP"	5	9	1	"Anicetus"	"cutlass"	0.98398452806732
+"505"	505	"male"	"yes"	23	"CCCC"	8	4	1	"Jack Sparrow"	"cutlass"	0.18374491162831
+"506"	506	"male"	"yes"	35	"JSSFP"	10	14	3	"Anicetus"	"sabre"	6.51839948541729
+"507"	507	"female"	"yes"	36	"JSSFP"	12	2	5	"Jack Sparrow"	"cutlass"	0.33131989534013
+"508"	508	"male"	"yes"	23	"CCCC"	12	7	4	"Jack Sparrow"	"scimitar"	4.41009082344776
+"509"	509	"female"	"yes"	36	"JSSFP"	11	5	1	"Edward Low"	"scimitar"	0.253385484684259
+"510"	510	"male"	"yes"	31	"CCCC"	10	11	5	"Hook"	"cutlass"	0.261236450460274
+"511"	511	"male"	"yes"	18	"CCCC"	8	6	2	"Jack Sparrow"	"sabre"	4.01049733147923
+"512"	512	"male"	"no"	22	"CCCC"	5	3	1	"Jack Sparrow"	"scimitar"	0.0276805041357875
+"513"	513	"female"	"yes"	30	"CCCC"	9	0	3	"Edward Low"	"cutlass"	0.442328539252577
+"514"	514	"female"	"yes"	26	"CCCC"	12	3	0	"Anicetus"	"cutlass"	0.91115889490414
+"515"	515	"female"	"no"	28	"JSSFP"	1	0	4	"Lewis Scot"	"banana"	1.1089133123676
+"516"	516	"male"	"yes"	32	"JSSFP"	5	1	1	"Jack Sparrow"	"cutlass"	0.842926039450623
+"517"	517	"male"	"yes"	27	"CCCC"	13	4	0	"Jack Sparrow"	"cutlass"	1.54480893739073
+"518"	518	"male"	"yes"	18	"CCCC"	7	3	0	"Jack Sparrow"	"cutlass"	0.0314185669781943
+"519"	519	"female"	"no"	32	"JSSFP"	9	2	3	"Edward Low"	"scimitar"	1.80431320014548
+"520"	520	"female"	"yes"	28	"CCCC"	10	12	4	"Hook"	"cutlass"	0.701268044041291
+"521"	521	"male"	"yes"	24	"CCCC"	13	1	1	"Jack Sparrow"	"cutlass"	1.6282686159624
+"522"	522	"female"	"yes"	25	"CCCC"	8	10	3	"Anicetus"	"cutlass"	0.482328779294133
+"523"	523	"male"	"yes"	18	"CCCC"	8	2	2	"Blackbeard"	"cutlass"	1.36922166644404
+"524"	524	"female"	"yes"	24	"CCCC"	9	10	4	"Jack Sparrow"	"cutlass"	0.149455576029141
+"525"	525	"female"	"yes"	33	"JSSFP"	8	1	4	"Edward Low"	"cutlass"	0.253116036669105
+"526"	526	"male"	"yes"	20	"CCCC"	15	11	0	"Blackbeard"	"cutlass"	0.184647360583767
+"527"	527	"female"	"yes"	34	"JSSFP"	8	1	4	"Hook"	"cutlass"	2.41191446185954
+"528"	528	"female"	"yes"	29	"CCCC"	17	3	2	"Lewis Scot"	"sabre"	0.461131783431712
+"529"	529	"male"	"yes"	27	"CCCC"	14	11	1	"Jack Sparrow"	"cutlass"	0.340244612598326
+"530"	530	"female"	"yes"	37	"JSSFP"	12	6	2	"Lewis Scot"	"cutlass"	0.655461195830077
+"531"	531	"female"	"yes"	31	"JSSFP"	13	7	6	"Jack Sparrow"	"cutlass"	0.58353593512141
+"532"	532	"other"	"yes"	30	"CCCC"	6	2	1	"Jack Sparrow"	"banana"	1.48676824055508
+"533"	533	"female"	"yes"	29	"JSSFP"	12	5	7	"Anicetus"	"cutlass"	1.76815940152797
+"534"	534	"female"	"yes"	24	"CCCC"	10	4	3	"Jack Sparrow"	"scimitar"	13.2558356126057
+"535"	535	"female"	"yes"	34	"JSSFP"	13	3	1	"Anicetus"	"cutlass"	0.55777436585334
+"536"	536	"male"	"yes"	22	"CCCC"	14	2	0	"Jack Sparrow"	"cutlass"	0.907550304472444
+"537"	537	"male"	"yes"	29	"CCCC"	9	2	2	"Hook"	"cutlass"	0.109339294431265
+"538"	538	"male"	"yes"	20	"CCCC"	14	0	1	"Jack Sparrow"	"cutlass"	0.065716776298359
+"539"	539	"female"	"yes"	29	"JSSFP"	11	0	0	"Jack Sparrow"	"cutlass"	0.681691266919308
+"540"	540	"male"	"no"	33	"JSSFP"	0	8	2	"Jack Sparrow"	"sabre"	0.36134943765189
+"541"	541	"male"	"yes"	20	"CCCC"	7	4	1	"Jack Sparrow"	"cutlass"	0.562677983854625
+"542"	542	"female"	"yes"	21	"CCCC"	16	2	1	"Anicetus"	"cutlass"	2.20399909813397
+"543"	543	"male"	"yes"	17	"CCCC"	12	2	0	"Edward Low"	"cutlass"	0.184575982857496
+"544"	544	"male"	"yes"	26	"CCCC"	12	7	1	"Jack Sparrow"	"cutlass"	0.598396165852256
+"545"	545	"male"	"yes"	24	"CCCC"	14	2	0	"Jack Sparrow"	"cutlass"	2.51635783688076
+"546"	546	"male"	"yes"	20	"CCCC"	12	9	6	"Jack Sparrow"	"cutlass"	0.348980688431766
+"547"	547	"other"	"yes"	23	"CCCC"	11	10	2	"Blackbeard"	"cutlass"	1.17653206101955
+"548"	548	"male"	"yes"	25	"CCCC"	11	5	3	"Hook"	"cutlass"	0.67160364470613
+"549"	549	"male"	"yes"	10	"CCCC"	12	7	3	"Jack Sparrow"	"cutlass"	2.07071717283402
+"550"	550	"female"	"yes"	33	"JSSFP"	15	4	8	"Lewis Scot"	"cutlass"	0.753215885462061
+"551"	551	"male"	"yes"	17	"CCCC"	10	3	1	"Jack Sparrow"	"cutlass"	0.757772739717558
+"552"	552	"female"	"no"	36	"JSSFP"	7	18	5	"Hook"	"banana"	0.22513059673131
+"553"	553	"male"	"yes"	33	"JSSFP"	6	11	1	"Jack Sparrow"	"cutlass"	0.0541584924212657
+"554"	554	"male"	"yes"	31	"JSSFP"	6	2	1	"Jack Sparrow"	"banana"	44.595856295165
+"555"	555	"male"	"yes"	22	"CCCC"	10	24	2	"Jack Sparrow"	"cutlass"	0.0828597827937624
+"556"	556	"female"	"yes"	33	"CCCC"	11	6	2	"Anicetus"	"cutlass"	0.92663715704681
+"557"	557	"female"	"yes"	25	"CCCC"	11	13	1	"Hook"	"cutlass"	0.17795468004095
+"558"	558	"female"	"yes"	32	"JSSFP"	8	3	2	"Anicetus"	"cutlass"	2.89958961825394
+"559"	559	"female"	"no"	24	"CCCC"	9	10	4	"Hook"	"scimitar"	0.587560013877227
+"560"	560	"male"	"yes"	29	"CCCC"	15	1	1	"Jack Sparrow"	"cutlass"	1.67660833444952
+"561"	561	"male"	"yes"	24	"CCCC"	12	3	0	"Jack Sparrow"	"cutlass"	1.06322097237559
+"562"	562	"female"	"yes"	21	"CCCC"	11	0	3	"Lewis Scot"	"cutlass"	0.680263227524057
+"563"	563	"female"	"yes"	34	"JSSFP"	12	29	9	"Jack Sparrow"	"sabre"	1.18731834925711
+"564"	564	"female"	"no"	32	"JSSFP"	9	6	8	"Lewis Scot"	"banana"	0.273373990675922
+"565"	565	"female"	"yes"	26	"CCCC"	13	0	4	"Blackbeard"	"scimitar"	1.13948462842339
+"566"	566	"female"	"yes"	32	"JSSFP"	4	0	6	"Jack Sparrow"	"cutlass"	0.728678248953981
+"567"	567	"male"	"yes"	23	"CCCC"	12	6	2	"Blackbeard"	"cutlass"	4.87878470303481
+"568"	568	"female"	"yes"	29	"JSSFP"	8	2	6	"Lewis Scot"	"cutlass"	0.126938294058801
+"569"	569	"male"	"yes"	23	"CCCC"	9	5	0	"Jack Sparrow"	"cutlass"	0.93838728123477
+"570"	570	"female"	"yes"	32	"JSSFP"	12	17	1	"Edward Low"	"cutlass"	0.535305247150183
+"571"	571	"female"	"no"	33	"JSSFP"	5	5	4	"Blackbeard"	"scimitar"	0.733268724288791
+"572"	572	"female"	"yes"	26	"CCCC"	9	14	7	"Edward Low"	"banana"	4.85537964925096
+"573"	573	"female"	"yes"	29	"JSSFP"	11	7	0	"Edward Low"	"cutlass"	1.22641644784586
+"574"	574	"female"	"yes"	34	"JSSFP"	12	5	1	"Blackbeard"	"cutlass"	1.22177244391629
+"575"	575	"female"	"yes"	32	"JSSFP"	7	51	2	"Hook"	"cutlass"	0.168516663816127
+"576"	576	"male"	"yes"	31	"JSSFP"	6	3	8	"Jack Sparrow"	"cutlass"	0.32094305177452
+"577"	577	"other"	"yes"	28	"CCCC"	13	14	1	"Hook"	"cutlass"	0.62810720815026
+"578"	578	"female"	"yes"	29	"JSSFP"	13	21	4	"Blackbeard"	"cutlass"	0.925455962212772
+"579"	579	"male"	"yes"	24	"CCCC"	7	1	4	"Hook"	"cutlass"	0.323426944378298
+"580"	580	"male"	"yes"	22	"CCCC"	11	4	4	"Jack Sparrow"	"cutlass"	0.653426594773129
+"581"	581	"female"	"yes"	28	"CCCC"	9	27	0	"Hook"	"cutlass"	0.77008851219137
+"582"	582	"female"	"yes"	30	"CCCC"	10	12	4	"Hook"	"scimitar"	10.2574737924607
+"583"	583	"male"	"yes"	27	"CCCC"	8	11	0	"Jack Sparrow"	"cutlass"	0.548570764871718
+"584"	584	"other"	"yes"	34	"JSSFP"	2	2	6	"Anicetus"	"cutlass"	0.0852976171881892
+"585"	585	"male"	"yes"	18	"CCCC"	8	2	3	"Anicetus"	"cutlass"	0.863332399140865
+"586"	586	"female"	"yes"	30	"CCCC"	15	0	3	"Blackbeard"	"cutlass"	1.0943485283699
+"587"	587	"female"	"yes"	29	"CCCC"	8	2	0	"Lewis Scot"	"cutlass"	0.144834718375932
+"588"	588	"female"	"yes"	35	"JSSFP"	8	9	1	"Edward Low"	"cutlass"	0.538028840065755
+"589"	589	"male"	"yes"	31	"JSSFP"	6	13	1	"Jack Sparrow"	"cutlass"	0.863042157699175
+"590"	590	"female"	"yes"	21	"CCCC"	10	1	1	"Anicetus"	"cutlass"	0.199654122116044
+"591"	591	"male"	"yes"	28	"CCCC"	14	8	1	"Jack Sparrow"	"cutlass"	0.159638585755602
+"592"	592	"male"	"yes"	16	"CCCC"	9	0	0	"Jack Sparrow"	"cutlass"	0.431111217185389
+"593"	593	"female"	"yes"	28	"CCCC"	8	1	0	"Edward Low"	"cutlass"	0.255326777405571
+"594"	594	"female"	"yes"	27	"CCCC"	7	1	7	"Blackbeard"	"cutlass"	0.424321385216899
+"595"	595	"female"	"yes"	29	"CCCC"	11	3	1	"Anicetus"	"cutlass"	0.460062418340809
+"596"	596	"male"	"yes"	25	"CCCC"	14	2	4	"Jack Sparrow"	"cutlass"	0.565379130194753
+"597"	597	"female"	"yes"	27	"CCCC"	15	11	0	"Jack Sparrow"	"cutlass"	0.479758338389151
+"598"	598	"male"	"yes"	21	"CCCC"	8	2	5	"Hook"	"cutlass"	1.25074780773708
+"599"	599	"female"	"yes"	34	"JSSFP"	14	2	2	"Blackbeard"	"cutlass"	0.414378166897222
+"600"	600	"male"	"yes"	29	"CCCC"	9	13	1	"Jack Sparrow"	"banana"	13.9017613386003
+"601"	601	"female"	"yes"	22	"CCCC"	8	1	0	"Blackbeard"	"cutlass"	0.217252233414911
+"602"	602	"male"	"yes"	35	"JSSFP"	7	2	9	"Jack Sparrow"	"cutlass"	0.0417339115753335
+"603"	603	"male"	"yes"	29	"CCCC"	7	2	2	"Jack Sparrow"	"cutlass"	0.171978691235462
+"604"	604	"female"	"yes"	38	"JSSFP"	2	2	14	"Edward Low"	"cutlass"	0.458135047202751
+"605"	605	"male"	"yes"	24	"CCCC"	9	12	1	"Jack Sparrow"	"cutlass"	0.0912191791576333
+"606"	606	"male"	"yes"	24	"CCCC"	11	10	1	"Jack Sparrow"	"sabre"	0.525463399747442
+"607"	607	"male"	"yes"	30	"JSSFP"	12	2	2	"Jack Sparrow"	"cutlass"	2.04943041772324
+"608"	608	"female"	"yes"	27	"CCCC"	11	8	0	"Hook"	"cutlass"	0.483045086121939
+"609"	609	"male"	"yes"	29	"CCCC"	11	0	2	"Jack Sparrow"	"cutlass"	1.31522397212586
+"610"	610	"other"	"no"	33	"JSSFP"	0	1	4	"Lewis Scot"	"sabre"	0.874890979113323
+"611"	611	"female"	"yes"	29	"CCCC"	14	4	3	"Hook"	"cutlass"	0.663921430215061
+"612"	612	"male"	"yes"	18	"CCCC"	9	4	0	"Jack Sparrow"	"cutlass"	0.132999804336578
+"613"	613	"male"	"yes"	26	"CCCC"	16	28	8	"Jack Sparrow"	"cutlass"	0.0568680328433402
+"614"	614	"female"	"yes"	32	"JSSFP"	10	0	0	"Edward Low"	"cutlass"	0.939672961778581
+"615"	615	"male"	"yes"	26	"CCCC"	3	3	0	"Jack Sparrow"	"cutlass"	0.723016749632283
+"616"	616	"male"	"yes"	23	"CCCC"	10	15	2	"Jack Sparrow"	"cutlass"	0.064290213631466
+"617"	617	"male"	"yes"	28	"CCCC"	4	1	3	"Blackbeard"	"cutlass"	1.2476316501327
+"618"	618	"female"	"yes"	30	"JSSFP"	7	1	1	"Anicetus"	"scimitar"	9.25906603905976
+"619"	619	"other"	"yes"	19	"CCCC"	4	7	2	"Edward Low"	"cutlass"	1.14710657852107
+"620"	620	"female"	"yes"	39	"JSSFP"	6	3	6	"Lewis Scot"	"cutlass"	0.497704501586788
+"621"	621	"male"	"yes"	19	"CCCC"	6	5	0	"Jack Sparrow"	"cutlass"	0.388840725240191
+"622"	622	"female"	"yes"	45	"JSSFP"	10	2	8	"Edward Low"	"cutlass"	0.230366557933611
+"623"	623	"female"	"yes"	28	"CCCC"	13	2	10	"Jack Sparrow"	"cutlass"	0.201859491062351
+"624"	624	"male"	"yes"	32	"JSSFP"	10	2	1	"Hook"	"cutlass"	3.91234009386624
+"625"	625	"female"	"yes"	35	"JSSFP"	7	9	7	"Anicetus"	"cutlass"	0.0194407501840033
+"626"	626	"male"	"yes"	20	"CCCC"	10	3	0	"Blackbeard"	"cutlass"	0.205921308661345
+"627"	627	"male"	"yes"	24	"CCCC"	9	2	2	"Jack Sparrow"	"cutlass"	1.20757324266584
+"628"	628	"female"	"yes"	32	"JSSFP"	8	6	0	"Jack Sparrow"	"cutlass"	0.0147432752419263
+"629"	629	"male"	"yes"	23	"CCCC"	8	4	0	"Jack Sparrow"	"cutlass"	0.409051719761919
+"630"	630	"male"	"yes"	26	"CCCC"	8	15	2	"Jack Sparrow"	"cutlass"	0.226225407095626
+"631"	631	"other"	"yes"	28	"CCCC"	5	8	3	"Edward Low"	"cutlass"	1.65420278316869
+"632"	632	"female"	"yes"	48	"JSSFP"	12	22	4	"Jack Sparrow"	"cutlass"	0.623987758855157
+"633"	633	"female"	"yes"	31	"JSSFP"	8	6	1	"Lewis Scot"	"cutlass"	0.087811230636309
+"634"	634	"male"	"yes"	24	"CCCC"	11	3	1	"Jack Sparrow"	"cutlass"	0.368249868624844
+"635"	635	"male"	"yes"	23	"CCCC"	7	3	6	"Jack Sparrow"	"cutlass"	1.65769532085677
+"636"	636	"female"	"yes"	37	"JSSFP"	11	13	6	"Jack Sparrow"	"cutlass"	0.604181477657341
+"637"	637	"female"	"yes"	38	"JSSFP"	17	1	10	"Hook"	"cutlass"	0.113974981650244
+"638"	638	"female"	"yes"	25	"CCCC"	13	8	2	"Blackbeard"	"cutlass"	0.959889022580922
+"639"	639	"female"	"yes"	35	"JSSFP"	8	17	1	"Edward Low"	"cutlass"	0.172417817229871
+"640"	640	"female"	"yes"	33	"JSSFP"	12	3	1	"Edward Low"	"cutlass"	0.140202869952191
+"641"	641	"other"	"yes"	25	"CCCC"	8	5	11	"Lewis Scot"	"cutlass"	0.613890699420412
+"642"	642	"female"	"no"	32	"JSSFP"	8	15	2	"Lewis Scot"	"scimitar"	4.62322882038164
+"643"	643	"male"	"yes"	11	"CCCC"	9	4	1	"Jack Sparrow"	"cutlass"	0.00459672999568284
+"644"	644	"female"	"yes"	22	"CCCC"	11	26	1	"Edward Low"	"cutlass"	1.51347149389019
+"645"	645	"female"	"yes"	31	"JSSFP"	9	10	3	"Blackbeard"	"cutlass"	1.08082612381761
+"646"	646	"female"	"yes"	31	"JSSFP"	9	23	1	"Anicetus"	"sabre"	2.50757729734871
+"647"	647	"male"	"yes"	31	"CCCC"	13	8	2	"Edward Low"	"cutlass"	1.1246004141342
+"648"	648	"female"	"yes"	34	"JSSFP"	3	1	0	"Jack Sparrow"	"cutlass"	0.27562346468997
+"649"	649	"female"	"yes"	29	"JSSFP"	11	3	0	"Jack Sparrow"	"cutlass"	0.513127049172118
+"650"	650	"female"	"yes"	36	"JSSFP"	11	1	2	"Edward Low"	"cutlass"	1.57881694721563
+"651"	651	"male"	"yes"	36	"JSSFP"	9	0	1	"Anicetus"	"cutlass"	0.636088583824977
+"652"	652	"female"	"no"	31	"JSSFP"	4	2	5	"Hook"	"banana"	2.44008613880864
+"653"	653	"female"	"yes"	35	"JSSFP"	12	1	1	"Edward Low"	"cutlass"	0.632632717620411
+"654"	654	"female"	"yes"	30	"CCCC"	11	20	6	"Hook"	"cutlass"	0.893336227111161
+"655"	655	"male"	"yes"	23	"CCCC"	8	1	7	"Jack Sparrow"	"cutlass"	0.256811232829932
+"656"	656	"female"	"yes"	33	"JSSFP"	10	1	3	"Jack Sparrow"	"cutlass"	0.393034494773019
+"657"	657	"male"	"yes"	27	"CCCC"	12	0	2	"Jack Sparrow"	"cutlass"	1.91431247618723
+"658"	658	"female"	"yes"	27	"CCCC"	11	1	6	"Jack Sparrow"	"banana"	13.6414726914644
+"659"	659	"male"	"yes"	19	"CCCC"	10	1	1	"Jack Sparrow"	"cutlass"	0.262719946622383
+"660"	660	"male"	"yes"	26	"CCCC"	11	20	1	"Jack Sparrow"	"cutlass"	0.0314810327836312
+"661"	661	"male"	"yes"	23	"CCCC"	8	19	1	"Jack Sparrow"	"cutlass"	0.125872386270203
+"662"	662	"other"	"yes"	22	"CCCC"	13	5	1	"Anicetus"	"cutlass"	0.147615211899392
+"663"	663	"female"	"no"	28	"CCCC"	5	4	11	"Hook"	"scimitar"	1.79072906256171
+"664"	664	"male"	"yes"	29	"CCCC"	11	0	2	"Edward Low"	"cutlass"	0.920598172763005
+"665"	665	"female"	"yes"	28	"JSSFP"	8	6	0	"Lewis Scot"	"cutlass"	0.403432896127924
+"666"	666	"male"	"yes"	23	"CCCC"	9	7	0	"Jack Sparrow"	"cutlass"	1.16970445140602
+"667"	667	"female"	"no"	25	"CCCC"	4	1	3	"Anicetus"	"banana"	8.98046738912515
+"668"	668	"male"	"yes"	24	"CCCC"	9	4	1	"Jack Sparrow"	"cutlass"	0.540067094961762
+"669"	669	"male"	"yes"	29	"CCCC"	10	3	1	"Jack Sparrow"	"cutlass"	0.14675520269873
+"670"	670	"male"	"yes"	28	"CCCC"	8	2	2	"Jack Sparrow"	"cutlass"	0.506285911516108
+"671"	671	"female"	"yes"	26	"CCCC"	18	32	5	"Lewis Scot"	"cutlass"	0.44451751685404
+"672"	672	"male"	"yes"	24	"CCCC"	7	3	1	"Jack Sparrow"	"cutlass"	0.121203174930997
+"673"	673	"male"	"yes"	24	"CCCC"	10	1	1	"Jack Sparrow"	"cutlass"	1.44007119924335
+"674"	674	"male"	"yes"	32	"JSSFP"	16	1	1	"Jack Sparrow"	"banana"	11.089056977335
+"675"	675	"female"	"yes"	34	"JSSFP"	6	1	0	"Anicetus"	"cutlass"	0.0781960602034815
+"676"	676	"other"	"yes"	27	"CCCC"	14	4	9	"Lewis Scot"	"cutlass"	0.170961217260399
+"677"	677	"male"	"yes"	20	"CCCC"	9	3	1	"Jack Sparrow"	"cutlass"	0.433013684814796
+"678"	678	"female"	"yes"	40	"JSSFP"	9	17	1	"Lewis Scot"	"cutlass"	0.0186723639490083
+"679"	679	"male"	"yes"	36	"JSSFP"	12	26	3	"Blackbeard"	"cutlass"	0.205239359287957
+"680"	680	"male"	"yes"	28	"JSSFP"	11	10	0	"Jack Sparrow"	"cutlass"	0.184227970312349
+"681"	681	"female"	"yes"	36	"JSSFP"	9	19	7	"Anicetus"	"cutlass"	0.150286428106483
+"682"	682	"female"	"yes"	34	"JSSFP"	8	1	4	"Blackbeard"	"cutlass"	0.614260025878258
+"683"	683	"female"	"yes"	34	"JSSFP"	10	5	6	"Blackbeard"	"cutlass"	0.754521805766791
+"684"	684	"female"	"yes"	34	"JSSFP"	8	2	0	"Edward Low"	"cutlass"	0.20277121999985
+"685"	685	"male"	"yes"	26	"CCCC"	9	9	3	"Anicetus"	"cutlass"	0.667731919066802
+"686"	686	"male"	"yes"	19	"CCCC"	9	5	2	"Edward Low"	"cutlass"	0.703261402060099
+"687"	687	"male"	"no"	27	"CCCC"	7	12	1	"Jack Sparrow"	"banana"	5.9304785416321
+"688"	688	"male"	"yes"	18	"CCCC"	16	6	2	"Blackbeard"	"cutlass"	0.939940328191608
+"689"	689	"female"	"yes"	30	"CCCC"	11	2	4	"Jack Sparrow"	"cutlass"	0.22294842156137
+"690"	690	"male"	"yes"	27	"CCCC"	8	3	2	"Jack Sparrow"	"cutlass"	1.54707124565302
+"691"	691	"male"	"yes"	25	"CCCC"	6	3	4	"Jack Sparrow"	"cutlass"	0.677397353548378
+"692"	692	"female"	"yes"	28	"CCCC"	16	1	2	"Edward Low"	"cutlass"	0.297883168968838
+"693"	693	"male"	"yes"	28	"CCCC"	14	2	2	"Jack Sparrow"	"cutlass"	0.573530860920984
+"694"	694	"female"	"yes"	31	"CCCC"	3	4	1	"Hook"	"cutlass"	0.654201699627385
+"695"	695	"male"	"yes"	25	"CCCC"	8	2	1	"Jack Sparrow"	"cutlass"	1.17585251335391
+"696"	696	"female"	"yes"	29	"JSSFP"	9	7	0	"Anicetus"	"cutlass"	0.0614865704694786
+"697"	697	"male"	"yes"	21	"CCCC"	10	1	1	"Jack Sparrow"	"cutlass"	0.372455627366435
+"698"	698	"male"	"yes"	23	"CCCC"	7	5	2	"Jack Sparrow"	"cutlass"	0.403329420369118
+"699"	699	"other"	"yes"	28	"CCCC"	11	1	1	"Hook"	"cutlass"	1.38590642126782
+"700"	700	"female"	"yes"	24	"CCCC"	7	5	2	"Lewis Scot"	"cutlass"	0.603138227888286
+"701"	701	"male"	"yes"	20	"CCCC"	9	13	0	"Blackbeard"	"sabre"	4.85967075914899
+"702"	702	"female"	"yes"	36	"JSSFP"	11	8	10	"Jack Sparrow"	"cutlass"	2.56826022044666
+"703"	703	"male"	"yes"	21	"CCCC"	7	0	1	"Jack Sparrow"	"cutlass"	0.277672645170242
+"704"	704	"male"	"yes"	14	"CCCC"	6	5	1	"Jack Sparrow"	"cutlass"	0.0952766585396603
+"705"	705	"male"	"yes"	26	"CCCC"	11	10	5	"Jack Sparrow"	"cutlass"	0.846294519698069
+"706"	706	"female"	"yes"	32	"JSSFP"	9	1	1	"Jack Sparrow"	"cutlass"	3.80807592512524
+"707"	707	"female"	"yes"	37	"JSSFP"	8	6	6	"Hook"	"cutlass"	1.5797100088639
+"708"	708	"male"	"yes"	20	"CCCC"	10	6	4	"Jack Sparrow"	"cutlass"	0.0175449873774543
+"709"	709	"male"	"yes"	19	"CCCC"	11	2	1	"Jack Sparrow"	"cutlass"	0.193561243941076
+"710"	710	"male"	"yes"	27	"CCCC"	9	13	2	"Jack Sparrow"	"cutlass"	0.167255872802343
+"711"	711	"female"	"yes"	32	"JSSFP"	12	32	1	"Lewis Scot"	"cutlass"	0.635703806649673
+"712"	712	"female"	"yes"	25	"CCCC"	8	13	0	"Edward Low"	"cutlass"	0.00087220745626837
+"713"	713	"female"	"yes"	34	"JSSFP"	12	2	7	"Anicetus"	"cutlass"	0.291063164477237
+"714"	714	"male"	"yes"	14	"CCCC"	10	5	0	"Jack Sparrow"	"cutlass"	0.910512639272917
+"715"	715	"female"	"yes"	33	"JSSFP"	9	21	4	"Hook"	"cutlass"	0.0987220558454283
+"716"	716	"male"	"yes"	27	"CCCC"	13	5	1	"Jack Sparrow"	"cutlass"	0.00843327811925602
+"717"	717	"female"	"yes"	30	"JSSFP"	10	1	8	"Jack Sparrow"	"scimitar"	1.88547855475917
+"718"	718	"male"	"yes"	25	"CCCC"	14	5	4	"Jack Sparrow"	"cutlass"	1.17026124959217
+"719"	719	"male"	"yes"	24	"CCCC"	9	1	0	"Jack Sparrow"	"cutlass"	0.482684678255402
+"720"	720	"male"	"yes"	17	"CCCC"	8	2	4	"Jack Sparrow"	"cutlass"	0.389582718116635
+"721"	721	"female"	"yes"	25	"CCCC"	12	6	2	"Anicetus"	"cutlass"	0.216319180035498
+"722"	722	"female"	"yes"	34	"JSSFP"	8	5	0	"Lewis Scot"	"cutlass"	0.448364089798935
+"723"	723	"other"	"yes"	28	"CCCC"	9	2	2	"Anicetus"	"cutlass"	0.378610071493313
+"724"	724	"female"	"no"	34	"JSSFP"	6	3	2	"Blackbeard"	"scimitar"	1.20787017971726
+"725"	725	"male"	"yes"	26	"CCCC"	10	3	1	"Jack Sparrow"	"scimitar"	6.19345208608961
+"726"	726	"male"	"no"	27	"CCCC"	7	2	5	"Jack Sparrow"	"sabre"	3.26636720909515
+"727"	727	"male"	"no"	20	"CCCC"	2	10	5	"Jack Sparrow"	"scimitar"	0.506112002767622
+"728"	728	"male"	"yes"	19	"CCCC"	7	1	1	"Jack Sparrow"	"cutlass"	0.00306806364875575
+"729"	729	"female"	"yes"	33	"JSSFP"	8	4	3	"Edward Low"	"cutlass"	1.14841542317869
+"730"	730	"female"	"yes"	21	"CCCC"	11	4	2	"Blackbeard"	"cutlass"	0.280220144195482
+"731"	731	"male"	"yes"	27	"CCCC"	6	3	2	"Jack Sparrow"	"cutlass"	0.275756913282023
+"732"	732	"female"	"yes"	29	"JSSFP"	14	0	1	"Jack Sparrow"	"cutlass"	0.980066599085565
+"733"	733	"male"	"yes"	31	"CCCC"	9	7	6	"Jack Sparrow"	"cutlass"	0.568110542948221
+"734"	734	"female"	"yes"	33	"JSSFP"	12	8	9	"Anicetus"	"cutlass"	1.86618768133897
+"735"	735	"male"	"yes"	28	"CCCC"	6	1	0	"Jack Sparrow"	"cutlass"	0.214135414571501
+"736"	736	"male"	"yes"	22	"CCCC"	10	13	2	"Jack Sparrow"	"cutlass"	0.217257561302121
+"737"	737	"male"	"yes"	28	"CCCC"	10	6	1	"Anicetus"	"cutlass"	0.998218384753659
+"738"	738	"male"	"yes"	25	"CCCC"	13	3	2	"Jack Sparrow"	"cutlass"	0.906958657594821
+"739"	739	"female"	"yes"	30	"JSSFP"	10	1	1	"Jack Sparrow"	"cutlass"	0.174762581591494
+"740"	740	"female"	"yes"	25	"CCCC"	13	0	8	"Jack Sparrow"	"cutlass"	0.212901982304174
+"741"	741	"female"	"yes"	31	"JSSFP"	9	0	5	"Jack Sparrow"	"cutlass"	0.448772466598831
+"742"	742	"male"	"yes"	29	"CCCC"	5	0	2	"Jack Sparrow"	"cutlass"	0.653643769687326
+"743"	743	"male"	"yes"	20	"CCCC"	11	1	0	"Jack Sparrow"	"cutlass"	0.574076098829329
+"744"	744	"male"	"yes"	24	"CCCC"	10	11	3	"Jack Sparrow"	"cutlass"	1.43688143339513
+"745"	745	"female"	"no"	34	"JSSFP"	2	0	5	"Jack Sparrow"	"banana"	3.6218474001531
+"746"	746	"male"	"yes"	28	"CCCC"	10	4	2	"Jack Sparrow"	"cutlass"	0.0935035300790332
+"747"	747	"female"	"yes"	26	"CCCC"	8	3	0	"Anicetus"	"cutlass"	0.28458297951147
+"748"	748	"male"	"no"	21	"CCCC"	10	1	1	"Jack Sparrow"	"sabre"	0.927534096741251
+"749"	749	"female"	"yes"	31	"JSSFP"	10	4	1	"Edward Low"	"cutlass"	0.0751797220436856
+"750"	750	"female"	"no"	33	"CCCC"	5	3	4	"Hook"	"sabre"	4.45724214802306
+"751"	751	"male"	"yes"	21	"CCCC"	8	4	1	"Jack Sparrow"	"cutlass"	0.028200141096022
+"752"	752	"male"	"yes"	23	"CCCC"	7	3	0	"Hook"	"cutlass"	0.713380583302871
+"753"	753	"male"	"yes"	18	"CCCC"	13	1	0	"Jack Sparrow"	"cutlass"	0.124500918656083
+"754"	754	"male"	"yes"	31	"JSSFP"	9	12	1	"Jack Sparrow"	"cutlass"	0.229456822271459
+"755"	755	"female"	"yes"	38	"JSSFP"	11	1	9	"Jack Sparrow"	"cutlass"	0.739673181643531
+"756"	756	"male"	"yes"	26	"CCCC"	13	5	1	"Jack Sparrow"	"sabre"	2.07309144704292
+"757"	757	"female"	"yes"	29	"CCCC"	7	0	1	"Edward Low"	"cutlass"	1.06093144388275
+"758"	758	"male"	"yes"	28	"CCCC"	14	6	2	"Jack Sparrow"	"cutlass"	0.728904971593812
+"759"	759	"male"	"yes"	22	"CCCC"	7	2	0	"Lewis Scot"	"cutlass"	0.765041341047555
+"760"	760	"female"	"yes"	27	"CCCC"	11	4	4	"Anicetus"	"cutlass"	0.187339910480659
+"761"	761	"male"	"yes"	27	"CCCC"	11	7	0	"Jack Sparrow"	"cutlass"	0.0420309837880115
+"762"	762	"female"	"yes"	25	"CCCC"	10	4	1	"Hook"	"cutlass"	0.292788723309059
+"763"	763	"male"	"yes"	24	"CCCC"	8	19	1	"Jack Sparrow"	"cutlass"	0.666589960429639
+"764"	764	"male"	"yes"	9	"CCCC"	7	6	0	"Jack Sparrow"	"cutlass"	1.23883786722423
+"765"	765	"female"	"yes"	31	"JSSFP"	11	9	5	"Hook"	"cutlass"	0.259205703914631
+"766"	766	"other"	"yes"	32	"JSSFP"	13	6	7	"Hook"	"cutlass"	1.29687233939172
+"767"	767	"male"	"yes"	30	"JSSFP"	9	5	5	"Jack Sparrow"	"cutlass"	3.57337280155575
+"768"	768	"female"	"yes"	35	"JSSFP"	11	5	1	"Anicetus"	"cutlass"	0.810626855210222
+"769"	769	"female"	"yes"	31	"JSSFP"	8	4	2	"Lewis Scot"	"cutlass"	0.233506247571769
+"770"	770	"female"	"yes"	29	"JSSFP"	13	5	2	"Hook"	"cutlass"	0.61217141291834
+"771"	771	"male"	"yes"	26	"CCCC"	5	1	1	"Jack Sparrow"	"cutlass"	1.73335024450006
+"772"	772	"female"	"no"	36	"JSSFP"	7	2	6	"Edward Low"	"banana"	0.130746486940075
+"773"	773	"female"	"no"	27	"CCCC"	1	1	2	"Edward Low"	"banana"	2.63174350307875
+"774"	774	"male"	"no"	20	"CCCC"	3	3	1	"Jack Sparrow"	"scimitar"	2.11802875305665
+"775"	775	"male"	"yes"	29	"CCCC"	6	3	2	"Edward Low"	"cutlass"	0.559769027845429
+"776"	776	"other"	"yes"	32	"JSSFP"	8	42	0	"Blackbeard"	"cutlass"	0.846838342232451
+"777"	777	"female"	"yes"	24	"CCCC"	9	6	2	"Anicetus"	"cutlass"	0.348911460314412
+"778"	778	"female"	"yes"	42	"JSSFP"	10	3	5	"Anicetus"	"cutlass"	0.243403268978
+"779"	779	"other"	"yes"	23	"CCCC"	10	34	0	"Blackbeard"	"cutlass"	0.964974467045027
+"780"	780	"male"	"yes"	30	"JSSFP"	9	15	5	"Jack Sparrow"	"cutlass"	0.390942592057399
+"781"	781	"male"	"yes"	18	"CCCC"	14	8	1	"Jack Sparrow"	"cutlass"	0.0576505193149575
+"782"	782	"female"	"yes"	39	"JSSFP"	9	3	3	"Jack Sparrow"	"banana"	3.16051598340571
+"783"	783	"male"	"yes"	25	"CCCC"	8	6	7	"Jack Sparrow"	"cutlass"	0.381893575831782
+"784"	784	"female"	"yes"	29	"CCCC"	8	2	4	"Edward Low"	"cutlass"	0.0946073580964402
+"785"	785	"female"	"yes"	29	"JSSFP"	9	8	0	"Edward Low"	"cutlass"	0.015584860520903
+"786"	786	"female"	"yes"	25	"CCCC"	13	8	4	"Hook"	"cutlass"	1.53885168830438
+"787"	787	"female"	"yes"	32	"JSSFP"	11	1	3	"Lewis Scot"	"cutlass"	0.0853099444066174
+"788"	788	"female"	"yes"	35	"JSSFP"	14	31	1	"Blackbeard"	"cutlass"	0.729452784591943
+"789"	789	"male"	"yes"	23	"CCCC"	6	15	1	"Jack Sparrow"	"cutlass"	1.57837524187325
+"790"	790	"male"	"yes"	19	"CCCC"	9	7	0	"Jack Sparrow"	"cutlass"	2.61088381738481
+"791"	791	"male"	"yes"	26	"CCCC"	14	16	1	"Jack Sparrow"	"cutlass"	1.95720856533128
+"792"	792	"female"	"yes"	28	"CCCC"	18	38	3	"Jack Sparrow"	"cutlass"	1.75457914349365
+"793"	793	"female"	"yes"	40	"JSSFP"	13	10	6	"Blackbeard"	"cutlass"	0.718184594215471
+"794"	794	"male"	"yes"	27	"CCCC"	8	12	1	"Lewis Scot"	"cutlass"	1.17859617918135
+"795"	795	"male"	"yes"	24	"CCCC"	7	2	5	"Edward Low"	"cutlass"	0.828281462282695
+"796"	796	"female"	"yes"	23	"CCCC"	12	1	0	"Blackbeard"	"scimitar"	1.22081356767218
+"797"	797	"male"	"yes"	11	"CCCC"	10	3	0	"Jack Sparrow"	"cutlass"	0.886758333019555
+"798"	798	"other"	"no"	28	"CCCC"	7	2	0	"Edward Low"	"sabre"	0.0371840456500649
+"799"	799	"female"	"no"	26	"CCCC"	5	0	4	"Anicetus"	"scimitar"	0.115310686330001
+"800"	800	"female"	"yes"	28	"CCCC"	4	13	0	"Hook"	"cutlass"	0.751201954527579
+"801"	801	"female"	"yes"	35	"JSSFP"	9	5	13	"Lewis Scot"	"cutlass"	1.24100546347314
+"802"	802	"female"	"yes"	22	"CCCC"	15	2	0	"Edward Low"	"cutlass"	0.126669302791721
+"803"	803	"female"	"yes"	33	"JSSFP"	5	26	6	"Blackbeard"	"cutlass"	1.12272688065992
+"804"	804	"male"	"no"	24	"CCCC"	10	25	5	"Jack Sparrow"	"banana"	1.07809875817466
+"805"	805	"male"	"yes"	23	"CCCC"	8	2	1	"Jack Sparrow"	"cutlass"	0.0602175901796609
+"806"	806	"female"	"yes"	35	"JSSFP"	8	3	4	"Edward Low"	"cutlass"	0.429666196869221
+"807"	807	"male"	"yes"	23	"CCCC"	12	2	1	"Jack Sparrow"	"cutlass"	0.362464368226938
+"808"	808	"male"	"yes"	34	"JSSFP"	9	13	0	"Jack Sparrow"	"cutlass"	0.0487122633902098
+"809"	809	"female"	"yes"	28	"CCCC"	3	1	8	"Anicetus"	"cutlass"	0.13336635514861
+"810"	810	"female"	"yes"	35	"JSSFP"	8	7	3	"Anicetus"	"cutlass"	0.276142879473254
+"811"	811	"female"	"yes"	36	"JSSFP"	11	4	0	"Blackbeard"	"cutlass"	0.379732784847187
+"812"	812	"female"	"yes"	26	"CCCC"	14	22	2	"Edward Low"	"cutlass"	3.94593516593766
+"813"	813	"male"	"yes"	23	"CCCC"	13	0	3	"Jack Sparrow"	"banana"	14.3236467619402
+"814"	814	"female"	"yes"	33	"JSSFP"	11	4	1	"Hook"	"cutlass"	0.723430052140549
+"815"	815	"male"	"yes"	20	"CCCC"	13	2	2	"Edward Low"	"cutlass"	1.32568404419853
+"816"	816	"male"	"yes"	24	"CCCC"	12	10	0	"Hook"	"cutlass"	0.466031152728766
+"817"	817	"female"	"yes"	30	"CCCC"	12	6	1	"Blackbeard"	"cutlass"	0.590194268707939
+"818"	818	"male"	"yes"	29	"CCCC"	10	4	11	"Jack Sparrow"	"cutlass"	0.0859973598904342
+"819"	819	"male"	"yes"	22	"CCCC"	9	1	2	"Edward Low"	"cutlass"	0.410542186000384
+"820"	820	"female"	"yes"	38	"JSSFP"	12	10	6	"Hook"	"cutlass"	0.355931860685814
+"821"	821	"female"	"yes"	34	"JSSFP"	16	9	1	"Jack Sparrow"	"cutlass"	0.509991320987985
+"822"	822	"male"	"yes"	26	"CCCC"	13	8	0	"Jack Sparrow"	"cutlass"	1.2633433448557
+"823"	823	"male"	"yes"	26	"CCCC"	15	8	0	"Hook"	"cutlass"	0.508227903261615
+"824"	824	"male"	"yes"	25	"CCCC"	9	0	15	"Jack Sparrow"	"cutlass"	1.08933886042202
+"825"	825	"female"	"yes"	26	"CCCC"	10	5	1	"Lewis Scot"	"cutlass"	0.736212986495167
+"826"	826	"female"	"yes"	20	"CCCC"	10	11	6	"Anicetus"	"cutlass"	1.79872519326139
+"827"	827	"female"	"yes"	37	"JSSFP"	11	6	0	"Anicetus"	"cutlass"	0.0178413520138087
+"828"	828	"male"	"yes"	27	"CCCC"	8	3	2	"Jack Sparrow"	"cutlass"	0.577799219146192
+"829"	829	"female"	"yes"	34	"JSSFP"	12	1	7	"Blackbeard"	"cutlass"	0.274419567722362
+"830"	830	"other"	"no"	26	"CCCC"	5	5	2	"Jack Sparrow"	"banana"	0.648860822617412
+"831"	831	"male"	"yes"	27	"CCCC"	6	16	7	"Jack Sparrow"	"cutlass"	0.0388241668933975
+"832"	832	"female"	"yes"	24	"CCCC"	14	12	1	"Jack Sparrow"	"cutlass"	0.67704561804124
+"833"	833	"male"	"yes"	23	"CCCC"	11	5	1	"Jack Sparrow"	"cutlass"	0.537535263314437
+"834"	834	"female"	"yes"	27	"CCCC"	11	1	2	"Hook"	"cutlass"	0.156030085054226
+"835"	835	"male"	"yes"	26	"CCCC"	9	2	6	"Anicetus"	"cutlass"	0.670860785731867
+"836"	836	"female"	"yes"	32	"JSSFP"	8	10	5	"Anicetus"	"cutlass"	0.155346398823895
+"837"	837	"male"	"no"	26	"CCCC"	8	10	1	"Jack Sparrow"	"scimitar"	10.3014896059395
+"838"	838	"male"	"yes"	26	"CCCC"	13	14	1	"Jack Sparrow"	"cutlass"	0.578619405833826
+"839"	839	"female"	"yes"	39	"JSSFP"	17	9	12	"Jack Sparrow"	"cutlass"	0.320533627236728
+"840"	840	"female"	"yes"	29	"CCCC"	10	11	2	"Lewis Scot"	"cutlass"	1.61627722546963
+"841"	841	"female"	"yes"	32	"CCCC"	11	0	1	"Hook"	"scimitar"	4.57730305098685
+"842"	842	"female"	"yes"	38	"JSSFP"	8	0	4	"Lewis Scot"	"cutlass"	0.284599168517161
+"843"	843	"female"	"yes"	32	"JSSFP"	16	8	1	"Blackbeard"	"cutlass"	0.720062103329048
+"844"	844	"male"	"no"	30	"JSSFP"	3	0	1	"Jack Sparrow"	"banana"	2.70163385053919
+"845"	845	"female"	"yes"	36	"JSSFP"	9	22	5	"Edward Low"	"cutlass"	0.176722559845075
+"846"	846	"female"	"yes"	30	"JSSFP"	12	1	12	"Jack Sparrow"	"cutlass"	0.00292395998258144
+"847"	847	"male"	"yes"	31	"JSSFP"	10	20	2	"Hook"	"cutlass"	0.626885590582907
+"848"	848	"male"	"yes"	17	"CCCC"	9	8	1	"Jack Sparrow"	"cutlass"	0.440082387041122
+"849"	849	"male"	"yes"	21	"CCCC"	11	11	1	"Hook"	"cutlass"	2.3542013651562
+"850"	850	"female"	"no"	33	"JSSFP"	7	9	0	"Blackbeard"	"sabre"	1.595344713696
+"851"	851	"male"	"no"	26	"CCCC"	2	4	3	"Anicetus"	"banana"	0.484221416751436
+"852"	852	"male"	"yes"	30	"CCCC"	14	2	7	"Jack Sparrow"	"sabre"	4.51903915950064
+"853"	853	"male"	"yes"	26	"CCCC"	14	2	1	"Jack Sparrow"	"cutlass"	0.451384154300793
+"854"	854	"male"	"yes"	25	"CCCC"	6	9	5	"Jack Sparrow"	"cutlass"	1.88383033954281
+"855"	855	"female"	"yes"	25	"CCCC"	9	4	0	"Lewis Scot"	"cutlass"	0.238859841483645
+"856"	856	"male"	"yes"	22	"CCCC"	7	5	1	"Jack Sparrow"	"cutlass"	0.547474205449028
+"857"	857	"female"	"yes"	32	"CCCC"	14	18	1	"Anicetus"	"cutlass"	0.663997538477935
+"858"	858	"other"	"yes"	19	"CCCC"	15	5	1	"Jack Sparrow"	"cutlass"	0.130418358312454
+"859"	859	"male"	"yes"	27	"JSSFP"	10	21	3	"Jack Sparrow"	"cutlass"	0.156693405588157
+"860"	860	"male"	"yes"	25	"CCCC"	12	8	0	"Jack Sparrow"	"cutlass"	0.700893827571355
+"861"	861	"other"	"yes"	24	"CCCC"	12	2	0	"Anicetus"	"scimitar"	8.13210556119224
+"862"	862	"male"	"no"	30	"CCCC"	7	5	2	"Jack Sparrow"	"scimitar"	0.420476827615251
+"863"	863	"female"	"yes"	28	"CCCC"	10	28	4	"Anicetus"	"sabre"	2.21942362559248
+"864"	864	"female"	"yes"	30	"JSSFP"	6	9	2	"Hook"	"cutlass"	0.264315714593977
+"865"	865	"female"	"yes"	24	"CCCC"	9	1	1	"Jack Sparrow"	"cutlass"	0.835599678076625
+"866"	866	"male"	"yes"	22	"CCCC"	7	5	0	"Jack Sparrow"	"cutlass"	0.312989065714646
+"867"	867	"male"	"yes"	27	"CCCC"	8	3	1	"Jack Sparrow"	"cutlass"	0.0351025440613739
+"868"	868	"female"	"no"	26	"CCCC"	5	0	1	"Jack Sparrow"	"sabre"	0.255727264979481
+"869"	869	"male"	"yes"	30	"CCCC"	11	14	0	"Anicetus"	"cutlass"	0.4729540139407
+"870"	870	"female"	"yes"	40	"JSSFP"	9	1	6	"Jack Sparrow"	"cutlass"	0.230493012350053
+"871"	871	"female"	"yes"	22	"CCCC"	4	8	0	"Edward Low"	"cutlass"	1.07763708796689
+"872"	872	"female"	"no"	41	"JSSFP"	8	15	4	"Anicetus"	"sabre"	2.76636878548694
+"873"	873	"male"	"yes"	12	"CCCC"	10	9	5	"Jack Sparrow"	"cutlass"	0.79971407188271
+"874"	874	"male"	"yes"	22	"CCCC"	11	15	1	"Jack Sparrow"	"cutlass"	0.203778379946016
+"875"	875	"female"	"yes"	30	"JSSFP"	14	3	2	"Anicetus"	"cutlass"	1.72939331844954
+"876"	876	"male"	"yes"	31	"JSSFP"	8	22	1	"Jack Sparrow"	"cutlass"	0.539103539168656
+"877"	877	"female"	"yes"	27	"CCCC"	12	1	3	"Lewis Scot"	"cutlass"	0.448846989656264
+"878"	878	"female"	"yes"	37	"JSSFP"	8	1	2	"Jack Sparrow"	"scimitar"	16.9891234106364
+"879"	879	"male"	"yes"	21	"CCCC"	11	1	3	"Lewis Scot"	"cutlass"	0.0435450821532868
+"880"	880	"female"	"yes"	31	"CCCC"	13	4	1	"Hook"	"cutlass"	1.21067059337498
+"881"	881	"female"	"yes"	26	"CCCC"	10	5	1	"Edward Low"	"cutlass"	0.745140765767366
+"882"	882	"female"	"yes"	30	"CCCC"	12	5	0	"Jack Sparrow"	"cutlass"	0.53797428726387
+"883"	883	"male"	"yes"	27	"CCCC"	16	18	0	"Hook"	"cutlass"	0.681628945140921
+"884"	884	"other"	"yes"	36	"JSSFP"	11	13	15	"Hook"	"cutlass"	0.619655107121736
+"885"	885	"male"	"yes"	30	"JSSFP"	13	6	4	"Jack Sparrow"	"cutlass"	0.290413899197816
+"886"	886	"female"	"yes"	26	"CCCC"	10	22	0	"Edward Low"	"cutlass"	0.0677044686744921
+"887"	887	"male"	"yes"	29	"CCCC"	11	22	21	"Jack Sparrow"	"cutlass"	0.255547994347019
+"888"	888	"male"	"yes"	22	"CCCC"	11	1	0	"Jack Sparrow"	"cutlass"	1.27439658501522
+"889"	889	"male"	"yes"	20	"CCCC"	11	0	1	"Jack Sparrow"	"cutlass"	0.402871452679392
+"890"	890	"female"	"no"	32	"JSSFP"	5	15	7	"Blackbeard"	"sabre"	3.72963972637786
+"891"	891	"female"	"yes"	32	"JSSFP"	11	9	7	"Jack Sparrow"	"cutlass"	0.242235504847486
+"892"	892	"male"	"no"	29	"JSSFP"	7	2	1	"Jack Sparrow"	"cutlass"	0.0107730797026306
+"893"	893	"female"	"yes"	29	"CCCC"	7	5	0	"Edward Low"	"cutlass"	0.179808312945035
+"894"	894	"female"	"yes"	32	"JSSFP"	12	15	2	"Hook"	"cutlass"	1.08958615101279
+"895"	895	"female"	"yes"	31	"CCCC"	8	0	3	"Lewis Scot"	"cutlass"	0.486608050388105
+"896"	896	"female"	"yes"	32	"JSSFP"	10	17	1	"Blackbeard"	"cutlass"	0.563785591352851
+"897"	897	"female"	"yes"	34	"JSSFP"	11	9	5	"Edward Low"	"cutlass"	1.29461236642079
+"898"	898	"female"	"yes"	25	"CCCC"	8	13	0	"Hook"	"cutlass"	1.58379660329355
+"899"	899	"female"	"yes"	24	"CCCC"	6	8	0	"Blackbeard"	"scimitar"	3.14583965150191
+"900"	900	"male"	"yes"	21	"CCCC"	14	8	0	"Jack Sparrow"	"cutlass"	0.886468427436069
+"901"	901	"male"	"yes"	19	"CCCC"	12	16	3	"Blackbeard"	"scimitar"	25.4351507950772
+"902"	902	"female"	"yes"	29	"JSSFP"	9	6	2	"Blackbeard"	"cutlass"	2.02421576239842
+"903"	903	"female"	"yes"	31	"JSSFP"	8	17	2	"Jack Sparrow"	"cutlass"	0.907803181273505
+"904"	904	"male"	"yes"	20	"CCCC"	10	4	2	"Hook"	"cutlass"	0.781881693375118
+"905"	905	"male"	"yes"	24	"CCCC"	9	3	2	"Jack Sparrow"	"cutlass"	0.50758339927265
+"906"	906	"female"	"yes"	26	"CCCC"	9	7	3	"Edward Low"	"cutlass"	0.224661469983403
+"907"	907	"female"	"yes"	37	"JSSFP"	5	4	0	"Anicetus"	"cutlass"	0.671155156822125
+"908"	908	"female"	"yes"	30	"CCCC"	9	9	2	"Jack Sparrow"	"cutlass"	0.846999637989149
+"909"	909	"female"	"yes"	34	"JSSFP"	14	3	8	"Edward Low"	"cutlass"	1.5719004987417
+"910"	910	"male"	"yes"	20	"CCCC"	8	32	3	"Jack Sparrow"	"cutlass"	3.4444405055164
+"911"	911	"female"	"no"	24	"CCCC"	6	12	9	"Lewis Scot"	"sabre"	1.13159452825105
+"912"	912	"male"	"yes"	23	"CCCC"	13	1	2	"Hook"	"cutlass"	0.249932542210445
+"913"	913	"male"	"yes"	33	"JSSFP"	17	2	11	"Jack Sparrow"	"cutlass"	0.247570173814893
+"914"	914	"female"	"yes"	34	"JSSFP"	14	14	1	"Lewis Scot"	"cutlass"	0.640682518106707
+"915"	915	"male"	"yes"	30	"CCCC"	11	19	1	"Anicetus"	"cutlass"	1.66078047004102
+"916"	916	"male"	"yes"	19	"CCCC"	8	12	1	"Jack Sparrow"	"cutlass"	0.239992524439003
+"917"	917	"female"	"yes"	43	"JSSFP"	14	2	6	"Hook"	"cutlass"	0.225330645916983
+"918"	918	"female"	"yes"	23	"CCCC"	7	15	1	"Lewis Scot"	"cutlass"	0.0860534085088983
+"919"	919	"female"	"yes"	32	"JSSFP"	7	16	3	"Hook"	"cutlass"	0.200686967546464
+"920"	920	"male"	"yes"	36	"JSSFP"	11	6	1	"Jack Sparrow"	"cutlass"	1.33667314533649
+"921"	921	"male"	"yes"	24	"CCCC"	11	4	1	"Jack Sparrow"	"cutlass"	0.20887684164336
+"922"	922	"female"	"yes"	25	"CCCC"	5	4	2	"Blackbeard"	"cutlass"	0.136695528926793
+"923"	923	"female"	"yes"	34	"JSSFP"	9	0	0	"Lewis Scot"	"sabre"	1.24745299573988
+"924"	924	"male"	"yes"	24	"CCCC"	9	12	1	"Edward Low"	"cutlass"	0.467674860820927
+"925"	925	"other"	"yes"	30	"JSSFP"	10	13	1	"Anicetus"	"cutlass"	2.14491693758148
+"926"	926	"female"	"yes"	34	"JSSFP"	9	3	4	"Lewis Scot"	"cutlass"	0.0923647114541382
+"927"	927	"male"	"yes"	22	"CCCC"	17	7	3	"Jack Sparrow"	"cutlass"	1.35163403457536
+"928"	928	"female"	"yes"	26	"JSSFP"	8	7	2	"Anicetus"	"cutlass"	0.422425645228941
+"929"	929	"male"	"yes"	29	"CCCC"	8	7	13	"Jack Sparrow"	"cutlass"	0.418717118154746
+"930"	930	"female"	"yes"	27	"CCCC"	11	16	0	"Lewis Scot"	"cutlass"	1.75018438127565
+"931"	931	"male"	"yes"	26	"CCCC"	8	0	1	"Jack Sparrow"	"cutlass"	0.226227784587536
+"932"	932	"male"	"yes"	23	"CCCC"	8	13	6	"Jack Sparrow"	"cutlass"	0.00919330108445138
+"933"	933	"male"	"no"	24	"CCCC"	7	6	6	"Hook"	"banana"	2.12728911084288
+"934"	934	"female"	"yes"	36	"JSSFP"	9	16	2	"Anicetus"	"cutlass"	0.0544016726893136
+"935"	935	"female"	"no"	41	"JSSFP"	5	4	5	"Edward Low"	"scimitar"	1.23879677764279
+"936"	936	"female"	"no"	21	"CCCC"	7	2	0	"Lewis Scot"	"banana"	0.628547820021834
+"937"	937	"male"	"yes"	34	"JSSFP"	9	2	3	"Jack Sparrow"	"cutlass"	1.29274393543007
+"938"	938	"female"	"yes"	29	"JSSFP"	7	6	1	"Jack Sparrow"	"banana"	4.08399764534
+"939"	939	"female"	"yes"	25	"CCCC"	12	3	3	"Hook"	"cutlass"	0.296281822083984
+"940"	940	"male"	"yes"	24	"CCCC"	3	6	4	"Jack Sparrow"	"cutlass"	1.02742414916271
+"941"	941	"male"	"no"	33	"JSSFP"	8	28	2	"Lewis Scot"	"cutlass"	0.379049413605024
+"942"	942	"male"	"yes"	24	"CCCC"	8	5	0	"Lewis Scot"	"cutlass"	0.34389371983707
+"943"	943	"female"	"yes"	29	"JSSFP"	16	6	0	"Blackbeard"	"cutlass"	1.43356319159775
+"944"	944	"male"	"yes"	23	"CCCC"	7	5	2	"Jack Sparrow"	"cutlass"	0.295992197630464
+"945"	945	"female"	"yes"	31	"JSSFP"	10	38	9	"Blackbeard"	"cutlass"	0.323247820488177
+"946"	946	"female"	"yes"	26	"CCCC"	6	4	8	"Hook"	"banana"	4.26253166187417
+"947"	947	"female"	"yes"	29	"CCCC"	12	8	13	"Lewis Scot"	"cutlass"	0.539612856279352
+"948"	948	"male"	"yes"	37	"JSSFP"	12	4	0	"Jack Sparrow"	"cutlass"	0.363113803905435
+"949"	949	"female"	"yes"	21	"CCCC"	8	3	4	"Lewis Scot"	"cutlass"	1.85801294156092
+"950"	950	"male"	"yes"	25	"CCCC"	6	0	1	"Edward Low"	"cutlass"	0.140594744055373
+"951"	951	"female"	"yes"	33	"JSSFP"	6	11	6	"Hook"	"sabre"	0.127715966769764
+"952"	952	"male"	"yes"	30	"CCCC"	10	9	1	"Jack Sparrow"	"cutlass"	0.0558929887483828
+"953"	953	"male"	"yes"	27	"CCCC"	13	3	4	"Jack Sparrow"	"sabre"	0.757807724587998
+"954"	954	"male"	"yes"	23	"CCCC"	14	2	17	"Jack Sparrow"	"cutlass"	1.2658078118168
+"955"	955	"female"	"no"	36	"JSSFP"	2	12	3	"Edward Low"	"sabre"	9.00923181537278
+"956"	956	"male"	"yes"	25	"CCCC"	10	35	9	"Jack Sparrow"	"cutlass"	0.450583375801816
+"957"	957	"female"	"yes"	36	"JSSFP"	6	37	11	"Blackbeard"	"cutlass"	0.40986354026245
+"958"	958	"male"	"yes"	19	"CCCC"	12	14	4	"Hook"	"cutlass"	0.328468871302903
+"959"	959	"male"	"yes"	27	"CCCC"	10	2	0	"Jack Sparrow"	"cutlass"	0.494614391328588
+"960"	960	"female"	"yes"	23	"CCCC"	4	2	0	"Edward Low"	"cutlass"	0.229268305702135
+"961"	961	"male"	"yes"	27	"CCCC"	11	3	0	"Jack Sparrow"	"cutlass"	0.0608768378151581
+"962"	962	"male"	"yes"	14	"CCCC"	5	0	3	"Jack Sparrow"	"cutlass"	0.0434708649923387
+"963"	963	"other"	"yes"	24	"CCCC"	12	2	0	"Anicetus"	"cutlass"	0.613171856940545
+"964"	964	"male"	"yes"	20	"CCCC"	7	0	0	"Jack Sparrow"	"cutlass"	0.0645608559716493
+"965"	965	"female"	"yes"	29	"JSSFP"	7	6	2	"Hook"	"cutlass"	0.508239945575188
+"966"	966	"female"	"yes"	27	"CCCC"	8	6	4	"Jack Sparrow"	"cutlass"	0.0869968517437205
+"967"	967	"male"	"yes"	23	"CCCC"	9	6	9	"Jack Sparrow"	"cutlass"	0.385159053839743
+"968"	968	"male"	"yes"	26	"CCCC"	14	46	1	"Anicetus"	"cutlass"	1.20749864954838
+"969"	969	"female"	"yes"	30	"CCCC"	6	20	1	"Hook"	"cutlass"	0.799579691900959
+"970"	970	"male"	"no"	26	"CCCC"	6	0	4	"Jack Sparrow"	"scimitar"	2.16357148090206
+"971"	971	"female"	"yes"	30	"CCCC"	5	7	16	"Anicetus"	"cutlass"	0.780937372447744
+"972"	972	"male"	"yes"	16	"CCCC"	15	36	1	"Edward Low"	"cutlass"	0.337055057752877
+"973"	973	"male"	"yes"	24	"CCCC"	5	3	2	"Jack Sparrow"	"cutlass"	0.297085292695556
+"974"	974	"female"	"yes"	32	"JSSFP"	10	19	2	"Hook"	"cutlass"	0.373912599405737
+"975"	975	"female"	"yes"	32	"JSSFP"	7	5	5	"Jack Sparrow"	"cutlass"	0.395092937105801
+"976"	976	"male"	"yes"	30	"CCCC"	10	7	2	"Lewis Scot"	"cutlass"	0.10963936598273
+"977"	977	"female"	"yes"	26	"CCCC"	9	7	4	"Anicetus"	"cutlass"	0.406657985877246
+"978"	978	"female"	"no"	38	"JSSFP"	2	1	1	"Anicetus"	"banana"	1.9815999870681
+"979"	979	"male"	"yes"	25	"CCCC"	10	0	2	"Jack Sparrow"	"cutlass"	0.481354401537039
+"980"	980	"male"	"yes"	25	"CCCC"	12	3	1	"Jack Sparrow"	"cutlass"	0.285610459686723
+"981"	981	"male"	"no"	21	"CCCC"	3	4	1	"Jack Sparrow"	"scimitar"	0.2310222806409
+"982"	982	"female"	"yes"	32	"JSSFP"	8	9	8	"Anicetus"	"cutlass"	0.649594953839489
+"983"	983	"male"	"yes"	15	"CCCC"	12	10	1	"Jack Sparrow"	"cutlass"	1.36854773302938
+"984"	984	"male"	"yes"	24	"CCCC"	13	0	1	"Jack Sparrow"	"cutlass"	0.180307571133216
+"985"	985	"female"	"no"	24	"CCCC"	0	5	0	"Hook"	"banana"	2.57410118346085
+"986"	986	"male"	"yes"	26	"CCCC"	10	2	7	"Jack Sparrow"	"cutlass"	0.417493623972405
+"987"	987	"female"	"yes"	33	"JSSFP"	8	3	0	"Edward Low"	"cutlass"	1.7130879137343
+"988"	988	"other"	"yes"	31	"CCCC"	12	2	2	"Jack Sparrow"	"cutlass"	0.0464897786150686
+"989"	989	"male"	"yes"	21	"CCCC"	13	8	9	"Jack Sparrow"	"cutlass"	1.36977348585187
+"990"	990	"male"	"yes"	11	"CCCC"	12	11	2	"Edward Low"	"cutlass"	0.695113965749562
+"991"	991	"male"	"yes"	33	"JSSFP"	8	1	5	"Blackbeard"	"cutlass"	0.0850856740726158
+"992"	992	"female"	"yes"	31	"JSSFP"	6	6	3	"Hook"	"cutlass"	0.406087884621229
+"993"	993	"female"	"yes"	29	"JSSFP"	13	12	3	"Anicetus"	"cutlass"	0.232060274865944
+"994"	994	"other"	"no"	28	"CCCC"	8	19	2	"Edward Low"	"banana"	1.601687152137
+"995"	995	"female"	"yes"	20	"CCCC"	12	0	3	"Blackbeard"	"cutlass"	0.655061676486071
+"996"	996	"male"	"yes"	31	"JSSFP"	8	16	1	"Jack Sparrow"	"cutlass"	0.0434172377572395
+"997"	997	"female"	"yes"	38	"JSSFP"	12	5	8	"Edward Low"	"cutlass"	0.455125496929333
+"998"	998	"female"	"yes"	35	"JSSFP"	12	0	6	"Lewis Scot"	"cutlass"	0.13241989625385
+"999"	999	"female"	"yes"	30	"CCCC"	10	16	15	"Blackbeard"	"cutlass"	1.06336707127617
+"1000"	1000	"female"	"no"	20	"CCCC"	0	3	2	"Blackbeard"	"cutlass"	0.674804519375271

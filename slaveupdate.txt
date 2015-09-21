@@ -1,0 +1,38 @@
+starting worker for localhost:11104 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Library snowfall loaded.
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Calling a snowfall function without calling 'sfInit' first or after sfStop().
+'sfInit()' is called now.
+snowfall 1.84-6 initialized: sequential execution, one CPU.
+
+Iteration  29 out of  210TType: EXEC 
+Iteration  54 out of  210TType: EXEC 
+Iteration  96 out of  210TType: EXEC 
+Iteration  128 out of  21TTType: EXEC 
+Iteration  159 out of  21TTType: EXEC 
+Iteration  192 out of  21TTType: EXECTTType: DONE 
+Warning messages:
+1: In searchCommandline(parallel, cpus = cpus, type = type, socketHosts = socketHosts,  :
+  Unknown option on commandline: --file
+2: In searchCommandline(parallel, cpus = cpus, type = type, socketHosts = socketHosts,  :
+  Unknown option on commandline: MASTER
+3: In searchCommandline(parallel, cpus = cpus, type = type, socketHosts = socketHosts,  :
+  Unknown option on commandline: PORT
+4: In searchCommandline(parallel, cpus = cpus, type = type, socketHosts = socketHosts,  :
+  Unknown option on commandline: OUT
+5: In searchCommandline(parallel, cpus = cpus, type = type, socketHosts = socketHosts,  :
+  Unknown option on commandline: SNOWLIB
+on on commandline: SNOWLIB

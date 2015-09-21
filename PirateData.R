@@ -1,5 +1,5 @@
 # Create pirate dataset for YaRrr
-
+{
 n <- 1000
 
 pirates <- data.frame("id" = 1:n,
@@ -94,8 +94,8 @@ pirates$sword.speed <- unlist(lapply(1:nrow(pirates), function(x) {
 
 
 # Write table to file
-write.table(pirates, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirate_survey.txt", sep = "\t")
-
+write.table(pirates, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirate_survey_noerrors.txt", sep = "\t")
+save(pirates, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/yarrr/data/pirates.RData")
 
 pirates.errors <- pirates
 
@@ -108,5 +108,54 @@ pirates.errors$tattoos[sample(1:nrow(pirates.errors), size = 10)] <- sample(c(10
 pirates.errors$favorite.pirate[sample(1:nrow(pirates.errors), size = 10)] <- sample(c("your mom"), size = 10, replace = T)
 
 # Write table to file
-write.table(pirates.errors, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirate_survey_errors.txt", sep = "\t")
+write.table(pirates.errors, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirate_survey_witherrors.txt", sep = "\t")
 
+}
+
+
+# Ship dataset
+
+shipauction <- data.frame(cannons = sample(c(seq(2, 20, 2)), size = 1000, replace = T),
+                    rooms = sample(seq(10, 60, 4), size = 1000, replace = T),
+                    age = round(rnorm(1000, mean = 50, sd = 10), 1),
+                    style = sample(c("modern", "classic"), size = 1000, replace = T),
+                    condition = sample(10:1, size = 1000, replace = T, prob = c(1:5, 5:1)),
+                    weight = rnorm(1000, 5000, 500),
+                    color = sample(c("black", "brown", "red"), size = 1000, prob = c(.5, .3, .2), replace = T),
+                    stringsAsFactors = F
+)
+
+
+
+
+shipauction$style <- sapply(1:nrow(shipauction), function(x) {
+  sample(c("modern", "classic"), 1, 
+         prob = c(1 - 1 / (1 + exp(-((shipauction$age[x] - 50) / 10))), 
+                  1 / (1 + exp(-((shipauction$age[x] - 50) / 10)))))})
+
+shipauction$price[shipauction$style == "modern"] <- with(shipauction[shipauction$style == "modern",], 
+                                       10000 + 
+                                       100 * cannons + 
+                                       500 * rooms + 
+                                       (-500) * age + 
+                                       200 * condition
+)
+
+
+shipauction$price[shipauction$style == "classic"] <- with(shipauction[shipauction$style == "classic",],
+                                                          0 + 
+                                                           100 * cannons + 
+                                                           500 * rooms + 
+                                                           (300) * age + 
+                                                           200 * condition
+)
+
+shipauction$price[shipauction$color == "black"] <- shipauction$price[shipauction$color == "black"] + 10000
+shipauction$price[shipauction$color == "black"] <- shipauction$price[shipauction$color == "brown"] + 0
+shipauction$price[shipauction$color == "black"] <- shipauction$price[shipauction$color == "red"] -5000
+
+shipauction$price <- round(shipauction$price + rnorm(1000, mean = 0, sd = 4000), 0)
+
+summary(lm(price~., data = shipauction))
+
+write.table(shipauction, "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/shipauction.txt", sep = "\t")

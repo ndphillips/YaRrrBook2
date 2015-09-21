@@ -1,22 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Tufte-Style Book (Minimal Template)
-% LaTeX Template
-% Version 1.0 (5/1/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% IMPORTANT NOTE:
-% In addition to running BibTeX to compile the reference list from the .bib
-% file, you will need to run MakeIndex to compile the index at the end of the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------
+% YaRrr! The Pirate's Guide to R
+% Written by Nathaniel Phillips
+% nathaniel.d.phillips.is@gmail.com
+%---------------------------------------------
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%	Load packages and define custom functions
 %----------------------------------------------------------------------------------------
 
 \documentclass{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
@@ -39,7 +28,6 @@
 
 \usepackage{xspace} % Used for printing a trailing space better than using a tilde (~) using the \xspace command
 
-\newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year} % A command to print the current month and year
 
 
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
@@ -63,10 +51,10 @@
 
 \begin{document}
 
-% \begin{center}
-% \includegraphics[width=40cm]{/Users/Nathaniel/Dropbox/Git/YaRrr_Book/media/YaRrr_Cover.pdf}
-% \end{center}
-% 
+\begin{center}
+\includegraphics[width=40cm]{/Users/Nathaniel/Dropbox/Git/YaRrr_Book/media/YaRrr_Cover.pdf}
+\end{center}
+
 
 
 \frontmatter
@@ -118,7 +106,7 @@ Copyright \copyright\ \the\year\ \thanklessauthor
 This book is dedicated to my former statistics instructors Dr. Thomas Moore and Dr. Wei Lin who taught me everything I know about statistics, and my PhD colleagues Dr. Dirk Wulff and Dr. Stefan Herzog who taught me everything I know about R.
 \end{doublespace}
 \vfill
-\vfill
+
 
 
 %----------------------------------------------------------------------------------------
@@ -174,7 +162,6 @@ chordDiagram(mat)
 \label{fig:chorddiagram}
 \end{marginfigure}
 
-
 \item Using RStudio, You can easily and seamlessly combine R code, analyses, plots, and written text into elegant documents all in one place using Sweave (R and Latex) or RMarkdown. In fact, I wrote this entire book (the text, formatting, plots, code...yes, everything) in RStudio using Sweave. With RStudio and Sweave, instead of trying to manage two or three programs, say Excel, Word and (sigh) SPSS, where you find yourself spending half your time copying, pasting and formatting data, images and test, you can do everything in one place so nothing gets misread, mistyped, or forgotten.
 
 \item Analyses conducted in R are transparent, easily shareable, and reproducible. If you ask an SPSS user how they conducted a specific analyses, they will either A) Not remember,  B) Try (nervously) to construct an analysis procedure on the spot that makes sense - which may or may not correspond to what they actually did months or years ago, or C) Ask you what you are doing in their kitchen\footnote{Get used to the bad jokes people. Lots more where that came from.}. I used to primarily use SPSS, so I speak from experience on this. If you ask an R user (who uses good programming techniques!) how they conducted an analysis, they should always be able to show you the exact code they used. Of course, this doesn't mean that they used the appropriate analysis or interpreted it correctly, but with all the original code, any problems should be completely transparent!
@@ -209,7 +196,7 @@ Because this is a beginner's book, I try to avoid bombarding you with too many d
 %----------------------------------------------------------------------------------------
 %	CHAPTER 1
 %----------------------------------------------------------------------------------------
-\chapter{1: Installing R, RStudio, and the pirate dataset}
+\chapter{1: Installing R, RStudio, and the yarrr package}
 \label{ch:1}
 
 %------------------------------------------------
@@ -254,7 +241,7 @@ You can send your code from the source to the Console by highlighting the code y
 
 \subsection{Console: The calculator}
 
-The console is where R actually executes (calculates) code. You can type code directly into the console and get an immediate response. For example, if you type 1+1 into the console, you'll see that R immediately gives an output of 2
+The console is where R actually executes (calculates) code. At the beginning of the console you'll see the character \texttt{>}. This is a prompt that tells you that R is ready for new code. You can type code directly into the console after the \texttt{>} prompt and get an immediate response. For example, if you type 1+1 into the console and press enter, you'll see that R immediately gives an output of 2
 
 \begin{footnotesize}
 <<>>=
@@ -316,7 +303,7 @@ For example, let's say you want to create a wordcloud - a graph that plots text 
 
 \begin{footnotesize}
 <<fig.width = 3, fig.height = 3, prompt=FALSE, warning=FALSE>>=
-install.packages("wordcloud")
+#install.packages("wordcloud")
 library("wordcloud") # Install the package
 
 par(mar = rep(0, 4))
@@ -329,20 +316,28 @@ wordcloud(words = c("sword", "YaRrr!", "eyepatch",
 \end{footnotesize}
 
 
+\section{Installing and loading the yarrr package}
 
-\section{Downloading and loading the pirate dataset}
+For much of this book, you will need the \texttt{yarrr} package. This package contains every dataset, function, and plotting code from this book. To install the \texttt{yarr} package on your machine, execute the following code:
 
-For much of this book, we will be referring to the \texttt{pirate} dataset. This dataset contains the results of a survey completed by 1,000 pirates that have been on my crew. To download this dataset, execute the following code:
-
-<<>>=
-pirates <- read.table(file = "http://nathanieldphillips.com/wp-content/uploads/2015/05/pirate_survey.txt",
-           header = T,
-           sep = "\t",
-           stringsAsFactors = F
-           )
+<<echo = T, eval = F, message = F>>=
+install.packages("devtools") # Install the devtools package
+library("devtools") # Load the devtools package
+install_github('ndphillips/yarrr') # Install the yarrr package from github
+library("yarrr") # Load the yarrr package
 @
 
-If you'd like to see how the dataset looks, you can execute the \texttt{View()} function:
+
+<<echo = F, eval = T, message = F>>=
+library("devtools") # Load the devtools package
+install_github('ndphillips/yarrr') # Install the yarrr package from github
+library("yarrr") # Load the yarrr package
+@
+
+
+If everything went correctly, you should have access to, among other things, the \texttt{pirates} dataset. To see the dataset, you can execute the 
+
+the \texttt{View()} function:
 
 <<eval = FALSE>>=
 View(pirates)
@@ -357,10 +352,9 @@ When you run this command, you should see the first several rows and columns of 
 \end{figure*}
 
 
-
 \section{The R Reference Card}
 
-Over the course of this book, you will be learning \textit{lots} of new functions. Wouldn't it be nice if someone created a Cheatsheet / Notecard of many common R functions? Yes it would, and thankfully Tom Short has done this in his creation of the R Reference Card. You can download a copy at <https://dl.dropboxusercontent.com/u/7618380/RReferenceCard.pdf>. I highly encourage you to print this out and start highlighting functions as you learn them!
+Over the course of this book, you will be learning \textit{lots} of new functions. Wouldn't it be nice if someone created a Cheatsheet / Notecard of many common R functions? Yes it would, and thankfully Tom Short has done this in his creation of the R Reference Card. You can download a copy at <http://nathanieldphillips.com/wp-content/uploads/2015/09/R-Reference-Card.pdf>. I highly encourage you to print this out and start highlighting functions as you learn them!
 
 
 \subsection{Finished!}
@@ -389,7 +383,6 @@ That's it for this lecture! All you did was install the most powerful statistica
 
 So by now you've installed R and you're ready to get started. But first, let me give you a brief word of warning: Especially if this is your first experience programming, you are going to experience a \textit{lot} of headaches when you get started. You will run into error after error and pound your fists against the table screaming: "WHY ISN'T MY CODE WORKING?!?!? There must be something wrong with this stupid software!!!" You will spend hours trying to find a bug in your code, only to find that - frustratingly enough, you had had an extra space or missed a comma somewhere. You'll then wonder why you ever decided to learn R when (::sigh::) SPSS was so "nice and easy."
 
-
 \marginnote{Fun fact: SPSS stands for "Shitty Piece of Shitty Shit". True story.}
 
 This is perfectly normal! Don't get discouraged and DON'T GO BACK TO SPSS! Trust me, as you gain more programming experience, you'll experience fewer and fewer bugs (though they'll never go away completely). Once you get over the initial barriers, you'll find yourself conducting analyses much, much faster than you ever did before.
@@ -406,7 +399,7 @@ At its heart, R is just a fancy calculator. Let's do some basic algebra, type th
 
 
 <<>>=
-1+1 # The result should be 2
+1+1
 @
 
 
@@ -429,31 +422,36 @@ As you can see, R ignores spaces in between arguments in code. I recommend using
 
 \marginnote{Good object names strike a balance between being easy to type (i.e.; short names) and interpret. If you have several datasets, it's probably not a good idea to name them \texttt{a}, \texttt{b}, \texttt{c} because you'll forget which is which. However, using long names like \texttt{March2015Group1OnlyFemales} and \texttt{March2015Group1OnlyMales} will give you carpel tunnel syndrome.}
 
-So far so good, you can use R as a simple calculator. Now, let's do our first \textit{object assignment}. Object assignment is our way of storing information, such as a number or a statistical test, into something we can easily refer to later. Let's start by creating the object "mateys" and assigning the outcome of $5*10}$ to it:
+So far so good, you can use R as a simple calculator. Now, let's do our first \textit{object assignment}. Object assignment is our way of storing information, such as a number or a statistical test, into something we can easily refer to later. Let's start by creating the object \texttt{a} and assigning the outcome of $5*10$ to it:
 
 
 <<>>=
 # The symbol(s) "<-" mean "assign"
-mateys <- 5 * 10 # Assign the value of 5*10 to a new objected called mateys
+a <- 5 * 10 # Assign the value of 5*10 to a new object called a
 @
 
-Now, anytime we want to refer to the content of the object \texttt{mateys}, we can just type it. When you assign a value to an object, R won't automatically print it. If you want to see the value, you need to call the object by just executing its name:
+Now, anytime we want to refer to the content of the object \texttt{a}, we can just type it. When you assign a value to an object, R won't automatically print it. If you want to see the value, you need to call the object by just executing its name:
 
 
 <<>>=
-mateys # What is the value of mateys?
+a # What is the value of a?
 @
 
+You can create object names using any combination of letters and a few special characters. However, you can't start the name of an object with a number, or use spaces in an object name. Let's create some new objects with meaningful names:
 
-A few notes about defining objects: you can't start the name of an object with a number, and you can't have spaces or other 'weird' characters in the name. Here are some examples of \textit{invalid} object names:
+<<>>=
+group.mean <- 10.21
+my.age <- 32
+@
+
+Here are some examples of \textit{invalid} object names:
 
 
 <<eval = F>>=
-me mateys <- 50 # Can't have spaces
-5.mateys <- 50 # Can't start a name with a number
-mayeys! <- 5 0# Can't have an "!" in the object name
+a b <- 50 # Can't have spaces
+5a <- 50 # Can't start a name with a number
+a! <- 5 0# Can't have an "!" in the object name
 @
-
 
 R is case-sensitive. If you define an object with uppercase letters, you must keep referring to it with uppercase letters!
 
@@ -467,8 +465,7 @@ Plunder
 plunder
 @
 
-
-Once you've defined an object, you can use it in other commands:
+Once you've defined an object, you can use it in other commands. Let's define two objects \texttt{a} and \texttt{b}, then do other operations on those objects.
 
 <<>>=
 a <- 100
@@ -477,23 +474,37 @@ c <- a + b
 c
 @
 
-
-If you want to change an object, you can just reassign it. You can even refer to the same object when reassigning it:
-
+If you want to change an object, you need to assign it again to the new result you want. If you want to, you can even refer to the same object while assigning it. For example, let's say you have an object \texttt{a} with a value of 10 and you want to increase the value of \texttt{a} by 10 so the new value of a will be 20.
 
 <<>>=
-a <- 2
-a <- a + a
-a
+a <- 10   # assign a value of 10 to the object a
+a <- a + 10  # assign a to be the object a plus 10
+a # Print the new value of a (should be 20)
 @
 
 
 \marginnote{You can use \texttt{=} instead of \texttt{<-} for object assignment but I recommend you stick with \textt{<-} because the direction of the assignment is clear.}
 
 
+\textbf{Important!!} \\
+
+It is important to note that once you've defined an object, you refer to it without quotation marks, even if the object is a character. For example, to refer to the object \texttt{a} that I defined above, you need to write \texttt{a} without quotations marks
+
+<<>>=
+a # Print the value of the object ship
+@
+
+If you write \texttt{"a"} with quotation marks, R will think that you're referring to a new string object
+
+<<>>=
+"a"   # Just the letter "a", not the object a
+@
+
+
+
 \section{Data object types in R}
 
-R stores everything as an object, and there are different types of objects. The first two objects we'll learn about are scalars and vectors. Later on, we'll talk about more complicated objects like matrices, dataframes, hypothesis tests, etc.
+There are different types of objects in R. The first two objects we'll learn about are scalars and vectors. Later on, we'll talk about more complicated objects like matrices, dataframes, hypothesis tests, etc.
 
 \subsection{Two simple data objects: scalars and vectors}
 
@@ -505,10 +516,8 @@ A \textbf{scalar} is just a single value. A scalar can either be \textit{numeric
 
 <<>>=
 a <- 1
-b <- 3 * 40
 ship <- "Black Pearl"
 @
-
 
 
 \begin{marginfigure}
@@ -535,14 +544,6 @@ text(2.5, -.5, "Vector")
 \label{fig:scalarvector}
 \end{tiny}
 \end{marginfigure}
-
-It is important to note that once you've defined an object, you refer to it without quotation marks, even if the object is a character. For example, to refer to the object \texttt{ship} that I defined above, you need to write \texttt{ship} without quotations marks
-
-
-<<>>=
-ship # Print the value of the object ship
-"ship" # R thinks this is a new string called "ship", not the object called ship
-@
 
 
 \subsection{Vectors}
@@ -763,6 +764,7 @@ seq(10, 100, 10) + 1:10
 
 
 \begin{enumerate}
+  \item If you want to run a single line of code, you don't need to highlight anything. If you run code (either by clicking the Run button or using the \texttt{command + enter} hotkey combination, R will execute the line of code your cursor is on - and automatically move the cursor to the next line. If you want slowly go through several lines of code to see what each line does, I highly recommend using this technique!
   \item To get more tips on how good coding techniques, check out the R style guide at http://adv-r.had.co.nz/Style.html
   \item For great blog articles on R, check out http://www.r-bloggers.com/
   \item If you need to enter a lot of numeric data into R by hand you might want to use the \texttt{scan()} function. This function allows you to easily enter data using 10-key typing on a number pad. To do this, run the code \texttt{scan()} and then enter the data number by number. When you are finished, R will then print the appropriate code to store the data into a vector.
@@ -846,7 +848,7 @@ segments(10, 15, 90, 15, col = col.vec[2], lty = 1, lwd = 2)
 \end{marginfigure}
 By now you know how to generate sequences of numbers with the functions :, \texttt{seq()}, and \texttt{rep()}. However, these functions don't generate very interesting data. Instead, we can use R to generate randomly sampled data from specified \textit{probability distributions}. A probability distribution is simply an equation that indicates how likely certain numerical values are to be drawn. When you draw a \textit{sample} of size N from a distribution, you are selecting N numerical values drawn according to that distribution's likelihood function.
 
-For example, imagine you need to hire a new group of pirates for your crew. You have the option of hiring people form one of two different pirate training colleges that produce pirates of varying quality. One college ``Pirate Training Unlimited" might tend to pirates that are generally ok - never great but never terrible. While another college ``Unlimited Pirate Training" might produce pirates with a wide variety of quality, from very low to very high. In Figure~\ref{fig:piratecollege} I plotted 5 example pirates from each college, where each pirate is shown as a ball with a number written on it. As you can see, pirates from PTU all tend to be clustered between 40 and 60 (not terrible but not great), whlie pirates from UPT are all over the map, from 0 to 100. We can use probability distributions (in this case, the uniform distribution) to 
+For example, imagine you need to hire a new group of pirates for your crew. You have the option of hiring people form one of two different pirate training colleges that produce pirates of varying quality. One college ``Pirate Training Unlimited" might tend to pirates that are generally ok - never great but never terrible. While another college ``Unlimited Pirate Training" might produce pirates with a wide variety of quality, from very low to very high. In Figure~\ref{fig:piratecollege} I plotted 5 example pirates from each college, where each pirate is shown as a ball with a number written on it. As you can see, pirates from PTU all tend to be clustered between 40 and 60 (not terrible but not great), while pirates from UPT are all over the map, from 0 to 100. We can use probability distributions (in this case, the uniform distribution) to 
 
 
 %\marginnote{Mathematically, a probability distribution must satisfy two criteria: 1) All likelihoods must be positive, 2) The sum (or integral) of all likelihoods must equal 1.} 
@@ -1115,7 +1117,7 @@ sample(x = chest,
        )
 @
 
-The output of the \texttt{sample()} function above is a vector of 10 strings indicating the type of coin we drew on each sample. The order of these strings matter: the first one is the first coin we drew, and the last one is the 10th coin we drew. And like any random sampling function, this code will likely give you different results everytime you run it! See how long it takes you to get 10 gold coins...
+The output of the \texttt{sample()} function above is a vector of 10 strings indicating the type of coin we drew on each sample. The order of these strings matter: the first one is the first coin we drew, and the last one is the 10th coin we drew. And like any random sampling function, this code will likely give you different results every time you run it! See how long it takes you to get 10 gold coins...
 
 \subsection{Simulating Pinder Outcomes}
 
@@ -1388,7 +1390,7 @@ tattoos[get.these.values] # Indexing with a named object
 @
 \end{footnotesize}
 
-You can also get random values from a vector by indexing a vector with the \texttt{sample()} function. Let's get 3 random values from the \texttt{tattoo} vector in 2 steps. First, we'll create 3 random indexing values using \texttt{sample()}. Secind, we'll index the \texttt{tattoo} object with the indexing values we generated in the first step.
+You can also get random values from a vector by indexing a vector with the \texttt{sample()} function. Let's get 3 random values from the \texttt{tattoo} vector in 2 steps. First, we'll create 3 random indexing values using \texttt{sample()}. Second, we'll index the \texttt{tattoo} object with the indexing values we generated in the first step.
 
 \begin{footnotesize}
 <<>>=
@@ -1408,7 +1410,7 @@ sample(x = tattoos, size = 3, replace = F)
 @
 \end{footnotesize}
 
-As you gain more experience with R, you'll realise that there are many ways to program the same result. The choice of which code you use comes down to a delicate balance of readability (How easily can your future self, and other people, understand what the code is doing?), simplicity (How many lines of code are necessary?), and processing speed (How quickly will R complete the task?).
+As you gain more experience with R, you'll realize that there are many ways to program the same result. The choice of which code you use comes down to a delicate balance of readability (How easily can your future self, and other people, understand what the code is doing?), simplicity (How many lines of code are necessary?), and processing speed (How quickly will R complete the task?).
 
 \section{Creating logical vectors}
 
@@ -1687,7 +1689,7 @@ chests.2015 <- c(0, 6, 3, 0, 20)
 @
 \end{footnotesize}
 
-Ok, so let's see which pirates improved their chest findind ability. I'll start by finding the index values where the number of chests found increased between the two years
+Ok, so let's see which pirates improved their chest finding ability. I'll start by finding the index values where the number of chests found increased between the two years
 
 \begin{footnotesize}
 <<>>=
@@ -2303,7 +2305,7 @@ Here are the main arguments to \texttt{read.table()} (to see all of them, run \t
 \fbox{
 \parbox{\textwidth}{
 
-\newfun{read.table()}\index{readltab.e()}
+\newfun{read.table()}\index{read.table()}
 
 \hline
 
@@ -2417,28 +2419,28 @@ Next let's start with the basics of indexing dataframes using brackets.
 
 Just like vectors, you can access specific data in dataframes using brackets. But now, instead of just using one indexing vector, we use two indexing vectors: one for the rows and one for the columns. To do this, use the notation \texttt{data[rows, columns]}, where \texttt{rows} and \texttt{columns} are scalars or vectors of the row and column numbers you want to get.
 
-Let's try this on the \texttt{ChickWeight} dataframe that comes with R.
+Let's try this on the \texttt{pirates} dataframe
 
-\begin{marginfigure}
-\includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Git/YaRrr_Book/media/chickweight.jpg}
-\caption{I tried ordering a vegan alternative at a traditional German restaurant and this is what I got.}
-\label{fig:chickweight}
-\end{marginfigure}
+% \begin{marginfigure}
+% \includegraphics[width=\linewidth]{/Users/Nathaniel/Dropbox/Git/YaRrr_Book/media/chickweight.jpg}
+% \caption{I tried ordering a vegan alternative at a traditional German restaurant and this is what I got.}
+% \label{fig:chickweight}
+% \end{marginfigure}
 
 \begin{footnotesize}
 <<>>=
-ChickWeight[1:5, 1] # Give me rows 1 through 5 in column 1
-ChickWeight[2:6, 2:3] # Give me rows 2 through 6 in columns 2 and 3
-ChickWeight[seq(from = 1, to = nrow(ChickWeight), by = 10), 3] # Give me every 10th row in the 3rd column
+pirates[1:5, 1] # Give me rows 1 through 5 in column 1
+pirates[2:6, 2:3] # Give me rows 2 through 6 in columns 2 and 3
+pirates[seq(from = 1, to = nrow(pirates), by = 20), 3] # Give me every 20th row in the 3rd column
 @
 \end{footnotesize}
-\marginnote{Here you can see the benefits of using \texttt{nrow()} - I used it to make sure I gave valid index values to \texttt{ChickWeight}}
+\marginnote{Here you can see the benefits of using \texttt{nrow()} - I used it to make sure I gave valid index values to \texttt{pirates}}
 
-If you want an entire row or column, you can simply leave one of the indices blank. For example, if I want the entire first row of \texttt{ChickWeight} and all of the columns, I can simply leave the column index blank:
+If you want an entire row or column, you can simply leave one of the indices blank. For example, if I want the entire first row of \texttt{pirates} and all of the columns, I can simply leave the column index blank:
 
 \begin{footnotesize}
 <<>>=
-ChickWeight[1,]
+pirates[1,]
 @
 \end{footnotesize}
 
@@ -2448,13 +2450,11 @@ You can use the same logic to get an entire column of a dataframe by leaving the
 
 One of the nice things about dataframes is that each column will have a name. You can then use this name to access specific columns without having to index columns by numbers. To access the names of a dataframe, use the function \texttt{names()}. This will return a string vector with the names of the dataframe.
 
-Let's use \texttt{names()} to get the names of some of the dataframes stored in R.
+Let's use \texttt{names()} to get the names of the \texttt{pirates} dataframe:
 
 \begin{footnotesize}
 <<>>=
-names(ChickWeight)
-names(InsectSprays)
-names(ToothGrowth)
+names(pirates)
 @
 \end{footnotesize}
 
@@ -2462,12 +2462,12 @@ To access a specific column in a dataframe by name, you use the the \texttt{\$} 
 
 \newfun{dataframe\$colname}
 
-where \texttt{dataframe} is the name of the dataframe, and \texttt{colname} is the name of the column you are interested in. When you apply the \texttt{\$} operator to a dataframe, it will return a vector. Let's access some of the vectors in the dataframes \texttt{ChickWeight}, and \texttt{ToothGrowth}
+where \texttt{dataframe} is the name of the dataframe, and \texttt{colname} is the name of the column you are interested in. When you apply the \texttt{\$} operator to a dataframe, it will return a vector. Let's access some of the vectors in the dataframe \texttt{pirates}:
 
 \begin{footnotesize}
-<<>>=
-ChickWeight$weight[1:20] # Just the first 20 values
-ToothGrowth$len
+<<eval = F>>=
+pirates$age
+pirates$sex
 @
 \end{footnotesize}
 
@@ -2475,45 +2475,37 @@ Because the \$ operator returns a vector, you can easily calculate descriptive s
 
 \begin{footnotesize}
 <<>>=
-mean(ChickWeight$weight)
-median(ToothGrowth$len)
+mean(pirates$age)
+median(pirates$sword.speed)
 @
 \end{footnotesize}
 
 \section{Adding new columns to a dataframe}
 
-You can easily add columns to a dataframe using the \texttt{\$} and assignment \texttt{<-} operators. To do this, just use the \texttt{dataframe\$colname} notation and assign a new vector to it. Let's test this by adding a new column to \texttt{ChickWeight} called \texttt{height} which indicates the height of each chick at each time point. Now, because I don't have the actual height data, I'll just sample some random data from a normal distribution with mean 5 and standard deviation 1.
+You can easily add columns to a dataframe using the \texttt{\$} and assignment \texttt{<-} operators. To do this, just use the \texttt{dataframe\$colname} notation and assign a new vector to it. Let's test this by adding a new column to \texttt{pirates} called \texttt{tattoos.per.year} which indicates the number of tattoos a pirate has divided by his/her age:
 
 \begin{footnotesize}
 <<>>=
-ChickWeight$height <- rnorm(n = nrow(ChickWeight), mean = 5, sd = 1)
+pirates$tatoos.per.year <- pirates$tattoos / pirates$age
 @
 \end{footnotesize}
 
-Let's look at the first few rows of \texttt{ChickWeight} to make sure it worked:
+Let's look at the first few rows of \texttt{pirates} to make sure it worked:
 
 \begin{footnotesize}
 <<>>=
-head(ChickWeight)
+head(pirates)
 @
 \end{footnotesize}
 
-As you can see, the \texttt{ChickWeight} dataframe now has a column named \texttt{height} with the random data we generated.
+As you can see, the \texttt{pirates} dataframe now has a column named \texttt{tattoos.per.year}.
 
-Of course, because columns of dataframes are just vectors, you can add columns that are some function of existing columns. For example, let's add a column to \texttt{ChickWeight} called \texttt{density} which we'll define as each chick's height divided by its weight:
-
-\begin{footnotesize}
-<<>>=
-ChickWeight$density <- ChickWeight$height / ChickWeight$weight
-head(ChickWeight)
-@
-\end{footnotesize}
-
-When you are conducting analyses on dataframes, it's important that you always repeat the name of the dataframe when accessing its columns. If you don't, R will assume the column name is a totally different object. For example, the following code \textit{won't work} because R thinks that \texttt{height} and \texttt{weight} are totally separate objects from \texttt{ChickWeight}}
+When you are conducting analyses on dataframes, it's important that you always repeat the name of the dataframe when accessing its columns. If you don't, R will assume the column name is a totally different object. For example, the following code \textit{won't work} because R thinks that \texttt{parrots.lifetime} and \texttt{age} are totally separate objects from \texttt{pirates}}
 
 \begin{footnotesize}
 <<eval = F>>=
-ChickWeight$density <- height / weight # BAD CODE!
+pirates$parrots.per.year <- parrots.lifetime / age # BAD CODE!
+pirates$parrots.per.year <- pirates$parrots.lifetime / pirates$age # GOOD CODE!
 @
 \end{footnotesize}
 
@@ -2525,11 +2517,11 @@ However, there is a function \texttt{with()} that can help prevent you from havi
 
 The function \texttt{with()} allows you to specify a dataframe (or any other object in R) once, and R will assume you're referring to that object in an expression.
 
-For example, let's repeat the \texttt{ChickWeight\$density} calculation using \texttt{with()}. We'll set the name of the dataframe as the first argument, then do our regular calculations on the column names.
+For example, let's repeat the \texttt{pirates\$parrots.per.year} calculation using \texttt{with()}. We'll set the name of the dataframe as the first argument, then do our regular calculations on the column names.
 
 \begin{footnotesize}
 <<>>=
-ChickWeight$density <- with(ChickWeight, height / weight)
+pirates$parrots.per.year <- with(pirates, parrots.lifetime / age)
 @
 \end{footnotesize}
 
@@ -2550,24 +2542,24 @@ Generally, if we have a dataframe called \texttt{df}, and we want to center a co
 df$x.centered <- with(df, x - mean(x))
 @
 
-Let's use this method to center the weight data from \texttt{ChickWeight} - we'll call the new column \texttt{weight.c}
+Let's use this method to center the age data from \texttt{pirates} - we'll call the new column \texttt{age.c}
 
 \begin{footnotesize}
 <<>>=
-ChickWeight$weight.c <- with(ChickWeight, weight - mean(weight))
+pirates$age.c <- with(pirates, age - mean(age))
 @
 \end{footnotesize}
 
-To see if this worked, let's compare the mean of \texttt{weight} and \texttt{weight.c}
+To see if this worked, let's compare the mean of \texttt{age} and \texttt{age.c}
 
 \begin{footnotesize}
 <<>>=
-mean(ChickWeight$weight)
-mean(ChickWeight$weight.c)
+mean(pirates$age)
+mean(pirates$age.c)
 @
 \end{footnotesize}
 
-I know what you're thinking...``But wait!!! The mean of \texttt{ChickWeight\$weight.c} isn't exactly 0!!!'' Don't worry, \texttt{-1.2919e-15} is -0000000000000012919. For all intents and purposes, that's equal to 0 - the reason it's not \textit{exactly} 0 is due to peculiarities about how computers represent numbers. Don't ask me why, I'm just a pirate.
+I know what you're thinking...``But wait!!! The mean of \texttt{pirates\$age.c} isn't exactly 0!!!'' Don't worry, \Sexpr{mean(pirates$age.c)} is so close to 0 that, for all intents and purposes, it is equal to 0 - the reason it's not \textit{exactly} 0 is due to peculiarities about how computers represent numbers. Don't ask me why, I'm just a pirate.
 
 \subsubsection{Standardizing}
 
@@ -2578,21 +2570,21 @@ Standardizing data is almost as easy as centering. The only difference is that, 
 df$x.z <- with(df, (x - mean(x)) / sd(x))
 @
 
-Let's use this method to standardize the weight data from \texttt{ChickWeight} - we'll call the new column \texttt{weight.z}
+Let's use this method to standardize the weight data from \texttt{pirates} - we'll call the new column \texttt{age.z}
 
 \begin{footnotesize}
 <<>>=
-ChickWeight$weight.z <- with(ChickWeight, (weight - mean(weight)) / sd(weight))
+pirates$age.z <- with(pirates, (age - mean(age)) / sd(age))
 @
 \end{footnotesize}
 
-To see if this worked, let's compare the mean of \texttt{weight}, \texttt{weight.c}, and \texttt{weight.z}. The mean of \texttt{weight.z} should be 0 and its standard deviation should be 1:
+To see if this worked, let's compare the mean of \texttt{age}, \texttt{age.c}, and \texttt{age.z}. The mean of \texttt{age.z} should be 0 and its standard deviation should be 1:
 
 \begin{footnotesize}
 <<>>=
-c(mean(ChickWeight$weight), sd(ChickWeight$weight))
-c(mean(ChickWeight$weight.c), sd(ChickWeight$weight.c))
-c(mean(ChickWeight$weight.z), sd(ChickWeight$weight.z))
+c(mean(pirates$age), sd(pirates$age))
+c(mean(pirates$age.c), sd(pirates$age.c))
+c(mean(pirates$age.z), sd(pirates$age.z))
 @
 \end{footnotesize}
 
@@ -2601,13 +2593,13 @@ c(mean(ChickWeight$weight.z), sd(ChickWeight$weight.z))
 
 Frequently you will want to access specific rows of a dataframe based on some criteria - this is called subsetting. For example, we may want to look just at the data from females in our survey data. To do this, we can use one of two methods: indexing with logical vectors, or the \texttt{subset()} function.
 
-Indexing dataframes with logical vectors is very similar to indexing data vectors. First, we create a logical vector. Next, we index the dataframe using that logical vector. Let's use indexing to access just the data from Chick 1 in \texttt{ChickWeight}:
+Indexing dataframes with logical vectors is very similar to indexing data vectors. First, we create a logical vector. Next, we index the dataframe using that logical vector. Let's use indexing to access just the data for pirates who never had a parrot in \texttt{pirates}:
 
 \begin{footnotesize}
 <<>>=
-chick1.log <- ChickWeight$Chick == 1 # Step 1: Create a logical vector
-chick1.data <- ChickWeight[chick1.log,] # Step 2: Index dataframe by logical vector
-chick1.data # Print the result
+noparrots.log <- pirates$parrots.lifetime == 0 # Step 1: Create a logical vector
+noparrots.data <- pirates[noparrots.log ,] # Step 2: Index dataframe by logical vector
+head(noparrots.data) # Show the first few rows of the result
 @
 \end{footnotesize}
 
@@ -2615,28 +2607,22 @@ If you'd like, you can also combine the two steps in one line. For example, the 
 
 \begin{footnotesize}
 <<>>=
-chick1.data <- ChickWeight[ChickWeight$Chick == 1, ] # Two steps in 1
+noparrots.data <- pirates[pirates$parrots.lifetime == 0, ] # Two steps in 1
 @
 \end{footnotesize}
 
-Now, let's try indexing the \texttt{ChickWeight} data using a slightly more complicated index. For example, let's access just the data for the chicks where \texttt{Time} is less than 10
+Now, let's try indexing the \texttt{pirates} data using a slightly more complicated index. For example, let's access just the data for pirates where \texttt{age} is less than 25 \textit{and} the college is \texttt{"CCCC"}
 
 \begin{footnotesize}
 <<>>=
-ChickWeight.lt10 <- ChickWeight[ChickWeight$Time < 10,]
-head(ChickWeight.lt10)
+newdata <- pirates[pirates$age < 20 & pirates$college == "CCCC",]
+head(newdata)
 @
 \end{footnotesize}
 
-Indexing with brackets is the standard way to slice and dice dataframes. However, if you are working on data that is all in the same dataframe, it can get a bit tiresome to have to constantly repeat the name of the dataframe. For example, let's say we wanted to get data from \texttt{ChickWeight} where \texttt{Time < 10} and \texttt{Diet == 1}. The following code works, but it's a bit tedious:
+Looks like we have \Sexpr{nrow(newdata)} pirates who are younger than 25 and who went to Captain Chunk's Canon Crew.
 
-\begin{footnotesize}
-<<>>=
-mydata <- ChickWeight[ChickWeight$Time < 10 & ChickWeight$Diet == 1,]
-@
-\end{footnotesize}
-
-A way to get around having to repeat the name of the dataframe over and over is to use the \texttt{subset()} function.
+Indexing with brackets is the standard way to slice and dice dataframes. However, if you are working on data that is all in the same dataframe, it can get a bit tiresome to have to constantly repeat the name of the dataframe. For example, let's say we wanted to get data from \texttt{pirates} where \texttt{age < 30} and \texttt{college == "CCCC"} and \texttt{tchests.found >= 35}. We could do this with indexing but it would take a lot of code. A way to get around having to repeat the name of the dataframe over and over is to use the \texttt{subset()} function.
 
 
 
@@ -2665,25 +2651,24 @@ A way to get around having to repeat the name of the dataframe over and over is 
 }
 \vspace{5mm} %5mm vertical space
 
-For example, let's get the \texttt{ChickWeight} data for \texttt{Diet == 1} and \texttt{Time > 15}
+For example, let's get the \texttt{pirates} data for \texttt{age < 30} and \texttt{college == "CCCC"} and \texttt{tchests.found >= 35}
 
 \begin{footnotesize}
 <<>>=
-data <- subset(x = ChickWeight, 
-               subset = (Diet == 1 & Time > 15)
+data <- subset(x = pirates, 
+               subset = (age < 30 & college == "CCCC" & tchests.found >= 35)
                )
 head(data)
 @
 \end{footnotesize}
 
-In the example above, I didn't specify an input to the \texttt{select} argument because I wanted all columns. However, if you just want certain columns, you can just name the columns you want. For example, let's say I just want the \texttt{weight} and \texttt{Time}
- columns from the previous analysis. To do this, I'll just add the column names as inputs to the \textt{select} argument:
+In the example above, I didn't specify an input to the \texttt{select} argument because I wanted all columns. However, if you just want certain columns, you can just name the columns you want. For example, let's say I just want the \texttt{id} and \texttt{age} columns from the previous analysis. To do this, I'll just add the column names as inputs to the \textt{select} argument:
  
  \begin{footnotesize}
 <<>>=
-data <- subset(x = ChickWeight, 
-               subset = (Diet == 1 & Time > 15),
-               select = c(weight, Time)
+data <- subset(x = pirates, 
+               subset = (age < 30 & college == "CCCC" & tchests.found >= 35),
+               select = c("id", "age")
                )
 head(data)
 @
@@ -2691,26 +2676,56 @@ head(data)
  
 \section{Combining indexing and descriptive statistics}
 
-Once you know how to index a dataframe to get the data vectors you want, you can then easily calculate descriptive statistics based on specific criteria. For example, let's calculate the mean weight of the chicks on \texttt{Diet == 1}. To show you that there are many ways to do this, I'll write the code in three different ways:
+Once you know how to index a dataframe to get the data vectors you want, you can then easily calculate descriptive statistics based on specific criteria. For example, let's calculate the mean age of the pirates who went to Captain Chunk's Canon Crew (\texttt{college == "CCCC"}). To show you that there are many ways to do this, I'll write the code in three different ways:
 
 \begin{footnotesize}
 <<>>=
 # What is the mean weight of chicks on the first diet?
 
-mean(ChickWeight$weight[ChickWeight$Diet == 1]) # Using logical indexing
-with(ChickWeight, mean(weight[Diet == 1])) # Logical indexing and with()
-mean(subset(x = ChickWeight, subset = Diet == 1)$weight) # Using subset()
+mean(pirates$age[pirates$college == "CCCC"]) # Using logical indexing
+with(pirates, mean(age[college == "CCCC"])) # Logical indexing and with()
+mean(subset(x = pirates, subset = college == "CCCC")$age) # Using subset()
 @
 \end{footnotesize}
 
 As you can see, there are many ways to do the same thing in R. Ultimately, the choice of which specific code and functions you use is up to you.
 
+\section{Recoding values in a dataframe}
+
+Let's say you have a dataframe with some messed up values, how can you convert the messed up values to reasonable ones? For example, consider the following survey containing age and gender data. 
+
+<<>>=
+survey <- data.frame("age" = c(49, 24, 35, 999, -10, 24),
+                     "sex" = c("male", "female", "male", "male", "martian", "yes please"), stringsAsFactors = F
+                     )
+
+survey
+@
+
+To recode numeric values, ...
+
+
+
+
+<<>>=
+ChickWeight[ChickWeight == 3, c(1, 2)] <- 4
+@
+
+
+
+
 \section{A worked example: Credit default}
 
-For this example, we'll work with a dataset called \texttt{credit}. This dataset contains information about German loan borrowers (IVs) and whether or not the borrower defaulted on their loan (DV). To load the dataset, either download and load the data from the link \texttt{http://goo.gl/a7umut}, or simply run the following code:
+For this example, we'll work with a new dataset called \texttt{credit}. This dataset contains information about German loan borrowers (IVs) and whether or not the borrower defaulted on their loan (DV). To load the dataset, either download and load the data from the link \texttt{http://goo.gl/a7umut}, or simply run the following code:
+
+<<echo = F>>=
+credit <- read.table("/Users/Nathaniel/Downloads/credit.csv", 
+                     sep = ",", header = T, stringsAsFactors = F)
+@
+
 
 \begin{footnotesize}
-<<>>=
+<<eval = F>>=
 credit <- read.table("http://nathanieldphillips.com/wp-content/uploads/2015/05/credit.csv", 
                      sep = ",", header = T, stringsAsFactors = F)
 @
@@ -3023,12 +3038,13 @@ While \texttt{plot()} is the most widely used high-level plotting command, there
 
 \begin{marginfigure}
 <<fig.width = 4, fig.height = 4>>=
-hist(x = ChickWeight$weight,
-     main = "Chick Weights",
-     xlab = "Weights (all time points"
+hist(x = pirates$age,
+     main = "Pirate Ages",
+     xlab = "age",
+     ylab = "frequency"
      )
 @
-\caption{Histogram of weight data from \texttt{ChickWeight}}
+\caption{Histogram of age data from \texttt{pirates}}
 \label{fig:histogram}
 \end{marginfigure}
 
@@ -3078,9 +3094,9 @@ Boxplots aren't used so often anymore (for reasons that I'll show you shortly), 
 \begin{marginfigure}
 \begin{tiny}
 <<fig.width = 4, fig.height = 4>>=
-boxplot(x = ChickWeight$weight, 
-        names = "All Data", ylab = "Weight", 
-        main = "Plot 1: All Weights")
+boxplot(x = pirates$age, 
+        names = "All Data", ylab = "Age", 
+        main = "Plot 1: All Ages")
 @
 \end{tiny}
 \caption{Plotting data from a single vector}
@@ -3089,10 +3105,11 @@ boxplot(x = ChickWeight$weight,
 
 \begin{marginfigure}
 \begin{tiny}
-boxplot(weight ~ Diet, # Formula: DV is weight and IV is Diet
-        data = ChickWeight, # dataframe
-        xlab = "Diet", ylab = "Weight", 
-        main = "Plot 2: Weight separated by Diet")
+<<fig.width = 4, fig.height = 4>>=
+boxplot(age ~ college, # Formula: DV is weight and IV is Diet
+        data = pirates, # dataframe
+        xlab = "college", ylab = "Weight", 
+        main = "Plot 2: Age separated by college")
 @
 \end{tiny}
 \caption{Plotting data as a function of levels of an independent variable using the \texttt{y {\raise.17ex\hbox{$\scriptstyle\sim$}} x} formula notation.}
@@ -3129,38 +3146,14 @@ boxplot(weight ~ Diet, # Formula: DV is weight and IV is Diet
 }
 \vspace{5mm} %5mm vertical space
 
-
-
 When you use \texttt{boxplot()}, you can either specify a single vector of data to plot, or you can use a \texttt{formula} to indicate a dependent and independent variable. If you do this, R will add separate boxes for all values of the independent variable.
 
-Let's go through two examples of boxplots in Figure~\ref{fig:boxplot}. In the first plot, I just entered a single vector of data: \texttt{ChickWeight\$weight} representing all weight data in the dataframe. In the second plot, I plotted separate boxes for the different levels of \texttt{Diet} using the formula notation \texttt{weight {\raise.17ex\hbox{$\scriptstyle\sim$}} Diet}. If you're wondering how R knows that I'm referring to the \texttt{ChickWeight} dataframe when using the formula notation, the answer is that I had to specify the name of the dataframe \texttt{ChickWeight} as an additional \texttt{data} argument. This argument tells R that the objects in the formula are names in the \texttt{ChickWeight} dataframe.
+Let's go through two examples of boxplots in Figure~\ref{fig:boxplot}. In the first plot, I just entered a single vector of data: \texttt{pirates\$age} representing all weight data in the dataframe. In the second plot, I plotted separate boxes for the different levels of \texttt{college} using the formula notation \texttt{age {\raise.17ex\hbox{$\scriptstyle\sim$}} college}. If you're wondering how R knows that I'm referring to the \texttt{pirates} dataframe when using the formula notation, the answer is that I had to specify the name of the dataframe \texttt{pirates} as an additional \texttt{data} argument. This argument tells R that the objects in the formula are names in the \texttt{pirates} dataframe.
 
 
 
 \subsection{Beanplots: \texttt{beanplot()}}
 
-\begin{marginfigure}
-\begin{tiny}
-<<fig.width = 4, fig.height = 4, echo = T>>=
-require("beanplot")
-
-bean.cols <- lapply(brewer.pal(4, "Set3"), 
-                    function(x) {return(c(x, "black", "black", "black"))})
-
-beanplot(weight ~ Diet, 
-         data = ChickWeight,
-         main = "Beans",
-         xlab = "Diet",
-         ylab = "Weight",
-         col = bean.cols ,
-         lwd = 1,
-         what = c(1, 1, 1, 1), log = ""
-         )
-@
-\end{tiny}
-\caption{Beanplots from the \texttt{beanplot} package. Beanplots are great at simultaneously showing raw data, smoothed distributions, and group averages.}
-\label{fig:beanplot}
-\end{marginfigure}
 
 The last high-level plotting I want to show you is the \texttt{beanplot()} function. This function creates a beanplot, which (like boxplots and histograms), shows you a distribution of sample data. However, as you can see in Figure~\ref{fig:beanplot}, they look much, much cooler than a boxplot or histogram. What's really great about beanplots is that they show you a combination of three elements: raw data, smoothed distribution lines, and group averages. This means that you can quickly detect outliers, multiple modes, or missing data much better than you can with boxplots.
 
@@ -3192,7 +3185,7 @@ Here are some of the main arguments for \texttt{beanplot()}. Check out the help 
         \item[\tt{subset}] \hfill \\
   An optional logical vector indicating a subset of the data to plot. For example, the command \texttt{subset = gender == "male" \& weight < 120}, will only plot data for males with weight less than 120.
          \item[\tt{what}] \hfill \\
-A vector of four boolean (0 or 1) values indicating what to plot in the following order: the total average line, the beans, the bean average, and the beanlines. For example, to plot everything, use \texttt{what = c(1, 1, 1, 1)}. To plot just the beans, use \texttt{what = c(0, 0, 1, 0)}
+A vector of four Boolean (0 or 1) values indicating what to plot in the following order: the total average line, the beans, the bean average, and the beanlines. For example, to plot everything, use \texttt{what = c(1, 1, 1, 1)}. To plot just the beans, use \texttt{what = c(0, 0, 1, 0)}
         \item[\tt{color}] \hfill \\
     The colors in the plot. A vector of up to four colors can be used representing the areas of the beans, the lines inside the beans, the lines outside the beans, and the average line per bean. If you want to make each bean a different color, you have to specify a list of separate color vectors, one for each bean. Look at my code in Figure~\ref{fig:beanplot} for a way to do this using \texttt{lapply}.
         \item[\tt{names}] \hfill \\
@@ -3205,19 +3198,21 @@ A method for determining the overall line (either \texttt{"mean"}or \texttt{"med
 }
 \vspace{5mm} %5mm vertical space
 
-The code for creating beanplots is very similar to the code for boxplots. The following code creates the plot in Figure~\ref{fig:beanplot}. 
+The code for creating beanplots is very similar to the code for boxplots. Let's create a beanplot showing the distribution of how many tattoos pirates have as a function of their favorite pirate:
 
 \begin{footnotesize}
-<<eval = F>>=
+<<fig.width = 7, fig.height = 7>>=
 require("beanplot")
-bean.cols <- lapply(brewer.pal(4, "Set3"), 
+require("RColorBrewer")
+
+bean.cols <- lapply(brewer.pal(6, "Set3"), 
                     function(x) {return(c(x, "black", "black", "black"))})
 
-beanplot(weight ~ Diet, 
-         data = ChickWeight,
+beanplot(tattoos ~ favorite.pirate, 
+         data = pirates,
          main = "Beans",
-         xlab = "Diet",
-         ylab = "Weight",
+         xlab = "Favorite Pirate",
+         ylab = "# of Tattoos",
          col = bean.cols ,
          lwd = 1,
          what = c(1, 1, 1, 1), log = ""
@@ -3263,19 +3258,19 @@ Once you've created a blank plot, you can proceed to add all the elements you'd 
 <<fig.width = 4, fig.height = 4>>=
 
 # Get subsets of data
-diet.1 <- subset(ChickWeight, Diet == 1)
-diet.2 <- subset(ChickWeight, Diet == 2)
+college.1 <- subset(pirates, college == "CCCC")
+college.2 <- subset(pirates, college == "JSSFP")
 
 # Create a blank plot
-plot(x = 1, y = 1, xlab = "Time", ylab = "Weight", 
+plot(x = 1, y = 1, xlab = "Age", ylab = "Number of Tattoos", 
      type = "n", main = "Even More Chicken Weights", 
-     xlim = c(0, 23), ylim = c(0, 315))
+     xlim = c(1, 50), ylim = c(0, 20))
 
-# Add red points for diet 1
-points(diet.1$Time, diet.1$weight, pch = 16, col = "red")
+# Add red points for college 1
+points(college.1$age, college.1$tattoos, pch = 16, col = "red")
 
 # Add skyblue points for diet 2
-points(diet.2$Time, diet.2$weight, pch = 16, col = "skyblue")
+points(college.2$age, college.2$tattoos, pch = 16, col = "skyblue")
 @
 \caption{Adding additional points to an existing plot with points()}
 \label{pointsexample}
@@ -3299,7 +3294,7 @@ points(diet.2$Time, diet.2$weight, pch = 16, col = "skyblue")
 Two vectors corresponding to the x and y values of the points
 
 \item[\tt{pch, col, bg}] \hfill \\
-Type of plotting symols (\texttt{pch}), color of the plotting symbols (\texttt{col}), and the color of the filling of the plotting symbols ((\texttt{bg})) for plotting symbols 21 through 25
+Type of plotting symbols (\texttt{pch}), color of the plotting symbols (\texttt{col}), and the color of the filling of the plotting symbols ((\texttt{bg})) for plotting symbols 21 through 25
   
   
 \end{description}
@@ -3321,7 +3316,7 @@ points(x = x.vals, # x-values
 
 Because you can continue adding as many low-level plotting commands to a plot as you'd like, you can keep adding different types or colors of points by adding additional \texttt{points()} functions. However, keep in mind that because R plots each element on top of the previous one, early calls to \texttt{points()} might be covered by later calls. So add the points that you want in the foreground at the end!
 
-In margin Figure~\ref{pointsexample}, I use the points function to plot data from ChickWeight, where chicks on diet 1 are plotted in red, and chicks on diet 2 are plotted in skyblue.
+In margin Figure~\ref{pointsexample}, I use the points function to plot data from pirates, where pirates from Captain Chunk's Canon Crew are plotted in red, and pirates from Jack Sparrow's School of Fashion and Piratry are plotted in skyblue.
 
 Next, we'll look at \texttt{abline()} which adds straight lines to a plot:
 
@@ -3754,7 +3749,7 @@ Coordinates of the legend - for example, \texttt{x = 0, y = 0} will put the text
   A string vector specifying the text in the legend. For example, \texttt{legend = c("Males, "Females")} will create two groups with names Males and Females.
   
 \item[\tt{pch, lty, lwd, col, pt.bg, ...}] \hfill \\
-Additional arguments specifying symbol types (\texttt{pch}), line types (\texttt{lty}), line widths (\texttt{lwd}), background color of symbol types 21 thorugh 25 ((\texttt{pt.bg})) and several other optional arguments. See \texttt{?legend} for a complete list
+Additional arguments specifying symbol types (\texttt{pch}), line types (\texttt{lty}), line widths (\texttt{lwd}), background color of symbol types 21 through 25 ((\texttt{pt.bg})) and several other optional arguments. See \texttt{?legend} for a complete list
 
 
 \end{description}
@@ -4095,7 +4090,7 @@ To create a color from RGB values, use the function \texttt{rgb()}
 \begin{description}
 
 \item[\tt{red, green blue}] \hfill \\
-Numeric arguments indicating the strength of red, green, and blue heus
+Numeric arguments indicating the strength of red, green, and blue hues
 
 \item[\tt{maxColorValue}] \hfill \\
 A number indicating the maximum possible hue value. The default is 1 - however, most people use \texttt{maxColorValue = 255}
@@ -4800,8 +4795,12 @@ Let's start by using the dataset \texttt{pirate\_survey\_werrors.txt} which is s
 
 To load the data, execute the following commands:
 
-<<>>=
-pirates.errors <- read.table("http://nathanieldphillips.com/wp-content/uploads/2015/05/pirate_survey_werrors.txt", sep = "\t", stringsAsFactors = F)
+<<echo = F>>=
+pirates.errors <- read.table("/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirate_survey_witherrors.txt", sep = "\t", stringsAsFactors = F)
+@
+
+<<eval = F>>=
+pirates.errors <- read.table("http://nathanieldphillips.com/wp-content/uploads/2015/05/pirate_survey_witherrors.txt", sep = "\t", stringsAsFactors = F)
 @
 
 
@@ -4898,7 +4897,7 @@ In these examples, we converted invalid values to NA. Of course, there's no reas
 
 \section{Splitting numerical data into groups using cut()}
 
-When we create some plots and analyses, we may want to group numerical data into bins of similar values. For example, in our pirate survey, we might want to group pirates into age decades, where all pirates in their 20s are in one group, all those in their 30s go into another group, etc. Once we have these bins, we can calculate aggreagte statistics for each group.
+When we create some plots and analyses, we may want to group numerical data into bins of similar values. For example, in our pirate survey, we might want to group pirates into age decades, where all pirates in their 20s are in one group, all those in their 30s go into another group, etc. Once we have these bins, we can calculate aggregate statistics for each group.
 
 R has a handy function for grouping numerical data called \texttt{cut()}
 
@@ -4968,7 +4967,7 @@ table(pirates$age.cut)
 
 \section{Grouped aggregation}
 
-As you can see, we have quite a bit of data in our Flights dataset. Many of the questions we might want to answer with this dataset have to do with comparisons between groups. For example, ``What is the flight cancellation rate for each carrier?" or "What is the arrival delay for each destination?" In each of these questions, we want to know a descriptive statistic of a numeric variable (cancellation rate and arrival delay) as a function of a nominal independent variable (carrier and destination). By now, your R skills are good enough that you \textit{could} answer these questions already. You could do this by using \texttt{subset()} or logical indexing to slice and dice the data set for each level of the independent variable. However, it would be a pain to have to manually create new subsets or indexes for each level of the independent variable. Thankfully, R contains many functions that will help you do this in a snap.
+As you can see, we have quite a bit of data in our pirates dataset. Many of the questions we might want to answer with this dataset have to do with comparisons between groups. For example, ``What is the average age of pirates from each college?" or "Do older pirates tend to have faster sword speeds?" In each of these questions, we want to know a descriptive statistic of a numeric variable (age and sword speed) as a function of one or more independent variables (college and age). By now, your R skills are good enough that you \textit{could} answer these questions already. You could use \texttt{subset()} or logical indexing to slice and dice the data set for each level of the independent variable. However, it would be a pain to have to manually create new subsets or indexes for each level of the independent variable. Thankfully, R contains many functions that will help you do this in a snap.
 
 The first function we'll cover is \texttt{aggregate()}. The function \texttt{aggregate()} takes three arguments, a formula in the form  \texttt{y {\raise.17ex\hbox{$\scriptstyle\sim$}} x1 + x2} defining the dependent (Y) and one or more independent variables (x1, x2, ...), a function (FUN), and a dataframe (data). When you execute \texttt{aggregate(\texttt{y {\raise.17ex\hbox{$\scriptstyle\sim$}} x1 + x2 + ...}, data, FUN)}, R will apply the input function (FUN) to the dependent variable (Y) \textit{separately} for each level(s) of the independent variable(s) (x1, x2, ...). Let's see how it works:
 
@@ -5003,106 +5002,98 @@ Optional arguments passed on to FUN (like \tt{na.rm = T} to ignore NA values in 
 \vspace{5mm} %5mm vertical space
 
 
-Let's give \texttt{aggregate()} a whirl. We'll use the function to answer the question ``What is the flight cancellation rate for each carrier?" For this question, we'll set the value of Y to \texttt{cancelled}, x1 to \texttt{carrier}, and FUN to \texttt{mean}
+Let's give \texttt{aggregate()} a whirl. We'll use the function to answer the question ``What is the average (mean) age of pirates from each college?" For this question, we'll set the value of Y to \texttt{age}, x1 to \texttt{college}, and FUN to \texttt{mean}
 
 \begin{footnotesize}
 <<>>=
-aggregate(formula = cancelled ~ carrier,  # DV is cancelled, IV is carrier
+aggregate(formula = age ~ college,  # DV is cancelled, IV is carrier
           FUN = mean, # Calculate the mean of the DV for each IV level
           na.rm = T, # Ignore NA values when calculating the mean
-          data = Flights # IV and DV are located in the Flights dataframe
+          data = pirates # IV and DV are located in the Flights dataframe
           ) 
 @
 \end{footnotesize}
 
 
-As you can see, the \texttt{aggregate()} function has returned a dataframe with a column for the independent variable (\texttt{carrier}), and a column for the results of the function \texttt{mean} applied to each level of the independent variable. We can easily plot these data using the \texttt{barplot()} function, which plots a numeric variable as a function of a nominal variable (see margin Figure~\ref{fig:barplot})
+As you can see, the \texttt{aggregate()} function has returned a dataframe with a column for the independent variable (\texttt{college}), and a column for the results of the function \texttt{mean} applied to each level of the independent variable. We can easily plot these data using the \texttt{barplot()} function, which plots a numeric variable as a function of a nominal variable (see margin Figure~\ref{fig:barplot})
 
 \begin{marginfigure}
 \begin{tiny}
 <<fig.height = 6, fig.width = 6>>=
-aggregated.data <- aggregate(formula = cancelled ~ carrier, 
-                             FUN = mean, na.rm = T, data = Flights)
+aggregated.data <- aggregate(formula = age ~ college, 
+                             FUN = mean, na.rm = T, data = pirates)
 
-barplot(height = aggregated.data$cancelled,
-        names.arg = aggregated.data$carrier)
+barplot(height = aggregated.data$age,
+        names.arg = aggregated.data$college)
 @
 \end{tiny}
-\caption{Barplot showing the mean flight cancellation rate for airlines in the \texttt{Flights.txt} dataset}
+\caption{Barplot showing the mean age for each pirate college}
 \label{fig:barplot}
 \end{marginfigure}
 
-You can include any function as the argument to \texttt{FUN} as long as the function takes a single numeric argument and returns a single scalar. For example, let's use \texttt{aggregate()} to now get the median arrival and departure delays for each airline carrier:
+You can include any function as the argument to \texttt{FUN} as long as the function takes a single numeric argument and returns a single scalar. You can also include multiple independent variables. For example, let's use \texttt{aggregate()} to now get the median age for all combinations of college and headband:
 
 \begin{footnotesize}
 <<>>=
 # Calculate median departure delay by carrier
- med.arrdelay <- aggregate(formula = arr_delay ~ carrier, # DV is arr_delay, IV is carrier
+agg.data <- aggregate(formula = age ~ college + headband, # DV is arr_delay, IV is carrier
             FUN = median, # Calculate the median arr_delay
-            data = Flights, # Columns are in the Flights dataframe
+            data = pirates, # Columns are in the Flights dataframe
             na.rm = T) # Ignore NA values
-     
-
-# Calculate median  departure delay by carrier
-med.depdelay <- aggregate(formula = dep_delay ~ carrier, 
-            FUN = median,
-            data = Flights,
-            na.rm = T) # Ignore NA values
-
 @
 
 \end{footnotesize}
 
-Let's combine two results from \texttt{aggregate()} into one plot. In margin Figure~\ref{fig:flightsdelay}, I compare the median arrival and departure delays for each airline. Interestingly, we can see that the carrier US has both a very low median arrival and departure delay. In fact, they're both negative, suggesting that US flights tend to leave and arrive early. In contrast, the carrier UA has a median arrival and departure delay of 0. If you ask me, UA has the better numbers as their flights, on average, depart and arrive when they are supposed to!
+% Let's combine two results from \texttt{aggregate()} into one plot. In margin Figure~\ref{fig:flightsdelay}, I compare the median arrival and departure delays for each airline. Interestingly, we can see that the carrier US has both a very low median arrival and departure delay. In fact, they're both negative, suggesting that US flights tend to leave and arrive early. In contrast, the carrier UA has a median arrival and departure delay of 0. If you ask me, UA has the better numbers as their flights, on average, depart and arrive when they are supposed to!
+% 
+% \begin{marginfigure}
+% \begin{tiny}
+% <<fig.width = 5, fig.height = 5>>=
+% require("RColorBrewer")
+% 
+% # Step 1: Calculate median arrival delays
+% med.arrdelay <- aggregate(formula = arr_delay ~ carrier, 
+%             FUN = median,
+%             data = Flights,
+%             na.rm = T) # Ignore NA values
+%      
+% 
+% # Step 2: Calculate median departure delays
+% med.depdelay <- aggregate(formula = dep_delay ~ carrier, 
+%             FUN = median,
+%             data = Flights,
+%             na.rm = T) # Ignore NA values
+% 
+% # Step 3: Set up plot and add reference line
+% plot(1, xlim = c(-10, 10), ylim = c(-5, 5), 
+%      type = "n", main = "Aggregate Carrier Flight Delays",
+%      xlab = "Arrival Delay",  ylab = "Departure Delay")
+% 
+% abline(h = 0, lty = 2, col = "gray")
+% abline(v = 0, lty = 2, col = "gray")
+% 
+% # Step 4: Add points
+% points(x = med.arrdelay$arr_delay, 
+%        y = med.depdelay$dep_delay,
+%        col = brewer.pal(12, "Set3"),
+%        pch = 16, cex = 1.5
+%        )
+% 
+% # Step 5: Add carrier labels
+% text(x = med.arrdelay$arr_delay,
+%      y = med.depdelay$dep_delay,
+%     labels = med.depdelay$carrier,
+%     pos = c(rep(1, 5), 3, rep(1, 9)) # Insert 3 for carrier EV
+%      )
+% 
+% @
+% \end{tiny}
+% \caption{Median arrival and departure delay for each airline carrier in the \texttt{Flights} dataset.}
+% \label{fig:flightsdelay}
+% \end{marginfigure}
 
-\begin{marginfigure}
-\begin{tiny}
-<<fig.width = 5, fig.height = 5>>=
-require("RColorBrewer")
 
-# Step 1: Calculate median arrival delays
-med.arrdelay <- aggregate(formula = arr_delay ~ carrier, 
-            FUN = median,
-            data = Flights,
-            na.rm = T) # Ignore NA values
-     
-
-# Step 2: Calculate median departure delays
-med.depdelay <- aggregate(formula = dep_delay ~ carrier, 
-            FUN = median,
-            data = Flights,
-            na.rm = T) # Ignore NA values
-
-# Step 3: Set up plot and add reference line
-plot(1, xlim = c(-10, 10), ylim = c(-5, 5), 
-     type = "n", main = "Aggregate Carrier Flight Delays",
-     xlab = "Arrival Delay",  ylab = "Departure Delay")
-
-abline(h = 0, lty = 2, col = "gray")
-abline(v = 0, lty = 2, col = "gray")
-
-# Step 4: Add points
-points(x = med.arrdelay$arr_delay, 
-       y = med.depdelay$dep_delay,
-       col = brewer.pal(12, "Set3"),
-       pch = 16, cex = 1.5
-       )
-
-# Step 5: Add carrier labels
-text(x = med.arrdelay$arr_delay,
-     y = med.depdelay$dep_delay,
-    labels = med.depdelay$carrier,
-    pos = c(rep(1, 5), 3, rep(1, 9)) # Insert 3 for carrier EV
-     )
-
-@
-\end{tiny}
-\caption{Median arrival and departure delay for each airline carrier in the \texttt{Flights} dataset.}
-\label{fig:flightsdelay}
-\end{marginfigure}
-
-
-While \texttt{aggregate()} is good for calculating summary statistics for a single dependent variable, it can't handle multiple dependent variables. For example, if you had a survey and you wanted to calculate summary statistics for multiple dependent variables (like income, weight, age, etc.), you'd need to execute an \texttt{aggregate()} command for each dependent variable, and then combine the results into a single dataframe. Thankfully, a recently released R package called \texttt{dplyr} makes this process very simple!
+While \texttt{aggregate()} is good for calculating summary statistics for a single dependent variable, it can't handle multiple dependent variables. For example, if you wanted to calculate summary statistics for multiple dependent variables (like age, sword speed, height, etc.), you'd need to execute an \texttt{aggregate()} command for each dependent variable, and then combine the results into a single dataframe. Thankfully, a recently released R package called \texttt{dplyr} makes this process very simple!
 
 \section{Aggregation with dplyr}
 
@@ -5111,7 +5102,7 @@ The \texttt{dplyr} package is a new package that allows you to do data `wranglin
 dplyr works by combining objects (dataframes and columns in dataframes), functions (mean, median, etc.), and \textit{verbs} (special commands in \texttt{dplyr}). In between these commands is a new operator called the \textit{pipe} which looks like this: \texttt{\%>\%}. The pipe simply tells R that you want to continue executing some functions or verbs on the object you are working on. You can think about this pipe as meaning 'and then...'
 
 To aggregate data with \texttt{dplyr}, your code will look something like the following code. In this example, assume that the original (raw) dataframe is called 
-\texttt{my..df}, the variable you want to collapse the data over is called \texttt{grouping.column}, and the columns you want to aggregate are called \texttt{col.a}, \texttt{col.b} and \texttt{col.c}
+\texttt{my.df}, the variable you want to collapse the data over is called \texttt{grouping.column}, and the columns you want to aggregate are called \texttt{col.a}, \texttt{col.b} and \texttt{col.c}
 
 <<eval = F>>=
 my.df %>%  # Specify original dataframe
@@ -5132,35 +5123,35 @@ Start with the dataframe \texttt{my.df}. \textit{Then}, group \texttt{my.df} by 
 When you use dplyr, you write code that sounds like: "The original dataframe is XXX, now filter the dataframe to only include rows that satisfy the conditions YYY, now group the data at each level of the variable(s) ZZZ, now summarize the data and calculate summary functions XXX..."
 
 
-Let's start with an example: Let's create a dataframe of aggregated data from the \texttt{Flights} dataset, where each row is a airline carrier, and each columns is a different summary statistic of some data across all flights. Specifically, let's create 5 columns: \texttt{dep.delay.med}, The median departure delay of that airline, \texttt{dep.delay.sd}: The standard deviation of departure delays of that airline, \texttt{arr.delay.max}: The maximum departure delay of that airline, and \texttt{dist.mean}: The average flight distance of that airline.
+Let's start with an example: Let's create a dataframe of aggregated data from the \texttt{pirates} dataset, where each row is a college, and each columns is a different summary statistic of some data across all flights. Specifically, let's create 5 columns: \texttt{age.med}, The median age of pirates from that college, \texttt{age.min}: The minimum age of pirates from that college, \texttt{sword.speed.med}: The median sword speed of pirates from that college, and \texttt{tchests.found.mean}: The average number of treasure chests found of pirates from that college
 
-To create this aggregated data frame, I will use the new function \textt{group\_by} and the verb \texttt{summarise}. I will assign the result to a new dataframe called \texttt{flights.agg}:
+To create this aggregated data frame, I will use the new function \textt{group\_by} and the verb \texttt{summarise}. I will assign the result to a new dataframe called \texttt{college.agg}:
 
 \begin{footnotesize}
 <<message = F>>=
 require(dplyr)
-flights.agg <- Flights %>% # Define dataframe, THEN...
-                group_by(carrier) %>% # Define the grouping variable, THEN...
+college.agg <- pirates %>% # Define dataframe, THEN...
+                group_by(college) %>% # Define the grouping variable, THEN...
   summarise( # Tell R you are going to calculate summaries
-    dep.delay.med = median(dep_delay, na.rm = T), # Define first summary...
-    dep.delay.sd = sd(dep_delay, na.rm = T),  # Define second summary...
-    arr.delay.max = max(arr_delay, na.rm = T),
-    dist.mean = mean(dist, na.rm = T)
+    age.med = median(age), # Define first summary...
+    age.min = min(age),  # Define second summary...
+    sword.speed.med = median(sword.speed),
+   tchests.found.mean = mean(tchests.found)
   ) # End
 
-flights.agg # Print result!
+college.agg # Print result!
 @
 \end{footnotesize}
 
-As you can see, our final object \texttt{flights.agg} is the aggregated dataframe we want which aggregates all the columns we wanted at the level of the airline carrier. Let's walk through the code
+As you can see, our final object \texttt{college.agg} is the aggregated dataframe we want which aggregates all the columns we wanted at the level of the airline carrier. Let's walk through the code
 
 \marginnote{When you use dplyr, the output will always be an object called a \textit{local data frame}. A local dataframe is identical to a regular dataframe, except that it looks a bit nicer if you print the entire dataframe into the console. This means you don't have to use the \texttt{head()} function when looking at a local dataframe.}
 
 \begin{itemize}
-  \item First, we define the original dataframe that we are basing our summary statistics on. In this case, the original dataframe is \texttt{Flights}. We then include the pipe \texttt{\%>\%} to tell R we are still working.
+  \item First, we define the original dataframe that we are basing our summary statistics on. In this case, the original dataframe is \texttt{pirates}. We then include the pipe \texttt{\%>\%} to tell R we are still working.
   \item Second, we define the grouping variable using the \texttt{group\_by} function. This tells R to group the results at the level of each carrier. We then use the \texttt{\%>\%} pipe.
   \item Next, we call the \texttt{summarise} function, which tells R that the following functions will be summaries of the grouping variable. Because all the arguments to the \texttt{summarise} function are within the parentheses, we don't need to use a pipe.
-  \item Finally, we define the summary columns in our final dataframe. For each column, we give it a name (e.g.; \texttt{dep.delay.med}), and then write the calculation as a function of the appropriate columns in the original dataframe. For example, to define \texttt{dep.delay.med}, we write \texttt{median(dep\_delay, na.rm = T)}.
+  \item Finally, we define the summary columns in our final dataframe. For each column, we give it a name (e.g.; \texttt{age.med}), and then write the calculation as a function of the appropriate columns in the original dataframe. For example, to define \texttt{age.med}, we write \texttt{median(age)}.
   
 \end{itemize}
 
@@ -5189,7 +5180,7 @@ Select a subset of rows in a dataframe. For example, the following code will res
   Reorders rows of a dataframe.
   
   \item[\tt{select}] \hfill \\  
-Select specific columns of a dataframe.
+Select specific columns of a dataframe. There are many ways to use select, for some examples, check out http://www.r-bloggers.com/the-complete-catalog-of-argument-variations-of-select-in-dplyr/.
 
 \item[\tt{mutate}] \hfill \\  
 Add a column to a dataframe. 
@@ -5203,35 +5194,37 @@ Add a column to a dataframe.
 }
 \vspace{5mm} %5mm vertical space
 
-Let's do an example where we combine multiple verbs into one chunk of code. We'll create a new dataframe called \texttt{flights.cancelled} that gives us data on the cancelled flights from each airline. However, let's add some additional data filters this time. We'll filter the data to only include flights that were scheduled to depart before 12pm, and whose destination is either DFW (Dallas Fort Worth), MIA (Miami), or DSM (Des Moines). 
+Let's do an example where we combine multiple verbs into one chunk of code. We'll create a new dataframe called \texttt{college.favpir.agg} that gives us aggregated data at the level of the both the college the pirate went to, and their favorite pirate. However, let's add some additional data filters this time. We'll filter the data to only include pirates who are older than 30 (\texttt{age > 40)}) and who wear a headband (\texttt{headband == "yes"}):
 
 \begin{footnotesize}
 <<>>=
 require(dplyr)
-flights.agg <- Flights %>% # Step 1
-            filter(hour < 12 & dest %in% c("DFW", "MIA", "DSM")) %>% # Step 2
-            group_by(carrier) %>% # Step 3
-            summarise( # Step 4
-              cancelled.p = mean(cancelled), # Step 5
-              n = length(cancelled) # Step 6
+college.favpir.agg <- pirates %>% # First, define the original df
+            filter(age > 30 & headband == "yes") %>% # Filter by age and headband
+            group_by(college, favorite.pirate) %>% # Define the grouping variable
+            summarise( #
+              frequency = n(), # How many pirates in each group?
+              sword.speed.med = median(sword.speed),  # Median sword speed?
+              parrots.mean = mean(parrots.lifetime) # # mean parrots?
             ) %>%
-            arrange(n) # Step 7
+            arrange(frequency) # Step 7
 
-flights.agg # Print the result!
+college.favpir.agg # Print the result!
 @
 \end{footnotesize}
 
-As you can see, our result is a dataframe with 5 rows and 3 columns. The reason why we only have 5 rows is because only 5 carriers had flights to one of the three airports we specified. Let's walk through the code line by line:
+As you can see, our result is a dataframe with 12 rows and 5 columns. Let's walk through the code line by line:
 
 \begin{enumerate}
 
-  \item First, we define the original dataframe as \texttt{Flights}, (\%>\% then...)
-  \item Next we filter the \texttt{Flights} dataframe by only including rows where the hour is less than 12, and the destination is in the set DFW, MIA and DSM. (\%>\% then...)
-  \item We group the data according to \texttt{carrier} (\%>\% then...)
-  \item We call the \texttt{summarise} verb, telling dplyr that the next commands are summary functions of \texttt{Flights}. These will be the columns in our new aggregated dataframe. (\%>\% then...)
-  \item The first column in our new aggregated dataset is called \texttt{cancelled.p} and is defined as the mean value of the \texttt{cancelled} column in \texttt{Flights}. 
-  \item The second column is called \texttt{n} and is simply the length of the vector \texttt{cancelled}. Because this function is called for each level of \texttt{carrier}, this will give us the number of observations for each level of \texttt{carrier}.
-    \item Arrange the final dataframe by the new column \texttt{n}
+  \item First, we define the original dataframe as \texttt{pirates}, (\%>\% then...)
+  \item Next we filter the \texttt{pirates} dataframe by only including rows where age is greater than 30 and headband is yes (\%>\% then...)
+  \item We group the data according to \texttt{college} and \texttt{favorite.pirate} (\%>\% then...)
+  \item We call the \texttt{summarise} verb, telling dplyr that the next commands are summary functions of \texttt{pirates}. These will be the columns in our new aggregated dataframe. (\%>\% then...)
+  \item The first column in our new aggregated dataset is called \texttt{frequency} and is defined as the number of pirates in the group (the function \texttt{n()} is special to \texttt{dplyr} and simply returns the number of rows in a group)
+  \item The second column is called \texttt{sword.speed.med} and is the median sword speed of pirates in the group
+  \item The third column is called \texttt{parrots.mean} and is the mean number of parrots owned by pirates in the group.
+  \item After closing the \texttt{summary()} function, we arrange the final dataframe by the new column \texttt{frequency}
   
 \end{enumerate}
 
@@ -5305,7 +5298,7 @@ As you can see, our new merged dataframe has added the information from \texttt{
 
 \subsection{Easily recode values in a dataframe with merge()}
 
-You can also use the \texttt{merge()} function to quickly recode values in a vector in a dataframe. For example, let's say some drunk pirate accidentely entered the wrong country names for each person in the column \texttt{country} in \texttt{hsurvey()}. Thankfully, when we got him sober enough he could tell us which (incorrect) entry goes to which correct entry. For example: the entry USA should be Canada, Mexico should be India, etc. We can quickly correct this in our original dataframe using \texttt{merge()}. We'll do this in two steps:
+You can also use the \texttt{merge()} function to quickly recode values in a vector in a dataframe. For example, let's say some drunk pirate accidentally entered the wrong country names for each person in the column \texttt{country} in \texttt{hsurvey()}. Thankfully, when we got him sober enough he could tell us which (incorrect) entry goes to which correct entry. For example: the entry USA should be Canada, Mexico should be India, etc. We can quickly correct this in our original dataframe using \texttt{merge()}. We'll do this in two steps:
 
 \begin{enumerate}
 \item Create a lookup table that shows the original (incorrect) and the new (correct) values
@@ -5611,12 +5604,12 @@ test.result
 
 As you can see, the results of this test and the prior test are identical. You can use which ever version makes more sense to you. Personally, I like the formula version because all the necessary commands (including the specification that the two diets are 1 and 2) are contained within the \texttt{t.test()} function. Of course, you can also specify additional restrictions in the \texttt{subset} argument.
 
-Let's try making the previous test a little more complicated by adding a \texttt{subset} argument. Let's say a pirate tells you "Oh, well there's only a difference between the age of headband and no-headband pirates for those pirates who went to college at Captain Chunk's Canon Crew." We can test this by addding the additional restriction \texttt{college == "Captain Chunk's Canon Crew}, to the \texttt{subset} argument:
+Let's try making the previous test a little more complicated by adding a \texttt{subset} argument. Let's say a pirate tells you "Oh, well there's only a difference between the age of headband and no-headband pirates for those pirates who went to college at Captain Chunk's Canon Crew (aka CCCC)." We can test this by adding the additional restriction \texttt{college == "CCCC"}, to the \texttt{subset} argument:
 
 <<>>=
 test.result <- t.test(formula = age ~ headband,
                       subset = headband %in% c("yes", "no") &
-                               college == "Captain Chunk's Canon Crew",
+                               college == "CCCC",
                       data = pirates,
                       alternative = "two.sided"
                       )
@@ -5742,16 +5735,14 @@ Let's use the \texttt{chisq.test()} function to test if there is a relationship 
 
 \begin{footnotesize}
 <<>>=
-test.result <- with(pirates, 
-                    chisq.test(x = college, 
-                              y = sword.type)
-                    )
-
+test.result <- chisq.test(x = pirates$college, 
+                          y = pirates$sword.type)
+                    
 test.result
 @
 \end{footnotesize}
 
-Looks like we got a test-statistic of \Sexpr{round(test.result$statistic, 2)} and a p-value of \Sexpr{round(test.result$p.value, 2)}. According to this test, we do not have sufficient data to reject the null hypothesis that there is no relationship between the two variables.
+Looks like we got a test-statistic of \Sexpr{round(test.result$statistic, 2)} and a p-value of \Sexpr{round(test.result$p.value, 2)}. Because the p-value is less than .05, we \textit{do} have sufficient data to reject the null hypothesis and conclude that there is a relationship between the two variables.
 
 Let's see what other information we can get from the chi-squre test object:
 
@@ -5793,6 +5784,8 @@ Chapter Goals
 
 \section{The Linear Model}\index{Linear Model}
 
+In this chapter, we will go over the basics of applying the general linear model in R.
+
 The linear model is easily the most famous and widely used model in all of statistics. Why? Because it can apply to so many interesting research questions where you are trying to predict a variable of interest (the \textit{response} or \textit{dependent variable}) on the basis of one or more other variables (the \textit{predictor} or \textit{independent variables}).
 
 The linear model takes the following form:
@@ -5803,12 +5796,9 @@ y=\beta_{0}+\beta_{1}x_{1}+\beta_{2}x_{2}+...\beta_{n}x_{n}
 \end{equation*}
 \end{Large}
 
-where the x values represent the predictors, while the beta values represent weights.
+where the x values represent the predictors, while the beta values represent weights. For example, we could define the value of a diamond as a linear function of the diamond's weight ($x_1$) and clarity ($x_2$).
 
 To use the linear model in R, we use the \texttt{lm()} function:
-
-
-
 
 
 \vspace{5mm} %5mm vertical space
@@ -5824,13 +5814,13 @@ To use the linear model in R, we use the \texttt{lm()} function:
 \begin{description}
 
 \item[\tt{function}] \hfill \\
-A function in a form \texttt{y {\raise.17ex\hbox{$\scriptstyle\sim$}} x1 + x2 + ...}, where y is the dependent variable, and x1, x2, ... are the independent varaibles.
+A function in a form \texttt{y {\raise.17ex\hbox{$\scriptstyle\sim$}} x1 + x2 + ...}, where y is the dependent variable, and x1, x2, ... are the independent variables. If you want to include all columns (excluding y) as independent variables, just enter \texttt{y {\raise.17ex\hbox{$\scriptstyle\sim$}} .}
 
 \item[\tt{data}] \hfill \\
   The dataframe containing the columns specified in the formula.
   
   \item[\tt{subset}] \hfill \\  
-An optional vector specifying a subset of observations to be used in the fitting process. For example \texttt{subset = age > 50}
+An optional vector specifying a subset of observations to be used in the fitting process. For example \texttt{subset = age > 50 & sex == "male"}
 
 \end{description}
 
@@ -5838,67 +5828,176 @@ An optional vector specifying a subset of observations to be used in the fitting
 }
 \vspace{5mm} %5mm vertical space
 
-Let's try an example with some made-up data. For this example, I'll create three independent variables x1, x2 and x3 from normal distributions. I'll then create a dependent variable \texttt{y} as a linear function of the three independent variables (with a little error thrown in)\footnote{If there was no error in the model, then the response variable would be a perfect linear combination of the predictor variables. When this happens, the model will always perfectly fit the data and no stats are necessary (or even possible!)}. Finally, I'll run the linear model and see if we can recover the true beta values:
+Let's try an example with the results of a recent pirate ship auction where 1,000 ships were sold to the highest bidder. You can download the dataset at http://nathanieldphillips.com/wp-content/uploads/2015/06/shipauction.txt. This dataset contains three columns: \texttt{cannons}: the number of cannons on the ship, \texttt{rooms}: the number of rooms on the ship, \texttt{age}: the age of the ship in years, \texttt{style}: the style of the ship, \texttt{condition}: the condition of the ship on a scale of 1 to 10, \texttt{weight}: the weight of the ship, and \texttt{price}: The price that the ship sold at.
 
 \begin{footnotesize}
 <<>>=
-# Step 1: Create a dataframe of predictors
-
-random.data <- data.frame(
-             "x1" = rnorm(100, mean = 0, sd = 1),
-             "x2" = rnorm(100, mean = 4, sd = 5),
-             "x3" = rnorm(100, mean = -2, sd = 2)
-             )
-
-# Step 2: Create the DV with beta values 0, 1, 2, 3
-random.data$y <- with(random.data, 0 + 1 * x1 + 2 * x2 + 3 * x3)
-
-# Step 3: Add some random noise to the DV
-random.data$y <- random.data$y + rnorm(100, mean = 0, sd = 1)
-
-# Step 4: Run the model then print the result
-result <- lm(y ~ x1 + x2 + x3, data = random.data)
-result
+shipauction <- read.table("http://nathanieldphillips.com/wp-content/uploads/2015/06/shipauction.txt", sep = "\t")
 @
 \end{footnotesize}
 
-Looks like our estimated beta values of \Sexpr{round(result$coefficients[1], 4)}, \Sexpr{round(result$coefficients[2], 4)}, \Sexpr{round(result$coefficients[3], 4)} and \Sexpr{round(result$coefficients[4], 4)} are pretty close to the true values of 0, 1, 2, 3! This means the model did a pretty good job of estimating the true beta values from the (noisy) data. 
+First, let's get a look at the dataset by executing \texttt{summary} on the dataset
 
-We can get lots of other information from the linear model object. Here are three of them (to see all of them, run \texttt{names(result)}):
-
-\begin{itemize}
-  \item \texttt{coefficients}: A vector of the estimated beta values
-  \item \texttt{residuals}: A vector of the differences between the true response values and the fitted response values.
-  \item \texttt{fitted.values}: A vector of the fitted values.
-\end{itemize}
-
-These attributes let us easily calculate some interesting model diagnostics. For example, let's see how far the model fits are on average from the true values:
-
-\begin{footnotesize}
 <<>>=
-abs.resid <- abs(result$residuals) # Calculate the absolute value of the residuals
-mean(abs.resid) # Calculate the mean
+summary(shipauction)
 @
-\end{footnotesize}
 
-So it looks like, on average, our model fits are \Sexpr{round(mean(abs.resid), 2)} off from the true values (This value is driven by the standard deviation in errors, which we set to 1).
+Now, let's use the linear model function \texttt{lm()} to regress the dependent variable \texttt{price} on the independent variables. This will tell us how relevant each of the independent variables was in the final selling price of the ship. We'll run execute the \texttt{lm()} command and assign the result to an object called auction.lm:
 
-The linear model assumes that there should be no relationship between the predicted values and the distribution of errors. We can easily check this with a scatterplot with the predicted values on the x-axis, and residuals on the y-axis(see Figure \ref{fig:diagnostic} in the margin).
+<<>>=
+auction.lm <- lm(price ~ cannons + rooms + age + 
+                   style + condition + weight, 
+                 data = shipauction)
+@
 
 \begin{marginfigure}
-<<fig.width = 3.5, fig.height = 3.5>>=
-plot(x = result$fitted.values, 
-     y = result$residuals,
-     main = "Model Diagnostics")
+
+Because we are including all columns in the \texttt{shipauction} dataframe as independent variables, we can also write our regression command as:
+
+<<>>=
+auction.lm <- lm(price ~ ., data = shipauction)
 @
-\caption{We see no evidence for a relationship between predicted values and residuals. This is good!}
-\label{fig:diagnostic}
+
+The results will be exactly the same. Using this format will save you a lot of typing if you are running regression analyses on dataframes with many independent variables!
+
 \end{marginfigure}
 
+When we call the \texttt{lm()} function and assign it to an object, R won't spit out any output. To see the actual statistical results, we need to run the \texttt{summary} command on the test object \texttt{auction.lm}. This will output a summary table with estimates of the beta weights as well as statistical tests testing whether the weights are significantly different from 0 - here is the output from the summary function applied to the linear model object \texttt{auction.lm} that we just defined:
+
+<<>>=
+summary(auction.lm)
+@
+
+As you can see above, executing the \texttt{summary()} function on a linear model object returns several results. The first output is \texttt{call} which tells us the exact model we ran. The second output is \texttt{Residuals}, which gives us information about the distribution of residuals - the difference between the model fits and the actual response data. In this case, we see that the median residual is \Sexpr{round(median(summary(auction.lm)$residuals), 0)} which means that the median deviation between the data and the model fits across all data points is \Sexpr{round(median(summary(auction.lm)$residuals), 0)}. The third, and most important, output is \texttt{coefficients}, which shows us the estimated beta values for each independent variable.
+
+Let's look at the table of coefficients: for each independent variable (including the intercept $\beta_0$), we see an estimate (indicating the estimated beta weight), the standard error of the beta weight, a test statistic testing whether the beta weight is significantly different from 0, and a p-value (which R calls Pr(>|t|))\footnote{Note: The text \texttt{Pr(>|t|)} is the p-value.} telling us the probability of obtaining a test statistic as large as the one we found assuming that the true population beta weight is truly 0. In the next column, R will output 0, 1, or more stars indicating how small the p-value is. P-values greater than .05 have no stars, indicating 'no significance' at the .05 level, 1 star indicating a p-value less than .05, 2 stars indicating a p-value less than .01 (and so on). Generally, one or more stars indicates that an effect is significant at the .05 level.
+
+
+We can get lots of other information from the linear model object. Here are three of them (to see all of them, run \texttt{names(auction.lm)}):
+
+\begin{itemize}
+
+  \item \texttt{coefficients}: A vector of the estimated beta values corresponding to the independent variables (and the intercept)
+  \item \texttt{fitted.values}: A vector of the fitted values for all test cases. This is the fitted linear model's prediction for the dependent variable (in our case, price) for each ship.
+  \item \texttt{residuals}: A vector of the differences between the true response values and the fitted response values.
+
+\end{itemize}
+
+These attributes let us easily calculate some interesting model diagnostics. For example, the attribute \texttt{fitted.values} shows us, for each row in the original dataset, what the model predicted the value should be. We can use this information to create a scatterplot comparing the true value for each ship, and the value fitted by the model. If the model did a good job of capturing the data, we would expect a strong linear relationship between the two. See margin figure XXX for an example:
+
+\begin{marginfigure}
+<<fig.width = 4, fig.height = 4>>=
+plot(x = shipauction$price, 
+     y = auction.lm$fitted.values, 
+     xlab = "True Price of Ship",
+     ylab = "Model Price of Ship",
+     main = "Pirate ship auction prices\n True versus model values", 
+     pch = 16, col = gray(.05, .15)
+     )
+
+# Add diagonal line
+abline(a = 0, b = 1)
+@
+\end{marginfigure}
+
+To get a full analysis of variance table (ANOVA) from a linear regression object, we can use the \texttt{anova()} function. The output of this function will look very similar to the table we saw after running \texttt{summary()}, but it contains a bit more information
+
+<<>>=
+anova(auction.lm)
+@
+
+If you want to access the results of an anova table directly, you can use the \$ notation. Let's use the \texttt{names()} function to see what is in the anova object:
+
+\begin{footnotesize}
+<<>>=
+names(anova(auction.lm))
+@
+\end{footnotesize}
+
+
+Now we can use these names to access specific columns from the anova table. For example, to get the p-values, we can run the following:
+
+\begin{footnotesize}
+<<>>=
+anova(auction.lm)$"Pr(>F)"
+@
+\end{footnotesize}
+
+This vector of p-values is given in the same order of the independent variables in the previous ANOVA table. For example, the first value is the p-value for \texttt{cannons}, and the second p-value is for \texttt{rooms}.
+
+
+\footnote{I know what you're thinking ``Why did we put ``Pr(>F)'' in quotation marks?'' The reason is because R gets confused by the > symbol in the column name. We use quotation marks to tell R that Pr(>F) is just a name and is not meant to be a mathematical operation. It's a strange quirk in R, I wish they had just called the p-value column \texttt{p} or something, but that's how it is....}
+
+
+\subsection{Interactions in model terms: y {\raise.17ex\hbox{$\scriptstyle\sim$}} x1 * x2}
+
+An interaction in a linear model means that the relationship between one independent variable on the dependent variable depends on the level of another independent variable. For example, let's see if the relationship between \texttt{age} and \texttt{price} depends on the level of \texttt{style}. To keep things simple, we'll only look at this one interaction (and ignore other independent variables). To include interaction terms in a linear model, use the $x1 \times x2$ notation. Because we're testing the interaction between \texttt{age} and \texttt{style}, we'll enter \texttt{cannons * style} as the independent variable(s):
+
+
+
+<<>>=
+auction.lm <- lm(price ~ age * style,
+                 data = shipauction)
+summary(auction.lm)
+@
+
+As you can see from the summary table, we have both significant main effects for both independent variables, and a significant main effect for the interaction (labelled \texttt{age:stylemodern}). The estimate for the interaction term (in this case, \Sexpr{round(as.numeric(lm(price ~ age * style, data = shipauction)$coefficients[4]), 2)}) tells us that, for modern ships, the beta weight for \texttt{age} is estimated to be \Sexpr{round(as.numeric(lm(price ~ age * style, data = shipauction)$coefficients[4]), 2)}) smaller than the beta weight for cannons for classic ships. To see this relationship, let's create two scatterplots showing the relationship between age and price, one for modern ships and one for classic ships. If we interpreted the interaction correctly, we should see a smaller slope between age and price for modern ships than for classic ships. The two scatterplots are shown in margin figure XXX:
+
+\begin{marginfigure}
+\begin{tiny}
+<<fig.width = 4, fig.height = 4>>=
+require(RColorBrewer)
+col.vec <- brewer.pal(3, "Set2")
+modern.data <- subset(shipauction, style == "modern")
+classic.data <- subset(shipauction, style == "classic")
+
+plot(modern.data$age, modern.data$price, pch = 21, 
+     bg = col.vec[1], 
+     ylim = c(min(shipauction$price) * 1.1, max(shipauction$price) * 1.1),
+     xlab = "age",
+     ylab = "price",
+     main = "Age and price of pirate ships at auction"
+     )
+
+points(classic.data$age, classic.data$price, pch = 21, bg = col.vec[2])
+
+legend("topright", legend = c("modern ships", "classic ships"), 
+       pch = c(21, 21), pt.bg = col.vec, bg = "white")
+@
+\end{tiny}
+\end{marginfigure}
+
+Looking at the graph, we can see that our previous conclusion make sense: for modern ships, we see a negative relationship between age and price, the older a modern ship is, the smaller the price it receives. However, for classic ships, we actually see a positive relationship between age and price: the older a classic ship is, the higher the price it receives.
+
+
+\section{Calculating an ANOVA with \texttt{aov()}}
+
+Let's go over how to calculate an ANOVA using the \texttt{aov()} function. You would calculate an ANOVA to test whether there is a relationship between a nominal independent variable and a quantitative dependent variable. For example, is there a relationship between the color of a pirate ship and its selling price? Let's test this by using \texttt{aov()}. We'll set price as the dependent variable and color as the independent variable.
+
+<<>>=
+color.aov <- aov(price ~ color, data = shipauction)
+summary(color.aov)
+@
+
+As you can see in the summary table, because the p-value of \Sexpr{round(summary(color.aov)[[1]][1,5], 2)} is less than .05, we conclude that we do find a significant effect of color on ship prices. After finding a significant ANOVA, we can move on to conduct post-hoc tests to test pair-wise differences between the colors. We can do this using the \texttt{TukeyHSD()} function:
+
+<<>>=
+TukeyHSD(color.aov)
+@
+
+Looking at the output of this function, we can see statistical tests comparing all pairs of the three colors. The four columns in the table are as follows:
+
+\begin{enumerate}
+  \item diff: The difference in means between the two groups.
+  \item lwr, upr: The lower and upper bounds of the 95\% CI of the difference between the two groups
+  \item p adj: The adjusted p-value testing whether or not the difference in groups is significantly different from 0. The p-value is adjusted so the family-wise type 1 error rate is 95\%. Look at ?TukeyHSD for more information.
+\end{enumerate}
+
+For example, let's look at the first row comparing brown to black ships. We find a mean difference of \Sexpr{TukeyHSD(color.aov)$color[1,1]}, a 95\% confidence interval of the difference of [\Sexpr{round(TukeyHSD(color.aov)$color[1,2], 2)}, \Sexpr{round(TukeyHSD(color.aov)$color[1, 3], 2)}], and an adjusted p-value of \Sexpr{round(TukeyHSD(color.aov)$color[1,4], 2)}. Because the p-value is smaller than .05, we conclude that there is a significant difference in the mean value of brown and black ships.
 
 \section{Generalized Linear Model (GLM)}
 
-In the Generalized Linear Model (GLM), we take the original linear model, but apply a link function that wraps around the linear combination of predictors
+In the Generalized Linear Model (GLM), we take the original linear model, but apply a link function that wraps around the linear combination of predictors. This allows us to model response data that is not normally distributed.
 
 
 \vspace{5mm} %5mm vertical space
@@ -5971,83 +6070,1139 @@ abline(v = 0, lty = 1)
 \end{marginfigure}
 
 
-To conduct binary logistic regression, we use the \texttt{family = "binomial"} argument. Let's try an example with some more made-up data. We'll set the true beta values to 0, 1, -2 and 3
+To conduct binary logistic regression, we use the \texttt{family = "binomial"} argument. Let's try an example with our \texttt{shipauction} dataset. Let's make age our independent variable, and style as our dependent variable. This will allow us to test whether older ships are more likely to be classic ships than modern ships. However, before we run the analysis, let's recode the style column into a numeric variable, where \texttt{modern = 0} and \texttt{classic = 1}. This will help us to interpret the beta values in the model later on:
+
+<<>>=
+shipauction$style.num[shipauction$style == "modern"] <- 0
+shipauction$style.num[shipauction$style == "classic"] <- 1
+
+@
+
+
+
 
 \begin{footnotesize}
 <<>>=
-# Step 1: Create a dataframe of predictors
-random.data <- data.frame(
-             "x1" = rnorm(500, mean = 0, sd = 2),
-             "x2" = rnorm(500, mean = 4, sd = 2),
-             "x3" = rnorm(500, mean = -2, sd = 2)
-             )
-
-# Step 2: Create the DV with beta values 0, 1, -2, 3
-random.data$y <- with(random.data, 0 + 1 * x1 - 2 * x2 + 0 * x3)
-
-# Step 3: Add some random noise to the DV
-random.data$y <- random.data$y + rnorm(500, mean = 0, sd = 1)
-
-# Step 4: Convert to probability
-random.data$y.prob <- with(random.data, 1 / (1 + exp(-y)))
-
-# Step 5: Create binary response
-random.data$y.bin <- round(random.data$y.prob, 0)
-
 # Step 4: Run the model then print the result
-result <- glm(y.bin ~ x1 + x2 + x3,
-              data = random.data, family = "binomial")
+age.style.glm <- glm(style.num ~ age,
+              data = shipauction, family = "binomial")
 
-result
-
-summary(result)
+summary(age.style.glm)
 @
 \end{footnotesize}
 
+Looking at the summary table, it looks like we have a significant positive effect of \texttt{age} (beta = \Sexpr{round(summary(age.style.glm)$coefficients[2, 1], 3)}, p = \Sexpr{round(summary(age.style.glm)$coefficients[2, 4], 3)}), meaning that the older a ship is, the more likely it is that it's a classic ship (we know it's more likely to be classic because we coded classic ships as 1 and modern ships as 0. If we reversed the coding, the sign of the beta weight would become negative).
 
-\section{ANOVA}
+You can visualize this relationship in Margin Figure XX: In the figure, I group the ships into 10 groups according to their age using the \texttt{cut()} function and then calculated the proportion of ships in each age group that were modern using \texttt{aggregate()}:
 
-Once you've calculated a regression object, you can easily create an \textit{ANOVA} table based on the regression analysis using the \texttt{anova()} function.
+\begin{marginfigure}
+\begin{tiny}
+<<fig.width = 4, fig.height = 4>>=
+shipauction$style.classic <- shipauction$style == "classic"
 
-\newfun{anova(mod)}\index{General Linear Model!anova()}
+shipauction$age.cut <- cut(shipauction$age, 
+                           breaks = seq(10, 90, 10))
 
-To use the \texttt{anova()} function, you apply it to an existing linear model object. For example, let's apply it to the previous model:
+probs <- aggregate(style.classic ~ age.cut, 
+                   data = shipauction, FUN = mean)
 
-\begin{footnotesize}
+plot(probs, xlab = "Age (grouped)", 
+     ylab = "p(ship is classic)", 
+     main = "Probabiliy that a ship is classic\ngiven its age")
+@
+\end{tiny}
+\end{marginfigure}
+
+
+\section{Additional Tips}
+
+\subsection{Adding a regression line to a plot}
+
+
+Once you've generated a model object from \texttt{lm()} or \texttt{glm()}, you can easily add a regression line from that object to a graph. To do this, use the \texttt{abline()} function with the linear model object as the primary argument. For example, to add a regression line to a scatterplot showing the relationship between \texttt{rooms} and \texttt{price}, we can run the following:
+
+<<fig.width = 4, fig.height = 4>>=
+plot(shipauction$rooms, shipauction$price, 
+     xlab = "rooms", ylab = "price", 
+     main = "Add a regression line\nabline(my.lm)")
+
+rooms.price.lm <- lm(price ~ rooms, data = shipauction)
+
+abline(rooms.price.lm, lty = 2, lwd = 2, col = "coral")
+@
+
+\subsection{Calculating regression lines on subsets of data}
+
+To run a linear model on a subset of data in a dataframe, use the \texttt{subset} argument. For example, to calculate a regression model on the pirates dataset, but only for pirates whose sex is Female and who are less than 30 years old, we can do the following:
+
 <<>>=
-anova(result)
+model <- lm(age ~ college + parrots.lifetime,
+            data = pirates,
+            subset = sex == "female" & age < 30
+            )
 @
-\end{footnotesize}
 
-Looks like we have significant effects for all predictors
+
+
+\subsection{Predicting new data from a model}
+
+Once you've saved a model object, you can use the \texttt{predict()} function to make predictions for new datasets with the model. For example, let's create a regression model that tries to predict the price of a ship based just on 
+
+
+
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 9
 %----------------------------------------------------------------------------------------
 
-\chapter{12: Writing your own functions (Coming Soon!)}
+\chapter{12: Writing your own functions}
 \label{ch:12}
 
+\section{Why would you want to write your own function?}
+
+To repeat the same code several times in the same session, or in different sessions
+
+To create code that can change based on some input
+- A plotting function that can add elements you specify
 
 \section{The basic structure of a function}
+
+What is a function? A function is simply an object that (usually) takes some input, performs some action, and then (usually) returns some output. This might sound complicated, but you've been using functions pre-defined in R throughout this book. For example, the function \texttt{mean()} takes a numeric vector as an argument, and then returns the arithmetic mean of that vector as a single scaler value.
+
+All functions have the following basic structure. First you define the name of the function, and assign a function call with \texttt{function(x, y, ...)} to that name. Next, you specify the inputs to the function \texttt{x, y, ...} within the function call. Finally, you specify what the function should do in curly braces:
+
+<<eval = F>>=
+my.fun <- function(inputs) {function code}
+@
+
+Here, \texttt{my.fun} is the name of the function you are creating, \texttt{inputs} are the inputs to the function, and \texttt{code} is any R code that you want the function to run. If you want the function to return some value to the user, you'll include the output in the \texttt{return()} function.
+
+\subsection{A simple example}
+
+Let's create a very simple example of a function. We'll create a function called \texttt{my.mean} that does the exact same thing as the \texttt{mean()} function in R. This function will take a vector \texttt{x} as an argument, creates a new vector called \texttt{output} that is the mean of all the elements of x (by summing all the values in x and dividing by the length of x), then return the \texttt{output} object to the user \footnote{The \texttt{return()} function is a special function that only use when you are writing a function. Anytime you want a function to return some value to the user, you need to specify this using \texttt{return()} by putting whatever object you want the function to return in the parentheses}:
+
+<<>>=
+my.mean <- function(x) {   # Single input called x
+
+  output <- sum(x) / length(x) # Calculate output
+  
+return(output)  # Return output to the user after running the function
+  
+}
+@
+
+When you create the function, nothing will happen - however, R has now stored the new function \texttt{my.mean()} in the current working directory for later use. To use the function, we can then just call our function like any other function in R. Let's call our new function on some data and make sure that it gives us the same result as \texttt{mean()}:
+
+\begin{marginfigure}
+
+If you ever want to see the exact code used to generate a function, you can just call the name of the function without the parentheses. For example, to see the code underlying our new function \texttt{my.mean} you can run the following:
+
+\begin{tiny}
+<<>>=
+my.mean
+@
+\end{tiny}
+
+\end{marginfigure}
+
+
+
+<<>>=
+data <- c(3, 1, 6, 4, 2, 8, 4, 2)
+my.mean(data)
+mean(data)
+@
+
+\subsection{Using multiple inputs and defaults}
+
+You can create functions with as many inputs as you'd like (even 0!). For example, we could create a simple function called \texttt{my.fun} that takes three arguments \texttt{a, b, c} and returns \texttt{(a + b) * c}
+
+<<>>=
+my.fun <- function(a, b, c) {
+  
+  output <- (a + b) * c
+  
+  return(output)
+}
+@
+
+\begin{marginfigure}
+You can use any kind of object as an input to a function. For example, we could re-create the function \texttt{my.fun} by having a single vector object as the input. In this version, we'll extract the values of a, b and c using indexing:
+\begin{tiny}
+<<>>=
+my.fun.vec <- function(input) {
+  
+  a <- input[1]
+  b <- input[2]
+  c <- input[3]
+  
+  output <- (a + b) * c
+  
+  return(output)
+  
+}
+@
+\end{tiny}
+\end{marginfigure}
+
+Now let's test our new function with a few different values for the inputs a, b and c.
+
+<<>>=
+my.fun(a = 1, b = 4, c = 1)
+my.fun(a = 0, b = 0, c = 5)
+@
+
+Now, let's add default values to the inputs. What is a default value? A default value is a value that R will assign to an input if the user does not specify it explicitly when calling the function. For example, if a user runs \texttt{my.fun()} but does not specify a value for c, we can create a default value that R will use. To add a default value to an input, just add \texttt{= X}, where X is the default value. Let's add some default values to \texttt{my.fun}, so that a will default to 5, b will default to 10, and c will default to 2:
+
+<<>>=
+my.fun <- function(a = 5, b = 10, c = 2) {
+  
+  output <- (a + b) * c
+  
+  return(output)
+}
+@
+
+Now, if a user does not specify a value for a, b, or c, the function will set the input values to 5, 10 and 2 respectively.
+
+Now, let's see what happens when we run \texttt{my.fun()} without specifying specific values:
+
+<<>>=
+my.fun(a = 100, b = 0, c = 2)
+my.fun(a = 100, b = 0)  # c will default to 2
+my.fun()  # All values will be their default
+@
+
+
+\subsection{Creating multiple coinflip() functions}
+
+Now let's create an extended example of creating a function that simulates the flip of a coin. We'll call this function \texttt{coinflip}.
+
+For the first version of the function (\texttt{coinflip.1}), we'll create it with 0 arguments. When the function runs, it will simply return either "Heads" or "Tails" with equal probability
+
+\footnote{If you're not familiar with the \texttt{sample()} function, look at Chapter 3 or look at the help page by executing \texttt{?sample}}
+
+<<>>=
+coinflip.1 <- function () {
+  
+  output <- sample(x = c("Heads", "Tails"), 
+                   size = 1, 
+                   prob = c(.5, .5),
+                   replace = T
+                   )
+  
+  return(output)
+  
+}
+@
+
+Because our function \texttt{coinflip.1()} has no inputs, we can call it by just running \texttt{coinflip.1()}:
+
+<<>>=
+coinflip.1()
+@
+
+As you can see, our function has returned a single string scalar representing the outcome of a single coin flip. Because the outcome is randomly generated, you can get different values each time you run it.
+
+Now, let's make the \texttt{coinflip} function a bit more complicated by adding additional inputs. We'll create a new version of the function called \texttt{coinflip.2()}. Here, we'll add an input called \texttt{n.flips} that indicates the number of flips of the coin we want, and \texttt{head.p}, the probability of flipping heads on any coin toss. Once we've defined these as inputs, we can then refer to them in the main function code (by putting them into the \texttt{sample()} function).
+
+<<>>=
+coinflip.2 <- function (n.flips, head.p) {
+  
+  output <- sample(x = c("Heads", "Tails"), 
+                   size = n.flips, # Now the size argument is n.flips
+                   prob = c(head.p, 1 - head.p), # Probability of "Heads" is head.p
+                   replace = T
+                   )
+  
+  return(output)
+  
+}
+@
+
+Let's test our new function by simulating 20 flips of a coin where the probability of heads is .90. If the function works correctly, we should get a string vector of length 20, where approximately 90\% of the values are "Heads".
+
+<<>>=
+coinflip.2(n.flips = 20, head.p = .9)
+@
+
+Looks like we did indeed get a vector of length 20 with mostly heads.
+
+Now, let's add default values to the inputs. Let's create \texttt{coinflip.3} that includes a default value of 1 for \texttt{n.flips}, and a default value of 0.50 for \texttt{head.p}:
+
+<<>>=
+coinflip.3 <- function (n.flips = 1, head.p = .5) {
+  
+  output <- sample(x = c("Heads", "Tails"), 
+                   size = n.flips, 
+                   prob = c(head.p, 1 - head.p),
+                   replace = T
+                   )
+  
+  return(output)
+  
+}
+@
+
+Now, let's try running \texttt{coinflip.3} with a different number of inputs. In each of these function calls, if I do not specify one of the two inputs, R will use the default values we specified earlier (that is, \texttt{n.flips = 1} and \texttt{head.p = .5})
+
+<<>>=
+coinflip.3(n.flips = 5, head.p = .5)  # Specify all inputs
+coinflip.3(head.p = .1)  # Just specify head.p
+coinflip.3(n.flips = 10) # Just specify n.flips
+coinflip.3()  # Don't specify anything!
+@
+
+\subsection{Using if/then statements in functions}
+
+One very common argument in functions is either a logical or string argument that can tell the function to calculate things in a different way or add additional commands. To do this, we can use the \texttt{if()} function in R. The \texttt{if()} function has two main elements, a logical test and a chunk of code (in curly braces) that is evaluated if the logical test is TRUE. If the logical test is FALSE, R will completely ignore all the code in the curly braces.
+
+In the following code, R will test if the object a in the parentheses is greater than 0. If it is, it will print "This value is positive"
+
+\begin{marginfigure}
+\textbf{You can put anything into an if(){} statement}
+
+You can put any R code you want in a \texttt{if()} function (not just \texttt{print()}). For example, let's create an if command that checks if a numeric scaler is negative. If it is negative, R will do one set of things, if a is positive, R will do another set of things.
+
+\begin{tiny}
+<<>>=
+a <- -50  # set a to -50
+
+if(a < 0) { # Code when a is negative
+
+ print("A is negative! I love negative numbers! Here are some more")
+ sample(seq(-100, 0, 1), size = 5) # Print some random negative numbers
+  
+} # End of things to do if a is negative
+
+
+if(a > 0) { # Code when a is positive
+  
+  print("I hate positive numbers! Let's make a negative!!")
+  a <- -1 * a
+  
+  print("ok! Now a is negative")
+  a
+  
+} # End of things to do if a is positive
+
+@
+\end{tiny}
+
+In this example, I set a to -50, so R only executed the code for the case where a < 0. If you change the value of a to a positive number, then R will execute the code for the if statement when a > 0.
+
+\end{marginfigure}
+
+<<>>=
+a <- 3
+if(a > 0) {print("This value is positive")}
+@
+
+If a is less than 0, R won't print anything because it will completely ignore everything in the curly braces
+
+<<>>=
+a <- -10
+if(a > 0) {print("This value is positive")}
+# Nothing happens because a is not greater than 0!
+@
+
+
+For example, let's create a function called \texttt{do.this()} that takes a numeric vector \texttt{x} as an argument, and then includes an additional string argument called \texttt{what} that tells the function what to do. In the function, we'll do different things depending on the value of \texttt{what}. If the value of \texttt{what} is the string ``sum", the function will calculate the sum of all the values in x. If the value of \texttt{what} is the string ``mean", the function will calculate the mean of all the values in x. Finally, if the value of \texttt{what} is ``joke", the function will return a really funny joke:
+
+<<>>=
+do.this <- function(x, what) {
+          
+  if (what == "sum") {output <- sum(x)}
+  if (what == "mean") {output <- mean(x)}
+  if (what == "joke") {output <- "I'm a pirate, not your joke monkey"}
+  
+  return(output)
+                  
+}
+@
+
+Let's test the function using different values of \texttt{do.what}
+
+<<>>=
+do.this(x = c(1, 5, 3, 2, 1, 2), what = "sum")
+do.this(x = c(1, 5, 3, 2, 1, 2), what = "mean")
+do.this(x = c(1, 5, 3, 2, 1, 2), what = "joke")
+@
+
+As you can see, R has changed the output depending on what the user enters for the \texttt{do.what} argument.
+% 
+% Let's use this idea to add a new input for our \texttt{coinflip()} function called \texttt{output.type} where the user can specify whether he or she wants the final output in string format (i.e.; "Heads" or "Tails") or a number format (i.e.; 1 for Heads and 0 for Tails). To do this, we can add a third argument \texttt{output.type} which can take one of two values: either "string" or "numeric." Next, we'll add additional arguments to the code that will change the output depending on whether the value of \texttt{output.type} is "string" or "numeric."
+% 
+% <<>>=
+% coinflip.4 <- function(n.flips = 5, head.p = .5, output.type = "string") {
+%   
+%   # If output.type is "string", do this....
+%   
+%   if(output.type == "string") {
+%   
+%     output <- sample(x = c("Heads", "Tails"), 
+%                    size = n.flips, 
+%                    prob = c(head.p, 1 - head.p),
+%                    replace = T
+%                    )
+%     
+%   }
+%   
+%     # If output.type is "numeric", do this....
+%   
+%     if(output.type == "numeric") {
+%   
+%     output <- sample(x = c(1, 0), 
+%                    size = n.flips, 
+%                    prob = c(head.p, 1 - head.p),
+%                    replace = T
+%                    )
+%     
+%   }
+%   
+%   return(output)
+%   
+% }
+% @
+% 
+% Now let's test the function with different values of \texttt{output.type}
+% 
+% <<>>=
+% coinflip.4(n.flips = 5, head.p = .5, output.type = "string")
+% coinflip.4(n.flips = 5, head.p = .5, output.type = "numeric")
+% @
+
+
+
+\section{Storing and loading your functions to and from a function file with source()}
+
+As you do more programming in R, you may find yourself writing several function that you'll want to use again and again in many different R scripts. It would be a bit of a pain to have to re-type your functions every time you start a new R session, but thankfully you don't need to do that. Instead, you can store all your functions in one R file and then load that file into each R session. 
+
+I recommend that you put all of your custom R functions into a single R script with a name like ``Custom\_R\_Functions.R''. Mine is called "Custom\_Pirate\_Functions.R''. Once you've done this, you can load all your functions into any R session by using the \texttt{source()} function. The source function takes a file directory as an argument (the location of your custom function file) and then executes the R script into your current session.
+
+For example, on my computer my custom function file is stored at Users/Nathaniel/Dropbox/Custom\_Pirate\_Functions.R. When I start a new R session, I load all of my custom functions by running the following code:
+
+<<eval = F>>=
+source(file = "Users/Nathaniel/Dropbox/Custom_Pirate_Functions.R")
+@
+
+Once I've run this, I have access to all of my functions, I highly recommend that you do the same thing!
+
+
 \section{Tips and tricks for complex functions}
-\section{Storing and loading your functions to and from a function file}
+
+Here are several tips and tricks that will help you to build good functions:
+
+\subsection{Conduct input quality checks}
+
+In most of your functions, you will expect the user to specify certain kinds of inputs. For example, in our \texttt{do.this} function, we only considered three possible inputs (\texttt{"sum", "mean", "joke"}) for the \texttt{what} argument. If a user enters a different value for the \texttt{what} argument, the function will fail and return some obtuse errors. Let's see what happens when we enter \texttt{what = "product"} as an argument:
+
+<<>>=
+do.this(x = 1:10, what = "product")
+@
+
+R returned an error because when \texttt{what} is ``product'', the function never defines the \texttt{output} object and thus returns an error. The problem with this though is the error message is quite vague, and without knowing the function in detail the user might not know what he/she did wrong. To help the user know which inputs are valid, you can include a quality check, where you explicitly check if the user's inputs are valid. If they valid, you can run the function as normal. If they are not valid, you can return an error message to the user telling them what is wrong.
+
+Let's add a quality control check to the \texttt{do.this} function. We'll do this by creating a logical value called \texttt{valid.input} which is TRUE when the input for \texttt{what} is valid, and FALSE when the input for \texttt{what} is not valid. Then, we'll define a warning message in the case where the input is not valid:
+
+<<>>=
+do.this <- function(x, what) {
+  
+  valid.input <- what %in% c("sum", "mean", "joke")
+  
+  if(valid.input == TRUE) {  # Begin TRUE valid input section
+  
+  if (what == "sum") {output <- sum(x)}
+  if (what == "mean") {output <- mean(x)}
+  if (what == "joke") {output <- "I'm a pirate, not your joke monkey"}
+  
+  } # Close TRUE valid input section
+  
+  if(valid.input == FALSE) { # Begin FALSE valid input section
+    
+    output <- "Your input for what is invalid. Please enter sum, mean, or joke. Try joke, it's funny"
+    
+  } # Close FALSE valid input section
+  
+  return(output)
+                  
+}
+@
+
+Let's try it out. We'll execute the \texttt{do.this()} function with an invalid value of \texttt{what}
+
+<<>>=
+do.this(x = 5, what = "product")
+do.this(x = 1, what = "joke")
+@
+
+
+\subsection{Test your functions by hard-coding input values}
+
+When you start writing more complex functions, with several inputs and lots of function code, you'll need to constantly test your function line-by-line to make sure it's working properly. However, because the input values are defined in the input definitions (which you won't execute when testing the function), you can't actually test the code line-by-line until you've defined the input objects in some other way. To do this, I recommend that you include temporary hard-coded values for the inputs at the beginning of the function code (in the curly braces).
+
+For example, consider the following function called \texttt{remove.outliers}. The goal of this function is to take a vector of data and remove any data points that are outliers. This function takes two inputs \texttt{x} and \texttt{outlier.def}, where \texttt{x} is a vector of numerical data, and \texttt{outlier.def} is used to define what an outlier is: if a data point is \texttt{outlier.def} standard deviations away from the mean, then it is defined as an outlier and is removed from the data vector.
+
+In the following function definition, I've included two lines where I directly assign the function inputs to certain values (in this case, I set x to be a vector with 100 values of 1, and one outlier value of 999, and \texttt{outlier.def} to be 2). Now, if I want to test the function code line by line, I can uncomment these test values, execute the code that assigns those test values to the input objects, then run the function code line by line to make sure the rest of the code works.
+
+<<>>=
+remove.outliers <- function(x, outlier.def = 2) {
+  
+# Test values (only used to test the following code)
+#  x <- c(rep(1, 100), 999)
+#  outlier.def <- 2
+
+  is.outlier <- x > (mean(x) + outlier.def * sd(x)) | x < (mean(x) - outlier.def * sd(x))
+  x.nooutliers <- x[is.outlier == F]
+  
+  return(x.nooutliers)
+  
+}
+@
+
+Trust me, when you start building large complex functions, hard-coding these test values will save you many headaches. Just don't forget to comment them out when you are done testing or the function will always use those values!
+
+
+\subsection{Using ... as option inputs}
+
+For some functions that you write, you may want the user to be able to specify inputs to functions within your overall function. For example, if I create a custom function that includes the histogram function \texttt{hist()} in R, I might also what the user to be able to specify optional inputs for the plot, like \texttt{main}, \texttt{xlab, ylab}, etc. However, it would be a real pain in the pirate ass to have to include all possible plotting parameters as inputs to our new function. Thankfully, we can take care of all of this by using the \texttt{...} notation as an input to the function\footnote{The ... notation will only pass arguments on to functions that are specifically written to allow for optional inputs. If you look at the help menu for \texttt{hist()}, you'll see that it does indeed allow for such option inputs passed on from other functions.}. The ... input tells R that the user might add additional inputs that should be used later in the function.
+
+
+
+Here's a quick example, let's create a function called \texttt{hist.advanced} that plots a histogram with some optional additional arguments passed on with ...
+
+<<>>=
+hist.advanced <- function(x, add.ci = T, ...) {
+  
+hist(x, # Main Data
+     ... # Here is where the additional arguments go
+     )
+
+if(add.ci == T) {
+  
+  ci <- t.test(x)$conf.int # Get 95% CI
+  segments(ci[1], 0, ci[2], 0, lwd = 5, col = "red")
+  
+  mtext(paste("95% CI of Mean = [", round(ci[1], 2), ",",
+              round(ci[2], 2), "]"), side = 3, line = 0)
+}
+}
+  
+@
+
+Now, let's test our function with the optional inputs \texttt{main}, \texttt{xlab}, and \texttt{col}. These arguments will be passed down to the \texttt{hist()} function within \texttt{hist.advanced()}:
+
+<<fig.width = 4, fig.height = 4>>=
+hist.advanced(x = rnorm(100), add.ci = T, 
+              main = "Treasure Chests found", xlab = "Number of Chests", 
+              col = "lightblue")
+@
+
+As you can see, R has passed our optional plotting arguments down to the main \textt{hist()} function in the function code. 
+
+\section{A worked example: Custom plotting functions}
+
+Let's create our own advanced own custom plotting function called ``plot.advanced'' that acts like the normal plotting function, but has several additional arguments
+
+\begin{itemize}
+
+  \item add.mean: A logical value indicating whether or not to add vertical and horizontal lines at the mean value of x and y.
+  \item add.regression: A logical value indicating whether or not to add a linear regression line
+  \item sig.line.col: The color of the regression line if the slope is significant.
+  \item nonsig.line.col: The color of the regression line if the slope is NOT significant.
+  \item p.threshold: A numeric scaler indicating the p.value threshold for determining significance
+  \item add.modeltext: A logical value indicating whether or not to include the regression equation as a sub-title to the plot
+
+\end{itemize}
+
+This plotting code is a bit complicated, so don't worry if you don't understand everything it right away.
+
+<<>>=
+plot.advanced <- function (x = rnorm(100), 
+                           y = rnorm(100), 
+                           add.mean = F,
+                           add.regression = F,
+                           sig.line.col = "red",
+                           nonsig.line.col = "black",
+                           p.threshold = .05,
+                           add.modeltext = F, 
+                           ...  # Optional further arguments passed on to plot
+                           ) {
+  
+# Generate the plot with optional arguments
+#   like main, xlab, ylab, etc.
+  plot(x, y, ...)
+
+# Add mean reference lines if add.mean is TRUE
+  if(add.mean == T) {
+    abline(h = mean(y), lty = 2)
+    abline(v = mean(x), lty = 2)
+  }
+  
+# Add regression line if add.regression is TRUE
+    if(add.regression == T) {
+    
+    model <- lm(y ~ x)  # Run regression
+    
+    p.value <- anova(model)$"Pr(>F)"[1] # Get p-value
+    
+    # Define line color from model p-value and threshold
+    if(p.value < p.threshold) {line.col <- sig.line.col}
+    if(p.value >= p.threshold) {line.col <- nonsig.line.col}  
+    
+    abline(lm(y ~ x), col = line.col, lwd = 2) # Add regression line
+    
+    }
+  
+  # Add regression equation text if add.modeltext is TRUE
+      if(add.modeltext == T) {
+    
+    # Run regression
+    model <- lm(y ~ x)
+    
+    # Determine coefficients from model object
+    coefficients <- model$coefficients
+    a <- round(coefficients[1], 2)
+    b <- round(coefficients[2], 2)
+    
+    # Create text
+    model.text <- paste("Regression Equation: ", a, " + ", b, " * x", sep = "")
+    
+    # Add text to top of plot
+    mtext(model.text, side = 3, line = .5, cex = .8)
+    
+    }
+  
+} 
+@
+
+
+Let's try the function on data from the pirates dataset. We'll turn on some of the additional elements, and include optional titles for the plot:
+
+<<fig.width = 4, fig.height = 4>>=
+plot.advanced(pirates$age, pirates$tchests.found,
+              add.regression = TRUE, 
+              add.modeltext = TRUE,
+              p.threshold = .05, 
+              main = "plot.advanced()",
+              xlab = "Age", ylab = "Treasure Chests Found", 
+              pch = 16, col = gray(.2, .3))
+@
+
+
+
+
 %----------------------------------------------------------------------------------------
-%	CHAPTER 9
+%	CHAPTER 13: Loops and Simulations
 %----------------------------------------------------------------------------------------
 
-\chapter{13: Loops and Simulations (Coming Soon!)}
+\chapter{13: Loops and Simulations}
 \label{ch:13}
 
-\section{When and when not to use loops}
-\section{The list object}
-\section{Simple loops over one index}
+\section{What are loops?}
+
+A loop is, very simply, code that tells a program like R to repeat a certain chunk of code several times with different values of an index. Loops are absolutely critical in conducting many analyses because they allow you to write code once but evaluate it tens, hundreds, thousands, or millions of times. In R, the format of a for-loop is:
+
+<<eval = F>>=
+for(INDEX in INDEX.VALUES) {LOOP.CODE}
+@
+
+For example, the following is a for-loop that prints the integers from 1 to 10:
+
+<<eval = T>>=
+for (i in 1:10) {print(i)}
+@
+
+There are three key aspects of loops:
+
+\begin{enumerate}
+
+  \item index: The object that is changing according to the index values. In the previous example, the index is \texttt{i}. You can use any object name that you want for the index. While most people use single character object names, sometimes it's more transparent to use names that mean something. For example, if you are doing a loop over participants in a study, you can call the index \texttt{participant.i}.
+  \item index values: A vector specifying all values that the index will take over the loop. In the previous example, the index values are \texttt{1:10}. You can specify the index values any way you'd like. If you're running a loop over numbers, you'll probably want to use \textt{a:b} or \texttt{seq()}. However, if you want to run a loop over a few specific values, you can just use the \texttt{c()} function to type the values manually. For example, to run a loop over three different pirate ships, you could set the index values as \texttt{c("Jolly Roger", "Black Pearl", "Queen Anne's Revenge")}.
+  \item loop code: The code that will be executed for all index values. In the previous example, the loop code is \texttt{print(i)}. You can write any R code you'd like in a loop - from plotting, to analyses.
+
+\end{enumerate}
+
+
+Let's do some simple for-loops on our pirates dataset. 
+
+\section{Creating multiple plots with a loop}
+
+Let's say we wanted to create a histogram of the sword speeds for each sword type. Instead of writing the \texttt{hist()} function several times, we'll create a loop.
+
+<<>>=
+par(mfrow = c(2, 2))  # Set up a 2 x 2 plotting space
+
+for (sword.type.i in c("cutlass", "scimitar", "sabre", "banana")) {
+  
+  # subset data for current index value
+  data.temp <- subset(pirates, 
+                      sword.type == sword.type.i)
+  
+  # Plot histogram of temporary data
+  hist(data.temp$sword.speed, 
+       main = sword.type.i, # Set plot title to index value
+       xlab = "speed")
+  
+}
+@
+
+Here's how the loop above works. First, I set up a 2 x 2 plotting space with \texttt{par(mfrow())}. Next, I started the loop by defining the index as \texttt{swordtype.i}, and the index values as \texttt{c(cutlass, scimitar, sabre, banana)}\footnote{I could have made this code a bit simpler by defining the index values as \texttt{unique(pirates\$sword.type)}. This would save me from having to type all possible values of the sword type.}. Next, I defined the loop code. In the loop code, I created a temporary data frame called \texttt{data.temp} which is a subset of the entire \texttt{pirates} data frame, for those cases where the column \texttt{sword.type} is equal to the index value \texttt{sword.type.i}. Next, I created a histogram from the \texttt{sword.speed} column from \texttt{data.temp} where the main title of the histogram is equal to \texttt{sword.type.i}
+
+\section{Assigning values to an object by combining a loop and assignment}
+
+One common use of loops is to create a table showing several statistics over some index. For example, in a survey of college students, you might want to calculate summary statistics for each level of sex, graduation year, major, etc. If you need to calculate a simple summary statistic (like a sample mean or median), you could easily do this using \texttt{aggregate()} or \texttt{dplyr}. However, for complex calculations, you may want to use a loop.
+
+Let's do a simple example. We'll create a vector called \texttt{squares}, where each entry in the vector is the square of the integers from one to ten.
+
+The first thing we need to do is create an vector called \texttt{squares} that is filled with NA values. When we write the loop, we'll overwrite these NA values by assigning new values. Anytime you want to save values in a loop, you need to make sure an object (like a matrix or dataframe) exists to store the values before you start the loop. Personally, I like to create vectors, matrices, or dataframes that are filled with NA values. Then, once the loop is completed, I can check to see if any NA values are left in the object. If they are, then something probably went wrong with the loop.
+
+<<>>=
+squares <- rep(NA, 10)
+@
+
+Now we can do our loop. We'll loop over index values from 1 to 10. For each index value, we'll calculate the square of that value and assign the result to the ith index of \texttt{squares}
+
+<<>>=
+for(i in 1:10) {
+  
+  result.i <- i ^ 2
+  squares[i] <- result.i
+
+}
+@
+
+Now let's look at the result. Hopefully we'll get the squares of 1 to 10...
+
+<<>>=
+squares
+@
+
+
+Ok that loop was pretty simple but hopefully it shows you the basic idea of combining indexing with assignment in loops.
+
+\begin{marginfigure} In fact, we could have easily done the same thing with:
+
+<<>>=
+squares <- (1:10) ^ 2
+@
+
+\end{marginfigure}
+
+
+Let's do a slightly more complex example. For this one, we'll use a loop to create a matrix containing many different statistics calculated from the \texttt{pirates} dataset. Specifically, we'll create a matrix called \texttt{parrot.ci.df} that contains  95\% confidence intervals for the mean number of parrots owned by pirates in each age group. That is, we want the 95\% confidence interval of parrots owned by pirates who are 20, 21, ... 30. We can do this using a loop. 
+
+
+First, let's create the storage dataframe \texttt{parrot.ci.df}. To keep the dataframe small enough to print in this book, I'll restrict the age values to 20, 21, ... 30. However, you can include as many ages as you'd like:
+
+\pagebreak
+
+\marginnote{
+Here's how I did each step:
+
+\begin{enumerate}
+
+\item Step 1: Determine all the age values to analyze and assign them to the object \texttt{ages.to.analyze}. Then determine total number of unique age values to analyze and assign the total to the object \texttt{n.ages}.
+
+\item Step 2: Create a storage dataframe called \texttt{parrot.ci.df} with N rows (where N is the number of ages we will analyze), and 3 columns (age, lower.bound, upper.bound). I started by filling   \texttt{parrot.ci.df} with NA values. We will use the loop to replace these NA values with our statistics.
+
+\end{enumerate}
+
+}
+
+<<>>=
+# Step 1 - Determine the age levels to analyze
+ages.to.analyze <- 20:30
+n.ages <- length(ages.to.analyze)
+
+# Step 2 - Create the storage dataframe parrot.ci.df
+parrot.ci.df <- as.data.frame(matrix(NA, nrow = n.ages, ncol = 4))
+names(parrot.ci.df) <- c("age", "mean", "lb", "ub")
+
+# Print the result
+parrot.ci.df
+@
+
+
+
+Now that we have the storage dataframe, we can use a loop to replace the NA values with the values we want. For this loop, we'll loop over the rows of the dataframe \texttt{parrots.ci.df}.
+\marginnote{
+Here's how I did each step:
+
+\begin{enumerate}
+
+\item Step 3: Set up the loop with an index of \texttt{row.i} where the index values are 1, 2, ... to the number of rows in the dataframe \texttt{result.df}. Our loop will analyze data specific to each row in the dataframe.
+
+\item Step 4: As a function of the current index, determine the age value in that row, create a temporary dataset of data for that age value, then determine the sample mean and confidence interval for that temporary dataset.
+
+\item Step 5: Assign the results for the current index value to \texttt{row.i} of the appropriate column in \texttt{result.df} 
+
+\end{enumerate}
+
+}
+<<>>=
+# Step 3 - Define the index and index values
+for (row.i in 1:nrow(parrot.ci.df)) {
+
+# Step 4 - Calculate statistics for current index value
+  age.i <- ages.to.analyze[row.i]
+  data.temp <- subset(pirates, age == age.i) # Subset the original data
+  mean.i <- mean(data.temp$parrots.lifetime) # Get the sample mean
+  ci.i <- t.test(data.temp$parrots.lifetime) # Get the ci
+  
+# Step 5 - Assign statistics to parrot.ci.df
+  parrot.ci.df$age[row.i] <- age.i
+  parrot.ci.df$mean[row.i] <- mean.i 
+  parrot.ci.df$lb[row.i] <- ci.i[1]
+  parrot.ci.df$ub[row.i] <- ci.i[2]
+  
+} # Close loop
+
+@
+
+Let's look at the result to make sure it worked correctly. We should get a dataframe with 4 columns showing summary statistics for ages 20 through 30:
+
+<<>>=
+parrot.ci.df
+@
+
+Looks like it worked!
+
+
 \section{Loops over multiple indices}
-\section{Printing and saving temporary results}
+
+So far we've covered simple loops with a single index value - but how can you do loops over multiple indices? You could do this by creating multiple nested loops. However, these are ugly and cumbersome. Instead, I recommend that you use \texttt{design matrices} to reduce loops with multiple index values into a single loop with just one index. Here's how you do it:
+
+Let's say you want to calculate the mean, median, and standard deviation of some quantitative variable for all combinations of two factors. For a concrete example, let's say we wanted to calculate these summary statistics on the age of pirates for all combinations of colleges and sex.
+
+\subsection{Design Matrices}
+
+To do this, we'll start by creating a design matrix. This matrix will have all combinations of our two factors. To create this design matrix matrix, we'll use the \texttt{expand.grid()} function. This function takes several vectors as arguments, and returns a dataframe with all combinations of values of those vectors. For our two factors college and sex, we'll enter all the factor values we want. Additionally, we'll add NA columns for the three summary statistics we want to calculate
+
+<<>>=
+design.matrix <- expand.grid(
+                             "college" = c("JSSFP", "CCCC"), # college factor
+                             "sex" = c("male", "female"), # sex factor
+                             "median.age" = NA, # NA columns for our future calculations
+                             "mean.age" = NA, #...
+                             "sd.age" = NA, #...
+                             stringsAsFactors = F
+                             )
+@
+
+Here's how the design matrix looks:
+
+<<>>=
+design.matrix
+@
+
+
+As you can see, the design matrix contains all combinations of our factors in addition to three NA columns for our future statistics. Now that we have the matrix, we can use a single loop where the index is the row of the design.matrix, and the index values are all the rows in the design matrix. For each index value (that is, for each row), we'll get the value of each factor (college and sex) by indexing the current row of the design matrix. We'll then subset the \texttt{pirates} dataframe with those factor values, calculate our summary statistics, then assign them 
+
+<<>>=
+
+for(row.i in 1:nrow(design.matrix)) {
+  
+# Get factor values for current row
+  college.i <- design.matrix$college[row.i]
+  sex.i <- design.matrix$sex[row.i]
+
+# Subset pirates with current factor values
+  data.temp <- subset(pirates, college == college.i & sex == sex.i)
+  
+# Calculate statistics
+  median.i <- median(data.temp$age)
+  mean.i <- mean(data.temp$age)
+  sd.i <- sd(data.temp$age)
+  
+# Assign statistics to row.i of design.matrix
+  design.matrix$median.age[row.i] <- median.i
+  design.matrix$mean.age[row.i] <- mean.i
+  design.matrix$sd.age[row.i] <- sd.i
+ 
+}
+@
+
+
+Let's look at the result to see if it worked!
+
+<<>>=
+design.matrix
+@
+
+Sweet! Our loop filled in the NA values with the statistics we wanted.
+
+\section{The list object}
+
+Let's say you are conducting a loop where the outcome of each index is a vector. However, the length of each vector could change - one might have a length of 1 and one might have a length of 100. How can you store each of these results in one object? Unfortunately, a vector, matrix or dataframe might not be appropriate because their size is fixed. The solution to this problem is to use a \texttt{list()}. A list is a special object in R that can store virtually \textit{anything}. You can have a list that contains several vectors, matrices, or dataframes of any size. If you want to get really Inception-y, you can even make lists of lists (of lists of lists....).
+
+To create a list in R, use the \texttt{list()} function. Let's create a list that contains 3 vectors where each vector is a random sample from a normal distribution. We'll have the first element have 10 samples, the second will have 5, and the third will have 15.
+
+<<>>=
+number.list <- list("first" = rnorm(n = 10),
+     "second" = rnorm(n = 5),
+     "third" = rnorm(n = 15)
+)
+
+number.list
+
+@
+
+To index a list, use double brackets [[]] or \$ if the list has names.  For example, to get the first element of a list named \texttt{number.list}, we'd use \texttt{number.ls[[1]]}:
+
+<<>>=
+number.list[[1]]
+number.list$second
+@
+
+Ok, now let's use the list object within a loop. We'll create a loop that generates 5 different samples from a Normal distribution with mean 0 and standard deviation 1 and saves the results in a list called \texttt{samples.ls}. The first element will have 1 sample, the second element will have 2 samples, etc.
+
+First, we need to set up an empty list container object. To do this, use the \texttt{vector} function:
+
+<<>>=
+samples.ls <- vector("list", 5)
+@
+
+If we look at \texttt{sample.ls}, we can see that it has 5 empty entries:
+
+<<>>=
+samples.ls
+@
+
+Now, let's run the loop. For each run of the loop, we'll generate random samples and assign them to an object called \texttt{samples}. We'll then assign the \texttt{samples} object to the ith entry in \texttt{samples.ls}
+
+<<>>=
+for(i in 1:5) {
+  samples <- rnorm(n = i, mean = 0, sd = 1)
+  samples.ls[[i]] <- samples
+}
+@
+
+Let's look at the result:
+
+<<>>=
+samples.ls
+@
+
+Looks like it worked. The first element has one sample, the second element has two samples
+
+If you want to convert a list to a vector format, you can use the command \texttt{unlist()}.
+
+<<>>=
+unlist(samples.ls)
+@
+
+Now all the results are compressed into one vector. Of course, the resulting vector has lost some information because you don't know which values came from which loop index.
+
+
+
 \section{Parallel computing with snowfall()}
 
+If you're running a long loop and find that it's taking a long time, you can try running in in parallel using \texttt{snowfall()}. Snowfall is a package that allows you to use multiple processors (called "slaves") on your computer to run a loop. Theoretically, this can increase the speed of your loop by 4, 16, 24 (etc.) times, but obviously it depends on how many cores your computer (or the server you're running the loop on) has.
+
+To install the \texttt{snowfall} package, run the code
+
+<<eval = FALSE>>=
+install.packages("snowfall")
+@
+
+There are 5 general steps to using \texttt{snowfall()}: 
+
+\begin{enumerate}
+
+\item Load the \texttt{snowfall} package with \texttt{library("snowfall")}
+\item Set up the slaves with \texttt{sfInit()}. Here, you determine how many slaves (processors) you want to run.
+\item Send objects and libraries to the slaves with \texttt{sfExport()}, \texttt{sfExportAll()}, and/or \texttt{sfLibrary()}.
+\item Write a function that each slave will evaluate (e.g.; \texttt{slave.fun}). The function must have a single input.
+\item Run the slaves using \texttt{sfLapply(x, fun)}, or \texttt{sfSapply()}, where \texttt{x} are the values that the slaves will evaluate on the function \texttt{fun}. When the function is completed, it will return a list.
+\item Turn the slaves off with \texttt{sfStop()}
+
+\end{enumerate}
+
+Let's go through the five steps for a detailed example. In this example, we'll use two slaves to simultaneously calculate the average age of pirates who went to Jack Sparrow's School of Fashion and Piratry (JSSFP) and Captain Chunk's Cannon Crew (CCCC).
+
+First, we'll load the \texttt{snowfall} package.
+
+<<>>=
+library("snowfall")
+@
+
+Second, we'll set up the cluster of slaves by running the \texttt{sfInit()} function. Enter the number of slaves you want to run using the \texttt{cpus} argument\footnote{There isn't really a correct number of slaves to use. If you use too many, then each might run very slowly. Personally, I set the number of slaves to be 2 times the number of cores on my computer. My computer has 8 cores, so I usually use 16 slaves. But again, this might not be the optimal number. If you're concerned about speed, you can try using different numbers of slaves and see which number seems to do the job the fastest on your computer}. Once you execute this, R will prepare those slaves in the background.
+
+<<warning=FALSE>>=
+sfInit(parallel = T, cpus = 2)
+@
+
+Third, you need to send objects and libraries to the slaves. These slaves are like brand new R sessions that are completely separate from your current R session. They won't have access to any of the objects you have defined or libraries you've loaded in your current session. To send objects and libraries to the slaves, use the \textt{sfExport} and \texttt{sfExportAll} commands. If you run \texttt{sfExportAll()}, R will send \textit{all} the objects in your current R session to the slaves. If you want to just send a few specific objects to the slaves, use \texttt{sfExport()}.
+
+Let's send the \texttt{pirates} dataset to the slaves using \texttt{sfExport}. For some reason (that I don't quite understand), you need to name the objects as strings (with quotation marks). If you don't include them, the function won't work''
+
+<<>>=
+sfExport("pirates")
+@
+
+Now let's load a library in each of the slaves, use \texttt{sfLibrary()}. Let's load the \texttt{dplyr} package on the slaves (we actually don't need it for our loop, but I'll show you how to do it anyway):
+
+<<>>=
+sfLibrary(dplyr)
+@
+
+Fourth, we'll define the function that you want each slave to run. In this case, we'll create a function called \texttt{slave.fun()} that takes the name of a college as an input, and return the average age of pirates from that college as an output. Each slave will evaluate this function on a specific college.
+
+<<>>=
+slave.fun <- function(college.i) {
+  
+  data.temp <- subset(pirates, college == college.i)
+  output <- mean(data.temp$age)
+  
+  return(output)
+   
+}
+@
+
+Fifth, now we're ready to run the cluster! We do this using the \texttt{sfSapply()}\footnote{In addition to \texttt{sfSapply()}, you can also use \texttt{sfLapply()}, which returns stores the results as a list} function. There are two arguments to \texttt{sfSapply()}: x, a vector of index values sent to the function, and \texttt{fun}, a function that will be evaluated with each element of x. For this example, we'll set x to a vector of the two colleges, and the function to be \texttt{slave.fun}. The function will then send each value of the vector x to a slave, the slave will evaluate \texttt{slave.fun()} for a value of x, and return the result to the main R session:
+
+<<>>=
+cluster.result <- sfSapply(x = c("JSSFP", "CCCC"), fun = slave.fun)
+@
+
+Sixth, now that the cluster is finished, we need to close the clusters with the command \texttt{sfStop()}.
+
+<<>>=
+sfStop()
+@
+
+Now that we're finished, we can look at the result. It should be a vector of length two, where the first element is the mean age of pirates who went to JSSFP and the second element is the mean age of pirates who went to CCCC:
+
+<<>>=
+cluster.result
+@
+
+Looks like our result is what we want. Now, of course this was a very simple example, and it would have been much easier to use the \texttt{aggregate()} function to accomplish this task. But the general structure should allow you to perform much more complicated loops in parallel. 
+
+\subsection{Additional tips for using Snowfall}
+
+\begin{enumerate}
+
+\item \textbf{Run your simulations in the background!} While you're using snowfall (or running any processor intensive code), you won't be able to continue executing any code in R. However, if you need to scratch your R itch during a long simulation, you can open up a second instance of R that will run independently of any other R sessions. On a Mac, you can do this by opening up the Terminal (in the Applications folder) and running the command \texttt{open -n -a RStudio.app}. When you run this command, another instance of RStudio should open up that you can now use while your simulation is running
+
+\item \textbf{Print a simulation progress report}. If your snowfall loop is taking a long time to run, you can get a progress report that tells you what percentage of the simulation is completed. While this won't speed anything up, it will give you an idea of how fast things are moving and help you know when it might be finished. To do this, use the \texttt{perUpdate} argument, which takes an integer as an argument, and prints a notification for every ith\% run of the simulation. The \texttt{perUpdate} argument only works in the the cluster function \texttt{sfClusterApplySR()} and not in \texttt{sfSapply()}, but the functions are virtually identical. For example, let's say we want to execute a slave function 1,000,000 times. We can get a progress report for every 1\% of simulations (every 10,000 instances) by using the following code:
+
+<<eval = FALSE>>=
+cluster.result <- sfClusterApplySR(1:1000000, # Execute the function from 1 to 1,000,000
+                                   fun = slave.fun, # The slave function
+                                   perUpdate = 1 # Print an update for every 1% completion of the simulation
+                                   )
+@
+
+
+\end{enumerate}
+
+
+\section{When and when not to use loops}
+
+Loops are great because they save you a lot of code. However, a drawback of loops is that they can be slow relative to other functions. For example, let's say we wanted to create a vector called \texttt{one.to.ten} that contains the integers from one to ten. We could do this using the following for-loop:
+
+<<>>=
+one.to.ten <- rep(NA, 10) # Create a dummy vector
+for (i in 1:10) {one.to.ten[i] <- i} # Assign new values to vector
+one.to.ten # Print the result
+@
+
+While this for-loop works just fine, you may have noticed that it's a bit silly. Why? Because R has built-in functions for quickly and easily calculating sequences of numbers. In fact, we used one of those functions in creating this loop! (See if you can spot it...it's \texttt{1:10}). The lesson is: before creating a loop, make sure there's not already a function in R that can do what you want.
+
+
+\section{A worked example: What is a p-value anyway?!}
+
+P-values are one of the most confusing aspects of statistics. If you ask 10 different R pirates what a p-value means, you'll probably get 10 different answers. It's not because R pirates are stupid, it's because p-values are inherently confusing as hell. Let's use some simulations to see what they really mean. 
+
+For this simulation, I'll draw random samples of size 10 from Normal distributions with some specified mean. I'll let the true population mean range from 0 (where the null hypothesis is true) to 10 in steps of 1. I'll fix the population standard deviation to be 1.
+
+I'll start by creating the design matrix. This matrix will have one two varying dimensions: population.mean - the true mean of the population, which will range from 0 to 10, and simulation - the simulation number for the current parameter settings, which will range from 1 to 1,000. In addition, I'll specify the population standard deviation (population.sd) to always be 1. 
+
+<<>>=
+design.matrix <- expand.grid("population.mean" = c(0:10),
+                             "population.sd" = 1,
+                             "simulation" = 1:1000,
+                             "p.value" = NA
+                             )
+@
+
+Let's take a look at the design.matrix:
+
+<<>>=
+set.seed(100) # Fix the random seed
+dim(design.matrix) # Get dimensions of design.matrix
+design.matrix[sample(nrow(design.matrix), 10),] # Look at 10 random entries
+@
+
+Now, let's add a column indicating whether the null hypothesis really is true or false:
+
+<<>>=
+design.matrix$null.hypothesis <- design.matrix$population.mean == 0
+@
+
+Ok, now let's do our simulation. I'll loop through each row in the design matrix, extract the population mean and standard deviation, draw a sample of size 10 from that distribution, then conduct a 1 sample t.test. I'll then extract the p-value from the t-test and assign it to the corresponding entry in the p.value column of the design.matrix.
+
+
+<<>>=
+for (row.i in 1:nrow(design.matrix)) {
+  
+  # Get population parameters
+  mean.i <- design.matrix$population.mean[row.i]
+  sd.i <- design.matrix$population.sd[row.i]
+  
+  # Draw a sample with parameters
+  sample.i <- rnorm(10, mean = mean.i, sd = sd.i)
+  
+  # Conduct t.test
+  test.result <- t.test(sample.i)
+  
+  # Get p.value
+  p.value.i <- test.result$p.value
+  
+  # Write p.value to design.matrix
+  design.matrix$p.value[row.i] <- p.value.i
+  
+}
+  
+@
+
+Now, let's calculate a new column indicating whether or not a p.value is significant at the .05 level:
+
+<<>>=
+design.matrix$sig.05 <- design.matrix$p.value < .05
+@
+
+Now let's aggregate the results. First, let's aggregate the data at the level of the true population mean. In other words, for each population mean, what is the probability of getting a significant test result?
+
+<<>>=
+agg.popmean <- aggregate(sig.05 ~ population.mean, data = design.matrix, FUN = mean)
+@
+
+Now, let's aggregate the data at the level of the significance and see how often the null hypothesis is really true. This will tell us, if we have a significant test result, what is the probability that the null hypothesis is really true?
+
+<<>>=
+agg.sig <- aggregate(null.hypothesis ~ sig.05, data = design.matrix, FUN = mean)
+@
+
+
+
+
+
+
+<<>>=
+agg.1 <- aggregate(sig.05 ~ null.hypothesis, data = design.matrix, FUN = mean)
+agg.2 <- aggregate(null.hypothesis ~ sig.05, data = design.matrix, FUN = mean, 
+                   subset = population.mean %in% c(0, 1))
+@
+
+
+
+
+
 %----------------------------------------------------------------------------------------
-%	CHAPTER 9
+%	CHAPTER 14: Bayesian Inference
 %----------------------------------------------------------------------------------------
 
 \chapter{14: Bayesian Inference (Coming Soon!)}
@@ -6060,7 +7215,7 @@ Looks like we have significant effects for all predictors
 
 
 %----------------------------------------------------------------------------------------
-%	CHAPTER 9
+%	CHAPTER 15: Function minimization and Parameter Estimatino
 %----------------------------------------------------------------------------------------
 
 \chapter{15: Model fitting (Coming Soon!)}
@@ -6074,7 +7229,7 @@ Looks like we have significant effects for all predictors
 
 
 %----------------------------------------------------------------------------------------
-%	CHAPTER 9
+%	CHAPTER 16: Writing and sharing your work
 %----------------------------------------------------------------------------------------
 
 \chapter{16: Writing and sharing your work (Coming Soon!)}
