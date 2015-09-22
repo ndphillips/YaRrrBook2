@@ -65,6 +65,7 @@
 \usepackage[tikz]{bclogo}
 
 %\usepackage{Sweave}
+\usepackage{listings}
 \usepackage{float}
 \usepackage{graphicx} % Needed to insert images into the document 
 \graphicspath{{graphics/}} % Sets the default location of pictures
@@ -152,10 +153,23 @@ Copyright \copyright\ \the\year\ \thanklessauthor
 \begin{doublespace}
 \noindent\fontsize{18}{22}\selectfont\itshape
 \nohyphenation
-This book is dedicated to my former statistics instructors Dr. Thomas Moore and Dr. Wei Lin who taught me everything I know about statistics, and my PhD colleagues Dr. Dirk Wulff and Dr. Stefan Herzog who taught me everything I know about R.
+This book is dedicated to my statistics instructors Dr. Thomas Moore and Dr. Wei Lin who taught me everything I know about statistics, and my PhD colleague Dr. Dirk Wulff who helped me get started with R.
 \end{doublespace}
 \vfill
-
+% 
+% 
+% <<echo = F>>=
+% library("knitr")
+% @
+% 
+% 
+% 
+% <<setup, echo=FALSE>>=
+% knit_hooks$set(source = function(x, options) {
+%     paste("\\begin{lstlisting}[numbers=left, firstnumber=last]\n", x, 
+%         "\\end{lstlisting}\n", sep = "")
+% })
+% @
 
 
 %----------------------------------------------------------------------------------------
@@ -380,43 +394,68 @@ To get help and see documentation for a function, type \texttt{?fun}, where \tex
 
 \section{Installing and loading packages}
 
-When you download and install R for the first time, you are installing the Base R software. Base R will will contain most if not all the functions you need. However, one of the great things about R is that people are constantly writing and sharing new functions that you can use. When people share a new function, they usually do so in the form of an \textit{R package} which contains anything from functions, to help menus, to vignettes (examples), to data. To install a new R package, you need to run the code \texttt{install.packages("package")}, where "package" is the name of the package. After you've installed the package, you need to \textit{load} it into R by running the code \texttt{load("package)}. This will load the package into your current R session and allow you to use its contents.\marginnote{Once you've installed a package on your computer, you never need to install it again. However, you do need to load the package every time you start a new R session.}
+When you download and install R for the first time, you are installing the Base R software. Base R will will contain most if not all the functions you need. However, one of the great things about R is that people are constantly writing and sharing new functions that you can use. When people share a new function, they usually do so in the form of an \textit{R package} which contains anything from functions, to help menus, to vignettes (examples), to data.
 
-For example, let's say you want to create a wordcloud - a graph that plots text in different sizes. You can certainly program this yourself in R, but thankfully someone has created a package called \texttt{wordcloud} with a function that will do this for you. Let's install the package, load it, and then use the \texttt{wordcloud} function:
+Most R packages are hosted at CRAN (<https://cran.r-project.org/>), the Comprehensive R Archive Network. To install a new R package from CRAN, you can simply run the code \texttt{install.packages("package")}, where "package" is the name of the package. After you've installed the package, you need to \textit{load} it into R by running the code \texttt{library("package")}. This will load the package into your current R session and allow you to use its contents.\marginnote{Once you've installed a package on your computer, you never need to install it again. However, you do need to load the package every time you start a new R session.}
 
-\begin{footnotesize}
+To see how this works in action, let's install and load the \texttt{wordcloud} package. This package contains the \texttt{wordcloud} function which allows you to easily create wordcloud plots.
+
+We'll start by installing the package. When you run the following code, R will download the package from CRAN. If everything works, you should see some information about where the package is being downloaded from, in addition to a progress bar.
+
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlcom{#install.packages("wordcloud")}
-\hlkwd{library}\hlstd{(}\hlstr{"wordcloud"}\hlstd{)} \hlcom{# Install the package}
-\end{alltt}
-
-
-{\ttfamily\noindent\itshape\color{messagecolor}{\#\# Loading required package: RColorBrewer}}\begin{alltt}
-\hlkwd{par}\hlstd{(}\hlkwc{mar} \hlstd{=} \hlkwd{rep}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{4}\hlstd{))}
-\hlkwd{wordcloud}\hlstd{(}\hlkwc{words} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"sword"}\hlstd{,} \hlstr{"YaRrr!"}\hlstd{,} \hlstr{"eyepatch"}\hlstd{,}
-                    \hlstr{"parrot"}\hlstd{,} \hlstr{"plunder"}\hlstd{,} \hlstr{"treasure"}\hlstd{,}
-                    \hlstr{"chest"}\hlstd{,} \hlstr{"scurvy"}\hlstd{),}
-          \hlkwc{freq} \hlstd{=} \hlkwd{sample}\hlstd{(}\hlnum{50}\hlopt{:}\hlnum{1000}\hlstd{,} \hlnum{8}\hlstd{),}
-          \hlkwc{colors} \hlstd{=} \hlkwd{gray}\hlstd{(}\hlkwd{runif}\hlstd{(}\hlnum{8}\hlstd{,} \hlnum{0}\hlstd{,} \hlnum{1}\hlstd{)))}
+\hlkwd{install.packages}\hlstd{(}\hlstr{"wordcloud"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
+\end{knitrout}
+
+Now that the package is installed on your computer, you can use it anytime you want by loading the package:
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{library}\hlstd{(}\hlstr{"wordcloud"}\hlstd{)}
+\end{alltt}
+
+
+{\ttfamily\noindent\itshape\color{messagecolor}{\#\# Loading required package: RColorBrewer}}\end{kframe}
+\end{knitrout}
+
+Now, let's create a wordcloud of pirate words! Don't worry about the specifics of the code below, you'll learn more about how all this works later. For now, just run the code and marvel at your wordcloud!
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{wordcloud}\hlstd{(}\hlkwd{rep}\hlstd{(}\hlkwd{c}\hlstd{(}\hlstr{"Blackbeard"}\hlstd{,} \hlstr{"Jolly.Roger"}\hlstd{,} \hlstr{"Grogg"}\hlstd{,} \hlstr{"Monkey.Island"}\hlstd{,} \hlstr{"Treasure"}\hlstd{,} \hlstr{"cutlass"}\hlstd{),}
+              \hlkwc{times} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{100}\hlstd{,} \hlnum{20}\hlstd{,} \hlnum{50}\hlstd{,} \hlnum{40}\hlstd{,} \hlnum{200}\hlstd{,} \hlnum{100}\hlstd{)))}
+\end{alltt}
+
+
+{\ttfamily\noindent\itshape\color{messagecolor}{\#\# Loading required package: tm\\\#\# Loading required package: NLP}}\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-8-1} 
 
 \end{knitrout}
-\end{footnotesize}
 
 
-\section{Installing and loading the yarrr package}
+\subsection{The yarrr package}
 
-For much of this book, you will need the \texttt{yarrr} package. This package contains every dataset, function, and plotting code from this book. To install the \texttt{yarr} package on your machine, execute the following code:
+For much of this book, you will need the \texttt{yarrr} package. This package contains every dataset, function, and plotting code from this book. Unlike most packages that you'll be using, the \texttt{yarrr} package is not hosted at CRAN. Instead, all the code is on github\footnote{For those of you unfamiliar with github, it's basically Facebook for programmers.} at <www.github.com/ndphillips/yarrr>. To install the \texttt{yarr} package on your machine, you'll first need to install the \texttt{devtools} package which will then allow you to directly install packages from github:
 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{install.packages}\hlstd{(}\hlstr{"devtools"}\hlstd{)} \hlcom{# Install the devtools package}
 \hlkwd{library}\hlstd{(}\hlstr{"devtools"}\hlstd{)} \hlcom{# Load the devtools package}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+Now that you've installed and loaded the \textt{devtools} package, you can install and load the \texttt{yarrr} package from github with the following code:
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
 \hlkwd{install_github}\hlstd{(}\hlstr{'ndphillips/yarrr'}\hlstd{)} \hlcom{# Install the yarrr package from github}
 \hlkwd{library}\hlstd{(}\hlstr{"yarrr"}\hlstd{)} \hlcom{# Load the yarrr package}
 \end{alltt}
@@ -427,9 +466,8 @@ For much of this book, you will need the \texttt{yarrr} package. This package co
 
 
 
-If everything went correctly, you should have access to, among other things, the \texttt{pirates} dataset. To see the dataset, you can execute the 
 
-the \texttt{View()} function:
+If everything went correctly, you should have access to, among other things, the \texttt{pirates} dataset. To see the dataset, you can execute the the \texttt{View()} function:
 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
@@ -450,7 +488,7 @@ When you run this command, you should see the first several rows and columns of 
 
 \section{The R Reference Card}
 
-Over the course of this book, you will be learning \textit{lots} of new functions. Wouldn't it be nice if someone created a Cheatsheet / Notecard of many common R functions? Yes it would, and thankfully Tom Short has done this in his creation of the R Reference Card. You can download a copy at <https://dl.dropboxusercontent.com/u/7618380/RReferenceCard.pdf>. I highly encourage you to print this out and start highlighting functions as you learn them!
+Over the course of this book, you will be learning \textit{lots} of new functions. Wouldn't it be nice if someone created a Cheatsheet / Notecard of many common R functions? Yes it would, and thankfully Tom Short has done this in his creation of the R Reference Card. You can download a copy at <http://nathanieldphillips.com/wp-content/uploads/2015/09/R-Reference-Card.pdf>. I highly encourage you to print this out and start highlighting functions as you learn them!
 
 
 \subsection{Finished!}
@@ -497,7 +535,7 @@ At its heart, R is just a fancy calculator. Let's do some basic algebra, type th
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlnum{1}\hlopt{+}\hlnum{1} \hlcom{# The result should be 2}
+\hlnum{1}\hlopt{+}\hlnum{1}
 \end{alltt}
 \begin{verbatim}
 ## [1] 2
@@ -646,9 +684,39 @@ If you want to change an object, you need to assign it again to the new result y
 \marginnote{You can use \texttt{=} instead of \texttt{<-} for object assignment but I recommend you stick with \textt{<-} because the direction of the assignment is clear.}
 
 
+\textbf{Important!!} \\
+
+It is important to note that once you've defined an object, you refer to it without quotation marks, even if the object is a character. For example, to refer to the object \texttt{a} that I defined above, you need to write \texttt{a} without quotations marks
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{a} \hlcom{# Print the value of the object ship}
+\end{alltt}
+\begin{verbatim}
+## [1] 20
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+If you write \texttt{"a"} with quotation marks, R will think that you're referring to a new string object
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstr{"a"}   \hlcom{# Just the letter "a", not the object a}
+\end{alltt}
+\begin{verbatim}
+## [1] "a"
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+
+
 \section{Data object types in R}
 
-There are different types of objects. The first two objects we'll learn about are scalars and vectors. Later on, we'll talk about more complicated objects like matrices, dataframes, hypothesis tests, etc.
+There are different types of objects in R. The first two objects we'll learn about are scalars and vectors. Later on, we'll talk about more complicated objects like matrices, dataframes, hypothesis tests, etc.
 
 \subsection{Two simple data objects: scalars and vectors}
 
@@ -690,42 +758,13 @@ A \textbf{scalar} is just a single value. A scalar can either be \textit{numeric
 \hlkwd{text}\hlstd{(}\hlnum{2.5}\hlstd{,} \hlopt{-}\hlnum{.5}\hlstd{,} \hlstr{"Vector"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-20-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-25-1} 
 
 \end{knitrout}
 \caption{Visual depiction of a scalar and vector. Deep shit. Wait until we get to matrices - you're going to lose it.}
 \label{fig:scalarvector}
 \end{tiny}
 \end{marginfigure}
-
-\textbf{Important!!} \\
-
-It is important to note that once you've defined an object, you refer to it without quotation marks, even if the object is a character. For example, to refer to the object \texttt{ship} that I defined above, you need to write \texttt{ship} without quotations marks
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{ship} \hlcom{# Print the value of the object ship}
-\end{alltt}
-\begin{verbatim}
-## [1] "Black Pearl"
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-
-If you write \texttt{"ship"} with quotation marks, R will think that you're referring to a new string object
-
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstr{"ship"}   \hlcom{# Just a new scalar}
-\end{alltt}
-\begin{verbatim}
-## [1] "ship"
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-
 
 
 \subsection{Vectors}
@@ -1148,7 +1187,7 @@ If you do an operation on two vectors, R will try to apply the operation between
 \hlkwd{segments}\hlstd{(}\hlnum{10}\hlstd{,} \hlnum{15}\hlstd{,} \hlnum{90}\hlstd{,} \hlnum{15}\hlstd{,} \hlkwc{col} \hlstd{= col.vec[}\hlnum{2}\hlstd{],} \hlkwc{lty} \hlstd{=} \hlnum{1}\hlstd{,} \hlkwc{lwd} \hlstd{=} \hlnum{2}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-35-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-38-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -1223,7 +1262,7 @@ In the next section we'll go over some of the most commonly used sampling distri
        \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-36-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-39-1} 
 
 \end{knitrout}
 \caption{Three different normal distributions with different means and standard deviations.}
@@ -1272,7 +1311,7 @@ For example, let's draw 5 samples (\texttt{n = 5}) from a normal distribution wi
 \hlkwd{rnorm}\hlstd{(}\hlkwc{n} \hlstd{=} \hlnum{5}\hlstd{,} \hlkwc{mean} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{sd} \hlstd{=} \hlnum{1}\hlstd{)}
 \end{alltt}
 \begin{verbatim}
-## [1]  0.3208537  0.4229227  0.4816208 -1.3443157 -0.8329985
+## [1]  0.005568711  0.635282822  0.644565417 -0.028134767  0.194183418
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -1289,13 +1328,13 @@ Because the sampling is done randomly, you'll get different values each time you
 \hlstd{a} \hlcom{# print a}
 \end{alltt}
 \begin{verbatim}
-## [1] 16.033079 11.225684 23.049293  3.064644 10.929647
+## [1] 10.487477 23.472031 18.582602  7.393501 15.688765
 \end{verbatim}
 \begin{alltt}
 \hlstd{b} \hlcom{# print b}
 \end{alltt}
 \begin{verbatim}
-## [1]  0.9104563  5.7742763  3.1701871 13.3542277 10.2892321
+## [1] 20.749317  4.571014  8.565096  2.984800  6.382865
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -1321,7 +1360,7 @@ Next, let's move on to the \textit{uniform} distribution. The uniform distributi
       \hlkwc{main} \hlstd{=} \hlstr{"Uniform\textbackslash{}nmin = 0, max = 1"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-39-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-42-1} 
 
 \end{knitrout}
 \caption{The Uniform distribution - known colloquially as the Anthony Davis distribution.}
@@ -1368,13 +1407,13 @@ Let's draw 5 samples from two uniform distributions, one with bounds at 0 and 1,
 \hlkwd{runif}\hlstd{(}\hlnum{5}\hlstd{,} \hlkwc{min} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{max} \hlstd{=} \hlnum{1}\hlstd{)} \hlcom{# 5 samples from U[0, 1]}
 \end{alltt}
 \begin{verbatim}
-## [1] 0.6079968 0.1209601 0.4558638 0.1477304 0.1971320
+## [1] 0.2058097 0.4326389 0.1622231 0.1038760 0.2073122
 \end{verbatim}
 \begin{alltt}
 \hlkwd{runif}\hlstd{(}\hlnum{5}\hlstd{,} \hlkwc{min} \hlstd{=} \hlopt{-}\hlnum{100}\hlstd{,} \hlkwc{max} \hlstd{=} \hlnum{100}\hlstd{)} \hlcom{# 5 samples from U[-100, 100]}
 \end{alltt}
 \begin{verbatim}
-## [1]  47.35737  39.62833 -74.80158   5.06175  10.77057
+## [1]   7.944137  87.286893  41.792067 -25.983227 -90.875794
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -1426,8 +1465,8 @@ As a simple example, let's simulate 10 flips of a fair coin, were the probably o
        \hlstd{)}
 \end{alltt}
 \begin{verbatim}
-##  [1] "Tails" "Tails" "Heads" "Tails" "Tails" "Heads" "Heads" "Tails"
-##  [9] "Tails" "Heads"
+##  [1] "Heads" "Tails" "Tails" "Tails" "Tails" "Heads" "Heads" "Tails"
+##  [9] "Heads" "Heads"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -1456,7 +1495,7 @@ As you can see, our function returned a vector of 10 values corresponding to our
        \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-42-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-45-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -1485,8 +1524,8 @@ Now, let's sample drawing coins from a treasure chest Let's say the chest has 10
        \hlstd{)}
 \end{alltt}
 \begin{verbatim}
-##  [1] "silver" "silver" "bronze" "bronze" "bronze" "bronze" "silver"
-##  [8] "bronze" "bronze" "gold"
+##  [1] "gold"   "silver" "silver" "silver" "bronze" "bronze" "silver"
+##  [8] "gold"   "bronze" "silver"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -1515,9 +1554,9 @@ Let's simulate some Pinder outcomes. For those who don't know, Pinder is an app 
        \hlstd{)}
 \end{alltt}
 \begin{verbatim}
-##  [1] "No Match" "Match!!!" "No Match" "No Match" "No Match" "No Match"
-##  [7] "No Match" "No Match" "No Match" "Match!!!" "No Match" "No Match"
-## [13] "No Match" "No Match" "No Match" "Match!!!" "No Match" "No Match"
+##  [1] "Match!!!" "No Match" "No Match" "No Match" "No Match" "Match!!!"
+##  [7] "No Match" "No Match" "No Match" "No Match" "No Match" "No Match"
+## [13] "No Match" "No Match" "No Match" "No Match" "No Match" "No Match"
 ## [19] "No Match" "No Match"
 \end{verbatim}
 \end{kframe}
@@ -1774,25 +1813,25 @@ If our test worked, then the difference for the small sample should be larger th
 \hlkwd{mean}\hlstd{(small)} \hlcom{# What is the mean of the small sample?}
 \end{alltt}
 \begin{verbatim}
-## [1] 98.1092
+## [1] 96.41325
 \end{verbatim}
 \begin{alltt}
 \hlkwd{mean}\hlstd{(large)} \hlcom{# What is the mean of the large sample?}
 \end{alltt}
 \begin{verbatim}
-## [1] 100.0071
+## [1] 100.0143
 \end{verbatim}
 \begin{alltt}
 \hlkwd{mean}\hlstd{(small)} \hlopt{-} \hlnum{100} \hlcom{# How far is the mean of Small from 100?}
 \end{alltt}
 \begin{verbatim}
-## [1] -1.8908
+## [1] -3.586747
 \end{verbatim}
 \begin{alltt}
 \hlkwd{mean}\hlstd{(large)} \hlopt{-} \hlnum{100} \hlcom{# How far is the mean of Large from 100?}
 \end{alltt}
 \begin{verbatim}
-## [1] 0.007118068
+## [1] 0.014292
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -1886,7 +1925,7 @@ You can also get random values from a vector by indexing a vector with the \text
 \hlstd{tattoos[rand.values]} \hlcom{# Step 2: Index tattoo with rand.values}
 \end{alltt}
 \begin{verbatim}
-## [1]  0 10  2
+## [1]   9 100  50
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -1901,7 +1940,7 @@ The result of our indexing is 3 randomly selected values from the \texttt{tattoo
 \hlkwd{sample}\hlstd{(}\hlkwc{x} \hlstd{= tattoos,} \hlkwc{size} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{replace} \hlstd{= F)}
 \end{alltt}
 \begin{verbatim}
-## [1] 100  17   2
+## [1] 50 17 20
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -1935,7 +1974,7 @@ As you gain more experience with R, you'll realize that there are many ways to p
         \hlkwc{adj} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{3}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-57-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-60-1} 
 
 \end{knitrout}
 \caption{Comparison operators in R}
@@ -1987,7 +2026,7 @@ As you gain more experience with R, you'll realize that there are many ways to p
          \hlkwd{rep}\hlstd{(}\hlnum{.8}\hlstd{,} \hlnum{9}\hlstd{),} \hlkwd{seq}\hlstd{(}\hlnum{1.5}\hlstd{,} \hlnum{9.5}\hlstd{,} \hlnum{1}\hlstd{),} \hlkwc{lty} \hlstd{=} \hlnum{2}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-58-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-61-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -2240,7 +2279,7 @@ Because the fourth, sixth, and tenth values were not valid (they were negative),
        \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-68-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-71-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -2562,7 +2601,7 @@ Returns TRUE of the two vectors x and y are identical (ignoring order) and FALSE
 \hlkwd{text}\hlstd{(}\hlnum{.5}\hlstd{,} \hlnum{.9}\hlstd{,} \hlstr{"union(x, y)"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-80-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-83-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -2971,7 +3010,7 @@ Matrices and dataframes are both two dimensional objects that contain rows and c
      \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-98-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-101-1} 
 
 \end{knitrout}
 \caption{scalar, Vector, Matrix... ::drops mike::}
@@ -3161,26 +3200,26 @@ To create a dataframe, you can use the \texttt{data.frame()} function. Let's cre
 \end{alltt}
 \begin{verbatim}
 ##    gender   height
-## 1  Female 143.6206
-## 2  Female 164.6989
-## 3  Female 163.7980
-## 4  Female 153.7831
-## 5  Female 164.9148
-## 6  Female 156.1879
-## 7  Female 152.6338
-## 8  Female 161.9872
-## 9  Female 152.8746
-## 10 Female 142.6964
-## 11   Male 150.7514
-## 12   Male 150.7252
-## 13   Male 142.4656
-## 14   Male 148.4195
-## 15   Male 151.6772
-## 16   Male 152.5521
-## 17   Male 158.8964
-## 18   Male 161.7284
-## 19   Male 168.0058
-## 20   Male 153.1401
+## 1  Female 140.3519
+## 2  Female 163.7395
+## 3  Female 156.8990
+## 4  Female 143.3528
+## 5  Female 128.7694
+## 6  Female 155.2658
+## 7  Female 134.2300
+## 8  Female 140.9559
+## 9  Female 148.0180
+## 10 Female 147.1105
+## 11   Male 145.5757
+## 12   Male 162.5618
+## 13   Male 138.2955
+## 14   Male 159.4965
+## 15   Male 149.6046
+## 16   Male 149.6611
+## 17   Male 163.9275
+## 18   Male 160.5404
+## 19   Male 141.9269
+## 20   Male 149.2816
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -3414,12 +3453,12 @@ When you are working with dataframes, you will frequently want to know its gener
 \end{alltt}
 \begin{verbatim}
 ##     gender              height     
-##  Length:20          Min.   :142.5  
-##  Class :character   1st Qu.:150.7  
-##  Mode  :character   Median :153.0  
-##                     Mean   :154.8  
-##                     3rd Qu.:161.8  
-##                     Max.   :168.0
+##  Length:20          Min.   :128.8  
+##  Class :character   1st Qu.:141.7  
+##  Mode  :character   Median :148.6  
+##                     Mean   :149.0  
+##                     3rd Qu.:157.5  
+##                     Max.   :163.9
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -4088,7 +4127,7 @@ Let's answer 5 questions with this dataset:
 
 
 {\ttfamily\noindent\itshape\color{messagecolor}{\#\# log="{}y"{} selected}}\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-136-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-139-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -4151,7 +4190,7 @@ We calculated the median loan size separately for people whose loans defaulted a
       \hlkwc{col} \hlstd{=} \hlstr{"red"}\hlstd{,} \hlkwc{lwd} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{type} \hlstd{=} \hlstr{"b"}\hlstd{,} \hlkwc{pch} \hlstd{=} \hlnum{16}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-138-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-141-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -4256,7 +4295,7 @@ We separately the proportion of people who defaulted on their loans separately b
      \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-141-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-144-1} 
 
 \end{knitrout}
   \end{tiny}
@@ -4384,7 +4423,7 @@ The \texttt{plot()} function, like many plotting functions, has several optional
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-143-1} 
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-146-1} 
 
 }
 
@@ -4422,7 +4461,7 @@ When you create a plot with \texttt{plot(x, y)}, you can specify the type of sym
      \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-144-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-147-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -4452,7 +4491,7 @@ While \texttt{plot()} is the most widely used high-level plotting command, there
      \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-145-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-148-1} 
 
 \end{knitrout}
 \caption{Histogram of age data from \texttt{pirates}}
@@ -4512,7 +4551,7 @@ Boxplots aren't used so often anymore (for reasons that I'll show you shortly), 
         \hlkwc{main} \hlstd{=} \hlstr{"Plot 1: All Ages"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-146-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-149-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -4531,7 +4570,7 @@ Boxplots aren't used so often anymore (for reasons that I'll show you shortly), 
         \hlkwc{main} \hlstd{=} \hlstr{"Plot 2: Age separated by college"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-147-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-150-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -4648,7 +4687,7 @@ The code for creating beanplots is very similar to the code for boxplots. Let's 
          \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-149-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-152-1} 
 
 \end{knitrout}
 \end{footnotesize}
@@ -4677,7 +4716,7 @@ Once you've created a plot with a high-level plotting function, you can add addi
      \hlkwc{xlim} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{100}\hlstd{),} \hlkwc{ylim} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{100}\hlstd{),} \hlkwc{main} \hlstd{=} \hlstr{"Blank Plot"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-150-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-153-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -4713,7 +4752,7 @@ Once you've created a blank plot, you can proceed to add all the elements you'd 
 \hlkwd{points}\hlstd{(college.2}\hlopt{$}\hlstd{age, college.2}\hlopt{$}\hlstd{tattoos,} \hlkwc{pch} \hlstd{=} \hlnum{16}\hlstd{,} \hlkwc{col} \hlstd{=} \hlstr{"skyblue"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-151-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-154-1} 
 
 \end{knitrout}
 \caption{Adding additional points to an existing plot with points()}
@@ -4791,7 +4830,7 @@ Next, we'll look at \texttt{abline()} which adds straight lines to a plot:
 \hlkwd{mtext}\hlstd{(}\hlstr{"lty = ..."}\hlstd{,} \hlkwc{side} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{at} \hlstd{=} \hlnum{3.5}\hlstd{,} \hlkwc{line} \hlstd{=} \hlnum{4}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{2}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-153-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-156-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -4885,7 +4924,7 @@ In margin Figure~\ref{fig:gridlinesexample} I add gridlines and a diagonal refer
        \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-156-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-159-1} 
 
 \end{knitrout}
 \caption{Adding gridlines to a plot with abline().}
@@ -4995,7 +5034,7 @@ To see \texttt{text()} in action, look at margin Figure \ref{fig:textexample} wh
      \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-159-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-162-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -5026,7 +5065,7 @@ When entering text in the \texttt{labels} argument, keep in mind that R will, by
      \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-160-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-163-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -5078,19 +5117,19 @@ The paste function will be helpful to you anytime you want to combine either mul
 \hlkwd{mean}\hlstd{(data)}
 \end{alltt}
 \begin{verbatim}
-## [1] 21.22822
+## [1] 21.00166
 \end{verbatim}
 \begin{alltt}
 \hlkwd{paste}\hlstd{(}\hlstr{"The mean of the group is"}\hlstd{,} \hlkwd{mean}\hlstd{(data))} \hlcom{# No rounding}
 \end{alltt}
 \begin{verbatim}
-## [1] "The mean of the group is 21.2282200516289"
+## [1] "The mean of the group is 21.0016609949259"
 \end{verbatim}
 \begin{alltt}
 \hlkwd{paste}\hlstd{(}\hlstr{"The mean of the group is"}\hlstd{,} \hlkwd{round}\hlstd{(}\hlkwd{mean}\hlstd{(data),} \hlnum{2}\hlstd{))} \hlcom{# No rounding}
 \end{alltt}
 \begin{verbatim}
-## [1] "The mean of the group is 21.23"
+## [1] "The mean of the group is 21"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -5148,7 +5187,7 @@ You can also use vectors as arguments to the \texttt{paste()} function. For exam
        \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-163-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-166-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -5246,7 +5285,7 @@ In Figure~\ref{fig:functionlines}, I use the \texttt{curve()} function to create
        \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-166-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-169-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -5364,7 +5403,7 @@ There are many more low-level plotting functions that can add additional element
          \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-168-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-171-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -5539,7 +5578,7 @@ Let's use the \texttt{paste()} command to create a histogram with labels indicat
 \hlkwd{abline}\hlstd{(}\hlkwc{v} \hlstd{=} \hlkwd{max}\hlstd{(data),} \hlkwc{lty} \hlstd{=} \hlnum{2}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-170-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-173-1} 
 
 \end{knitrout}
 \end{footnotesize}
@@ -5593,9 +5632,10 @@ The easiest way to specify a color is to just write its name as a string. For ex
 \hlkwd{colors}\hlstd{()[}\hlkwd{sample}\hlstd{(}\hlnum{1}\hlopt{:}\hlkwd{length}\hlstd{(}\hlkwd{colors}\hlstd{()),} \hlnum{10}\hlstd{)]}
 \end{alltt}
 \begin{verbatim}
-##  [1] "tan4"          "palevioletred" "royalblue4"    "wheat3"       
-##  [5] "lightcyan"     "gray84"        "orange4"       "cadetblue"    
-##  [9] "gray13"        "palegoldenrod"
+##  [1] "gray93"          "lightyellow"     "grey74"         
+##  [4] "mediumslateblue" "darkseagreen"    "grey73"         
+##  [7] "ivory"           "ivory3"          "sandybrown"     
+## [10] "dodgerblue2"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -5622,7 +5662,7 @@ If you're a lonely, sexually repressed, 50+ year old housewife, then you might w
      \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-172-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-175-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -5710,7 +5750,7 @@ One package that is great for getting (and even creating) palettes is \texttt{RC
 \hlkwd{display.brewer.all}\hlstd{()}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-174-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-177-1} 
 
 \end{knitrout}
 
@@ -5789,7 +5829,7 @@ My favorite way to generate colors that represent numerical data is with the fun
 \hlkwd{mtext}\hlstd{(}\hlkwc{text} \hlstd{=} \hlstr{"Point color indicates smoking rate"}\hlstd{,} \hlkwc{line} \hlstd{=} \hlnum{.5}\hlstd{,} \hlkwc{side} \hlstd{=} \hlnum{3}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-176-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-179-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -5865,7 +5905,7 @@ One of my favorite tricks for getting great colors in R is to use a \textit{colo
 \hlkwd{text}\hlstd{(}\hlnum{3.5}\hlstd{,} \hlnum{.7}\hlstd{,} \hlstr{"Look familiar?"}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-178-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-181-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -5924,7 +5964,7 @@ One of my favorite tricks for getting great colors in R is to use a \textit{colo
 \hlkwd{text}\hlstd{(}\hlnum{.7}\hlstd{,} \hlnum{.9}\hlstd{,} \hlstr{"This is Margin Text\textbackslash{}nMade with mtext()"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-179-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-182-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -5955,7 +5995,7 @@ In the plot on the left, I'll set the margins to 3 on all sides. In the plot on 
 \hlkwd{mtext}\hlstd{(}\hlstr{"Large Margins"}\hlstd{,} \hlkwc{side} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{line} \hlstd{=} \hlnum{1}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{1.2}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-180-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-183-1} 
 
 \end{knitrout}
 \end{footnotesize}
@@ -6016,7 +6056,7 @@ R makes it easy to arrange multiple plots in the same plotting space. The most c
 \hlstd{\}}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-181-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-184-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -6082,7 +6122,7 @@ The \texttt{layout()} function can be a bit confusing at first, so I think it's 
 \hlkwd{layout.show}\hlstd{(}\hlnum{3}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-184-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-187-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -6146,7 +6186,7 @@ Now we're ready to put the plots together
         \hlkwc{col} \hlstd{=} \hlstr{"white"}\hlstd{,} \hlkwc{frame} \hlstd{= F)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-186-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-189-1} 
 
 \end{knitrout}
 \end{footnotesize}
@@ -6293,7 +6333,7 @@ Look at Figure X to see the plot that this code created
 \hlkwd{hist}\hlstd{(}\hlkwc{x} \hlstd{=} \hlkwd{rnorm}\hlstd{(}\hlnum{100}\hlstd{))}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-193-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-196-1} 
 
 \end{knitrout}
 
@@ -6890,7 +6930,7 @@ As you can see, the \texttt{aggregate()} function has returned a dataframe with 
         \hlkwc{names.arg} \hlstd{= aggregated.data}\hlopt{$}\hlstd{college)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-210-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-213-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -7391,7 +7431,7 @@ where \texttt{x} is a vector of data, \texttt{mu} is the population mean under t
 \hlkwd{abline}\hlstd{(}\hlkwc{v} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{lty} \hlstd{=} \hlnum{1}\hlstd{,} \hlkwc{col} \hlstd{=} \hlstr{"red"}\hlstd{,} \hlkwc{lwd} \hlstd{=} \hlnum{4}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-222-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-225-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -7522,7 +7562,7 @@ Being able to quickly extract key numerical information from a test object is hu
 \hlkwd{abline}\hlstd{(}\hlkwc{v} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{lty} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{col} \hlstd{=} \hlstr{"black"}\hlstd{,} \hlkwc{lwd} \hlstd{=} \hlnum{4}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-227-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-230-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -7684,7 +7724,7 @@ Looks like we still don't find a significant difference in age between headband 
        \hlkwc{lty} \hlstd{=} \hlnum{1}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-231-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-234-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -8078,7 +8118,7 @@ These attributes let us easily calculate some interesting model diagnostics. For
 \hlkwd{abline}\hlstd{(}\hlkwc{a} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{b} \hlstd{=} \hlnum{1}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-243-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-246-1} 
 
 \end{knitrout}
 \end{marginfigure}
@@ -8211,7 +8251,7 @@ As you can see from the summary table, we have both significant main effects for
        \hlkwc{pch} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{21}\hlstd{,} \hlnum{21}\hlstd{),} \hlkwc{pt.bg} \hlstd{= col.vec,} \hlkwc{bg} \hlstd{=} \hlstr{"white"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-248-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-251-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -8344,7 +8384,7 @@ p(y=1)=\frac{1}{1+e^{-(\beta_{0}+\beta_{1}x_{1}+\beta_{2}x_{2}+...\beta_{n}x_{n}
 \hlkwd{abline}\hlstd{(}\hlkwc{v} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{lty} \hlstd{=} \hlnum{1}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-251-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-254-1} 
 
 \end{knitrout}
 \caption{The logit function used in binary logistic regression}
@@ -8427,7 +8467,7 @@ You can visualize this relationship in Margin Figure XX: In the figure, I group 
      \hlkwc{main} \hlstd{=} \hlstr{"Probabiliy that a ship is classic\textbackslash{}ngiven its age"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-254-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-257-1} 
 
 \end{knitrout}
 \end{tiny}
@@ -8453,7 +8493,7 @@ Once you've generated a model object from \texttt{lm()} or \texttt{glm()}, you c
 \hlkwd{abline}\hlstd{(rooms.price.lm,} \hlkwc{lty} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{lwd} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{col} \hlstd{=} \hlstr{"coral"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-255-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-258-1} 
 
 \end{knitrout}
 
@@ -8712,7 +8752,7 @@ Because our function \texttt{coinflip.1()} has no inputs, we can call it by just
 \hlkwd{coinflip.1}\hlstd{()}
 \end{alltt}
 \begin{verbatim}
-## [1] "Tails"
+## [1] "Heads"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -8747,9 +8787,9 @@ Let's test our new function by simulating 20 flips of a coin where the probabili
 \hlkwd{coinflip.2}\hlstd{(}\hlkwc{n.flips} \hlstd{=} \hlnum{20}\hlstd{,} \hlkwc{head.p} \hlstd{=} \hlnum{.9}\hlstd{)}
 \end{alltt}
 \begin{verbatim}
-##  [1] "Heads" "Heads" "Tails" "Heads" "Heads" "Heads" "Heads" "Heads"
+##  [1] "Heads" "Tails" "Heads" "Heads" "Heads" "Heads" "Heads" "Heads"
 ##  [9] "Heads" "Heads" "Heads" "Heads" "Heads" "Heads" "Heads" "Heads"
-## [17] "Tails" "Heads" "Heads" "Heads"
+## [17] "Heads" "Heads" "Heads" "Heads"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -8784,26 +8824,26 @@ Now, let's try running \texttt{coinflip.3} with a different number of inputs. In
 \hlkwd{coinflip.3}\hlstd{(}\hlkwc{n.flips} \hlstd{=} \hlnum{5}\hlstd{,} \hlkwc{head.p} \hlstd{=} \hlnum{.5}\hlstd{)}  \hlcom{# Specify all inputs}
 \end{alltt}
 \begin{verbatim}
-## [1] "Tails" "Tails" "Heads" "Tails" "Heads"
+## [1] "Heads" "Tails" "Heads" "Heads" "Heads"
 \end{verbatim}
 \begin{alltt}
 \hlkwd{coinflip.3}\hlstd{(}\hlkwc{head.p} \hlstd{=} \hlnum{.1}\hlstd{)}  \hlcom{# Just specify head.p}
 \end{alltt}
 \begin{verbatim}
-## [1] "Tails"
+## [1] "Heads"
 \end{verbatim}
 \begin{alltt}
 \hlkwd{coinflip.3}\hlstd{(}\hlkwc{n.flips} \hlstd{=} \hlnum{10}\hlstd{)} \hlcom{# Just specify n.flips}
 \end{alltt}
 \begin{verbatim}
-##  [1] "Tails" "Tails" "Tails" "Tails" "Heads" "Tails" "Heads" "Tails"
-##  [9] "Heads" "Tails"
+##  [1] "Heads" "Heads" "Heads" "Heads" "Tails" "Heads" "Tails" "Tails"
+##  [9] "Heads" "Heads"
 \end{verbatim}
 \begin{alltt}
 \hlkwd{coinflip.3}\hlstd{()}  \hlcom{# Don't specify anything!}
 \end{alltt}
 \begin{verbatim}
-## [1] "Tails"
+## [1] "Heads"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -8834,7 +8874,7 @@ You can put any R code you want in a \texttt{if()} function (not just \texttt{pr
 \end{alltt}
 \begin{verbatim}
 ## [1] "A is negative! I love negative numbers! Here are some more"
-## [1] -75 -73 -65 -30 -38
+## [1] -12  -6  -7 -29 -33
 \end{verbatim}
 \begin{alltt}
 \hlkwa{if}\hlstd{(a} \hlopt{>} \hlnum{0}\hlstd{) \{} \hlcom{# Code when a is positive}
@@ -9127,7 +9167,7 @@ Now, let's test our function with the optional inputs \texttt{main}, \texttt{xla
               \hlkwc{col} \hlstd{=} \hlstr{"lightblue"}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-283-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-286-1} 
 
 \end{knitrout}
 
@@ -9228,7 +9268,7 @@ Let's try the function on data from the pirates dataset. We'll turn on some of t
               \hlkwc{pch} \hlstd{=} \hlnum{16}\hlstd{,} \hlkwc{col} \hlstd{=} \hlkwd{gray}\hlstd{(}\hlnum{.2}\hlstd{,} \hlnum{.3}\hlstd{))}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-285-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-288-1} 
 
 \end{knitrout}
 
@@ -9312,7 +9352,7 @@ Let's say we wanted to create a histogram of the sword speeds for each sword typ
 \hlstd{\}}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-288-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-291-1} 
 
 \end{knitrout}
 
@@ -9606,16 +9646,16 @@ To create a list in R, use the \texttt{list()} function. Let's create a list tha
 \end{alltt}
 \begin{verbatim}
 ## $first
-##  [1]  1.52910665  0.04969488  0.18302607  1.27781435  0.21040487
-##  [6] -0.89083225  0.61664899 -0.28808023 -0.99489911 -0.66856866
+##  [1]  1.28044230 -1.38974668 -1.78883875  0.07580274 -1.28073515
+##  [6] -0.47139643 -0.09711147  0.69950510 -1.88002510 -1.98666366
 ## 
 ## $second
-## [1]  0.09458471  1.51756944  0.77357810 -0.75037446  0.17962661
+## [1] -3.4646438 -1.7647492  0.7151397  0.7276283 -0.5690954
 ## 
 ## $third
-##  [1] -0.001863922  1.773112932 -0.806524193 -0.005082688 -2.606307723
-##  [6]  1.910856610  0.396039466 -1.191649433 -0.841604571  0.438320653
-## [11] -1.785135888  0.305258102  0.296752977  2.148138052  2.469771739
+##  [1] -1.47062232 -0.93942472 -0.94036811 -0.02026055  0.32091253
+##  [6]  1.29690583  0.40908405 -0.29338873  0.15593591  0.88325099
+## [11] -0.19105124  0.43316408  2.22196760  0.66567183 -0.34316132
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -9628,14 +9668,14 @@ To index a list, use double brackets [[]] or \$ if the list has names.  For exam
 \hlstd{number.list[[}\hlnum{1}\hlstd{]]}
 \end{alltt}
 \begin{verbatim}
-##  [1]  1.52910665  0.04969488  0.18302607  1.27781435  0.21040487
-##  [6] -0.89083225  0.61664899 -0.28808023 -0.99489911 -0.66856866
+##  [1]  1.28044230 -1.38974668 -1.78883875  0.07580274 -1.28073515
+##  [6] -0.47139643 -0.09711147  0.69950510 -1.88002510 -1.98666366
 \end{verbatim}
 \begin{alltt}
 \hlstd{number.list}\hlopt{$}\hlstd{second}
 \end{alltt}
 \begin{verbatim}
-## [1]  0.09458471  1.51756944  0.77357810 -0.75037446  0.17962661
+## [1] -3.4646438 -1.7647492  0.7151397  0.7276283 -0.5690954
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -9700,19 +9740,19 @@ Let's look at the result:
 \end{alltt}
 \begin{verbatim}
 ## [[1]]
-## [1] -1.293406
+## [1] -1.027127
 ## 
 ## [[2]]
-## [1] -1.197633  1.179725
+## [1] -0.5933634  1.4533802
 ## 
 ## [[3]]
-## [1] -0.9337128 -0.7752760  0.3020535
+## [1] -1.0444339 -0.5516022 -0.7425344
 ## 
 ## [[4]]
-## [1] -0.3645072  0.4258059  1.1679821  0.8083178
+## [1] -0.9008107  0.1950480  0.5663279  1.3993161
 ## 
 ## [[5]]
-## [1] -0.63179938  0.77773750  0.59981124 -0.30948120  0.04995765
+## [1]  0.13906197 -0.26122046 -0.02065071  0.06000143  0.23857757
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -9727,9 +9767,9 @@ If you want to convert a list to a vector format, you can use the command \textt
 \hlkwd{unlist}\hlstd{(samples.ls)}
 \end{alltt}
 \begin{verbatim}
-##  [1] -1.29340610 -1.19763318  1.17972466 -0.93371280 -0.77527596
-##  [6]  0.30205355 -0.36450723  0.42580595  1.16798209  0.80831777
-## [11] -0.63179938  0.77773750  0.59981124 -0.30948120  0.04995765
+##  [1] -1.02712746 -0.59336344  1.45338018 -1.04443387 -0.55160215
+##  [6] -0.74253437 -0.90081071  0.19504805  0.56632791  1.39931610
+## [11]  0.13906197 -0.26122046 -0.02065071  0.06000143  0.23857757
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -10125,7 +10165,7 @@ Now, let's aggregate the data at the level of the significance and see how often
      \hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-326-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-329-1} 
 
 \end{knitrout}
 \end{footnotesize}

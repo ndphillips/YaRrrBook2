@@ -16,6 +16,7 @@
 \usepackage[tikz]{bclogo}
 
 %\usepackage{Sweave}
+\usepackage{listings}
 \usepackage{float}
 \usepackage{graphicx} % Needed to insert images into the document 
 \graphicspath{{graphics/}} % Sets the default location of pictures
@@ -103,10 +104,23 @@ Copyright \copyright\ \the\year\ \thanklessauthor
 \begin{doublespace}
 \noindent\fontsize{18}{22}\selectfont\itshape
 \nohyphenation
-This book is dedicated to my former statistics instructors Dr. Thomas Moore and Dr. Wei Lin who taught me everything I know about statistics, and my PhD colleagues Dr. Dirk Wulff and Dr. Stefan Herzog who taught me everything I know about R.
+This book is dedicated to my statistics instructors Dr. Thomas Moore and Dr. Wei Lin who taught me everything I know about statistics, and my PhD colleague Dr. Dirk Wulff who helped me get started with R.
 \end{doublespace}
 \vfill
-
+% 
+% 
+% <<echo = F>>=
+% library("knitr")
+% @
+% 
+% 
+% 
+% <<setup, echo=FALSE>>=
+% knit_hooks$set(source = function(x, options) {
+%     paste("\\begin{lstlisting}[numbers=left, firstnumber=last]\n", x, 
+%         "\\end{lstlisting}\n", sep = "")
+% })
+% @
 
 
 %----------------------------------------------------------------------------------------
@@ -297,35 +311,48 @@ To get help and see documentation for a function, type \texttt{?fun}, where \tex
 
 \section{Installing and loading packages}
 
-When you download and install R for the first time, you are installing the Base R software. Base R will will contain most if not all the functions you need. However, one of the great things about R is that people are constantly writing and sharing new functions that you can use. When people share a new function, they usually do so in the form of an \textit{R package} which contains anything from functions, to help menus, to vignettes (examples), to data. To install a new R package, you need to run the code \texttt{install.packages("package")}, where "package" is the name of the package. After you've installed the package, you need to \textit{load} it into R by running the code \texttt{load("package)}. This will load the package into your current R session and allow you to use its contents.\marginnote{Once you've installed a package on your computer, you never need to install it again. However, you do need to load the package every time you start a new R session.}
+When you download and install R for the first time, you are installing the Base R software. Base R will will contain most if not all the functions you need. However, one of the great things about R is that people are constantly writing and sharing new functions that you can use. When people share a new function, they usually do so in the form of an \textit{R package} which contains anything from functions, to help menus, to vignettes (examples), to data.
 
-For example, let's say you want to create a wordcloud - a graph that plots text in different sizes. You can certainly program this yourself in R, but thankfully someone has created a package called \texttt{wordcloud} with a function that will do this for you. Let's install the package, load it, and then use the \texttt{wordcloud} function:
+Most R packages are hosted at CRAN (<https://cran.r-project.org/>), the Comprehensive R Archive Network. To install a new R package from CRAN, you can simply run the code \texttt{install.packages("package")}, where "package" is the name of the package. After you've installed the package, you need to \textit{load} it into R by running the code \texttt{library("package")}. This will load the package into your current R session and allow you to use its contents.\marginnote{Once you've installed a package on your computer, you never need to install it again. However, you do need to load the package every time you start a new R session.}
 
-\begin{footnotesize}
-<<fig.width = 3, fig.height = 3, prompt=FALSE, warning=FALSE>>=
-#install.packages("wordcloud")
-library("wordcloud") # Install the package
+To see how this works in action, let's install and load the \texttt{wordcloud} package. This package contains the \texttt{wordcloud} function which allows you to easily create wordcloud plots.
 
-par(mar = rep(0, 4))
-wordcloud(words = c("sword", "YaRrr!", "eyepatch", 
-                    "parrot", "plunder", "treasure",
-                    "chest", "scurvy"),
-          freq = sample(50:1000, 8), 
-          colors = gray(runif(8, 0, 1)))
+We'll start by installing the package. When you run the following code, R will download the package from CRAN. If everything works, you should see some information about where the package is being downloaded from, in addition to a progress bar.
+
+<<eval = F>>=
+install.packages("wordcloud")
 @
-\end{footnotesize}
+
+Now that the package is installed on your computer, you can use it anytime you want by loading the package:
+
+<<>>=
+library("wordcloud")
+@
+
+Now, let's create a wordcloud of pirate words! Don't worry about the specifics of the code below, you'll learn more about how all this works later. For now, just run the code and marvel at your wordcloud!
+
+<<>>=
+wordcloud(rep(c("Blackbeard", "Jolly.Roger", "Grogg", "Monkey.Island", "Treasure", "cutlass"),
+              times = c(100, 20, 50, 40, 200, 100)))
+@
 
 
-\section{Installing and loading the yarrr package}
+\subsection{The yarrr package}
 
-For much of this book, you will need the \texttt{yarrr} package. This package contains every dataset, function, and plotting code from this book. To install the \texttt{yarr} package on your machine, execute the following code:
+For much of this book, you will need the \texttt{yarrr} package. This package contains every dataset, function, and plotting code from this book. Unlike most packages that you'll be using, the \texttt{yarrr} package is not hosted at CRAN. Instead, all the code is on github\footnote{For those of you unfamiliar with github, it's basically Facebook for programmers.} at <www.github.com/ndphillips/yarrr>. To install the \texttt{yarr} package on your machine, you'll first need to install the \texttt{devtools} package which will then allow you to directly install packages from github:
 
 <<echo = T, eval = F, message = F>>=
 install.packages("devtools") # Install the devtools package
 library("devtools") # Load the devtools package
+@
+
+Now that you've installed and loaded the \textt{devtools} package, you can install and load the \texttt{yarrr} package from github with the following code:
+
+<<eval = F>>=
 install_github('ndphillips/yarrr') # Install the yarrr package from github
 library("yarrr") # Load the yarrr package
 @
+
 
 
 <<echo = F, eval = T, message = F>>=
@@ -335,9 +362,7 @@ library("yarrr") # Load the yarrr package
 @
 
 
-If everything went correctly, you should have access to, among other things, the \texttt{pirates} dataset. To see the dataset, you can execute the 
-
-the \texttt{View()} function:
+If everything went correctly, you should have access to, among other things, the \texttt{pirates} dataset. To see the dataset, you can execute the the \texttt{View()} function:
 
 <<eval = FALSE>>=
 View(pirates)

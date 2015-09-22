@@ -15,9 +15,9 @@
 \contentsline {subsection}{Files / Plots / Packages / Help}{15}{subsection*.16}
 \contentsline {section}{Getting help}{16}{section*.17}
 \contentsline {section}{Installing and loading packages}{16}{section*.18}
-\contentsline {section}{Installing and loading the yarrr package}{17}{section*.19}
-\contentsline {section}{The R Reference Card}{18}{section*.20}
-\contentsline {subsection}{Finished!}{19}{subsection*.21}
+\contentsline {subsection}{The yarrr package}{18}{subsection*.19}
+\contentsline {section}{The R Reference Card}{19}{section*.20}
+\contentsline {subsection}{Finished!}{20}{subsection*.21}
 \contentsline {chapter}{2: Coding Basics}{21}{chapter*.22}
 \contentsline {subsection}{Chapter Goals}{21}{subsection*.23}
 \contentsline {subsection}{Before we get started, a word of warning...}{21}{subsection*.24}
