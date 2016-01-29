@@ -1,90 +1,95 @@
 \begin{theindex}
 
-  \item [], \hyperpage{41}
-  \item \%in\%, \hyperpage{44}
+  \item [], \hyperpage{50}
+  \item \%in\%, \hyperpage{53}
 
   \indexspace
 
-  \item a:b, \hyperpage{26}
-  \item abline(), \hyperpage{86}
-  \item aggregate(), \hyperpage{117}
+  \item a:b, \hyperpage{32}
+  \item abline(), \hyperpage{121}
+  \item aggregate(), \hyperpage{92}
+  \item assignment, \hyperpage{26}
 
   \indexspace
 
-  \item beanplot(), \hyperpage{83}
-  \item boxplot(), \hyperpage{81}
+  \item barplot, \hyperpage{117}
+  \item boxplot(), \hyperpage{119}
 
   \indexspace
 
-  \item c(), \hyperpage{25}
-  \item cbind(), \hyperpage{54}
-  \item chisq.test(), \hyperpage{135}
-  \item cor.test(), \hyperpage{134}
-  \item correlation, \hyperpage{133}
-  \item curve(), \hyperpage{89}
-  \item cut(), \hyperpage{115}
+  \item c(), \hyperpage{30}
+  \item cbind(), \hyperpage{66}
+  \item chisq.test(), \hyperpage{156}
+  \item cor.test(), \hyperpage{154}
+  \item correlation, \hyperpage{153}
+  \item curve(), \hyperpage{125}
+  \item cut(), \hyperpage{207}
 
   \indexspace
 
-  \item data.frame(), \hyperpage{56}
-  \item dplyr(), \hyperpage{121}
+  \item data.frame(), \hyperpage{68}
+  \item dplyr(), \hyperpage{96}
 
   \indexspace
 
-  \item glm(), \hyperpage{145}
+  \item glm(), \hyperpage{167}
 
   \indexspace
 
-  \item head(), \hyperpage{57}
-  \item hist(), \hyperpage{80}
+  \item head(), \hyperpage{70}
+  \item hist(), \hyperpage{113}
 
   \indexspace
 
-  \item legend(), \hyperpage{90}
-  \item length(), \hyperpage{26}
+  \item legend(), \hyperpage{126}
   \item license, \hyperpage{2}
-  \item Linear Model, \hyperpage{137}
-  \item lm(), \hyperpage{138}
+  \item Linear Model, \hyperpage{159}
+  \item lm(), \hyperpage{160}
 
   \indexspace
 
-  \item matrix(), \hyperpage{55}
-  \item merge(), \hyperpage{123}
+  \item matrix(), \hyperpage{67}
+  \item merge(), \hyperpage{209}
 
   \indexspace
 
-  \item paste(), \hyperpage{88}
-  \item plot(), \hyperpage{78}
-  \item points(), \hyperpage{85}
+  \item names(), \hyperpage{70}
 
   \indexspace
 
-  \item rbind(), \hyperpage{54}
-  \item read.table(), \hyperpage{59}
-  \item rep(), \hyperpage{28}
-  \item rgb(), \hyperpage{98}
-  \item rnorm(), \hyperpage{32}
-  \item runif(), \hyperpage{33}
+  \item paste(), \hyperpage{123}
+  \item pirateplot(), \hyperpage{115}
+  \item plot(), \hyperpage{109}
+  \item points(), \hyperpage{120}
 
   \indexspace
 
-  \item Sammy Davis Jr., \hyperpage{77}
-  \item sample(), \hyperpage{34}
-  \item seq(), \hyperpage{27}
-  \item subset(), \hyperpage{70}
+  \item rbind(), \hyperpage{66}
+  \item read.table(), \hyperpage{73}
+  \item rep(), \hyperpage{34}
+  \item rgb(), \hyperpage{134}
+  \item rnorm(), \hyperpage{100}
+  \item runif(), \hyperpage{101}
 
   \indexspace
 
-  \item t-test, \hyperpage{128}
-    \subitem t.test(), \hyperpage{128}, \hyperpage{131}
-  \item text(), \hyperpage{87}
+  \item Sammy Davis Jr., \hyperpage{107}
+  \item sample(), \hyperpage{102}
+  \item seq(), \hyperpage{33}
+  \item subset(), \hyperpage{84}
 
   \indexspace
 
-  \item View(), \hyperpage{58}
+  \item t-test, \hyperpage{148}
+    \subitem t.test(), \hyperpage{148}, \hyperpage{151}
+  \item text(), \hyperpage{122}
 
   \indexspace
 
-  \item with(), \hyperpage{66}
+  \item View(), \hyperpage{71}
+
+  \indexspace
+
+  \item with(), \hyperpage{82}
 
 \end{theindex}

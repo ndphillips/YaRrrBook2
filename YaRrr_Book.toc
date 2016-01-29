@@ -1,175 +1,205 @@
-\contentsline {chapter}{Introduction}{9}{chapter*.2}
-\contentsline {subsection}{Who am I?}{9}{subsection*.3}
-\contentsline {subsection}{This book is in progress..}{9}{subsection*.4}
-\contentsline {subsection}{Who is this book for?}{9}{subsection*.5}
-\contentsline {subsection}{What this book \textbf {is}}{9}{subsection*.6}
-\contentsline {subsection}{What this book is \textbf {not}}{9}{subsection*.7}
-\contentsline {subsection}{Why is R so great?}{10}{subsection*.8}
-\contentsline {subsection}{Code Chunks}{11}{subsection*.9}
-\contentsline {subsection}{Additional Tips}{11}{subsection*.10}
-\contentsline {chapter}{1: Installing R, RStudio, and the yarrr package}{13}{chapter*.11}
-\contentsline {subsection}{The four RStudio windows}{13}{subsection*.12}
-\contentsline {subsection}{Source - Your notepad for code}{13}{subsection*.13}
-\contentsline {subsection}{Console: The calculator}{14}{subsection*.14}
-\contentsline {subsection}{Environment / History}{15}{subsection*.15}
-\contentsline {subsection}{Files / Plots / Packages / Help}{15}{subsection*.16}
-\contentsline {section}{Getting help}{16}{section*.17}
-\contentsline {section}{Installing and loading packages}{16}{section*.18}
-\contentsline {subsection}{The yarrr package}{18}{subsection*.19}
-\contentsline {section}{The R Reference Card}{19}{section*.20}
-\contentsline {subsection}{Finished!}{20}{subsection*.21}
-\contentsline {chapter}{2: Coding Basics}{21}{chapter*.22}
-\contentsline {subsection}{Chapter Goals}{21}{subsection*.23}
-\contentsline {subsection}{Before we get started, a word of warning...}{21}{subsection*.24}
-\contentsline {subsection}{The basics of R programming}{21}{subsection*.25}
-\contentsline {subsection}{R as a calculator}{22}{subsection*.26}
-\contentsline {section}{Defining objects with the <- assignment}{22}{section*.27}
-\contentsline {section}{Data object types in R}{24}{section*.28}
-\contentsline {subsection}{Two simple data objects: scalars and vectors}{24}{subsection*.29}
-\contentsline {subsection}{scalars}{24}{subsection*.30}
-\contentsline {subsection}{Vectors}{25}{subsection*.31}
-\contentsline {section}{Generating numeric vectors}{26}{section*.32}
-\contentsline {subsection}{Arithmetic operations on scalars and vectors}{28}{subsection*.33}
-\contentsline {subsection}{Additional Tips}{29}{subsection*.34}
-\contentsline {chapter}{3: Sampling data and Descriptive Statistics}{31}{chapter*.35}
-\contentsline {section}{Sampling data from probability distributions}{31}{section*.36}
-\contentsline {subsection}{The Normal (Gaussian) distribution}{32}{subsection*.37}
-\contentsline {subsection}{The Uniform distribution}{33}{subsection*.38}
-\contentsline {subsection}{Sampling from a set of values: sample()}{34}{subsection*.39}
-\contentsline {subsection}{Drawing coins from a treasure chest}{35}{subsection*.40}
-\contentsline {subsection}{Simulating Pinder Outcomes}{36}{subsection*.41}
-\contentsline {section}{Descriptive statistics}{36}{section*.42}
-\contentsline {subsection}{Other helpful vector functions}{38}{subsection*.43}
-\contentsline {section}{A worked example: A quick test of the law of large numbers}{39}{section*.44}
-\contentsline {subsection}{Additional Tips}{40}{subsection*.45}
-\contentsline {chapter}{4: Indexing and comparing vectors}{41}{chapter*.46}
-\contentsline {section}{Indexing vectors with brackets}{41}{section*.47}
-\contentsline {subsection}{Numerical Indexing}{41}{subsection*.48}
-\contentsline {section}{Creating logical vectors}{42}{section*.49}
-\contentsline {section}{Indexing data with logical vectors}{44}{section*.50}
-\contentsline {section}{Additional helpful vector functions}{46}{section*.51}
-\contentsline {section}{Set Functions}{47}{section*.52}
-\contentsline {section}{Using indexing to remove specific values of a vector}{47}{section*.53}
-\contentsline {section}{Taking the sum and mean of logical vectors to get counts and percentages}{48}{section*.54}
-\contentsline {subsection}{Additional Tips}{49}{subsection*.55}
-\contentsline {section}{A worked example - Chicken Weights}{50}{section*.56}
-\contentsline {chapter}{5: Matrices and Data Frames}{53}{chapter*.57}
-\contentsline {section}{Creating matrices and dataframes}{53}{section*.58}
-\contentsline {subsection}{cbind() and rbind()}{53}{subsection*.59}
-\contentsline {subsection}{Dataframe: An m x n object containing numbers, strings and factors}{56}{subsection*.60}
-\contentsline {section}{Data sets pre-loaded in R}{57}{section*.61}
-\contentsline {section}{Viewing matrices and dataframes}{57}{section*.62}
-\contentsline {section}{Loading data into R with read.table()}{59}{section*.63}
-\contentsline {subsection}{Additional tips}{60}{subsection*.64}
-\contentsline {chapter}{6: Basic Dataframe Manipulation}{63}{chapter*.65}
-\contentsline {section}{Getting information about matrices and dataframes}{63}{section*.66}
-\contentsline {section}{Indexing dataframes with brackets [rows, columns]}{64}{section*.67}
-\contentsline {subsection}{Accessing dataframe columns by column name and \$}{65}{subsection*.68}
-\contentsline {section}{Adding new columns to a dataframe}{66}{section*.69}
-\contentsline {section}{Centering and standardizing (z-score) data}{67}{section*.70}
-\contentsline {section}{Subsetting dataframes with logical indexing and subset()}{68}{section*.71}
-\contentsline {section}{Combining indexing and descriptive statistics}{71}{section*.72}
-\contentsline {section}{Recoding values in a dataframe}{71}{section*.73}
-\contentsline {section}{A worked example: Credit default}{72}{section*.74}
-\contentsline {subsection}{Additional Tips}{74}{subsection*.75}
-\contentsline {chapter}{7: Plotting Basics}{77}{chapter*.76}
-\contentsline {section}{High-level plotting functions}{77}{section*.77}
-\contentsline {section}{Symbol types: pch}{79}{section*.78}
-\contentsline {section}{Other high-Level plotting commands}{80}{section*.79}
-\contentsline {subsection}{Histograms \texttt {hist()}}{80}{subsection*.80}
-\contentsline {subsection}{Boxplots \texttt {boxplot()}}{81}{subsection*.81}
-\contentsline {subsection}{Beanplots: \texttt {beanplot()}}{82}{subsection*.82}
-\contentsline {section}{Low-level plotting functions}{84}{section*.83}
-\contentsline {subsection}{Starting with a blank plot}{85}{subsection*.84}
-\contentsline {subsection}{points()}{85}{subsection*.85}
-\contentsline {subsection}{abline()}{86}{subsection*.86}
-\contentsline {subsection}{text()}{87}{subsection*.87}
-\contentsline {subsection}{Formatting text for plotting}{88}{subsection*.88}
-\contentsline {subsection}{curve()}{89}{subsection*.89}
-\contentsline {subsection}{legend()}{90}{subsection*.90}
-\contentsline {section}{Additional low-level plotting functions}{91}{section*.91}
-\contentsline {section}{Saving plots to a file}{92}{section*.92}
-\contentsline {section}{A worked example: Creating a plot with automated numeric labels}{94}{section*.93}
-\contentsline {section}{Additional Tips}{95}{section*.94}
-\contentsline {chapter}{8: Customizing Plots}{97}{chapter*.95}
-\contentsline {section}{Colors in R}{97}{section*.96}
-\contentsline {subsection}{Specifying colors as a string}{97}{subsection*.97}
-\contentsline {subsection}{Shades of gray with \texttt {gray()}}{97}{subsection*.98}
-\contentsline {subsection}{RGB values: \texttt {rgb()}}{98}{subsection*.99}
-\contentsline {subsection}{Color Palettes with the \texttt {RColorBrewer} package}{99}{subsection*.100}
-\contentsline {subsection}{Numerically defined color gradients with \texttt {colorRamp2}}{100}{subsection*.101}
-\contentsline {subsection}{Stealing any color from your screen with a kuler}{101}{subsection*.102}
-\contentsline {section}{Plot margins}{102}{section*.103}
-\contentsline {section}{Arranging multiple plots with \texttt {par(mfrow)} and \texttt {layout}}{104}{section*.104}
-\contentsline {subsection}{Simple plot layouts with par(mfrow) and par(mfcol)}{104}{subsection*.105}
-\contentsline {subsection}{Complex plot layouts with \texttt {layout()}}{104}{subsection*.106}
-\contentsline {section}{Using alternative fonts in pdfs with the extrafont package}{106}{section*.107}
-\contentsline {section}{Additional Tips}{109}{section*.108}
-\contentsline {chapter}{9: Advanced dataframe manipulation}{111}{chapter*.109}
-\contentsline {section}{Recoding values in a vector}{111}{section*.110}
-\contentsline {subsection}{3 Steps to recoding values}{111}{subsection*.111}
-\contentsline {subsection}{Recoding values from the pirate survey}{112}{subsection*.112}
-\contentsline {section}{Splitting numerical data into groups using cut()}{114}{section*.113}
-\contentsline {section}{Grouped aggregation}{116}{section*.114}
-\contentsline {section}{Aggregation with dplyr}{118}{section*.115}
-\contentsline {subsection}{The 5 verbs in dplyr}{120}{subsection*.116}
-\contentsline {section}{Merging two dataframes}{122}{section*.117}
-\contentsline {subsection}{Easily recode values in a dataframe with merge()}{124}{subsection*.118}
-\contentsline {chapter}{10: 1 and 2-sample Null-Hypothesis tests}{127}{chapter*.119}
-\contentsline {section}{Warning about null-hypothesis tests with "frequentist" statistics}{127}{section*.120}
-\contentsline {section}{T-test}{128}{section*.121}
-\contentsline {subsection}{One-Sample t-test}{129}{subsection*.122}
-\contentsline {subsection}{Two-sample t-test}{130}{subsection*.123}
-\contentsline {subsection}{Specifying t-tests with formula notation}{131}{subsection*.124}
-\contentsline {section}{Correlation test}{133}{section*.125}
-\contentsline {section}{Chi-square test}{135}{section*.126}
-\contentsline {chapter}{11: Regression and ANOVA}{137}{chapter*.127}
-\contentsline {section}{The Linear Model}{137}{section*.128}
-\contentsline {subsection}{Interactions in model terms: y {\raise .17ex\hbox {$\scriptstyle \sim $}} x1 * x2}{142}{subsection*.129}
-\contentsline {section}{Calculating an ANOVA with \texttt {aov()}}{143}{section*.130}
-\contentsline {section}{Generalized Linear Model (GLM)}{144}{section*.131}
-\contentsline {subsection}{Binary Logistic Regression}{145}{subsection*.132}
-\contentsline {section}{Additional Tips}{147}{section*.133}
-\contentsline {subsection}{Adding a regression line to a plot}{147}{subsection*.134}
-\contentsline {subsection}{Calculating regression lines on subsets of data}{147}{subsection*.135}
-\contentsline {subsection}{Predicting new data from a model}{148}{subsection*.136}
-\contentsline {chapter}{12: Writing your own functions}{149}{chapter*.137}
-\contentsline {section}{Why would you want to write your own function?}{149}{section*.138}
-\contentsline {section}{The basic structure of a function}{149}{section*.139}
-\contentsline {subsection}{A simple example}{149}{subsection*.140}
-\contentsline {subsection}{Using multiple inputs and defaults}{150}{subsection*.141}
-\contentsline {subsection}{Creating multiple coinflip() functions}{151}{subsection*.142}
-\contentsline {subsection}{Using if/then statements in functions}{154}{subsection*.143}
-\contentsline {section}{Storing and loading your functions to and from a function file with source()}{155}{section*.144}
-\contentsline {section}{Tips and tricks for complex functions}{155}{section*.145}
-\contentsline {subsection}{Conduct input quality checks}{156}{subsection*.146}
-\contentsline {subsection}{Test your functions by hard-coding input values}{157}{subsection*.147}
-\contentsline {subsection}{Using ... as option inputs}{158}{subsection*.148}
-\contentsline {section}{A worked example: Custom plotting functions}{159}{section*.149}
-\contentsline {chapter}{13: Loops and Simulations}{163}{chapter*.150}
-\contentsline {section}{What are loops?}{163}{section*.151}
-\contentsline {section}{Creating multiple plots with a loop}{164}{section*.152}
-\contentsline {section}{Assigning values to an object by combining a loop and assignment}{165}{section*.153}
-\contentsline {section}{Loops over multiple indices}{168}{section*.154}
-\contentsline {subsection}{Design Matrices}{168}{subsection*.155}
-\contentsline {section}{The list object}{170}{section*.156}
-\contentsline {section}{Parallel computing with snowfall()}{173}{section*.157}
-\contentsline {subsection}{Additional tips for using Snowfall}{175}{subsection*.158}
-\contentsline {section}{When and when not to use loops}{176}{section*.159}
-\contentsline {section}{A worked example: What is a p-value anyway?!}{176}{section*.160}
-\contentsline {chapter}{14: Bayesian Inference (Coming Soon!)}{181}{chapter*.161}
-\contentsline {section}{What are Bayesian statistics?}{181}{section*.162}
-\contentsline {section}{Bayesian one and two sample tests}{181}{section*.163}
-\contentsline {section}{Bayesian general linear model}{181}{section*.164}
-\contentsline {chapter}{15: Model fitting (Coming Soon!)}{183}{chapter*.165}
-\contentsline {section}{What is a model?}{183}{section*.166}
-\contentsline {section}{What is a loss function?}{183}{section*.167}
-\contentsline {section}{Minimizing loss functions with optimization routines}{183}{section*.168}
-\contentsline {section}{A worked example: Prospect Theory}{183}{section*.169}
-\contentsline {chapter}{16: Writing and sharing your work (Coming Soon!)}{185}{chapter*.170}
-\contentsline {section}{RMarkdown}{185}{section*.171}
-\contentsline {section}{Shiny}{185}{section*.172}
-\contentsline {section}{Sweave (R and Latex)}{185}{section*.173}
-\contentsline {chapter}{Appendix}{187}{chapter*.174}
-\contentsline {chapter}{Index}{191}{chapter*.175}
+\contentsline {chapter}{Introduction}{11}{chapter*.2}
+\contentsline {subsection}{Who am I?}{11}{subsection*.3}
+\contentsline {subsection}{Buy me a mug of beer!}{11}{subsection*.4}
+\contentsline {subsection}{Where did this book come from?}{11}{subsection*.5}
+\contentsline {subsection}{This book is in progress..}{12}{subsection*.6}
+\contentsline {subsection}{Who is this book for?}{12}{subsection*.7}
+\contentsline {subsection}{What this book \textbf {is}}{12}{subsection*.8}
+\contentsline {subsection}{What this book is \textbf {not}}{12}{subsection*.9}
+\contentsline {subsection}{Why is R so great?}{12}{subsection*.10}
+\contentsline {subsection}{Code Chunks}{13}{subsection*.11}
+\contentsline {subsection}{Additional Tips}{14}{subsection*.12}
+\contentsline {chapter}{1: Getting Started (and why R is like a relationship)}{15}{chapter*.13}
+\contentsline {section}{R is like a relationship...}{15}{section*.14}
+\contentsline {section}{Installing R and RStudio}{16}{section*.15}
+\contentsline {subsection}{The four RStudio windows}{16}{subsection*.16}
+\contentsline {subsection}{Source - Your notepad for code}{17}{subsection*.17}
+\contentsline {subsection}{Console: The calculator}{18}{subsection*.18}
+\contentsline {subsection}{Environment / History}{18}{subsection*.19}
+\contentsline {subsection}{Files / Plots / Packages / Help}{19}{subsection*.20}
+\contentsline {section}{Installing and loading packages}{20}{section*.21}
+\contentsline {section}{The yarrr package}{22}{section*.22}
+\contentsline {section}{The R Reference Card}{23}{section*.23}
+\contentsline {subsection}{Finished!}{24}{subsection*.24}
+\contentsline {chapter}{2: Coding Basics}{25}{chapter*.25}
+\contentsline {subsection}{Chapter Goals}{25}{subsection*.26}
+\contentsline {subsection}{The basics of R programming}{25}{subsection*.27}
+\contentsline {subsection}{R as a calculator}{25}{subsection*.28}
+\contentsline {subsection}{Commenting code with the #### (pound) sign}{25}{subsection*.29}
+\contentsline {subsection}{Code formatting guidelines}{26}{subsection*.30}
+\contentsline {section}{Assigning objects with the <- assignment}{26}{section*.31}
+\contentsline {subsection}{How to name objects}{27}{subsection*.32}
+\contentsline {subsection}{R is case-sensitive!}{27}{subsection*.33}
+\contentsline {subsection}{Changing and combining objects}{28}{subsection*.34}
+\contentsline {subsection}{Numbers versus characters}{29}{subsection*.35}
+\contentsline {section}{Scalers and vectors}{29}{section*.36}
+\contentsline {subsection}{scalars}{30}{subsection*.37}
+\contentsline {subsection}{Vectors}{30}{subsection*.38}
+\contentsline {subsection}{Vectors contain either numbers or characters, not both!}{31}{subsection*.39}
+\contentsline {section}{Generating numeric vectors}{31}{section*.40}
+\contentsline {subsection}{a:b}{32}{subsection*.41}
+\contentsline {subsection}{seq(from, to, by, length.out)}{32}{subsection*.42}
+\contentsline {subsection}{rep(x, times, each)}{34}{subsection*.43}
+\contentsline {subsection}{length()}{35}{subsection*.44}
+\contentsline {section}{Test your R might!}{35}{section*.45}
+\contentsline {section}{Additional Tips}{36}{section*.46}
+\contentsline {chapter}{3: Vector arithmetic and descriptive statistics}{39}{chapter*.47}
+\contentsline {section}{Arithmetic operations on vectors}{39}{section*.48}
+\contentsline {subsection}{Basic math with vectors and scalers}{39}{subsection*.49}
+\contentsline {subsection}{Basic math with multiple vectors}{40}{subsection*.50}
+\contentsline {section}{Summary statistics for Continuous data}{41}{section*.51}
+\contentsline {subsection}{Watch out for NA values!}{42}{subsection*.52}
+\contentsline {subsection}{Other helpful vector functions}{43}{subsection*.53}
+\contentsline {subsection}{Standardizing (z-score) variables}{43}{subsection*.54}
+\contentsline {section}{Summary Statistics for Discrete data}{45}{section*.55}
+\contentsline {subsection}{Additional Tips}{46}{subsection*.56}
+\contentsline {section}{Test your R Might!}{46}{section*.57}
+\contentsline {chapter}{4: Indexing and comparing vectors}{49}{chapter*.58}
+\contentsline {section}{Indexing vectors with brackets}{49}{section*.59}
+\contentsline {subsection}{Numerical Indexing}{50}{subsection*.60}
+\contentsline {section}{Creating logical vectors}{51}{section*.61}
+\contentsline {section}{Indexing data with logical vectors}{54}{section*.62}
+\contentsline {section}{Additional helpful vector functions}{55}{section*.63}
+\contentsline {section}{Set Functions}{56}{section*.64}
+\contentsline {section}{Using indexing to remove specific values of a vector}{57}{section*.65}
+\contentsline {section}{Taking the sum and mean of logical vectors to get counts and percentages}{58}{section*.66}
+\contentsline {subsection}{Additional Tips}{60}{subsection*.67}
+\contentsline {section}{A worked example - Chicken Weights}{60}{section*.68}
+\contentsline {section}{Test your R might!}{62}{section*.69}
+\contentsline {chapter}{5: Matrices and Data Frames}{65}{chapter*.70}
+\contentsline {section}{Creating matrices and dataframes}{65}{section*.71}
+\contentsline {subsection}{cbind() and rbind()}{65}{subsection*.72}
+\contentsline {subsection}{Dataframe: An m x n object containing numbers, strings and factors}{68}{subsection*.73}
+\contentsline {section}{Data sets pre-loaded in R}{69}{section*.74}
+\contentsline {section}{Getting information about matrices and dataframes}{69}{section*.75}
+\contentsline {section}{Loading data into R with read.table()}{72}{section*.76}
+\contentsline {subsection}{Additional tips}{74}{subsection*.77}
+\contentsline {section}{Test your R might!}{75}{section*.78}
+\contentsline {chapter}{6: Basic Dataframe Manipulation}{77}{chapter*.79}
+\contentsline {section}{Get the pirates dataframe}{77}{section*.80}
+\contentsline {section}{Indexing dataframes with brackets [rows, columns]}{77}{section*.81}
+\contentsline {subsection}{Accessing dataframe columns by column name and \$}{79}{subsection*.82}
+\contentsline {section}{Adding new columns to a dataframe}{80}{section*.83}
+\contentsline {subsection}{Warning: Always repeat the name of the dataframe when referring to it!}{80}{subsection*.84}
+\contentsline {section}{Changing dataframe column names}{81}{section*.85}
+\contentsline {section}{Subsetting dataframes with logical indexing and subset()}{82}{section*.86}
+\contentsline {section}{Combining indexing and functions}{85}{section*.87}
+\contentsline {section}{Recoding values in a dataframe column}{86}{section*.88}
+\contentsline {section}{A worked example: movies}{86}{section*.89}
+\contentsline {subsection}{Q1: What was the mean box-office total of Action movies and Adventure movies separately?}{87}{subsection*.90}
+\contentsline {subsection}{Q2: Was there a difference in the production budget of Super Hero versus Science Fiction movies?}{88}{subsection*.91}
+\contentsline {subsection}{Q3: Were are higher percentage of R rated movies in the Action genre than the Thriller/Suspense genre?}{88}{subsection*.92}
+\contentsline {subsection}{Q4: Did movies with a running time longer than 100 minutes make more money than those with a running time less than 100 minutes??}{89}{subsection*.93}
+\contentsline {subsection}{Q5: What was the name of the movie that earned the highest box-office relative to its production budget?}{89}{subsection*.94}
+\contentsline {section}{Test your R Might!}{90}{section*.95}
+\contentsline {chapter}{7: Grouped aggregation with dataframes}{91}{chapter*.96}
+\contentsline {section}{Grouped aggregation with aggregate()}{91}{section*.97}
+\contentsline {section}{Aggregation with dplyr}{93}{section*.98}
+\contentsline {subsection}{The 5 verbs in dplyr}{95}{subsection*.99}
+\contentsline {section}{Test your R might!}{97}{section*.100}
+\contentsline {section}{Additional Tips}{98}{section*.101}
+\contentsline {chapter}{7: Sampling and Probability Distributions}{99}{chapter*.102}
+\contentsline {section}{Sampling data from probability distributions}{99}{section*.103}
+\contentsline {subsection}{The Normal (Gaussian) distribution}{100}{subsection*.104}
+\contentsline {subsection}{The Uniform distribution}{101}{subsection*.105}
+\contentsline {subsection}{Sampling from a set of values: sample()}{102}{subsection*.106}
+\contentsline {subsection}{Drawing coins from a treasure chest}{103}{subsection*.107}
+\contentsline {subsection}{Simulating Pinder Outcomes}{104}{subsection*.108}
+\contentsline {section}{A worked example: A quick test of the law of large numbers}{104}{section*.109}
+\contentsline {section}{Test your R might!}{105}{section*.110}
+\contentsline {section}{Additional Tips}{105}{section*.111}
+\contentsline {chapter}{9: Plotting: Part 1}{107}{chapter*.112}
+\contentsline {section}{Color basics}{107}{section*.113}
+\contentsline {subsection}{High vs. low-level plotting commands}{108}{subsection*.114}
+\contentsline {subsection}{Plotting arguments}{108}{subsection*.115}
+\contentsline {section}{Scatterplot: \texttt {plot()}}{108}{section*.116}
+\contentsline {subsection}{Symbol types: pch}{111}{subsection*.117}
+\contentsline {subsection}{Scatterplot of pirates data}{111}{subsection*.118}
+\contentsline {section}{Histogram: \texttt {hist()}}{112}{section*.119}
+\contentsline {section}{The Pirate Plot: \texttt {pirateplot()}}{114}{section*.120}
+\contentsline {section}{Other plotting types}{116}{section*.121}
+\contentsline {subsection}{Barplot: barplot()}{117}{subsection*.122}
+\contentsline {subsection}{Boxplot: boxplot()}{118}{subsection*.123}
+\contentsline {section}{Low-level plotting functions}{119}{section*.124}
+\contentsline {subsection}{Starting with a blank plot}{120}{subsection*.125}
+\contentsline {section}{points()}{120}{section*.126}
+\contentsline {subsection}{abline()}{121}{subsection*.127}
+\contentsline {subsection}{text()}{121}{subsection*.128}
+\contentsline {subsection}{Formatting text for plotting}{123}{subsection*.129}
+\contentsline {subsection}{curve()}{125}{subsection*.130}
+\contentsline {subsection}{legend()}{126}{subsection*.131}
+\contentsline {section}{Additional low-level plotting functions}{127}{section*.132}
+\contentsline {section}{Saving plots to a file}{128}{section*.133}
+\contentsline {section}{A worked example: Creating a plot with automated numeric labels}{129}{section*.134}
+\contentsline {section}{Additional Tips}{131}{section*.135}
+\contentsline {chapter}{10: Plotting: Part Deux}{133}{chapter*.136}
+\contentsline {section}{Colors in R}{133}{section*.137}
+\contentsline {subsection}{Specifying colors as a string}{133}{subsection*.138}
+\contentsline {subsection}{Shades of gray with \texttt {gray()}}{133}{subsection*.139}
+\contentsline {subsection}{RGB values: \texttt {rgb()}}{134}{subsection*.140}
+\contentsline {subsection}{Color Palettes with the \texttt {RColorBrewer} package}{135}{subsection*.141}
+\contentsline {subsection}{Numerically defined color gradients with \texttt {colorRamp2}}{136}{subsection*.142}
+\contentsline {subsection}{Stealing any color from your screen with a kuler}{137}{subsection*.143}
+\contentsline {section}{Plot margins}{138}{section*.144}
+\contentsline {section}{Arranging multiple plots with \texttt {par(mfrow)} and \texttt {layout}}{140}{section*.145}
+\contentsline {subsection}{Simple plot layouts with par(mfrow) and par(mfcol)}{140}{subsection*.146}
+\contentsline {subsection}{Complex plot layouts with \texttt {layout()}}{140}{subsection*.147}
+\contentsline {section}{Using alternative fonts in pdfs with the extrafont package}{142}{section*.148}
+\contentsline {section}{Additional Tips}{145}{section*.149}
+\contentsline {chapter}{11: 1 and 2-sample Null-Hypothesis tests}{147}{chapter*.150}
+\contentsline {section}{Warning about null-hypothesis tests with "frequentist" statistics}{147}{section*.151}
+\contentsline {section}{T-test}{148}{section*.152}
+\contentsline {subsection}{One-Sample t-test}{149}{subsection*.153}
+\contentsline {subsection}{Two-sample t-test}{150}{subsection*.154}
+\contentsline {subsection}{Specifying t-tests with formula notation}{151}{subsection*.155}
+\contentsline {section}{Correlation test}{153}{section*.156}
+\contentsline {section}{Chi-square test}{155}{section*.157}
+\contentsline {section}{Getting APA-style conclusions with the apa function}{157}{section*.158}
+\contentsline {section}{Additional Tips}{158}{section*.159}
+\contentsline {section}{Test your R might!}{158}{section*.160}
+\contentsline {chapter}{12: Regression and ANOVA}{159}{chapter*.161}
+\contentsline {section}{The Linear Model}{159}{section*.162}
+\contentsline {subsection}{Interactions in model terms: y {\raise .17ex\hbox {$\scriptstyle \sim $}} x1 * x2}{164}{subsection*.163}
+\contentsline {section}{Calculating an ANOVA with \texttt {aov()}}{165}{section*.164}
+\contentsline {section}{Generalized Linear Model (GLM)}{166}{section*.165}
+\contentsline {subsection}{Binary Logistic Regression}{167}{subsection*.166}
+\contentsline {section}{Additional Tips}{169}{section*.167}
+\contentsline {subsection}{Adding a regression line to a plot}{169}{subsection*.168}
+\contentsline {subsection}{Using a regression model to predict new data}{170}{subsection*.169}
+\contentsline {chapter}{13: Writing your own functions}{173}{chapter*.170}
+\contentsline {section}{Why would you want to write your own function?}{173}{section*.171}
+\contentsline {section}{The basic structure of a function}{174}{section*.172}
+\contentsline {subsection}{A simple example}{174}{subsection*.173}
+\contentsline {subsection}{Using multiple inputs}{175}{subsection*.174}
+\contentsline {subsection}{Including default values}{176}{subsection*.175}
+\contentsline {subsection}{Using if/then statements in functions}{177}{subsection*.176}
+\contentsline {section}{Storing and loading your functions to and from a function file with source()}{180}{section*.177}
+\contentsline {section}{Tips and tricks for complex functions}{180}{section*.178}
+\contentsline {subsection}{Conduct input quality checks}{180}{subsection*.179}
+\contentsline {subsection}{Test your functions by hard-coding input values}{182}{subsection*.180}
+\contentsline {subsection}{Using ... as option inputs}{183}{subsection*.181}
+\contentsline {section}{A worked example: Custom plotting functions}{183}{section*.182}
+\contentsline {chapter}{14: Loops}{187}{chapter*.183}
+\contentsline {section}{What are loops?}{188}{section*.184}
+\contentsline {subsection}{A simple loop: Adding integers from 1 to 100}{189}{subsection*.185}
+\contentsline {section}{Creating multiple plots with a loop}{189}{section*.186}
+\contentsline {section}{Storing sequential loop results in a container object}{191}{section*.187}
+\contentsline {subsection}{A complex data loop}{191}{subsection*.188}
+\contentsline {section}{Loops over multiple indices}{194}{section*.189}
+\contentsline {subsection}{Design Matrices}{194}{subsection*.190}
+\contentsline {section}{The list object}{196}{section*.191}
+\contentsline {section}{When and when not to use loops}{198}{section*.192}
+\contentsline {section}{Parallel computing with snowfall()}{199}{section*.193}
+\contentsline {subsection}{Additional tips for using Snowfall}{202}{subsection*.194}
+\contentsline {chapter}{16: Data Cleaning and preparation}{203}{chapter*.195}
+\contentsline {section}{The Basics}{203}{section*.196}
+\contentsline {subsection}{Changing column names in a dataframe}{203}{subsection*.197}
+\contentsline {subsection}{Changing the order of columns}{203}{subsection*.198}
+\contentsline {subsection}{Converting values in a vector or dataframe}{205}{subsection*.199}
+\contentsline {subsection}{Changing the class of a vector}{206}{subsection*.200}
+\contentsline {section}{Splitting numerical data into groups using cut()}{207}{section*.201}
+\contentsline {section}{Merging two dataframes}{209}{section*.202}
+\contentsline {section}{Random Data Preparation Tips}{211}{section*.203}
+\contentsline {chapter}{Appendix}{213}{chapter*.204}
+\contentsline {chapter}{Index}{217}{chapter*.205}
 \contentsfinish 

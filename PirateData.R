@@ -36,12 +36,12 @@ pirates$tattoos[pirates$tattoos < 0] <- 0
 
 
 # Create tchests found as a function of age and tattoos
-pirates$tchests.found <- round(rexp(n, 5 / (pirates$age + pirates$tattoos)), 0)
+pirates$tchests <- round(rexp(n, 5 / (pirates$age + pirates$tattoos)), 0)
 
-# Create parrots.lifetime as a function of age
-pirates$parrots.lifetime <- round(rexp(n, 1 / pirates$age * 10), 0)
+# Create parrots as a function of age
+pirates$parrots <- round(rexp(n, 1 / pirates$age * 10), 0)
 
-# Create favoriate pirate as a function of sex
+# Create favorate pirate as a function of sex
 
 pirates$favorite.pirate[pirates$sex == "male"] <- sample(x = c("Jack Sparrow", "Blackbeard", "Lewis Scot", "Hook", "Edward Low", "Anicetus"),
                                                          size = sum(pirates$sex == "male"),
@@ -68,13 +68,13 @@ pirates$sword.type[pirates$headband == "no"] <- sample(c("cutlass", "sabre", "sc
 
 # Create sword speed as a function of bandana use and sword.type
 
-pirates$sword.speed <- unlist(lapply(1:nrow(pirates), function(x) {
+pirates$sword.time <- unlist(lapply(1:nrow(pirates), function(x) {
   
   sword.i <- pirates$sword.type[x]
   headband.i <- pirates$headband[x]
   
   sword.num.convert <- data.frame("sword" = c("cutlass", "sabre", "scimitar", "banana"),
-                                  "num" = c(15, 2, 1, .001)
+                                  "num" = c(15, 2, 1, .0001)
   )
   
   headband.num.convert <- data.frame("headband" = c("yes", "no"),
@@ -84,33 +84,138 @@ pirates$sword.speed <- unlist(lapply(1:nrow(pirates), function(x) {
   sword.num <- sword.num.convert$num[sword.num.convert$sword == sword.i]
   headband.num <- headband.num.convert$num[headband.num.convert$headband == headband.i] 
   
-  speed.i <- rexp(1, rate = (sword.num + headband.num) / 10)
+  speed.i <- rexp(1, rate = (sword.num + headband.num / 5) / 10)
+
   
-  speed.i
-  
-  return(speed.i)
+  return(round(speed.i, 2))
   
 }))
 
 
-# Write table to file
-write.table(pirates, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirate_survey_noerrors.txt", sep = "\t")
-save(pirates, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/yarrr/data/pirates.RData")
+# Create eye-patch as a function of age and parrots
 
-pirates.errors <- pirates
+pirates$eyepatch <- unlist(lapply(1:nrow(pirates), function(x) {
+  
+  age.i <- pirates$age[x]
+  parrots.i <- pirates$parrots[x]
+  
+  patch.prob <- 1 / (1 + exp(-age.i / 50 - parrots.i / 20))
+  
+  patch.i <- sample(c(1, 0), size = 1, replace = T, prob = c(patch.prob, 1 - patch.prob))
+  
+  
+  return(patch.i)
+  
+}))
+
+
+
+# Create beard-length as a function of sex and tattoos
+
+pirates$beard.length <- unlist(lapply(1:nrow(pirates), function(x) {
+  
+  sex.i <- pirates$sex[x]
+  tattoos.i <- pirates$tattoos[x]
+  
+  if(sex.i == "male") {sex.num <- 10}
+  if(sex.i == "female") {sex.num <- 0} 
+  if(sex.i == "other") {sex.num <- 5}
+  
+  beard.length <- rnorm(1, mean = sex.num + tattoos.i, sd = 5)
+  
+if(sex.i == "female") {beard.length <- rnorm(1, mean = 0, sd = 1)}
+  if(beard.length < 0) {beard.length <- 0}
+  
+  return(round(beard.length, 0))
+  
+}))
+
+# Create favorite pixar movie as a function of eyepatch
+
+pirates$fav.pixar <- unlist(lapply(1:nrow(pirates), function(x) {
+
+  movie.vec <- c("Toy Story", 
+                 "A Bug's Life", 
+                 "Toy Story 2", 
+                 "Monsters, Inc.", 
+                 "Finding Nemo", 
+                 "The Incredibles", 
+                 "Cars", 
+                 "Ratatouille",
+                 "WALL-E", 
+                 "Up", 
+                 "Toy Story 3", 
+                 "Cars 2", 
+                 "Brave", 
+                 "Monsters University", 
+                 "Inside Out")
+  
+  patch.i <- pirates$eyepatch[x]
+  prob.vec.1 <- c(10, 10, 10, 20, 200, 30, 10, 1, 25, 40, 5, 5, 10, 35, 5)
+  prob.vec.2 <- c(10, 10, 10, 20, 10, 30, 10, 1, 25, 40, 5, 5, 10, 35, 200)
+  
+  if(patch.i == 0) {prob.vec.i <- prob.vec.1}
+  if(patch.i > 0) {prob.vec.i <- prob.vec.2}
+  
+fav.pix <- sample(movie.vec, size = 1, prob = prob.vec.i / sum(prob.vec.i))
+  
+  
+  return(fav.pix)
+  
+}))
+
+
+
+# ------------------
+# Write table to file
+write.table(pirates, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirates.txt", sep = "\t")
+save(pirates, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/yarrr/data/pirates.RData")
+# ------------------
+
+# ---------
+# Create pirate.errors
+# ----------
+
+
+pirateserrors <- pirates
 
 ## Add some bad data
-pirates.errors$sex[sample(1:nrow(pirates.errors), size = 3)] <- sample(c("yes please!", "sure I'll have some", "depends on who is offering"), size = 3, replace = F)
-pirates.errors$age[sample(1:nrow(pirates.errors), size = 20)] <- sample(c(999, 0, -99, 500, 12345), size = 20, replace = T)
-pirates.errors$headband[sample(1:nrow(pirates.errors), size = 10)] <- sample(c("sometimes", "what is a headband?"), size = 10, replace = T)
-pirates.errors$college[sample(1:nrow(pirates.errors), size = 10)] <- sample(c(NA), size = 10, replace = T)
-pirates.errors$tattoos[sample(1:nrow(pirates.errors), size = 10)] <- sample(c(1000000, -10, NA), size = 10, replace = T)
-pirates.errors$favorite.pirate[sample(1:nrow(pirates.errors), size = 10)] <- sample(c("your mom"), size = 10, replace = T)
+pirateserrors$sex[sample(1:nrow(pirateserrors), size = 3)] <- sample(c("yes please!", "sure I'll have some", "depends on who is offering"), size = 3, replace = F)
+pirateserrors$age[sample(1:nrow(pirateserrors), size = 20)] <- sample(c(999, 0, -99, 500, 12345), size = 20, replace = T)
+pirateserrors$headband[sample(1:nrow(pirateserrors), size = 10)] <- sample(c("sometimes", "what is a headband?"), size = 10, replace = T)
+pirateserrors$college[sample(1:nrow(pirateserrors), size = 10)] <- sample(c(NA), size = 10, replace = T)
+pirateserrors$tattoos[sample(1:nrow(pirateserrors), size = 10)] <- sample(c(1000000, -10, NA), size = 10, replace = T)
+pirateserrors$favorite.pirate[sample(1:nrow(pirateserrors), size = 10)] <- sample(c("your mom"), size = 10, replace = T)
+pirateserrors$eyepatch[sample(1:nrow(pirateserrors), size = 20)] <- sample(c(2:10), size = 20, replace = T)
+pirateserrors$tchests[sample(1:nrow(pirateserrors), size = 20)] <- sample(1000:10000, size = 20, replace = T)
+pirateserrors$parrots[sample(1:nrow(pirateserrors), size = 20)] <- sample(500:1000, size = 20, replace = T)
 
-# Write table to file
-write.table(pirates.errors, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirate_survey_witherrors.txt", sep = "\t")
+
+# Add NAs in random locations
+
+row.vec <- sample(1:nrow(pirateserrors), size = 50, replace = T)
+col.vec <- sample(1:ncol(pirateserrors), size = 50, replace = T)
+
+for(i in 1:length(row.vec)) {
+
+pirateserrors[row.vec[i], col.vec[i]] <- NA 
 
 }
+
+
+# Write table to file
+write.table(pirateserrors, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/data/pirateserrors.txt", sep = "\t")
+save(pirateserrors, file = "/Users/Nathaniel/Dropbox/Git/YaRrr_Book/yarrr/data/pirateserrors.RData")
+
+}
+
+
+
+
+
+
+
+
 
 
 # Ship dataset
