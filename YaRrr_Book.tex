@@ -2178,7 +2178,7 @@ You can also get random values from a vector by indexing a vector with the \text
 \hlstd{tattoos[rand.values]} \hlcom{# Step 2: Index tattoo with rand.values}
 \end{alltt}
 \begin{verbatim}
-## [1] 17 50 20
+## [1] 17 50  2
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -2193,7 +2193,7 @@ The result of our indexing is 3 randomly selected values from the \texttt{tattoo
 \hlkwd{sample}\hlstd{(}\hlkwc{x} \hlstd{= tattoos,} \hlkwc{size} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{replace} \hlstd{= F)}
 \end{alltt}
 \begin{verbatim}
-## [1]  0  9 50
+## [1]  8 10 50
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -5210,7 +5210,7 @@ For example, let's draw 5 samples (\texttt{n = 5}) from a normal distribution wi
 \hlkwd{rnorm}\hlstd{(}\hlkwc{n} \hlstd{=} \hlnum{5}\hlstd{,} \hlkwc{mean} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{sd} \hlstd{=} \hlnum{1}\hlstd{)}
 \end{alltt}
 \begin{verbatim}
-## [1]  0.093800411  0.007233502 -0.024966945  0.810972954  1.964946635
+## [1] 1.6184811 0.6021107 0.7290129 1.6754286 0.6640214
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -5225,13 +5225,13 @@ Because the sampling is done randomly, you'll get different values each time you
 \hlkwd{rnorm}\hlstd{(}\hlnum{5}\hlstd{,} \hlkwc{mean} \hlstd{=} \hlnum{10}\hlstd{,} \hlkwc{sd} \hlstd{=} \hlnum{5}\hlstd{)}
 \end{alltt}
 \begin{verbatim}
-## [1] 12.713930 11.808661  9.884972 12.825395  9.992205
+## [1]  9.109339 10.427758  9.553366  6.413901 10.697239
 \end{verbatim}
 \begin{alltt}
 \hlkwd{rnorm}\hlstd{(}\hlnum{5}\hlstd{,} \hlkwc{mean} \hlstd{=} \hlnum{10}\hlstd{,} \hlkwc{sd} \hlstd{=} \hlnum{5}\hlstd{)}
 \end{alltt}
 \begin{verbatim}
-## [1] 11.052812 12.245184 16.795069 11.467617  2.583594
+## [1]  8.024336 14.333532  4.704237  4.201031 13.658394
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -5301,13 +5301,13 @@ Let's draw 5 samples from two uniform distributions, one with bounds at 0 and 1,
 \hlkwd{runif}\hlstd{(}\hlnum{5}\hlstd{,} \hlkwc{min} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{max} \hlstd{=} \hlnum{1}\hlstd{)} \hlcom{# 5 samples from U[0, 1]}
 \end{alltt}
 \begin{verbatim}
-## [1] 0.70115050 0.11665552 0.21896768 0.01532818 0.46970110
+## [1] 0.64137201 0.57755064 0.96007265 0.05210931 0.08823298
 \end{verbatim}
 \begin{alltt}
 \hlkwd{runif}\hlstd{(}\hlnum{5}\hlstd{,} \hlkwc{min} \hlstd{=} \hlopt{-}\hlnum{100}\hlstd{,} \hlkwc{max} \hlstd{=} \hlnum{100}\hlstd{)} \hlcom{# 5 samples from U[-100, 100]}
 \end{alltt}
 \begin{verbatim}
-## [1] 47.0907746 94.2556744 75.7832659 -3.2327119  0.2626603
+## [1]  98.68427  26.83085 -24.17919  85.17760 -64.09378
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -5359,8 +5359,8 @@ As a simple example, let's simulate 10 flips of a fair coin, were the probably o
        \hlstd{)}
 \end{alltt}
 \begin{verbatim}
-##  [1] "Tails" "Tails" "Tails" "Tails" "Tails" "Heads" "Tails" "Heads"
-##  [9] "Tails" "Tails"
+##  [1] "Heads" "Tails" "Tails" "Heads" "Tails" "Tails" "Heads" "Tails"
+##  [9] "Heads" "Heads"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -5418,8 +5418,8 @@ Now, let's sample drawing coins from a treasure chest Let's say the chest has 10
        \hlstd{)}
 \end{alltt}
 \begin{verbatim}
-##  [1] "bronze" "bronze" "gold"   "silver" "gold"   "bronze" "bronze"
-##  [8] "bronze" "silver" "silver"
+##  [1] "bronze" "gold"   "bronze" "bronze" "bronze" "gold"   "bronze"
+##  [8] "bronze" "bronze" "bronze"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -5448,9 +5448,9 @@ Let's simulate some Pinder outcomes. For those who don't know, Pinder is an app 
 \end{alltt}
 \begin{verbatim}
 ##  [1] "No Match" "No Match" "No Match" "Match!!!" "No Match" "No Match"
-##  [7] "No Match" "No Match" "Match!!!" "No Match" "No Match" "No Match"
-## [13] "No Match" "No Match" "No Match" "No Match" "No Match" "No Match"
-## [19] "No Match" "No Match"
+##  [7] "No Match" "No Match" "No Match" "Match!!!" "No Match" "No Match"
+## [13] "No Match" "Match!!!" "No Match" "No Match" "No Match" "Match!!!"
+## [19] "No Match" "Match!!!"
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -5539,25 +5539,25 @@ If our test worked, then the difference for the small sample should be larger th
 \hlkwd{mean}\hlstd{(small)} \hlcom{# What is the mean of the small sample?}
 \end{alltt}
 \begin{verbatim}
-## [1] 105.1404
+## [1] 103.6144
 \end{verbatim}
 \begin{alltt}
 \hlkwd{mean}\hlstd{(large)} \hlcom{# What is the mean of the large sample?}
 \end{alltt}
 \begin{verbatim}
-## [1] 99.98555
+## [1] 99.98045
 \end{verbatim}
 \begin{alltt}
 \hlkwd{mean}\hlstd{(small)} \hlopt{-} \hlnum{100} \hlcom{# How far is the mean of Small from 100?}
 \end{alltt}
 \begin{verbatim}
-## [1] 5.140435
+## [1] 3.614376
 \end{verbatim}
 \begin{alltt}
 \hlkwd{mean}\hlstd{(large)} \hlopt{-} \hlnum{100} \hlcom{# How far is the mean of Large from 100?}
 \end{alltt}
 \begin{verbatim}
-## [1] -0.01445006
+## [1] -0.01954734
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -11144,16 +11144,17 @@ In one of the early chapters of this book, we learned how to change values in a 
 \end{kframe}
 \end{knitrout}
 
-However, if you need to convert many values in a vector, typing this type of code over and over can become tedious. Instead, I recommend writing a function to do this. As far as I know, this function is not stored in base R, so we'll write one ourselves called \texttt{recode.v()} (which stands for `recode vector'). You can find this function in the right-hand margin. The function has 4 inputs
+However, if you need to convert many values in a vector, typing this type of code over and over can become tedious. Instead, I recommend writing a function to do this. As far as I know, this function is not stored in base R, so we'll write one ourselves called \texttt{recodev()} (which stands for `recode vector'). The \texttt{recodev} function is included in the \texttt{yarrr} package. If you don't have the package, the full definition of the function is on the sidebar. -- just execute the code in your R session to use it.
+The function has 4 inputs
 
 \begin{marginfigure}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlcom{#recode.v function}
+\hlcom{#recodev function}
 \hlcom{# Execute this code in R to use it!}
 
-\hlstd{recode.v} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{original.vector}\hlstd{,}
+\hlstd{recodev} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{original.vector}\hlstd{,}
                    \hlkwc{old.values}\hlstd{,}
                    \hlkwc{new.values}\hlstd{,}
                    \hlkwc{others} \hlstd{=} \hlkwa{NULL}\hlstd{) \{}
@@ -11209,13 +11210,13 @@ Here's the function in action: Let's say we have a vector \texttt{gender} which 
 \end{kframe}
 \end{knitrout}
 
-Let's use the \texttt{recode.v()} function to convert the 0s to "female", 1s to "male" and 2s to "other"
+Let's use the \texttt{recodev()} function to convert the 0s to "female", 1s to "male" and 2s to "other"
 
 \begin{footnotesize}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlstd{gender} \hlkwb{<-} \hlkwd{recode.v}\hlstd{(}\hlkwc{original.vector} \hlstd{= gender,}
+\hlstd{gender} \hlkwb{<-} \hlkwd{recodev}\hlstd{(}\hlkwc{original.vector} \hlstd{= gender,}
          \hlkwc{old.values} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{2}\hlstd{),}
          \hlkwc{new.values} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"female"}\hlstd{,} \hlstr{"male"}\hlstd{,} \hlstr{"other"}\hlstd{)}
 \hlstd{)}

@@ -8228,14 +8228,15 @@ In one of the early chapters of this book, we learned how to change values in a 
 vec[vec == 1] <- 0
 @
 
-However, if you need to convert many values in a vector, typing this type of code over and over can become tedious. Instead, I recommend writing a function to do this. As far as I know, this function is not stored in base R, so we'll write one ourselves called \texttt{recode.v()} (which stands for `recode vector'). You can find this function in the right-hand margin. The function has 4 inputs
+However, if you need to convert many values in a vector, typing this type of code over and over can become tedious. Instead, I recommend writing a function to do this. As far as I know, this function is not stored in base R, so we'll write one ourselves called \texttt{recodev()} (which stands for `recode vector'). The \texttt{recodev} function is included in the \texttt{yarrr} package. If you don't have the package, the full definition of the function is on the sidebar. -- just execute the code in your R session to use it.
+The function has 4 inputs
 
 \begin{marginfigure}
 <<>>=
-#recode.v function
+#recodev function
 # Execute this code in R to use it!
 
-recode.v <- function(original.vector, 
+recodev <- function(original.vector, 
                    old.values, 
                    new.values, 
                    others = NULL) {
@@ -8285,11 +8286,11 @@ Here's the function in action: Let's say we have a vector \texttt{gender} which 
 gender <- c(0, 1, 0, 1, 1, 0, 0, 2, 1)
 @
 
-Let's use the \texttt{recode.v()} function to convert the 0s to "female", 1s to "male" and 2s to "other"
+Let's use the \texttt{recodev()} function to convert the 0s to "female", 1s to "male" and 2s to "other"
 
 \begin{footnotesize}
 <<>>=
-gender <- recode.v(original.vector = gender,
+gender <- recodev(original.vector = gender,
          old.values = c(0, 1, 2),
          new.values = c("female", "male", "other")
 )

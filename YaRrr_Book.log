@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.21)  29 JAN 2016 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.21)  29 JAN 2016 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3656,12 +3656,6 @@ Overfull \hbox (17.73001pt too wide) in paragraph at lines 5180--5203
  [] 
  []
 
-
-Overfull \hbox (43.0pt too wide) in paragraph at lines 5214--5214
-[]\T1/zi4/m/it/10 ## [1]  0.093800411  0.007233502 -0.024966945  0.810972954  1
-.964946635[] 
- []
-
 [100 <./figure/unnamed-chunk-177-1.pdf>]
 <figure/unnamed-chunk-180-1.pdf, id=1483, 361.35pt x 361.35pt>
 File: figure/unnamed-chunk-180-1.pdf Graphic file (type pdf)
@@ -3797,7 +3791,7 @@ Overfull \hbox (6.0026pt too wide) in paragraph at lines 5392--5393
 
 
 Overfull \hbox (38.0pt too wide) in paragraph at lines 5423--5423
-[]\T1/zi4/m/it/10 ##  [1] "bronze" "bronze" "gold"   "silver" "gold"   "bronze"
+[]\T1/zi4/m/it/10 ##  [1] "bronze" "gold"   "bronze" "bronze" "bronze" "gold"  
  "bronze"[] 
  []
 
@@ -6952,56 +6946,47 @@ Overfull \hbox (44.0pt too wide) in paragraph at lines 11062--11062
 Underfull \vbox (badness 2126) has occurred while \output is active []
 
  [204]
-Overfull \hbox (0.11014pt too wide) in paragraph at lines 11147--11148
+Overfull \hbox (0.11014pt too wide) in paragraph at lines 11147--11149
 \T1/pplj/m/n/10 (+14) this type of code over and over can be-come te-dious. In-
 stead, I rec-om- 
  []
 
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 11156--11156
-[][]\T1/zi4/m/it/8 recode.v[] []<-[] []\T1/zi4/b/n/8 function[][]\T1/zi4/m/it/8
- ([][]original.vector[][],[][] 
- []
-
-
-Overfull \hbox (27.2pt too wide) in paragraph at lines 11170--11170
+Overfull \hbox (27.2pt too wide) in paragraph at lines 11171--11171
 []                   []\T1/zi4/b/n/8 length[][]\T1/zi4/m/it/8 (original.vector)
 )[][] 
  []
 
 
-Overfull \hbox (47.8pt too wide) in paragraph at lines 11176--11176
+Overfull \hbox (47.8pt too wide) in paragraph at lines 11177--11177
 [][]\T1/zi4/m/it/8 change.log[] []<-[] []original.vector[] []==[] []old.values[
 i][] []&[][] 
  []
 
 
-Overfull \hbox (19.8pt too wide) in paragraph at lines 11177--11177
+Overfull \hbox (19.8pt too wide) in paragraph at lines 11178--11178
 []              []\T1/zi4/b/n/8 is.na[][]\T1/zi4/m/it/8 (original.vector)[] []=
 =[] []F[][] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 11179--11179
+Overfull \hbox (12.0pt too wide) in paragraph at lines 11180--11180
 [][]\T1/zi4/m/it/8 new.vector[change.log][] []<-[] []new.values[i][][] 
  []
 
-
-LaTeX Warning: Marginpar on page 205 moved.
-
 [205]
-Overfull \hbox (12.0pt too wide) in paragraph at lines 11272--11272
+Overfull \hbox (12.0pt too wide) in paragraph at lines 11273--11273
 [][]\T1/zi4/m/it/8 # We\TS1/zi4/m/n/8 '\T1/zi4/m/it/8 ll get an error because a
 ge is not[][] 
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 11278--11278
+Underfull \hbox (badness 3690) in paragraph at lines 11279--11279
 []\T1/zi4/m/it/8 ## Warning in 
  []
 
 
-Overfull \hbox (7.95439pt too wide) in paragraph at lines 11295--11296
+Overfull \hbox (7.95439pt too wide) in paragraph at lines 11296--11297
 []\T1/pplj/m/n/10 (-20) To con-vert \T1/zi4/m/it/10 gender \T1/pplj/m/n/10 (-20
 ) from a fac-tor to a char-ac-ter, use the \T1/zi4/m/it/10 as.character() 
  []
@@ -7010,76 +6995,76 @@ Overfull \hbox (7.95439pt too wide) in paragraph at lines 11295--11296
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.11364 }
+l.11365 }
          
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11364--11364
+Underfull \hbox (badness 10000) in paragraph at lines 11365--11365
 []\T1/pplj/m/n/10 (+20) Either a nu-meric vec-tor of two or more unique cut poi
 nts or a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11364--11364
+Underfull \hbox (badness 10000) in paragraph at lines 11365--11365
 \T1/pplj/m/n/10 (+20) sin-gle num-ber (greater than or equal to 2) giv-ing the 
 num-ber of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11364--11364
+Underfull \hbox (badness 10000) in paragraph at lines 11365--11365
 \T1/pplj/m/n/10 (+20) in-ter-vals into which x is to be cut. For ex-am-ple, \T1
 /zi4/m/it/10 breaks = 1:10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11364--11364
+Underfull \hbox (badness 10000) in paragraph at lines 11365--11365
 []\T1/pplj/m/n/10 (+20) An op-tional string vec-tor of la-bels for each group-i
 ng. By de-fault,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11364--11364
+Underfull \hbox (badness 10000) in paragraph at lines 11365--11365
 \T1/pplj/m/n/10 (+20) la-bels are con-structed us-ing "(a,b]" in-ter-val no-ta-
 tion. If la-bels =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11364--11364
+Underfull \hbox (badness 10000) in paragraph at lines 11365--11365
 []\T1/pplj/m/n/10 (+20) A log-i-cal value in-di-cat-ing if the in-ter-vals shou
 ld be closed on the
  []
 
 
-Overfull \hbox (17.73001pt too wide) in paragraph at lines 11341--11366
+Overfull \hbox (17.73001pt too wide) in paragraph at lines 11342--11367
  [] 
  []
 
 [207]
-Overfull \hbox (8.0pt too wide) in paragraph at lines 11414--11414
+Overfull \hbox (8.0pt too wide) in paragraph at lines 11415--11415
 [][]\T1/zi4/m/it/8 # Calculate the decade for each pirate[][] 
  []
 
 
-Overfull \hbox (8.0pt too wide) in paragraph at lines 11421--11421
+Overfull \hbox (8.0pt too wide) in paragraph at lines 11422--11422
 [][]\T1/zi4/m/it/8 # Calculate the mean number of tattoos[][] 
  []
 
 
-Overfull \hbox (58.0pt too wide) in paragraph at lines 11476--11476
+Overfull \hbox (58.0pt too wide) in paragraph at lines 11477--11477
 []\T1/zi4/m/it/10 ##   (0,10]  (10,20]  (20,30]  (30,40]  (40,50]  (50,60]  (60
 ,70]  (70,80][] 
  []
 
 
-Overfull \hbox (58.0pt too wide) in paragraph at lines 11476--11476
+Overfull \hbox (58.0pt too wide) in paragraph at lines 11477--11477
 []\T1/zi4/m/it/10 ##        0      115      600      278        7        0     
    0        0[] 
  []
 
 
-Overfull \hbox (0.15321pt too wide) in paragraph at lines 11482--11483
+Overfull \hbox (0.15321pt too wide) in paragraph at lines 11483--11484
 \T1/pplj/m/n/10 (+11) Merging two dataframes together allows you to combine inf
 ormation 
  []
@@ -7088,79 +7073,79 @@ ormation
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.11506 }
+l.11507 }
          
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 []\T1/pplj/m/n/10 (+20) The names of the columns that will be used for merg-ing
 . If the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 \T1/pplj/m/n/10 (+20) the merg-ing columns have the same names in both datafram
 es,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 \T1/pplj/m/n/10 (+20) you can just use \T1/zi4/m/it/10 by = c("col.1", "col.2".
 ..)\T1/pplj/m/n/10 (+20) . If the merg-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 \T1/pplj/m/n/10 (+20) columns have dif-fer-ent names in both dataframes, use \T
 1/zi4/m/it/10 by.x \T1/pplj/m/n/10 (+20) to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 \T1/pplj/m/n/10 (+20) name the columns in the x dataframe, and \T1/zi4/m/it/10 
 by.y \T1/pplj/m/n/10 (+20) to name the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 \T1/pplj/m/n/10 (+2) columns in the y dataframe. For ex-am-ple, if the merg-ing
  col-umn is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 \T1/pplj/m/n/10 (+20) called \T1/zi4/m/it/10 STUDENT.NAME \T1/pplj/m/n/10 (+20)
  in dataframe x, and \T1/zi4/m/it/10 name \T1/pplj/m/n/10 (+20) in dataframe y,
  you
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 []\T1/pplj/m/n/10 (+14) A log-i-cal value in-di-cat-ing whether or not to in-cl
 ude non-matching
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 \T1/pplj/m/n/10 (+20) rows of the dataframes in the fi-nal out-put. The de-faul
 t value is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11506--11506
+Underfull \hbox (badness 10000) in paragraph at lines 11507--11507
 \T1/zi4/m/it/10 all.y = FALSE\T1/pplj/m/n/10 (+20) , such that any non-matching
  rows in y are not
  []
 
 
-Overfull \hbox (17.73001pt too wide) in paragraph at lines 11486--11508
+Overfull \hbox (17.73001pt too wide) in paragraph at lines 11487--11509
  [] 
  []
 
 
-Overfull \hbox (22.75pt too wide) in paragraph at lines 11516--11516
+Overfull \hbox (22.75pt too wide) in paragraph at lines 11517--11517
 []                []\T1/zi4/m/it/10 by[] []=[] []"column"[]  []# Common column 
 name in both x and y[][] 
  []
@@ -7170,31 +7155,31 @@ name in both x and y[][]
 LaTeX Warning: Marginpar on page 210 moved.
 
 
-Overfull \hbox (42.0pt too wide) in paragraph at lines 11581--11581
+Overfull \hbox (42.0pt too wide) in paragraph at lines 11582--11582
 []              []\T1/zi4/m/it/8 "Spain"[][],[] []"Austria"[][],[] []"Australia
 "[][]),[][] 
  []
 
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 11582--11582
+Overfull \hbox (2.0pt too wide) in paragraph at lines 11583--11583
 [][]\T1/zi4/m/it/8 "language"[] []=[] []\T1/zi4/b/n/8 c[][]\T1/zi4/m/it/8 ([][]
 "German"[][],[] []"Portugese"[][],[][] 
  []
 
 
-Overfull \hbox (42.0pt too wide) in paragraph at lines 11583--11583
+Overfull \hbox (42.0pt too wide) in paragraph at lines 11584--11584
 []               []\T1/zi4/m/it/8 "Spanish"[][],[] []"German"[][],[] []"English
 "[][]),[][] 
  []
 
 
-Overfull \hbox (34.0pt too wide) in paragraph at lines 11584--11584
+Overfull \hbox (34.0pt too wide) in paragraph at lines 11585--11585
 [][]\T1/zi4/m/it/8 "continent"[] []=[] []\T1/zi4/b/n/8 c[][]\T1/zi4/m/it/8 ([][
 ]"Europe"[][],[] []"Europe"[][],[] []"Europe"[][],[][] 
  []
 
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 11585--11585
+Overfull \hbox (10.0pt too wide) in paragraph at lines 11586--11586
 []                []\T1/zi4/m/it/8 "Europe"[][],[] []"Australia"[][]),[][] 
  []
 
@@ -7206,11 +7191,11 @@ File: figure/unnamed-chunk-390-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-390-1.pdf>
 Package pdftex.def Info: figure/unnamed-chunk-390-1.pdf used on input line 1171
-4.
+5.
 (pdftex.def)             Requested size: 480.0061pt x 480.0061pt.
 
 
-LaTeX Warning: Float too large for page by 34.86209pt on input line 11720.
+LaTeX Warning: Float too large for page by 34.86209pt on input line 11721.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -7222,12 +7207,12 @@ No file YaRrr_Book.bbl.
 ] [216
 
 ]) [217]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11737.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 11737.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11738.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 11738.
  (./YaRrr_Book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11737.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11738.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11737
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11738
 .
 Package rerunfilecheck Info: File `YaRrr_Book.out' has not changed.
 (rerunfilecheck)             Checksum: 5BFD845CE3E91E069153722A64C05BA5;22665.
@@ -7238,7 +7223,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11737.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11738.
  ) 
 Here is how much of TeX's memory you used:
  29988 strings out of 493089
@@ -7263,7 +7248,7 @@ dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 /palatino/uplri8a.pfb>
-Output written on YaRrr_Book.pdf (219 pages, 9805676 bytes).
+Output written on YaRrr_Book.pdf (219 pages, 9805812 bytes).
 PDF statistics:
  2772 PDF objects out of 2984 (max. 8388607)
  2197 compressed objects within 22 object streams
